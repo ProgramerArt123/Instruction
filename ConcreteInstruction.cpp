@@ -36,3 +36,45 @@ AbstractInstruction(x86::size32::integer_data_transmitted::Transmitted_8__16__32
 {
 	
 }
+
+IntegerDataTransmitted::IntegerDataTransmitted(const Data8 &source, const Segment16 &destination)
+	:
+#if PLATFORM=='X' 
+	AbstractInstruction(x86::size32::integer_data_transmitted::Transmitted_8__16__32(), source, destination)
+#endif
+{
+	
+}
+IntegerDataTransmitted::IntegerDataTransmitted(const Data16 &source, const Segment16 &destination)
+	:
+#if PLATFORM=='X' 
+	AbstractInstruction(x86::size32::integer_data_transmitted::Transmitted_8__16__32(), source, destination)
+#endif
+{
+	
+}
+	
+IntegerDataTransmitted::IntegerDataTransmitted(const Data8 &source, const Segment32 &destination)
+	:
+#if PLATFORM=='X' 
+	AbstractInstruction(x86::size32::integer_data_transmitted::Transmitted_8__16__32(), source, destination)
+#endif
+{
+	
+}
+IntegerDataTransmitted::IntegerDataTransmitted(const Data16 &source, const Segment32 &destination)
+	:
+#if PLATFORM=='X' 
+	AbstractInstruction(x86::size32::integer_data_transmitted::Transmitted_8__16__32(), source, destination)
+#endif
+{
+	
+}
+IntegerDataTransmitted::IntegerDataTransmitted(const Data32 &source, const Segment32 &destination)
+	:
+#if PLATFORM=='X' 
+	AbstractInstruction(x86::size32::integer_data_transmitted::Transmitted_8__16__32(), source, destination)
+#endif
+{
+	
+}
