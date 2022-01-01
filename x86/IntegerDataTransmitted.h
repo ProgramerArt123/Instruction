@@ -16,7 +16,7 @@ public:
 	const char *Swap_8__16__32()const;
 	const char *Transmitted_8__16__32_If_Not_Equal_A_ZF()const;
 	const char *Swap_8__16__32_Add()const;
-	const char *Transmitted_8_To_AL_From_Data_Segment()const;
+	const char *Transmitted_8_To_AL_From_DS()const;
 	const char *Read_8__16_From_IO_PORT()const;
 	const char *Write_8__16_To_IO_PORT()const;
 	const char *Load_Effective_Address_16__32()const;

@@ -74,7 +74,7 @@ const char *IntegerDataTransmitted::Swap_8__16__32_Add()const {
 	return "XADD";
 }
 //操作是以DS:[BX+AL]为地址，提取存储器中的一个字节再送入AL
-const char *IntegerDataTransmitted::Transmitted_8_To_AL_From_Data_Segment()const {
+const char *IntegerDataTransmitted::Transmitted_8_To_AL_From_DS()const {
 	return "XLAT";
 }
 //从端口输入一个字节或字到AL或AX中。源操作数是端口地址，可以是8位的常量或者DX中的一个16位地址。
