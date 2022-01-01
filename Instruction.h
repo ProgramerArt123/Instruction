@@ -34,6 +34,7 @@
 #include "x86/register/offset/Source.h"
 #include "x86/register/offset/SourceExtend.h"
 #include "x86/register/offset/Destination.h"
+#include "x86/register/offset/DestinationExtend.h"
 #include "x86/register/general/AccumulatorLow.h"
 #include "x86/register/general/AccumulatorHigh.h"
 #include "x86/register/general/Accumulator.h"
