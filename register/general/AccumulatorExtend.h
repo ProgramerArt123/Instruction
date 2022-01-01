@@ -1,5 +1,5 @@
-#ifndef __GENERAL_ACCUMULATOR_EXTEND_H__
-#define __GENERAL_ACCUMULATOR_EXTEND_H__
+#ifndef __REGISTER_GENERAL_ACCUMULATOR_EXTEND_H__
+#define __REGISTER_GENERAL_ACCUMULATOR_EXTEND_H__
 #include "General32.h"
 namespace general
 {

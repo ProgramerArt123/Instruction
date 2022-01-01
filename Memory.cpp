@@ -1,6 +1,6 @@
 #include "Define.h"
-#include "segment/Data.h"
-#include "segment/Segment.h"
+#include "register/segment/Data.h"
+#include "register/segment/Segment.h"
 #include "immediate/Immediate.h"
 #include "Memory.h"
 

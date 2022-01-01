@@ -1,8 +1,8 @@
-#include "../Define.h"
+#include "Define.h"
 #if PLATFORM=='X'
-#include "../x86/64/IntegerDataTransmitted.h"
+#include "x86/64/IntegerDataTransmitted.h"
 #endif
-#include "../Instruction.h"
+#include "Instruction.h"
 #include "ConcreteInstruction64.h"
 namespace size64
 {

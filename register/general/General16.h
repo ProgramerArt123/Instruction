@@ -1,5 +1,5 @@
-#ifndef __GENERAL_16_H__
-#define __GENERAL_16_H__
+#ifndef __REGISTER_GENERAL_16_H__
+#define __REGISTER_GENERAL_16_H__
 #include "General.h"
 namespace general
 {

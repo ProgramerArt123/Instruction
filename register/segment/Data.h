@@ -1,5 +1,5 @@
-#ifndef __SEGMENT_DATA_H__
-#define __SEGMENT_DATA_H__
+#ifndef __REGISTER_SEGMENT_DATA_H__
+#define __REGISTER_SEGMENT_DATA_H__
 #include "Segment.h"
 namespace segment
 {

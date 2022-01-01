@@ -1,5 +1,5 @@
-#ifndef __GENERAL_ACCUMULATOR_LOW_H__
-#define __GENERAL_ACCUMULATOR_LOW_H__
+#ifndef __REGISTER_GENERAL_ACCUMULATOR_LOW_H__
+#define __REGISTER_GENERAL_ACCUMULATOR_LOW_H__
 #include "General8.h"
 namespace general
 {

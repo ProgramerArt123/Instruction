@@ -1,5 +1,5 @@
 #include <cstring>
-#include "../Define.h"
+#include "Define.h"
 #include "Immediate.h"
 namespace immediate {
 	Immediate::Immediate() {

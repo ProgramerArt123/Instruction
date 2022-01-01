@@ -1,6 +1,6 @@
-#ifndef __OFFSET_H__
-#define __OFFSET_H__
-#include "../Register.h"
+#ifndef __REGISTER_OFFSET_H__
+#define __REGISTER_OFFSET_H__
+#include "register/Register.h"
 namespace offset
 {
 	class Offset : public Register {
