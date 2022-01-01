@@ -35,6 +35,18 @@ namespace x86
 						const char *Subtract_Packed_Double_128__256() {
 							return "VSUBPD";
 						}
+						const char *Multiply_Packed_Single_128__256() {
+							return "VMULPS";
+						}
+						const char *Multiply_Packed_Double_128__256() {
+							return "VMULPD";
+						}
+						const char *Divide_Packed_Single_128__256() {
+							return "VDIVPS";
+						}
+						const char *Divide_Packed_Double_128__256() {
+							return "VDIVPD";
+						}
 					}
 				}
 			}

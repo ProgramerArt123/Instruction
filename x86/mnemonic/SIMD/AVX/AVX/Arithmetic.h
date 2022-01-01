@@ -20,6 +20,10 @@ namespace x86
 						const char *Add_Packed_Double_128__256();
 						const char *Subtract_Packed_Single_128__256();
 						const char *Subtract_Packed_Double_128__256();
+						const char *Multiply_Packed_Single_128__256();
+						const char *Multiply_Packed_Double_128__256();
+						const char *Divide_Packed_Single_128__256();
+						const char *Divide_Packed_Double_128__256();
 					}
 				}
 			}
