@@ -5,6 +5,7 @@ class Operand {
 public:
 	explicit Operand();
 	virtual ~Operand();
+	virtual const char *ToString() = 0;
 };
 
 #endif
