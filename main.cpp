@@ -126,6 +126,10 @@ int main(int argc, char *argv[])
 		const x86::IntegerDataTransmitted move(EAX, EDX);
 		out << move << std::endl;
 	}
+	{
+		const x86::size64::IntegerDataTransmitted move(RAX, RDX);
+		out << move << std::endl;
+	}
 	const std::string &str = out.str();
 	{
 		std::ofstream code("test.s");
