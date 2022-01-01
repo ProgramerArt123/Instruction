@@ -30,6 +30,8 @@
 #include "AccumulatorHigh.h"
 #include "Accumulator.h"
 #include "AccumulatorExtend.h"
+#include "BaseLow.h"
+#include "Base.h"
 #include "64/AccumulatorExtend64.h"
 #include "ConcreteInstruction.h"
 #include "64/ConcreteInstruction64.h"

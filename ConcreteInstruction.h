@@ -19,6 +19,10 @@ public:
 	explicit IntegerDataTransmitted(const Immediate16 &source, const General16 &destination);
 	explicit IntegerDataTransmitted(const Immediate32 &source, const General32 &destination);
 	
+	explicit IntegerDataTransmitted(const General8 &source, const General8 &destination);
+	explicit IntegerDataTransmitted(const General16 &source, const General16 &destination);
+	explicit IntegerDataTransmitted(const General32 &source, const General32 &destination);
+	
 	explicit IntegerDataTransmitted(const General16 &source, const Segment &destination);
 	explicit IntegerDataTransmitted(const Segment &source, const General16 &destination);
 };

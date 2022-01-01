@@ -54,5 +54,13 @@ int main(int argc, char *argv[])
 		const IntegerDataTransmitted move(ES, AX);
 		std::cout << move << std::endl;
 	}
+	{
+		const IntegerDataTransmitted move(AL, BL);
+		std::cout << move << std::endl;
+	}
+	{
+		const IntegerDataTransmitted move(BX, AX);
+		std::cout << move << std::endl;
+	}
 	return 0;
 }
