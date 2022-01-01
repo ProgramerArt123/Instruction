@@ -5,7 +5,5 @@
 
 #define PLATFORM 'X'
 
-#define AX Accumulator::GetInstance()
-#define BX Base::GetInstance()
 
 #endif

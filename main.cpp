@@ -1,12 +1,5 @@
 #include <iostream>
-
 #include "Instruction.h"
-#include "Accumulator.h"
-#include "Base.h"
-#include "Define.h"
-#include "ImmediateSigned16.h"
-#include "Memory.h"
-#include "ConcreteInstruction.h"
 int main(int argc, char *argv[])
 {
 	NoOperation nop;

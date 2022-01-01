@@ -8,4 +8,6 @@ private:
 	explicit Base();
 };
 
+#define BX Base::GetInstance()
+
 #endif

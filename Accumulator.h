@@ -8,4 +8,6 @@ private:
 	explicit Accumulator();
 };
 
+#define AX Accumulator::GetInstance()
+
 #endif

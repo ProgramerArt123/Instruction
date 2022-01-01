@@ -5,7 +5,7 @@
 #include "ConcreteInstruction.h"
 NoOperation::NoOperation():
 #if PLATFORM=='X'
-Instruction(x86::processor_control::No_Operation())
+AbstractInstruction(x86::processor_control::No_Operation())
 #endif
 {
 	
