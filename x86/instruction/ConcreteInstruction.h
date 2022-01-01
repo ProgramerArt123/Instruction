@@ -1308,6 +1308,10 @@ namespace x86
 				explicit SaveState(const x86::memory::MemoryN<94> &source);
 				explicit SaveState(const x86::memory::MemoryN<108> &source);
 			};
+			class Free : public AbstractInstruction {
+			public:
+				explicit Free(const x86::reg::FPU::Data &source);
+			};
 		}
 
 	}

@@ -1805,6 +1805,10 @@ int main(int argc, char *argv[])
 		out << x86::instruction::FPU::SaveState(x86::memory::MemoryN<108>(EAX)) << std::endl;
 	}
 	
+	{
+		out << x86::instruction::FPU::Free(ST1) << std::endl;
+	}
+	
 	
 	const std::string &str = out.str();
 	{

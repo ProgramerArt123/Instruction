@@ -2329,6 +2329,11 @@ namespace x86
 			{
 				
 			}
+			Free::Free(const x86::reg::FPU::Data &source)
+				: AbstractInstruction(x86::mnemonic::FPU::control::Free_Float_Register(), source)
+			{
+				
+			}
 		}
 	}
 }
