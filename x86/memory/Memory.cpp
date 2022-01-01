@@ -1,7 +1,7 @@
 #include "Define.h"
-#include "register/segment/Data.h"
-#include "register/segment/Segment.h"
-#include "immediate/Immediate.h"
+#include "x86/register/segment/Data.h"
+#include "x86/register/segment/Segment.h"
+#include "x86/immediate/Immediate.h"
 #include "Memory.h"
 namespace memory {
 	Memory::Memory(segment::Data &base) {

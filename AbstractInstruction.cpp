@@ -1,5 +1,5 @@
 #include "Define.h"
-#include "Operand.h"
+#include "x86/Operand.h"
 #include "AbstractInstruction.h"
 
 AbstractInstruction::AbstractInstruction(const char *mnemonic) {

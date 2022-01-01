@@ -1,6 +1,6 @@
 #ifndef __REGISTER_H__
 #define __REGISTER_H__
-#include "Operand.h"
+#include "x86/Operand.h"
 class Register : public Operand {
 public:
 	const char *PureString() const override;
