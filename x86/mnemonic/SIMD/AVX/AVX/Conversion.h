@@ -19,6 +19,9 @@ namespace x86
 						const char *Convert_Truncation_Packed_Double_Packed_Doubleword_128__256();
 						const char *Convert_Packed_Double_Packed_Doubleword_128__256();
 						const char *Convert_Packed_Doubleword_Packed_Double_64__128();
+						const char *Unpack_Interleave_High_Packed_Double_128__256();
+						const char *Unpack_Interleave_High_Packed_Single_128__256();
+						const char *Unpack_Interleave_Low_Packed_Double_128__256();
 					}
 				}
 			}

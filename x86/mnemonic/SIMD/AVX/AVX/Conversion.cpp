@@ -34,6 +34,15 @@ namespace x86
 						const char *Convert_Packed_Doubleword_Packed_Double_64__128() {
 							return "VCVTDQ2PD";
 						}
+						const char *Unpack_Interleave_High_Packed_Double_128__256() {
+							return "VUNPCKHPD";
+						}
+						const char *Unpack_Interleave_High_Packed_Single_128__256() {
+							return "VUNPCKHPS";
+						}
+						const char *Unpack_Interleave_Low_Packed_Double_128__256() {
+							return "VUNPCKLPD";
+						}
 					}
 				}
 			}
