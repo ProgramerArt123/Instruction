@@ -3,7 +3,8 @@
 namespace x86
 {
 	namespace mnemonic {
-		namespace string {
+		namespace classic {
+			namespace string {
 				const char *Transmitted_8();
 				const char *Transmitted_16();
 				const char *Transmitted_32();
@@ -24,6 +25,7 @@ namespace x86
 				const char *Repeat_Prefix_Not_Equal_ZF_ECX();
 				const char *Repeat_Prefix_CF_ECX();
 				const char *Repeat_Prefix_Not_CF_ECX();
+			}	
 		}
 	}
 }

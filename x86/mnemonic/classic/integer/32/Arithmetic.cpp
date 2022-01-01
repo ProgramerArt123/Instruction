@@ -2,6 +2,7 @@
 namespace x86
 {
 	namespace mnemonic {
+		namespace classic {
 		namespace integer
 		{
 			namespace size32 {
@@ -74,6 +75,7 @@ namespace x86
 						return "CDQ";
 					}
 				}
+			}
 			}
 		}
 	}

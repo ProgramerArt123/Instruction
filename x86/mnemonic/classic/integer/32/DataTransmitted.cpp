@@ -1,10 +1,12 @@
 #include "DataTransmitted.h"
 namespace x86
 {
-	namespace mnemonic {
+	namespace mnemonic 
+	{
+		namespace classic {
 		namespace integer
 		{
-			namespace size64
+			namespace size32
 			{
 				namespace data_transmitted 
 				{
@@ -13,7 +15,7 @@ namespace x86
 					 *MOV  内存单元,   寄存器/段寄存器/立即数
 					 *MOV  段寄存器,   寄存器/内存单元
 					 **/
-					const char *Transmitted_8__16__32__64() {
+					const char *Transmitted_8__16__32() {
 						return "MOV";
 					}
 
@@ -30,7 +32,7 @@ namespace x86
 					 *MOVZX reg32,reg/mem8
 					 *MOVZX reg32,reg/mem16
 					 *MOVZX reg16,reg/mem8*/
-					const char *Transmitted_8__16_Fill_0() {
+					const char *Transmitted_8__16_Fill_Zero() {
 						return "MOVZX";
 					}
 
@@ -38,14 +40,14 @@ namespace x86
 					 *PUSH reg/mem16
 					 *PUSH reg/mem32
 					 *PUSH inm32*/
-					const char *Push_Stack_8__16() {
+					const char *Push_Stack_8__16__32() {
 						return "PUSH";
 					}
 
 					/*
 					 *POP reg/mem16
 					 *POP reg/mem32*/
-					const char *Pop_Stack_8__16() {
+					const char *Pop_Stack_8__16__32() {
 						return "POP";
 					}
 					//把AX,CX,DX,BX,SP,BP,SI,DI依次压入堆栈
@@ -86,11 +88,11 @@ namespace x86
 						return "XLAT";
 					}
 					//从端口输入一个字节或字到AL或AX中。源操作数是端口地址，可以是8位的常量或者DX中的一个16位地址。
-					const char *Read_8__16_From_IO_PORT() {
+					const char *Read_8__16__32_From_IO_PORT() {
 						return "IN";
 					}
 					//将累加器中的一个字节或字输出到端口。端口地址如果在范围0-FFh之间，可以是一个常量，也可以在DX中存放0-FFFFh之间的端口地址。
-					const char *Write_8__16_To_IO_PORT() {
+					const char *Write_8__16__32_To_IO_PORT() {
 						return "OUT";
 					}
 					//装入有效地址.例: LEA DX,string ;把偏移地址存到DX.
@@ -130,11 +132,12 @@ namespace x86
 						return "POPF";
 					}
 					const char *Push_Stack_32_Flags() {
-						return "PUSHD";
+						return "PUSHFD";
 					}
 					const char *Pop_Stack_32_Flags() {
-						return "POPD";
+						return "POPFD";
 					}
+				}
 				}
 			}
 		}
