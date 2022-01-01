@@ -35,6 +35,7 @@
 #include "x86/register/general/BaseLow.h"
 #include "x86/register/general/BaseHigh.h"
 #include "x86/register/general/Base.h"
+#include "x86/register/general/BaseExtend.h"
 #include "x86/register/general/64/AccumulatorExtend64.h"
 #include "x86/ConcreteInstruction.h"
 #include "x86/64/ConcreteInstruction.h"
