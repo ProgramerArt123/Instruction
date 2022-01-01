@@ -11,15 +11,15 @@ int main(int argc, char *argv[])
 		out << nop << std::endl;
 	}
 	{
-		const IntegerDataTransmitted move(ImmediateSigned8(1), AL);
+		const IntegerDataTransmitted move(immediate::ImmediateSigned8(1), AL);
 		out << move << std::endl;
 	}
 	{
-		const IntegerDataTransmitted move(ImmediateSigned16(-2), AX);
+		const IntegerDataTransmitted move(immediate::ImmediateSigned16(-2), AX);
 		out << move << std::endl;
 	}
 	{
-		const IntegerDataTransmitted move(ImmediateUnSigned32(3), EAX);
+		const IntegerDataTransmitted move(immediate::ImmediateUnSigned32(3), EAX);
 		out << move << std::endl;
 	}
 	{

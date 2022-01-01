@@ -21,9 +21,9 @@ public:
 
 class IntegerDataTransmitted : public AbstractInstruction {
 public:
-	explicit IntegerDataTransmitted(const Immediate8 &source, const general::General8 &destination);
-	explicit IntegerDataTransmitted(const Immediate16 &source, const general::General16 &destination);
-	explicit IntegerDataTransmitted(const Immediate32 &source, const general::General32 &destination);
+	explicit IntegerDataTransmitted(const immediate::Immediate8 &source, const general::General8 &destination);
+	explicit IntegerDataTransmitted(const immediate::Immediate16 &source, const general::General16 &destination);
+	explicit IntegerDataTransmitted(const immediate::Immediate32 &source, const general::General32 &destination);
 	
 	explicit IntegerDataTransmitted(const general::General8 &source, const general::General8 &destination);
 	explicit IntegerDataTransmitted(const general::General16 &source, const general::General16 &destination);

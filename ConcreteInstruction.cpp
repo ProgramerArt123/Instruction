@@ -12,7 +12,7 @@ AbstractInstruction(x86::processor_control::No_Operation())
 {
 	
 }
-IntegerDataTransmitted::IntegerDataTransmitted(const Immediate8 &source, const general::General8 &destination)
+IntegerDataTransmitted::IntegerDataTransmitted(const immediate::Immediate8 &source, const general::General8 &destination)
 	:
 #if PLATFORM=='X'
 AbstractInstruction(x86::size32::integer_data_transmitted::Transmitted_8__16__32(), source, destination)
@@ -20,7 +20,7 @@ AbstractInstruction(x86::size32::integer_data_transmitted::Transmitted_8__16__32
 {
 	
 }
-IntegerDataTransmitted::IntegerDataTransmitted(const Immediate16 &source, const general::General16 &destination)
+IntegerDataTransmitted::IntegerDataTransmitted(const immediate::Immediate16 &source, const general::General16 &destination)
 	:
 #if PLATFORM=='X'
 AbstractInstruction(x86::size32::integer_data_transmitted::Transmitted_8__16__32(), source, destination)
@@ -28,7 +28,7 @@ AbstractInstruction(x86::size32::integer_data_transmitted::Transmitted_8__16__32
 {
 	
 }
-IntegerDataTransmitted::IntegerDataTransmitted(const Immediate32 &source, const general::General32 &destination)
+IntegerDataTransmitted::IntegerDataTransmitted(const immediate::Immediate32 &source, const general::General32 &destination)
 	:
 #if PLATFORM=='X'
 AbstractInstruction(x86::size32::integer_data_transmitted::Transmitted_8__16__32(), source, destination)
