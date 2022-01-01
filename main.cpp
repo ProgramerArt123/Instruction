@@ -77,6 +77,14 @@ int main(int argc, char *argv[])
 	{
 		const x86::IntegerDataTransmitted move(EAX, EBX);
 		out << move << std::endl;
+	} 
+	{
+		const x86::size64::IntegerDataTransmitted move(RAX, RBX);
+		out << move << std::endl;
+	}
+	{
+		const x86::size64::IntegerDataTransmitted move(RAX, SS);
+		out << move << std::endl;
 	}
 	const std::string &str = out.str();
 	{

@@ -10,6 +10,10 @@ namespace x86
 		class IntegerDataTransmitted : public AbstractInstruction {
 		public:
 			explicit IntegerDataTransmitted(const x86::immediate::size64::Immediate64 &source, const x86::reg::general::size64::General64 &destination);
+			explicit IntegerDataTransmitted(const x86::reg::general::size64::General64 &source, const x86::reg::general::size64::General64 &destination);
+			
+			explicit IntegerDataTransmitted(const x86::reg::general::size64::General64 &source, const x86::reg::segment::Segment &destination);
+			explicit IntegerDataTransmitted(const x86::reg::segment::Segment &source, const x86::reg::general::size64::General64 &destination);
 		};
 	}
 }

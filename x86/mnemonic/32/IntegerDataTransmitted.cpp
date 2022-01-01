@@ -1,7 +1,8 @@
 #include "IntegerDataTransmitted.h"
 namespace x86
 {
-	namespace mnemonic {
+	namespace mnemonic 
+	{
 		namespace size32
 		{
 			namespace integer_data_transmitted 
