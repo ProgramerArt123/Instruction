@@ -34,13 +34,13 @@ namespace x86
 		explicit IntegerDataTransmitted(const  x86::reg::general::General16 &source, const  x86::reg::segment::Segment &destination);
 		explicit IntegerDataTransmitted(const  x86::reg::segment::Segment &source, const  x86::reg::general::General16 &destination);
 	
-		explicit IntegerDataTransmitted(const x86::reg::offset::Offset &source, const x86::reg::offset::Offset &destination);
+		explicit IntegerDataTransmitted(const x86::reg::offset::Offset16 &source, const x86::reg::offset::Offset16 &destination);
 	
-		explicit IntegerDataTransmitted(const x86::reg::general::General16 &source, const x86::reg::offset::Offset &destination);
-		explicit IntegerDataTransmitted(const x86::reg::offset::Offset &source, const  x86::reg::general::General16 &destination);
+		explicit IntegerDataTransmitted(const x86::reg::general::General16 &source, const x86::reg::offset::Offset16 &destination);
+		explicit IntegerDataTransmitted(const x86::reg::offset::Offset16 &source, const  x86::reg::general::General16 &destination);
 	
-		explicit IntegerDataTransmitted(const  x86::reg::segment::Segment &source, const x86::reg::offset::Offset &destination);
-		explicit IntegerDataTransmitted(const x86::reg::offset::Offset &source, const  x86::reg::segment::Segment &destination);
+		explicit IntegerDataTransmitted(const  x86::reg::segment::Segment &source, const x86::reg::offset::Offset16 &destination);
+		explicit IntegerDataTransmitted(const x86::reg::offset::Offset16 &source, const  x86::reg::segment::Segment &destination);
 	};
 }
 

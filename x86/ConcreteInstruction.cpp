@@ -60,31 +60,31 @@ namespace x86
 	{
 	
 	}
-	IntegerDataTransmitted::IntegerDataTransmitted(const x86::reg::offset::Offset &source, const x86::reg::offset::Offset &destination)
+	IntegerDataTransmitted::IntegerDataTransmitted(const x86::reg::offset::Offset16 &source, const x86::reg::offset::Offset16 &destination)
 		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Transmitted_8__16__32(), source, destination)
 	
 	{
 	
 	}
 	
-	IntegerDataTransmitted::IntegerDataTransmitted(const x86::reg::general::General16 &source, const x86::reg::offset::Offset &destination)
-		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Transmitted_8__16__32(), source, destination)
-		
-	{
-	}
-	
-	IntegerDataTransmitted::IntegerDataTransmitted(const x86::reg::offset::Offset &source, const x86::reg::general::General16 &destination)
+	IntegerDataTransmitted::IntegerDataTransmitted(const x86::reg::general::General16 &source, const x86::reg::offset::Offset16 &destination)
 		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Transmitted_8__16__32(), source, destination)
 		
 	{
 	}
 	
-	IntegerDataTransmitted::IntegerDataTransmitted(const x86::reg::segment::Segment &source, const x86::reg::offset::Offset &destination)
+	IntegerDataTransmitted::IntegerDataTransmitted(const x86::reg::offset::Offset16 &source, const x86::reg::general::General16 &destination)
+		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Transmitted_8__16__32(), source, destination)
+		
+	{
+	}
+	
+	IntegerDataTransmitted::IntegerDataTransmitted(const x86::reg::segment::Segment &source, const x86::reg::offset::Offset16 &destination)
 		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Transmitted_8__16__32(), source, destination)
 	
 	{
 	}
-	IntegerDataTransmitted::IntegerDataTransmitted(const x86::reg::offset::Offset &source, const x86::reg::segment::Segment &destination)
+	IntegerDataTransmitted::IntegerDataTransmitted(const x86::reg::offset::Offset16 &source, const x86::reg::segment::Segment &destination)
 		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Transmitted_8__16__32(), source, destination)
 		
 	{

@@ -1,13 +1,13 @@
 #ifndef __X86_REGISTER_OFFSET_DESTINATION_H__
 #define __X86_REGISTER_OFFSET_DESTINATION_H__
-#include "Offset.h"
+#include "Offset16.h"
 namespace x86
 {
 	namespace reg
 	{
 		namespace offset
 		{
-			class Destination : public Offset {
+			class Destination : public Offset16 {
 			public:
 				static Destination &GetInstance();
 			private:

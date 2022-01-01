@@ -1,13 +1,13 @@
 #ifndef __X86_REGISTER_OFFSET_BASE_H__
 #define __X86_REGISTER_OFFSET_BASE_H__
-#include "Offset.h"
+#include "Offset16.h"
 namespace x86
 {
 	namespace reg
 	{
 		namespace offset
 		{
-			class Base : public Offset {
+			class Base : public Offset16 {
 			public:
 				static Base &GetInstance();
 			private:
