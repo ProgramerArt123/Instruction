@@ -944,6 +944,15 @@ int main(int argc, char *argv[])
 		out << x86::LogicalExclusiveOR(x86::immediate::ImmediateUnSigned32(1), x86::memory::Memory32(EAX)) << std::endl;
 	}
 	
+	{
+		out << x86::LogicalNOT(AL) << std::endl;
+	}
+	{
+		out << x86::LogicalNOT(AX) << std::endl;
+	}
+	{
+		out << x86::LogicalNOT(EAX) << std::endl;
+	}
 	const std::string &str = out.str();
 	{
 		std::ofstream code("test.s");

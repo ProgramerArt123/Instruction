@@ -513,5 +513,14 @@ namespace x86
 
 		explicit LogicalExclusiveOR(const x86::immediate::Immediate32 &source, const x86::operand::RegMem32 &destination);
 	};
-}
+	
+	class LogicalNOT : public AbstractInstruction {
+	public:
+		explicit LogicalNOT(const x86::reg::classic::general::General8 &source);
+
+		explicit LogicalNOT(const x86::reg::classic::general::General16 &source);
+
+		explicit LogicalNOT(const x86::reg::classic::general::General32 &source);
+	};
+	}
 #endif

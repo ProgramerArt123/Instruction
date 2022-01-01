@@ -1063,4 +1063,22 @@ namespace x86
 	{
 
 	}
+	
+	LogicalNOT::LogicalNOT(const x86::reg::classic::general::General8 &source)
+		: AbstractInstruction(x86::mnemonic::size32::integer_logic::Not_8__16__32(), source)
+	{
+
+	}
+
+	LogicalNOT::LogicalNOT(const x86::reg::classic::general::General16 &source)
+		: AbstractInstruction(x86::mnemonic::size32::integer_logic::Not_8__16__32(), source)
+	{
+
+	}
+
+	LogicalNOT::LogicalNOT(const x86::reg::classic::general::General32 &source)
+		: AbstractInstruction(x86::mnemonic::size32::integer_logic::Not_8__16__32(), source)
+	{
+
+	}
 }
