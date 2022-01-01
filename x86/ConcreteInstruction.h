@@ -1,5 +1,5 @@
-#ifndef __CONCRETE_INSTRUCTION_H__
-#define __CONCRETE_INSTRUCTION_H__
+#ifndef __X86_CONCRETE_INSTRUCTION_H__
+#define __X86_CONCRETE_INSTRUCTION_H__
 #include "AbstractInstruction.h"
 class Immediate8;
 class Immediate16;

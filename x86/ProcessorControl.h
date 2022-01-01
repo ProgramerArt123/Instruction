@@ -1,5 +1,5 @@
-#ifndef __PROCESSOR_CONTROL_H__
-#define __PROCESSOR_CONTROL_H__
+#ifndef __X86_PROCESSOR_CONTROL_H__
+#define __X86_PROCESSOR_CONTROL_H__
 
 namespace x86
 {

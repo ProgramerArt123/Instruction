@@ -1,5 +1,5 @@
-#ifndef __OPERAND_H__
-#define __OPERAND_H__
+#ifndef __X86_OPERAND_H__
+#define __X86_OPERAND_H__
 
 #include <string>
 class Operand {

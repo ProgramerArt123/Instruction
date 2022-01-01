@@ -1,5 +1,5 @@
-#ifndef __STRING_OPERATION_H__
-#define __STRING_OPERATION_H__
+#ifndef __X86_32_STRING_OPERATION_H__
+#define __X86_32_STRING_OPERATION_H__
 
 class StringOperation {
 public:

@@ -1,5 +1,5 @@
-#ifndef __INSTRUCTION_POINTER_JUMP_H__
-#define __INSTRUCTION_POINTER_JUMP_H__
+#ifndef __X86_32_INSTRUCTION_POINTER_JUMP_H__
+#define __X86_32_INSTRUCTION_POINTER_JUMP_H__
 
 class InstructionPointerJump {
 public:

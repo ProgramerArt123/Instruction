@@ -1,5 +1,5 @@
-#ifndef __REGISTER_SEGMENT_STACK_H__
-#define __REGISTER_SEGMENT_STACK_H__
+#ifndef __X86_REGISTER_SEGMENT_STACK_H__
+#define __X86_REGISTER_SEGMENT_STACK_H__
 #include "Segment.h"
 namespace segment
 {

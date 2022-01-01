@@ -1,5 +1,5 @@
-#ifndef __MEMORY_H__
-#define __MEMORY_H__
+#ifndef __X86_MEMORY_H__
+#define __X86_MEMORY_H__
 #include "x86/Operand.h"
 
 namespace segment

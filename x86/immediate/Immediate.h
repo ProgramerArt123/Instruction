@@ -1,5 +1,5 @@
-#ifndef __IMMEDIATE_H__
-#define __IMMEDIATE_H__
+#ifndef __X86_IMMEDIATE_H__
+#define __X86_IMMEDIATE_H__
 #include "x86/Operand.h"
 namespace immediate {
 	class Immediate : public Operand {

@@ -1,5 +1,5 @@
-#ifndef __REGISTER_H__
-#define __REGISTER_H__
+#ifndef __X86_REGISTER_H__
+#define __X86_REGISTER_H__
 #include "x86/Operand.h"
 class Register : public Operand {
 public:

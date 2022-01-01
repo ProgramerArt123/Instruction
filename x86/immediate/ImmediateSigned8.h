@@ -1,5 +1,5 @@
-#ifndef __IMMEDIATE_SIGNED_8_H__
-#define __IMMEDIATE_SIGNED_8_H__
+#ifndef __X86_IMMEDIATE_SIGNED_8_H__
+#define __X86_IMMEDIATE_SIGNED_8_H__
 #include <cstdint>
 #include "Immediate8.h"
 namespace immediate {

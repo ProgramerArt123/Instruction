@@ -1,5 +1,5 @@
-#ifndef __FLOAT_DATA_TRANSMITTED_H__
-#define __FLOAT_DATA_TRANSMITTED_H__
+#ifndef __X86_32_FLOAT_DATA_TRANSMITTED_H__
+#define __X86_32_FLOAT_DATA_TRANSMITTED_H__
 
 class FloatDataTransmitted {
 public:

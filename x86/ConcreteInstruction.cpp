@@ -1,7 +1,7 @@
 #include "Define.h"
 #if PLATFORM=='X'
 #include "x86/ProcessorControl.h"
-#include "x86/32/IntegerDataTransmitted.h"
+#include "x86/mnemonic/32/IntegerDataTransmitted.h"
 #endif
 #include "Instruction.h"
 #include "ConcreteInstruction.h"

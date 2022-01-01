@@ -1,5 +1,5 @@
-#ifndef __ACCUMULATOR_EXTEND_64_H__
-#define __ACCUMULATOR_EXTEND_64_H__
+#ifndef __X86_64_ACCUMULATOR_EXTEND_64_H__
+#define __X86_64_ACCUMULATOR_EXTEND_64_H__
 #include "General64.h"
 namespace general
 {

@@ -1,5 +1,5 @@
-#ifndef __INTEGER_LOGICAL_H__
-#define __INTEGER_LOGICAL_H__
+#ifndef __X86_32_INTEGER_LOGICAL_H__
+#define __X86_32_INTEGER_LOGICAL_H__
 
 class IntegerLogical {
 public:

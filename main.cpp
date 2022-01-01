@@ -77,13 +77,10 @@ int main(int argc, char *argv[])
 			std::cerr << "test.s open faild!";
 			return 1;
 		}
-		code << ".globl main" << std::endl;
-		code << ".type main, @function" << std::endl;
-		code << "main:" << std::endl;
 		code << str;
 	}
 	system("cat -n test.s");
-	if (0==system("gcc test.s")) {
+	if (0==system("as test.s")) {
 		std::cout << "success" << std::endl;
 	}
 	return 0;

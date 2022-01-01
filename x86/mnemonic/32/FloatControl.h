@@ -1,5 +1,5 @@
-#ifndef __FLOAT_CONTROL_H__
-#define __FLOAT_CONTROL_H__
+#ifndef __X86_32_FLOAT_CONTROL_H__
+#define __X86_32_FLOAT_CONTROL_H__
 
 class FloatControl {
 public:

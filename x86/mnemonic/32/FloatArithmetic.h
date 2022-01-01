@@ -1,5 +1,5 @@
-#ifndef __FLOAT_ARITHMETIC_H__
-#define __FLOAT_ARITHMETIC_H__
+#ifndef __X86_32_FLOAT_ARITHMETIC_H__
+#define __X86_32_FLOAT_ARITHMETIC_H__
 
 class FloatArithmetic {
 public:

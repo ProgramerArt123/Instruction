@@ -1,5 +1,5 @@
-#ifndef __CONCRETE_INSTRUCTION_64_H__
-#define __CONCRETE_INSTRUCTION_64_H__
+#ifndef __X86_64_CONCRETE_INSTRUCTION_64_H__
+#define __X86_64_CONCRETE_INSTRUCTION_64_H__
 #include "AbstractInstruction.h"
 namespace size64
 {

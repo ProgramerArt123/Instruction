@@ -1,5 +1,5 @@
-#ifndef __REGISTER_OFFSET_STACK_H__
-#define __REGISTER_OFFSET_STACK_H__
+#ifndef __X86_REGISTER_OFFSET_STACK_H__
+#define __X86_REGISTER_OFFSET_STACK_H__
 #include "Offset.h"
 namespace offset
 {

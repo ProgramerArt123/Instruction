@@ -1,5 +1,5 @@
-#ifndef __INTEGER_ARITHMETIC_H__
-#define __INTEGER_ARITHMETIC_H__
+#ifndef __X86_32_INTEGER_ARITHMETIC_H__
+#define __X86_32_INTEGER_ARITHMETIC_H__
 
 class IntegerArithmetic {
 public:

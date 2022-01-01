@@ -1,5 +1,5 @@
-#ifndef __IMMEDIATE_SIGNED_64_H__
-#define __IMMEDIATE_SIGNED_64_H__
+#ifndef __X86_64_IMMEDIATE_SIGNED_64_H__
+#define __X86_64_IMMEDIATE_SIGNED_64_H__
 #include <cstdint>
 #include "Immediate64.h"
 namespace size64

@@ -1,5 +1,5 @@
-#ifndef __IMMEDIATE_64_H__
-#define __IMMEDIATE_64_H__
+#ifndef __X86_64_IMMEDIATE_64_H__
+#define __X86_64_IMMEDIATE_64_H__
 #include <cstdint>
 #include "x86/immediate/Immediate.h"
 namespace size64

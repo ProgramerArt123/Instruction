@@ -1,12 +1,12 @@
-#ifndef __INTEGER_DATA_TRANSMITTED_H__
-#define __INTEGER_DATA_TRANSMITTED_H__
+#ifndef __X86_64_INTEGER_DATA_TRANSMITTED_H__
+#define __X86_64_INTEGER_DATA_TRANSMITTED_H__
 namespace x86
 {
-	namespace size32
+	namespace size64
 	{
 		namespace integer_data_transmitted 
 		{
-			const char *Transmitted_8__16__32();
+			const char *Transmitted_8__16__32__64();
 			const char *Transmitted_8__16_Fill_Sign();
 			const char *Transmitted_8__16_Fill_0();
 			const char *Push_Stack_8__16();

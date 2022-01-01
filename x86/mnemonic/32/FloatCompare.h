@@ -1,5 +1,5 @@
-#ifndef __FLOAT_COMPARE_H__
-#define __FLOAT_COMPARE_H__
+#ifndef __X86_32_FLOAT_COMPARE_H__
+#define __X86_32_FLOAT_COMPARE_H__
 
 class FloatCompare {
 public:

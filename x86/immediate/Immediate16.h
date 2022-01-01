@@ -1,5 +1,5 @@
-#ifndef __IMMEDIATE_16_H__
-#define __IMMEDIATE_16_H__
+#ifndef __X86_IMMEDIATE_16_H__
+#define __X86_IMMEDIATE_16_H__
 #include <cstdint>
 #include "Immediate.h"
 namespace immediate {
