@@ -25,6 +25,14 @@ public:
 	
 	explicit IntegerDataTransmitted(const General16 &source, const segment::Segment &destination);
 	explicit IntegerDataTransmitted(const segment::Segment &source, const General16 &destination);
+	
+	explicit IntegerDataTransmitted(const address::Address &source, const address::Address &destination);
+	
+	explicit IntegerDataTransmitted(const General16 &source, const address::Address &destination);
+	explicit IntegerDataTransmitted(const address::Address &source, const General16 &destination);
+	
+	explicit IntegerDataTransmitted(const segment::Segment &source, const address::Address &destination);
+	explicit IntegerDataTransmitted(const address::Address &source, const segment::Segment &destination);
 };
 
 #endif

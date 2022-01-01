@@ -1,66 +1,90 @@
 #include <iostream>
+#include <fstream>
+#include <sstream>
 #include "Instruction.h"
 int main(int argc, char *argv[])
 {
+	
+	std::stringstream out;
 	{
 		const NoOperation nop;
-		std::cout << nop << std::endl;
+		out << nop << std::endl;
 	}
 	{
 		const IntegerDataTransmitted move(ImmediateSigned8(1), AL);
-		std::cout << move << std::endl;
+		out << move << std::endl;
 	}
 	{
 		const IntegerDataTransmitted move(ImmediateSigned16(-2), AX);
-		std::cout << move << std::endl;
+		out << move << std::endl;
 	}
 	{
 		const IntegerDataTransmitted move(ImmediateUnSigned32(3), EAX);
-		std::cout << move << std::endl;
+		out << move << std::endl;
 	}
 	{
 		const size64::IntegerDataTransmitted move(size64::ImmediateSigned64(3), RAX);
-		std::cout << move << std::endl;
+		out << move << std::endl;
 	}
 	{
 		const IntegerDataTransmitted move(AX, CS);
-		std::cout << move << std::endl;
+		out << move << std::endl;
 	}
 	{
 		const IntegerDataTransmitted move(CS, AX);
-		std::cout << move << std::endl;
+		out << move << std::endl;
 	}
 	{
 		const IntegerDataTransmitted move(AX, DS);
-		std::cout << move << std::endl;
+		out << move << std::endl;
 	}
 	{
 		const IntegerDataTransmitted move(DS, AX);
-		std::cout << move << std::endl;
+		out << move << std::endl;
 	}
 	{
 		const IntegerDataTransmitted move(AX, SS);
-		std::cout << move << std::endl;
+		out << move << std::endl;
 	}
 	{
 		const IntegerDataTransmitted move(SS, AX);
-		std::cout << move << std::endl;
+		out << move << std::endl;
 	}
 	{
 		const IntegerDataTransmitted move(AX, ES);
-		std::cout << move << std::endl;
+		out << move << std::endl;
 	}
 	{
 		const IntegerDataTransmitted move(ES, AX);
-		std::cout << move << std::endl;
+		out << move << std::endl;
 	}
 	{
 		const IntegerDataTransmitted move(AL, BL);
-		std::cout << move << std::endl;
+		out << move << std::endl;
 	}
 	{
 		const IntegerDataTransmitted move(BX, AX);
-		std::cout << move << std::endl;
+		out << move << std::endl;
+	}
+	{
+		const IntegerDataTransmitted move(AX, SP);
+		out << move << std::endl;
+	}
+	const std::string &str =  out.str();
+	std::cout << str;
+	{
+		std::ofstream code("test.s");
+		if (!code.is_open()) {
+			std::cerr << "test.s open faild!";
+			return 1;
+		}
+		code << ".globl main" << std::endl;
+		code << ".type main, @function" << std::endl;
+		code << "main:" << std::endl;
+		code << str;
+	}
+	if (0==system("gcc test.s")) {
+		std::cout << "success" << std::endl;
 	}
 	return 0;
 }

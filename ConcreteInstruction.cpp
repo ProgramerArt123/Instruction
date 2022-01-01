@@ -78,4 +78,42 @@ IntegerDataTransmitted::IntegerDataTransmitted(const segment::Segment &source, c
 {
 	
 }
+IntegerDataTransmitted::IntegerDataTransmitted(const address::Address &source, const address::Address &destination)
+	:
+#if PLATFORM=='X' 
+	AbstractInstruction(x86::size32::integer_data_transmitted::Transmitted_8__16__32(), source, destination)
+#endif
+{
 	
+}
+	
+IntegerDataTransmitted::IntegerDataTransmitted(const General16 &source, const address::Address &destination)
+	:
+#if PLATFORM=='X' 
+	AbstractInstruction(x86::size32::integer_data_transmitted::Transmitted_8__16__32(), source, destination)
+#endif
+{
+}
+	
+IntegerDataTransmitted::IntegerDataTransmitted(const address::Address &source, const General16 &destination)
+	:
+#if PLATFORM=='X' 
+	AbstractInstruction(x86::size32::integer_data_transmitted::Transmitted_8__16__32(), source, destination)
+#endif
+{
+}
+	
+IntegerDataTransmitted::IntegerDataTransmitted(const segment::Segment &source, const address::Address &destination)
+	:
+#if PLATFORM=='X'
+	AbstractInstruction(x86::size32::integer_data_transmitted::Transmitted_8__16__32(), source, destination)
+#endif
+{
+}
+IntegerDataTransmitted::IntegerDataTransmitted(const address::Address &source, const segment::Segment &destination)
+	:
+#if PLATFORM=='X' 
+	AbstractInstruction(x86::size32::integer_data_transmitted::Transmitted_8__16__32(), source, destination)
+#endif
+{
+}
