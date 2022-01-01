@@ -8,8 +8,8 @@ class Operand;
 class AbstractInstruction {
 public:
 	
-	const char *String();
-	friend std::ostream &operator<<(std::ostream &out, AbstractInstruction &instruction);
+	const char *String()const;
+	friend std::ostream &operator<<(std::ostream &out, const AbstractInstruction &instruction);
 	
 protected:
 	explicit AbstractInstruction(const char *mnemonic);

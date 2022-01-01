@@ -24,6 +24,7 @@
 #include "64/ImmediateUnSigned64.h"
 #include "Code.h"
 #include "Data.h"
+#include "Stack.h"
 #include "AccumulatorLow.h"
 #include "AccumulatorHigh.h"
 #include "Accumulator.h"

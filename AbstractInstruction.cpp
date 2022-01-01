@@ -21,10 +21,10 @@ AbstractInstruction::AbstractInstruction(const char *mnemonic, const Operand &so
 AbstractInstruction::~AbstractInstruction() {
 	
 }
-const char *AbstractInstruction::String() {
+const char *AbstractInstruction::String()const {
 	return m_string.c_str();
 }
-std::ostream &operator<<(std::ostream &out, AbstractInstruction &instruction) {
+std::ostream &operator<<(std::ostream &out, const AbstractInstruction &instruction) {
 	out << instruction.String();
 	return out;
 }
