@@ -2,25 +2,28 @@
 #define __MEMORY_H__
 #include "Operand.h"
 
-class Data;
+namespace segment
+{
+	class Segment;
+	class Data; 
+}
 class Immediate;
-class Segment;
 
 class Memory : public Operand {
 public:
-	explicit Memory(Data &base);
-	explicit Memory(Data &base, Immediate &disp);
-	explicit Memory(Data &base, Data &index);
-	explicit Memory(Data &base, Immediate &disp, Data &index);
-	explicit Memory(Data &base, Data &index, Immediate &scale);
-	explicit Memory(Data &base, Immediate &disp, Data &index, Immediate &scale);
+	explicit Memory(segment::Data &base);
+	explicit Memory(segment::Data &base, Immediate &disp);
+	explicit Memory(segment::Data &base, segment::Data &index);
+	explicit Memory(segment::Data &base, Immediate &disp, segment::Data &index);
+	explicit Memory(segment::Data &base, segment::Data &index, Immediate &scale);
+	explicit Memory(segment::Data &base, Immediate &disp, segment::Data &index, Immediate &scale);
 
-	explicit Memory(Data &base, Segment &segment);
-	explicit Memory(Data &base, Immediate &disp, Segment &segment);
-	explicit Memory(Data &base, Data &index, Segment &segment);
-	explicit Memory(Data &base, Immediate &disp, Data &index, Segment &segment);
-	explicit Memory(Data &base, Data &index, Immediate &scale, Segment &segment);
-	explicit Memory(Data &base, Immediate &disp, Data &index, Immediate &scale, Segment &segment);
+	explicit Memory(segment::Data &base, segment::Segment &segment);
+	explicit Memory(segment::Data &base, Immediate &disp, segment::Segment &segment);
+	explicit Memory(segment::Data &base, segment::Data &index, segment::Segment &segment);
+	explicit Memory(segment::Data &base, Immediate &disp, segment::Data &index, segment::Segment &segment);
+	explicit Memory(segment::Data &base, segment::Data &index, Immediate &scale, segment::Segment &segment);
+	explicit Memory(segment::Data &base, Immediate &disp, segment::Data &index, Immediate &scale, segment::Segment &segment);
 
 };
 

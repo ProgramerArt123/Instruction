@@ -1,44 +1,44 @@
 #include "Define.h"
-#include "Data.h"
-#include "Segment.h"
+#include "segment/Data.h"
+#include "segment/Segment.h"
 #include "Immediate.h"
 #include "Memory.h"
 
-Memory::Memory(Data &base) {
+Memory::Memory(segment::Data &base) {
 	
 }
-Memory::Memory(Data &base, Immediate &disp) {
+Memory::Memory(segment::Data &base, Immediate &disp) {
 	
 }
-Memory::Memory(Data &base, Data &index) {
+Memory::Memory(segment::Data &base, segment::Data &index) {
 	
 }
-Memory::Memory(Data &base, Data &index, Immediate &scale) {
+Memory::Memory(segment::Data &base, segment::Data &index, Immediate &scale) {
 	
 }
-Memory::Memory(Data &base, Immediate &disp, Data &index) {
+Memory::Memory(segment::Data &base, Immediate &disp, segment::Data &index) {
 	
 }
-Memory::Memory(Data &base, Immediate &disp, Data &index, Immediate &scale) {
+Memory::Memory(segment::Data &base, Immediate &disp, segment::Data &index, Immediate &scale) {
 	
 }
 
-Memory::Memory(Data &base, Segment &segment) {
+Memory::Memory(segment::Data &base, segment::Segment &segment) {
 	
 }
-Memory::Memory(Data &base, Immediate &disp, Segment &segment) {
+Memory::Memory(segment::Data &base, Immediate &disp, segment::Segment &segment) {
 	
 }
-Memory::Memory(Data &base, Data &index, Segment &segment) {
+Memory::Memory(segment::Data &base, segment::Data &index, segment::Segment &segment) {
 	
 }
-Memory::Memory(Data &base, Immediate &disp, Data &index, Segment &segment) {
+Memory::Memory(segment::Data &base, Immediate &disp, segment::Data &index, segment::Segment &segment) {
 	
 }
-Memory::Memory(Data &base, Data &index, Immediate &scale, Segment &segment) {
+Memory::Memory(segment::Data &base, segment::Data &index, Immediate &scale, segment::Segment &segment) {
 	
 }
-Memory::Memory(Data &base, Immediate &disp, Data &index, Immediate &scale, Segment &segment) {
+Memory::Memory(segment::Data &base, Immediate &disp, segment::Data &index, Immediate &scale, segment::Segment &segment) {
 #if FORMAT=='A'
 	m_string.append(segment.String());
 	m_string.append(":");

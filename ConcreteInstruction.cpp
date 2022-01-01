@@ -62,7 +62,7 @@ IntegerDataTransmitted::IntegerDataTransmitted(const General32 &source, const Ge
 	
 }
 
-IntegerDataTransmitted::IntegerDataTransmitted(const General16 &source, const Segment &destination)
+IntegerDataTransmitted::IntegerDataTransmitted(const General16 &source, const segment::Segment &destination)
 	:
 #if PLATFORM=='X' 
 	AbstractInstruction(x86::size32::integer_data_transmitted::Transmitted_8__16__32(), source, destination)
@@ -70,7 +70,7 @@ IntegerDataTransmitted::IntegerDataTransmitted(const General16 &source, const Se
 {
 	
 }
-IntegerDataTransmitted::IntegerDataTransmitted(const Segment &source, const General16 &destination)
+IntegerDataTransmitted::IntegerDataTransmitted(const segment::Segment &source, const General16 &destination)
 	:
 #if PLATFORM=='X' 
 	AbstractInstruction(x86::size32::integer_data_transmitted::Transmitted_8__16__32(), source, destination)
