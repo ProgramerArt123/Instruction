@@ -43,6 +43,7 @@
 #include "x86/register/general/Data.h"
 #include "x86/register/general/DataLow.h"
 #include "x86/register/general/DataHigh.h"
+#include "x86/register/general/DataExtend.h"
 #include "x86/register/general/64/AccumulatorExtend64.h"
 #include "x86/register/general/64/BaseExtend64.h"
 #include "x86/register/general/64/CountExtend64.h"
