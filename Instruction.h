@@ -39,6 +39,7 @@
 #include "x86/register/general/CountLow.h"
 #include "x86/register/general/CountHigh.h"
 #include "x86/register/general/Count.h"
+#include "x86/register/general/CountExtend.h"
 #include "x86/register/general/64/AccumulatorExtend64.h"
 #include "x86/register/general/64/BaseExtend64.h"
 #include "x86/ConcreteInstruction.h"

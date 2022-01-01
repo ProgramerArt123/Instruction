@@ -98,6 +98,10 @@ int main(int argc, char *argv[])
 		const x86::IntegerDataTransmitted move(AH, CH);
 		out << move << std::endl;
 	}
+	{
+		const x86::IntegerDataTransmitted move(EAX, ECX);
+		out << move << std::endl;
+	}
 	const std::string &str = out.str();
 	{
 		std::ofstream code("test.s");
