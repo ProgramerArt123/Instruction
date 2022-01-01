@@ -63,6 +63,10 @@ int main(int argc, char *argv[])
 		out << move << std::endl;
 	}
 	{
+		const x86::IntegerDataTransmitted move(BL, BH);
+		out << move << std::endl;
+	}
+	{
 		const x86::IntegerDataTransmitted move(BX, AX);
 		out << move << std::endl;
 	}
