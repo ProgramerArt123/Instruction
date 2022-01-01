@@ -3,7 +3,7 @@
 #include "Operand.h"
 #include "register/Register.h"
 #include "immediate/Immediate.h"
-#include "Memory.h"
+#include "memory/Memory.h"
 #include "register/general/General.h"
 #include "register/segment/Segment.h"
 #include "register/offset/Offset.h"
