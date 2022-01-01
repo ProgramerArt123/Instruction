@@ -87,6 +87,10 @@ int main(int argc, char *argv[])
 		out << move << std::endl;
 	}
 	{
+		const x86::size64::IntegerDataTransmitted move(RAX, RCX);
+		out << move << std::endl;
+	}
+	{
 		const x86::IntegerDataTransmitted move(AX, CX);
 		out << move << std::endl;
 	}
