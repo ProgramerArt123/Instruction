@@ -7,11 +7,15 @@ namespace x86
 	{
 		namespace general
 		{
+			class CountLow;
+			class CountHigh;
 			class Count : public General16 {
 			public:
 				static Count &GetInstance();
 			private:
 				explicit Count();
+				CountLow &m_low;
+				CountHigh &m_high;
 			};
 		}
 	}

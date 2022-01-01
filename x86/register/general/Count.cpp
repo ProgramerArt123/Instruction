@@ -1,3 +1,5 @@
+#include "CountLow.h"
+#include "CountHigh.h"
 #include "Count.h"
 namespace x86
 {
@@ -10,7 +12,9 @@ namespace x86
 				return instance;
 			}
 
-			Count::Count() {
+			Count::Count() 
+				: m_low(CountLow::GetInstance())
+				, m_high(CountHigh::GetInstance()) {
 				m_string.append("CX");
 			}
 		}

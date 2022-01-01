@@ -1,3 +1,5 @@
+#include "BaseLow.h"
+#include "BaseHigh.h"
 #include "Base.h"
 namespace x86
 {
@@ -6,11 +8,13 @@ namespace x86
 		namespace general
 		{
 			Base &Base::GetInstance() {
-				static  Base instance;
+				static Base instance;
 				return instance;
 			}
 
-			Base::Base() {
+			Base::Base()
+				: m_low(BaseLow::GetInstance())
+				, m_high(BaseHigh::GetInstance()) {
 				m_string.append("BX");
 			}
 		}

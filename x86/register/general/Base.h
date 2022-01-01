@@ -7,11 +7,15 @@ namespace x86
 	{
 		namespace general
 		{
+			class BaseLow;
+			class BaseHigh;
 			class Base : public General16 {
 			public:
 				static Base &GetInstance();
 			private:
 				explicit Base();
+				BaseLow &m_low;
+				BaseHigh &m_high;
 			};
 		}
 	}
