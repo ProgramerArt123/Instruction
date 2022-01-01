@@ -1,18 +1,24 @@
 #ifndef __X86_REGISTER_GENERAL_ACCUMULATOR_EXTEND_H__
 #define __X86_REGISTER_GENERAL_ACCUMULATOR_EXTEND_H__
 #include "General32.h"
-namespace general
+namespace x86
 {
-	class Accumulator;
-	class AccumulatorExtend : public General32 {
-	public:
-		static AccumulatorExtend &GetInstance();
-	private:
-		explicit AccumulatorExtend();
-		Accumulator &m_low;
-	};
+	namespace reg
+	{
+		namespace general
+		{
+			class Accumulator;
+			class AccumulatorExtend : public General32 {
+			public:
+				static AccumulatorExtend &GetInstance();
+			private:
+				explicit AccumulatorExtend();
+				Accumulator &m_low;
+			};
+		}
+	}
 }
 
-#define EAX general::AccumulatorExtend::GetInstance()
+#define EAX x86::reg::general::AccumulatorExtend::GetInstance()
 
 #endif

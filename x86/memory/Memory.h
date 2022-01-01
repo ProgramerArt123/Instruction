@@ -1,34 +1,39 @@
 #ifndef __X86_MEMORY_H__
 #define __X86_MEMORY_H__
 #include "x86/Operand.h"
-
-namespace segment
+namespace x86
 {
-	class Segment;
-	class Data; 
-}
-namespace immediate
-{
-	class Immediate; 
-}
-namespace memory {
-	class Memory : public Operand {
-	public:
-		explicit Memory(segment::Data &base);
-		explicit Memory(segment::Data &base, immediate::Immediate &disp);
-		explicit Memory(segment::Data &base, segment::Data &index);
-		explicit Memory(segment::Data &base, immediate::Immediate &disp, segment::Data &index);
-		explicit Memory(segment::Data &base, segment::Data &index, immediate::Immediate &scale);
-		explicit Memory(segment::Data &base, immediate::Immediate &disp, segment::Data &index, immediate::Immediate &scale);
+	namespace reg
+	{
+		namespace segment
+		{
+			class Segment;
+			class Data; 
+		}
+	}
+	namespace immediate
+	{
+		class Immediate; 
+	}
+	namespace memory {
+		class Memory : public Operand {
+		public:
+			explicit Memory(x86::reg::segment::Data &base);
+			explicit Memory(x86::reg::segment::Data &base, x86::immediate::Immediate &disp);
+			explicit Memory(x86::reg::segment::Data &base, x86::reg::segment::Data &index);
+			explicit Memory(x86::reg::segment::Data &base, x86::immediate::Immediate &disp, x86::reg::segment::Data &index);
+			explicit Memory(x86::reg::segment::Data &base, x86::reg::segment::Data &index, x86::immediate::Immediate &scale);
+			explicit Memory(x86::reg::segment::Data &base, x86::immediate::Immediate &disp, x86::reg::segment::Data &index, x86::immediate::Immediate &scale);
 
-		explicit Memory(segment::Data &base, segment::Segment &segment);
-		explicit Memory(segment::Data &base, immediate::Immediate &disp, segment::Segment &segment);
-		explicit Memory(segment::Data &base, segment::Data &index, segment::Segment &segment);
-		explicit Memory(segment::Data &base, immediate::Immediate &disp, segment::Data &index, segment::Segment &segment);
-		explicit Memory(segment::Data &base, segment::Data &index, immediate::Immediate &scale, segment::Segment &segment);
-		explicit Memory(segment::Data &base, immediate::Immediate &disp, segment::Data &index, immediate::Immediate &scale, segment::Segment &segment);
+			explicit Memory(x86::reg::segment::Data &base, x86::reg::segment::Segment &segment);
+			explicit Memory(x86::reg::segment::Data &base, x86::immediate::Immediate &disp, x86::reg::segment::Segment &segment);
+			explicit Memory(x86::reg::segment::Data &base, x86::reg::segment::Data &index, x86::reg::segment::Segment &segment);
+			explicit Memory(x86::reg::segment::Data &base, x86::immediate::Immediate &disp, x86::reg::segment::Data &index, x86::reg::segment::Segment &segment);
+			explicit Memory(x86::reg::segment::Data &base, x86::reg::segment::Data &index, x86::immediate::Immediate &scale, x86::reg::segment::Segment &segment);
+			explicit Memory(x86::reg::segment::Data &base, x86::immediate::Immediate &disp, x86::reg::segment::Data &index, x86::immediate::Immediate &scale, x86::reg::segment::Segment &segment);
 
-	};
+		};
+	}
 }
 
 #endif

@@ -1,16 +1,22 @@
 #ifndef __X86_REGISTER_GENERAL_BASE_H__
 #define __X86_REGISTER_GENERAL_BASE_H__
 #include "General16.h"
-namespace general
+namespace x86
 {
-	class Base : public General16 {
-	public:
-		static Base &GetInstance();
-	private:
-		explicit Base();
-	};
+	namespace reg
+	{
+		namespace general
+		{
+			class Base : public General16 {
+			public:
+				static Base &GetInstance();
+			private:
+				explicit Base();
+			};
+		}
+	}
 }
 
-#define BX general::Base::GetInstance()
+#define BX x86::reg::general::Base::GetInstance()
 
 #endif

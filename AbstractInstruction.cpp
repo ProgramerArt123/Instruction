@@ -5,17 +5,17 @@
 AbstractInstruction::AbstractInstruction(const char *mnemonic) {
 		m_string = mnemonic;
 }
-AbstractInstruction::AbstractInstruction(const char *mnemonic, const Operand &source) {
+AbstractInstruction::AbstractInstruction(const char *mnemonic, const x86::Operand &source) {
 	
 }
-AbstractInstruction::AbstractInstruction(const char *mnemonic, const Operand &source, const Operand &destination) {
+AbstractInstruction::AbstractInstruction(const char *mnemonic, const x86::Operand &source, const x86::Operand &destination) {
 #if FORMAT=='A'
 	m_string = std::string(mnemonic) + "\t" + source.String() + ", " + destination.String();
 #else
 	m_string = std::string(mnemonic) + "\t" + destination.String() + ", " + source.String();
 #endif
 }
-AbstractInstruction::AbstractInstruction(const char *mnemonic, const Operand &source, const Operand &destination, const Operand &auxiliary) {
+AbstractInstruction::AbstractInstruction(const char *mnemonic, const x86::Operand &source, const x86::Operand &destination, const x86::Operand &auxiliary) {
 	
 }
 AbstractInstruction::~AbstractInstruction() {

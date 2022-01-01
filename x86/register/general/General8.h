@@ -1,12 +1,18 @@
 #ifndef __X86_REGISTER_GENERAL_8_H__
 #define __X86_REGISTER_GENERAL_8_H__
 #include "General.h"
-namespace general
+namespace x86
 {
-	class General8 : public General {
-	protected:
-		explicit General8();
-	};
+	namespace reg
+	{
+		namespace general
+		{
+			class General8 : public General {
+			protected:
+				explicit General8();
+			};
+		}
+	}
 }
 
 #endif

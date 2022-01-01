@@ -1,11 +1,17 @@
 #ifndef __X86_REGISTER_GENERAL_16_H__
 #define __X86_REGISTER_GENERAL_16_H__
 #include "General.h"
-namespace general
+namespace x86
 {
-	class General16 : public General {
-	protected:
-		explicit General16();
-	};
+	namespace reg
+	{
+		namespace general
+		{
+			class General16 : public General {
+			protected:
+				explicit General16();
+			};
+		}
+	}
 }
 #endif

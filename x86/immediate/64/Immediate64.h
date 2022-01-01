@@ -1,12 +1,19 @@
-#ifndef __X86_64_IMMEDIATE_64_H__
-#define __X86_64_IMMEDIATE_64_H__
+#ifndef __X86_IMMEDIATE_64_IMMEDIATE_64_H__
+#define __X86_IMMEDIATE_64_IMMEDIATE_64_H__
 #include <cstdint>
 #include "x86/immediate/Immediate.h"
-namespace size64
+namespace x86
 {
-	class Immediate64 : public immediate::Immediate {
-	protected:
-		explicit Immediate64();
-	};
+	namespace immediate
+	{
+		namespace size64
+		{
+			class Immediate64 : public Immediate {
+			protected:
+				explicit Immediate64();
+			};
+		}
+	}
 }
+
 #endif

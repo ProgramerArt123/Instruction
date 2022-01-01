@@ -1,7 +1,13 @@
 #include "General32.h"
-namespace general
+namespace x86
 {
-	General32::General32() {
+	namespace reg
+	{
+		namespace general
+		{
+			General32::General32() {
 
+			}
+		}
 	}
 }

@@ -1,11 +1,17 @@
 #include "Stack.h"
-namespace segment
+namespace x86
 {
-	Stack &Stack::GetInstance() {
-		static Stack instance;
-		return instance;
-	}
-	Stack::Stack() {
-		m_string.append("SS");
+	namespace reg
+	{
+		namespace segment
+		{
+			Stack &Stack::GetInstance() {
+				static Stack instance;
+				return instance;
+			}
+			Stack::Stack() {
+				m_string.append("SS");
+			}
+		}
 	}
 }

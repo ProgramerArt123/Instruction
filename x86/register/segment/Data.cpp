@@ -1,11 +1,17 @@
 #include "Data.h"
-namespace segment
+namespace x86
 {
-	Data &Data::GetInstance() {
-		static Data instance;
-		return instance;
-	}
-	Data::Data() {
-		m_string.append("DS");
+	namespace reg
+	{
+		namespace segment
+		{
+			Data &Data::GetInstance() {
+				static Data instance;
+				return instance;
+			}
+			Data::Data() {
+				m_string.append("DS");
+			}
+		}
 	}
 }

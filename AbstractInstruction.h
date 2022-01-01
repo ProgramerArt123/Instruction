@@ -3,8 +3,10 @@
 
 #include <string>
 #include <ostream>
-
-class Operand;
+namespace x86
+{
+	class Operand; 
+}
 class AbstractInstruction {
 public:
 	
@@ -13,9 +15,9 @@ public:
 	
 protected:
 	explicit AbstractInstruction(const char *mnemonic);
-	explicit AbstractInstruction(const char *mnemonic, const Operand &source);
-	explicit AbstractInstruction(const char *mnemonic, const Operand &source, const Operand &destination);
-	explicit AbstractInstruction(const char *mnemonic, const Operand &source, const Operand &destination, const Operand &auxiliary);
+	explicit AbstractInstruction(const char *mnemonic, const x86::Operand &source);
+	explicit AbstractInstruction(const char *mnemonic, const x86::Operand &source, const x86::Operand &destination);
+	explicit AbstractInstruction(const char *mnemonic, const x86::Operand &source, const x86::Operand &destination, const x86::Operand &auxiliary);
 	virtual ~AbstractInstruction();
 	std::string m_string;
 };

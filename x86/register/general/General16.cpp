@@ -1,7 +1,13 @@
 #include "General16.h"
-namespace general
+namespace x86
 {
-	General16::General16() {
+	namespace reg
+	{
+		namespace general
+		{
+			General16::General16() {
 
+			}
+		}
 	}
 }

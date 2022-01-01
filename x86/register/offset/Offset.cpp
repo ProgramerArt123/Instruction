@@ -1,7 +1,13 @@
 #include "Offset.h"
-namespace offset
+namespace x86
 {
-	Offset::Offset() {
+	namespace reg
+	{
+		namespace offset
+		{
+			Offset::Offset() {
 		
+			}
+		}
 	}
 }

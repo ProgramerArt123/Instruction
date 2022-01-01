@@ -7,67 +7,67 @@ int main(int argc, char *argv[])
 	
 	std::stringstream out;
 	{
-		const NoOperation nop;
+		const x86::NoOperation nop;
 		out << nop << std::endl;
 	}
 	{
-		const IntegerDataTransmitted move(immediate::ImmediateSigned8(1), AL);
+		const x86::IntegerDataTransmitted move(x86::immediate::ImmediateSigned8(1), AL);
 		out << move << std::endl;
 	}
 	{
-		const IntegerDataTransmitted move(immediate::ImmediateSigned16(-2), AX);
+		const  x86::IntegerDataTransmitted move(x86::immediate::ImmediateSigned16(-2), AX);
 		out << move << std::endl;
 	}
 	{
-		const IntegerDataTransmitted move(immediate::ImmediateUnSigned32(3), EAX);
+		const x86::IntegerDataTransmitted move(x86::immediate::ImmediateUnSigned32(3), EAX);
 		out << move << std::endl;
 	}
 	{
-		const size64::IntegerDataTransmitted move(size64::ImmediateSigned64(3), RAX);
+		const x86::size64::IntegerDataTransmitted move(x86::immediate::size64::ImmediateSigned64(3), RAX);
 		out << move << std::endl;
 	}
 	{
-		const IntegerDataTransmitted move(AX, CS);
+		const x86::IntegerDataTransmitted move(AX, CS);
 		out << move << std::endl;
 	}
 	{
-		const IntegerDataTransmitted move(CS, AX);
+		const x86::IntegerDataTransmitted move(CS, AX);
 		out << move << std::endl;
 	}
 	{
-		const IntegerDataTransmitted move(AX, DS);
+		const x86::IntegerDataTransmitted move(AX, DS);
 		out << move << std::endl;
 	}
 	{
-		const IntegerDataTransmitted move(DS, AX);
+		const x86::IntegerDataTransmitted move(DS, AX);
 		out << move << std::endl;
 	}
 	{
-		const IntegerDataTransmitted move(AX, SS);
+		const x86::IntegerDataTransmitted move(AX, SS);
 		out << move << std::endl;
 	}
 	{
-		const IntegerDataTransmitted move(SS, AX);
+		const x86::IntegerDataTransmitted move(SS, AX);
 		out << move << std::endl;
 	}
 	{
-		const IntegerDataTransmitted move(AX, ES);
+		const x86::IntegerDataTransmitted move(AX, ES);
 		out << move << std::endl;
 	}
 	{
-		const IntegerDataTransmitted move(ES, AX);
+		const x86::IntegerDataTransmitted move(ES, AX);
 		out << move << std::endl;
 	}
 	{
-		const IntegerDataTransmitted move(AL, BL);
+		const x86::IntegerDataTransmitted move(AL, BL);
 		out << move << std::endl;
 	}
 	{
-		const IntegerDataTransmitted move(BX, AX);
+		const x86::IntegerDataTransmitted move(BX, AX);
 		out << move << std::endl;
 	}
 	{
-		const IntegerDataTransmitted move(AX, SP);
+		const x86::IntegerDataTransmitted move(AX, SP);
 		out << move << std::endl;
 	}
 	const std::string &str = out.str();

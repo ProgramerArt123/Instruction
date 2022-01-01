@@ -1,6 +1,12 @@
 #include "Immediate64.h"
-namespace size64
+namespace x86
 {
-	Immediate64::Immediate64() {
+	namespace immediate
+	{
+		namespace size64
+		{
+			Immediate64::Immediate64() {
+			}
+		}
 	}
 }

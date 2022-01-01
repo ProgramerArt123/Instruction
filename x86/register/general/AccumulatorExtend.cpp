@@ -1,13 +1,19 @@
 #include "Accumulator.h"
 #include "AccumulatorExtend.h"
-namespace general
+namespace x86
 {
-	AccumulatorExtend &AccumulatorExtend::GetInstance() {
-		static AccumulatorExtend instance;
-		return instance;
-	}
-	AccumulatorExtend::AccumulatorExtend()
-		: m_low(Accumulator::GetInstance()) {
-		m_string.append("EAX");
+	namespace reg
+	{
+		namespace general
+		{
+			AccumulatorExtend &AccumulatorExtend::GetInstance() {
+				static AccumulatorExtend instance;
+				return instance;
+			}
+			AccumulatorExtend::AccumulatorExtend()
+				: m_low(Accumulator::GetInstance()) {
+				m_string.append("EAX");
+			}
+		}
 	}
 }

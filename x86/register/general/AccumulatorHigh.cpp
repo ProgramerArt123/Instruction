@@ -1,11 +1,17 @@
 #include "AccumulatorHigh.h"
-namespace general
+namespace x86
 {
-	AccumulatorHigh &AccumulatorHigh::GetInstance() {
-		static AccumulatorHigh instance;
-		return instance;
-	}
-	AccumulatorHigh::AccumulatorHigh() {
-		m_string.append("AH");
+	namespace reg
+	{
+		namespace general
+		{
+			AccumulatorHigh &AccumulatorHigh::GetInstance() {
+				static AccumulatorHigh instance;
+				return instance;
+			}
+			AccumulatorHigh::AccumulatorHigh() {
+				m_string.append("AH");
+			}
+		}
 	}
 }

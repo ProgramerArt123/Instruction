@@ -1,5 +1,8 @@
 #include "Immediate16.h"
-namespace immediate {
-	Immediate16::Immediate16() {
+namespace x86
+{
+	namespace immediate {
+		Immediate16::Immediate16() {
+		}
 	}
 }

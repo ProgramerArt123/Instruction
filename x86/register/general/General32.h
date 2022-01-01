@@ -1,12 +1,17 @@
 #ifndef __X86_REGISTER_GENERAL_32_H__
 #define __X86_REGISTER_GENERAL_32_H__
 #include "General.h"
-namespace general
+namespace x86
 {
-	class General32 : public General {
-	protected:
-		explicit General32();
-	};
+	namespace reg
+	{
+		namespace general
+		{
+			class General32 : public General {
+			protected:
+				explicit General32();
+			};
+		}
+	}
 }
-
 #endif

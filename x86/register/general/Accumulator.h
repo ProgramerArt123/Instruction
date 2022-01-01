@@ -1,20 +1,26 @@
 #ifndef __X86_REGISTER_GENERAL_ACCUMULATOR_H__
 #define __X86_REGISTER_GENERAL_ACCUMULATOR_H__
 #include "General16.h"
-namespace general
+namespace x86
 {
-	class AccumulatorLow;
-	class AccumulatorHigh;
-	class Accumulator : public General16 {
-	public:
-		static Accumulator &GetInstance();
-	private:
-		explicit Accumulator();
-		AccumulatorLow &m_low;
-		AccumulatorHigh &m_high;
-	};
+	namespace reg
+	{
+		namespace general
+		{
+			class AccumulatorLow;
+			class AccumulatorHigh;
+			class Accumulator : public General16 {
+			public:
+				static Accumulator &GetInstance();
+			private:
+				explicit Accumulator();
+				AccumulatorLow &m_low;
+				AccumulatorHigh &m_high;
+			};
+		}
+	}
 }
 
-#define AX general::Accumulator::GetInstance()
+#define AX x86::reg::general::Accumulator::GetInstance()
 
 #endif

@@ -36,5 +36,5 @@
 #include "x86/register/general/Base.h"
 #include "x86/register/general/64/AccumulatorExtend64.h"
 #include "x86/ConcreteInstruction.h"
-#include "x86/64/ConcreteInstruction64.h"
+#include "x86/64/ConcreteInstruction.h"
 #endif

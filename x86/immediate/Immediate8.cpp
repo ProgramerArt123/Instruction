@@ -1,5 +1,8 @@
 #include "Immediate8.h"
-namespace immediate {
-	Immediate8::Immediate8() {
+namespace x86
+{
+	namespace immediate {
+		Immediate8::Immediate8() {
+		}
 	}
 }

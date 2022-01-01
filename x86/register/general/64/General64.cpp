@@ -1,7 +1,16 @@
 #include "General64.h"
-namespace size64
+namespace x86
 {
-	General64::General64() {
+	namespace reg
+	{
+		namespace general
+		{
+			namespace size64
+			{
+				General64::General64() {
 
+				}
+			}
+		}
 	}
 }

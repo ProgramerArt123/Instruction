@@ -1,11 +1,17 @@
 #include "AccumulatorLow.h"
-namespace general
+namespace x86
 {
-	AccumulatorLow &AccumulatorLow::GetInstance() {
-		static AccumulatorLow instance;
-		return instance;
-	}
-	AccumulatorLow::AccumulatorLow() {
-		m_string.append("AL");
+	namespace reg
+	{
+		namespace general
+		{
+			AccumulatorLow &AccumulatorLow::GetInstance() {
+				static AccumulatorLow instance;
+				return instance;
+			}
+			AccumulatorLow::AccumulatorLow() {
+				m_string.append("AL");
+			}
+		}
 	}
 }

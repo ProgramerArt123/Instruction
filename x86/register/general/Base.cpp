@@ -1,12 +1,18 @@
 #include "Base.h"
-namespace general
+namespace x86
 {
-	Base &Base::GetInstance() {
-		static  Base instance;
-		return instance;
-	}
+	namespace reg
+	{
+		namespace general
+		{
+			Base &Base::GetInstance() {
+				static  Base instance;
+				return instance;
+			}
 
-	Base::Base() {
-		m_string.append("BX");
+			Base::Base() {
+				m_string.append("BX");
+			}
+		}
 	}
 }

@@ -1,5 +1,8 @@
 #include "Immediate32.h"
-namespace immediate {
-	Immediate32::Immediate32() {
+namespace x86
+{
+	namespace immediate {
+		Immediate32::Immediate32() {
+		}
 	}
 }

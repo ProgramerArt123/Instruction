@@ -1,7 +1,13 @@
 #include "General.h"
-namespace general
+namespace x86
 {
-	General::General() {
+	namespace reg
+	{
+		namespace general
+		{
+			General::General() {
 
+			}
+		}
 	}
 }

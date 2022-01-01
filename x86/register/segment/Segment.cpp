@@ -1,7 +1,13 @@
 #include "Segment.h"
-namespace segment
+namespace x86
 {
-	Segment::Segment() {
+	namespace reg
+	{
+		namespace segment
+		{
+			Segment::Segment() {
 
+			}
+		}
 	}
 }
