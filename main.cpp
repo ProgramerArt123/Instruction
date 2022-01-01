@@ -5,6 +5,7 @@
 #include "Base.h"
 #include "Define.h"
 #include "ImmediateSigned16.h"
+#include "Memory.h"
 int main(int argc, char *argv[])
 {
 	Instruction nop("NOP");
