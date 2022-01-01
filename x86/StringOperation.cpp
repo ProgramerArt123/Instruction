@@ -48,10 +48,10 @@ const char *StringOperation::Store_32_To_ES_EDI_From_EAX()const {
 const char *StringOperation::Repeat_Prefix_ECX()const {
 	return "REP";
 }
-const char *StringOperation::Repeat_Prefix_EQUAL__ZF_ECX()const {
+const char *StringOperation::Repeat_Prefix_EQUAL_ZF_ECX()const {
 	return "REPE";
 }
-const char *StringOperation::Repeat_Prefix_NOT_EQUAL__ZF_ECX()const {
+const char *StringOperation::Repeat_Prefix_NOT_EQUAL_ZF_ECX()const {
 	return "REPNE";
 }
 const char *StringOperation::Repeat_Prefix_CF_ECX()const {

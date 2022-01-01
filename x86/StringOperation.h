@@ -19,8 +19,8 @@ public:
 	const char *Store_16_To_ES_EDI_From_AX()const;
 	const char *Store_32_To_ES_EDI_From_EAX()const;
 	const char *Repeat_Prefix_ECX()const;
-	const char *Repeat_Prefix_EQUAL__ZF_ECX()const;
-	const char *Repeat_Prefix_NOT_EQUAL__ZF_ECX()const;
+	const char *Repeat_Prefix_EQUAL_ZF_ECX()const;
+	const char *Repeat_Prefix_NOT_EQUAL_ZF_ECX()const;
 	const char *Repeat_Prefix_CF_ECX()const;
 	const char *Repeat_Prefix_NOT_CF_ECX()const;
 };
