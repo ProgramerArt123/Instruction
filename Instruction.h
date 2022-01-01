@@ -36,6 +36,7 @@
 #include "x86/register/general/BaseHigh.h"
 #include "x86/register/general/Base.h"
 #include "x86/register/general/BaseExtend.h"
+#include "x86/register/general/CountLow.h"
 #include "x86/register/general/Count.h"
 #include "x86/register/general/64/AccumulatorExtend64.h"
 #include "x86/register/general/64/BaseExtend64.h"

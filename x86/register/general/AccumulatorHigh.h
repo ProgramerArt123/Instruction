@@ -17,6 +17,6 @@ namespace x86
 	}
 }
 
-#define AH AccumulatorHigh::GetInstance()
+#define AH x86::reg::general::AccumulatorHigh::GetInstance()
 
 #endif
