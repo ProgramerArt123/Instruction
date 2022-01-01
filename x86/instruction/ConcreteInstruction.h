@@ -374,5 +374,10 @@ namespace x86
 	public:
 		explicit SubConvertASCIIFormat();
 	};
+
+	class SubConvertDecimalFormat : public AbstractInstruction {
+	public:
+		explicit SubConvertDecimalFormat();
+	};
 }
 #endif

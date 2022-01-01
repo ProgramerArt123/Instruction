@@ -795,4 +795,9 @@ namespace x86
 	{
 		
 	}
+	SubConvertDecimalFormat::SubConvertDecimalFormat() 
+		: AbstractInstruction(x86::mnemonic::size32::integer_arithmetic::Convert_Decimal_Format_Sub_AL_CF_AF())
+	{
+
+	}
 }
