@@ -64,6 +64,9 @@ namespace x86
 						const char *Compare_Scalar_Double_64() {
 							return "VCMPSD";
 						}
+						const char *Compare_Packed_Quadwords_128() {
+							return "VPCMPEQQ";
+						}
 					}
 				}
 			}

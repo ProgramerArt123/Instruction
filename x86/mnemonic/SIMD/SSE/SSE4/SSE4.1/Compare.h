@@ -14,7 +14,7 @@ namespace x86
 					{
 						namespace compare {
 							const char *Compare_ZF_CF();
-							const char *Compare_Packed_Quadwords();
+							const char *Compare_Packed_Quadwords_128();
 						}
 					}
 				}

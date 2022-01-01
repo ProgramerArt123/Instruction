@@ -15,7 +15,7 @@ namespace x86
 							const char *Compare_ZF_CF() {
 								return "PTEST";
 							}
-							const char *Compare_Packed_Quadwords() {
+							const char *Compare_Packed_Quadwords_128() {
 								return "PCMPEQQ";
 							}
 						}
