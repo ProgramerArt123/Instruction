@@ -1,5 +1,5 @@
 #include "Stack.h"
-namespace address
+namespace offset
 {
 	Stack &Stack::GetInstance() {
 		static Stack instance;

@@ -78,7 +78,7 @@ IntegerDataTransmitted::IntegerDataTransmitted(const segment::Segment &source, c
 {
 	
 }
-IntegerDataTransmitted::IntegerDataTransmitted(const address::Address &source, const address::Address &destination)
+IntegerDataTransmitted::IntegerDataTransmitted(const offset::Offset &source, const offset::Offset &destination)
 	:
 #if PLATFORM=='X' 
 	AbstractInstruction(x86::size32::integer_data_transmitted::Transmitted_8__16__32(), source, destination)
@@ -87,7 +87,7 @@ IntegerDataTransmitted::IntegerDataTransmitted(const address::Address &source, c
 	
 }
 	
-IntegerDataTransmitted::IntegerDataTransmitted(const General16 &source, const address::Address &destination)
+IntegerDataTransmitted::IntegerDataTransmitted(const General16 &source, const offset::Offset &destination)
 	:
 #if PLATFORM=='X' 
 	AbstractInstruction(x86::size32::integer_data_transmitted::Transmitted_8__16__32(), source, destination)
@@ -95,7 +95,7 @@ IntegerDataTransmitted::IntegerDataTransmitted(const General16 &source, const ad
 {
 }
 	
-IntegerDataTransmitted::IntegerDataTransmitted(const address::Address &source, const General16 &destination)
+IntegerDataTransmitted::IntegerDataTransmitted(const offset::Offset &source, const General16 &destination)
 	:
 #if PLATFORM=='X' 
 	AbstractInstruction(x86::size32::integer_data_transmitted::Transmitted_8__16__32(), source, destination)
@@ -103,14 +103,14 @@ IntegerDataTransmitted::IntegerDataTransmitted(const address::Address &source, c
 {
 }
 	
-IntegerDataTransmitted::IntegerDataTransmitted(const segment::Segment &source, const address::Address &destination)
+IntegerDataTransmitted::IntegerDataTransmitted(const segment::Segment &source, const offset::Offset &destination)
 	:
 #if PLATFORM=='X'
 	AbstractInstruction(x86::size32::integer_data_transmitted::Transmitted_8__16__32(), source, destination)
 #endif
 {
 }
-IntegerDataTransmitted::IntegerDataTransmitted(const address::Address &source, const segment::Segment &destination)
+IntegerDataTransmitted::IntegerDataTransmitted(const offset::Offset &source, const segment::Segment &destination)
 	:
 #if PLATFORM=='X' 
 	AbstractInstruction(x86::size32::integer_data_transmitted::Transmitted_8__16__32(), source, destination)
