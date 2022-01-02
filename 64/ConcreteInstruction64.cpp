@@ -6,7 +6,8 @@
 #include "ConcreteInstruction64.h"
 namespace size64
 {
-	IntegerDataTransmitted::IntegerDataTransmitted(const Immediate64 &source, const Data64 &destination):
+	IntegerDataTransmitted::IntegerDataTransmitted(const Immediate64 &source, const General64 &destination)
+		:
 #if PLATFORM=='X'
 	AbstractInstruction(x86::size64::integer_data_transmitted::Transmitted_8__16__32__64(), source, destination)
 #endif

@@ -1,10 +1,10 @@
 #ifndef __ACCUMULATOR_EXTEND_64_H__
 #define __ACCUMULATOR_EXTEND_64_H__
-#include "Data64.h"
+#include "General64.h"
 class AccumulatorExtend;
 namespace size64
 {
-	class AccumulatorExtend : public Data64 {
+	class AccumulatorExtend : public General64 {
 	public:
 		static AccumulatorExtend &GetInstance();
 	private:

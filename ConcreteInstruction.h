@@ -4,9 +4,9 @@
 class Immediate8;
 class Immediate16;
 class Immediate32;
-class Data8;
-class Data16;
-class Data32;
+class General8;
+class General16;
+class General32;
 class Segment16;
 class Segment32;
 class NoOperation : public AbstractInstruction {
@@ -16,17 +16,17 @@ public:
 
 class IntegerDataTransmitted : public AbstractInstruction {
 public:
-	explicit IntegerDataTransmitted(const Immediate8 &source, const Data8 &destination);
-	explicit IntegerDataTransmitted(const Immediate16 &source, const Data16 &destination);
-	explicit IntegerDataTransmitted(const Immediate32 &source, const Data32 &destination);
+	explicit IntegerDataTransmitted(const Immediate8 &source, const General8 &destination);
+	explicit IntegerDataTransmitted(const Immediate16 &source, const General16 &destination);
+	explicit IntegerDataTransmitted(const Immediate32 &source, const General32 &destination);
 	
 	
-	explicit IntegerDataTransmitted(const Data8 &source, const Segment16 &destination);
-	explicit IntegerDataTransmitted(const Data16 &source, const Segment16 &destination);
+	explicit IntegerDataTransmitted(const General8 &source, const Segment16 &destination);
+	explicit IntegerDataTransmitted(const General16 &source, const Segment16 &destination);
 	
-	explicit IntegerDataTransmitted(const Data8 &source, const Segment32 &destination);
-	explicit IntegerDataTransmitted(const Data16 &source, const Segment32 &destination);
-	explicit IntegerDataTransmitted(const Data32 &source, const Segment32 &destination);
+	explicit IntegerDataTransmitted(const General8 &source, const Segment32 &destination);
+	explicit IntegerDataTransmitted(const General16 &source, const Segment32 &destination);
+	explicit IntegerDataTransmitted(const General32 &source, const Segment32 &destination);
 };
 
 #endif

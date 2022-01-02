@@ -1,8 +1,8 @@
 #ifndef __ACCUMULATOR_EXTEND_H__
 #define __ACCUMULATOR_EXTEND_H__
-#include "Data32.h"
+#include "General32.h"
 class Accumulator;
-class AccumulatorExtend : public Data32 {
+class AccumulatorExtend : public General32 {
 public:
 	static AccumulatorExtend &GetInstance();
 private:
