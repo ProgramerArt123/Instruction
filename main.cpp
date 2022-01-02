@@ -22,5 +22,13 @@ int main(int argc, char *argv[])
 		size64::IntegerDataTransmitted move(size64::ImmediateSigned64(3), RAX);
 		std::cout << move << std::endl;
 	}
+	{
+		IntegerDataTransmitted move(AX, CS);
+		std::cout << move << std::endl;
+	}
+	{
+		IntegerDataTransmitted move(CS, AX);
+		std::cout << move << std::endl;
+	}
 	return 0;
 }
