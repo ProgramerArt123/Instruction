@@ -4,7 +4,7 @@
 
 class Immediate : public Operand {
 public:
-	const char *PureString() override;
+	const char *PureString() const override;
 protected:
 	explicit Immediate();
 };

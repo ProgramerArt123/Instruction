@@ -4,8 +4,8 @@
 #include <string>
 class Operand {
 public:
-	const char *String();
-	virtual const char *PureString();
+	const char *String() const;
+	virtual const char *PureString() const;
 protected:
 	explicit Operand();
 	virtual ~Operand();

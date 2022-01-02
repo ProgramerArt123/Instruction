@@ -8,7 +8,7 @@ Register::Register() {
 #else
 #endif
 }
-const char *Register::PureString(){
+const char *Register::PureString() const {
 #if FORMAT=='A'
 	return Operand::PureString() + strlen("%");
 #else

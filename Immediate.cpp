@@ -7,7 +7,7 @@ Immediate::Immediate() {
 #else
 #endif
 }
-const char *Immediate::PureString() {
+const char *Immediate::PureString() const {
 #if FORMAT=='A'
 	return Operand::PureString() + strlen("$");
 #else
