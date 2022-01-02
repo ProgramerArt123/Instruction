@@ -4,7 +4,6 @@
 class Accumulator : public Register {
 public:
 	static Accumulator &GetInstance();
-	const char *ToString() override;
 private:
 	explicit Accumulator();
 };

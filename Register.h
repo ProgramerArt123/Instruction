@@ -2,7 +2,9 @@
 #define __REGISTER_H__
 #include "Operand.h"
 class Register : public Operand {
-	
+public:
+	explicit Register();
+
 };
 
 #endif

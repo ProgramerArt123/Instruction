@@ -3,4 +3,7 @@
 
 #define FORMAT 'A'
 
+#define AX Accumulator::GetInstance()
+#define BX Base::GetInstance()
+
 #endif

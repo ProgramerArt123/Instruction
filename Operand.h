@@ -1,11 +1,14 @@
 #ifndef __OPERAND_H__
 #define __OPERAND_H__
 
+#include <string>
 class Operand {
 public:
 	explicit Operand();
 	virtual ~Operand();
-	virtual const char *ToString() = 0;
+	const char *ToString();
+protected:
+	std::string m_string;
 };
 
 #endif

@@ -4,7 +4,6 @@
 class Base : public Register {
 public:
 	static Base &GetInstance();
-	const char *ToString() override;
 private:
 	explicit Base();
 };
