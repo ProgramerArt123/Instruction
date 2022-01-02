@@ -150,6 +150,10 @@ int main(int argc, char *argv[])
 		const x86::IntegerDataTransmitted move(EAX, ESP);
 		out << move << std::endl;
 	}
+	{
+		const x86::IntegerDataTransmitted move(ESI, EAX);
+		out << move << std::endl;
+	}
 
 	const std::string &str = out.str();
 	{
