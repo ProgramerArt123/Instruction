@@ -18,5 +18,9 @@ int main(int argc, char *argv[])
 		IntegerDataTransmitted move(ImmediateUnSigned32(3), EAX);
 		std::cout << move << std::endl;
 	}
+	{
+		size64::IntegerDataTransmitted move(size64::ImmediateSigned64(3), RAX);
+		std::cout << move << std::endl;
+	}
 	return 0;
 }

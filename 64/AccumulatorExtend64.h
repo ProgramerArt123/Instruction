@@ -9,7 +9,7 @@ namespace size64
 		static AccumulatorExtend &GetInstance();
 	private:
 		explicit AccumulatorExtend();
-		AccumulatorExtend &m_low;
+		::AccumulatorExtend &m_low;
 	};
 }
 #define RAX size64::AccumulatorExtend::GetInstance()

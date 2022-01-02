@@ -3,11 +3,11 @@
 namespace size64
 {
 	AccumulatorExtend &AccumulatorExtend::GetInstance() {
-		static AccumulatorExtend instance;
+		static size64::AccumulatorExtend instance;
 		return instance;
 	}
 	AccumulatorExtend::AccumulatorExtend()
-		: m_low(AccumulatorExtend::GetInstance()) {
+		: m_low(::AccumulatorExtend::GetInstance()) {
 		m_string.append("RAX");
 	}
 }
