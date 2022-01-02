@@ -3,8 +3,9 @@
 #include "Operand.h"
 class Register : public Operand {
 public:
-	explicit Register();
 	const char *PureString() override;
+protected:
+	explicit Register();
 };
 
 #endif

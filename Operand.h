@@ -4,11 +4,11 @@
 #include <string>
 class Operand {
 public:
-	explicit Operand();
-	virtual ~Operand();
 	const char *String();
 	virtual const char *PureString();
 protected:
+	explicit Operand();
+	virtual ~Operand();
 	std::string m_string;
 };
 
