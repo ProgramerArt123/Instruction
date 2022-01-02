@@ -1,5 +1,5 @@
-#ifndef __EXTRA_H__
-#define __EXTRA_H__
+#ifndef __SEGMENT_EXTRA_H__
+#define __SEGMENT_EXTRA_H__
 #include "Segment.h"
 namespace segment
 {

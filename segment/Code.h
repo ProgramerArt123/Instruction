@@ -1,5 +1,5 @@
-#ifndef __CODE_H__
-#define __CODE_H__
+#ifndef __SEGMENT_CODE_H__
+#define __SEGMENT_CODE_H__
 #include "Segment.h"
 
 namespace segment
