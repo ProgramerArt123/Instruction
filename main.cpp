@@ -79,6 +79,10 @@ int main(int argc, char *argv[])
 		out << move << std::endl;
 	}
 	{
+		const x86::IntegerDataTransmitted move(AX, SI);
+		out << move << std::endl;
+	}
+	{
 		const x86::IntegerDataTransmitted move(EAX, EBX);
 		out << move << std::endl;
 	} 
