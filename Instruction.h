@@ -15,10 +15,6 @@ public:
 	const char *String();
 	friend std::ostream &operator<<(std::ostream &out, Instruction &instruction);
 protected:
-	const std::string m_mnemonic;
-	Operand *m_source = NULL;
-	Operand *m_destination = NULL;
-	Operand *m_auxiliary = NULL;
 	std::string m_string;
 };
 

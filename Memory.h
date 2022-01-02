@@ -2,21 +2,25 @@
 #define __MEMORY_H__
 #include "Operand.h"
 
-class Register;
+class Data;
 class Immediate;
 class Segment;
 
 class Memory : public Operand {
 public:
-	explicit Memory(Register &base);
-	explicit Memory(Register &base, Immediate &disp);
-	explicit Memory(Register &base, Register &index);
-	explicit Memory(Register &base, Register &index, Immediate &scale, Immediate &disp);
+	explicit Memory(Data &base);
+	explicit Memory(Data &base, Immediate &disp);
+	explicit Memory(Data &base, Data &index);
+	explicit Memory(Data &base, Immediate &disp, Data &index);
+	explicit Memory(Data &base, Data &index, Immediate &scale);
+	explicit Memory(Data &base, Immediate &disp, Data &index, Immediate &scale);
 
-	explicit Memory(Register &base, Segment &segment);
-	explicit Memory(Register &base, Immediate &disp, Segment &segment);
-	explicit Memory(Register &base, Register &index, Segment &segment);
-	explicit Memory(Register &base, Register &index, Immediate &scale, Immediate &disp, Segment &segment);
+	explicit Memory(Data &base, Segment &segment);
+	explicit Memory(Data &base, Immediate &disp, Segment &segment);
+	explicit Memory(Data &base, Data &index, Segment &segment);
+	explicit Memory(Data &base, Immediate &disp, Data &index, Segment &segment);
+	explicit Memory(Data &base, Data &index, Immediate &scale, Segment &segment);
+	explicit Memory(Data &base, Immediate &disp, Data &index, Immediate &scale, Segment &segment);
 
 };
 

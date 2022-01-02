@@ -4,7 +4,7 @@
 class Register : public Operand {
 public:
 	explicit Register();
-
+	const char *PureString() override;
 };
 
 #endif

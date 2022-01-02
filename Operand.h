@@ -6,7 +6,8 @@ class Operand {
 public:
 	explicit Operand();
 	virtual ~Operand();
-	const char *ToString();
+	const char *String();
+	virtual const char *PureString();
 protected:
 	std::string m_string;
 };

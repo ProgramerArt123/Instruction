@@ -2,24 +2,20 @@
 #include "Operand.h"
 #include "Instruction.h"
 
-Instruction::Instruction(const char *mnemonic): 
-	m_mnemonic(mnemonic) {
-		m_string = m_mnemonic;
+Instruction::Instruction(const char *mnemonic){
+		m_string = mnemonic;
 }
-Instruction::Instruction(const char *mnemonic, Operand &source): 
-	m_mnemonic(mnemonic), m_source(&source) {
+Instruction::Instruction(const char *mnemonic, Operand &source){
 	
 }
-Instruction::Instruction(const char *mnemonic, Operand &source, Operand &destination): 
-	m_mnemonic(mnemonic), m_source(&source), m_destination(&destination) {
+Instruction::Instruction(const char *mnemonic, Operand &source, Operand &destination){
 #if FORMAT=='A'
-		m_string = m_mnemonic + "\t" + m_source->ToString() + ", " + m_destination->ToString();
+	m_string = std::string(mnemonic) + "\t" + source.String() + ", " + destination.String();
 #else
-		m_string = m_mnemonic + "\t" + m_destination->ToString() + ", " + m_source->ToString();
+	m_string = std::string(mnemonic) + "\t" + destination.String() + ", " + source.String();
 #endif
 }
-Instruction::Instruction(const char *mnemonic, Operand &source, Operand &destination, Operand &auxiliary): 
-	m_mnemonic(mnemonic), m_source(&source), m_destination(&destination), m_auxiliary(&auxiliary) {
+Instruction::Instruction(const char *mnemonic, Operand &source, Operand &destination, Operand &auxiliary){
 	
 }
 Instruction::~Instruction() {
