@@ -1,9 +1,9 @@
 #ifndef __ACCUMULATOR_H__
 #define __ACCUMULATOR_H__
-#include "Data.h"
+#include "Data16.h"
 class AccumulatorLow;
 class AccumulatorHigh;
-class Accumulator : public Data {
+class Accumulator : public Data16 {
 public:
 	static Accumulator &GetInstance();
 private:
