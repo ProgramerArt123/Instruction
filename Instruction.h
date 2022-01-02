@@ -23,7 +23,7 @@
 #include "64/ImmediateSigned64.h"
 #include "64/ImmediateUnSigned64.h"
 #include "Code.h"
-#include "Segment32.h"
+#include "Data.h"
 #include "AccumulatorLow.h"
 #include "AccumulatorHigh.h"
 #include "Accumulator.h"

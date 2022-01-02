@@ -30,5 +30,13 @@ int main(int argc, char *argv[])
 		IntegerDataTransmitted move(CS, AX);
 		std::cout << move << std::endl;
 	}
+	{
+		IntegerDataTransmitted move(AX, DS);
+		std::cout << move << std::endl;
+	}
+	{
+		IntegerDataTransmitted move(DS, AX);
+		std::cout << move << std::endl;
+	}
 	return 0;
 }

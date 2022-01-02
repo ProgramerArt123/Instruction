@@ -1,7 +1,7 @@
 #ifndef __BASE_H__
 #define __BASE_H__
-#include "Data.h"
-class Base : public Data {
+#include "General16.h"
+class Base : public General16 {
 public:
 	static Base &GetInstance();
 private:
