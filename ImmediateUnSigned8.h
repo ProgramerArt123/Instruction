@@ -1,9 +1,9 @@
 #ifndef __IMMEDIATE_UNSIGNED_8_H__
 #define __IMMEDIATE_UNSIGNED_8_H__
 #include <cstdint>
-#include "Immediate.h"
+#include "Immediate8.h"
 
-class ImmediateUnSigned8 : public Immediate {
+class ImmediateUnSigned8 : public Immediate8 {
 public:
 	explicit ImmediateUnSigned8(uint8_t value);
 };
