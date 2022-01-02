@@ -1,4 +1,7 @@
 #include "Data64.h"
-Data64::Data64() {
+namespace size64
+{
+	Data64::Data64() {
 
+	}
 }
