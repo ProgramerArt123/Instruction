@@ -27,13 +27,13 @@ const char *ProcessorControl::Set_Interrupt_Flag()const {
 const char *ProcessorControl::No_Operation()const {
 	return "NOP";
 }
-const char *ProcessorControl::Halt()const {
+const char *ProcessorControl::Halt_Processor()const {
 	return "HLT";
 }
 const char *ProcessorControl::Check_Float_Exception()const {
 	return "FWAIT";
 }
-const char *ProcessorControl::Escape()const {
+const char *ProcessorControl::Switch_Coprocessor()const {
 	return "ESC";
 }
 const char *ProcessorControl::Atomic_Prefix()const {

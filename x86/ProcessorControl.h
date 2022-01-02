@@ -11,9 +11,9 @@ public:
 	const char *Clear_Interrupt_Flag()const;
 	const char *Set_Interrupt_Flag()const;
 	const char *No_Operation()const;
-	const char *Halt()const;
+	const char *Halt_Processor()const;
 	const char *Check_Float_Exception()const;
-	const char *Escape()const;
+	const char *Switch_Coprocessor()const;
 	const char *Atomic_Prefix()const;
 };
 
