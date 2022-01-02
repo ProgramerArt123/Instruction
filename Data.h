@@ -2,7 +2,7 @@
 #define __DATA_H__
 #include "Register.h"
 class Data : public Register {
-public:
+protected:
 	explicit Data();
 
 };

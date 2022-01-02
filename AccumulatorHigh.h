@@ -1,7 +1,7 @@
 #ifndef __ACCUMULATOR_HIGH_H__
 #define __ACCUMULATOR_HIGH_H__
-#include "Data.h"
-class AccumulatorHigh : public Data {
+#include "Data8.h"
+class AccumulatorHigh : public Data8 {
 public:
 	static AccumulatorHigh &GetInstance();
 private:
