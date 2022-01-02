@@ -1,9 +1,9 @@
 #ifndef __IMMEDIATE_SIGNED_32_H__
 #define __IMMEDIATE_SIGNED_32_H__
 #include <cstdint>
-#include "Immediate.h"
+#include "Immediate32.h"
 
-class ImmediateSigned32 : public Immediate {
+class ImmediateSigned32 : public Immediate32 {
 public:
 	explicit ImmediateSigned32(int32_t value);
 };

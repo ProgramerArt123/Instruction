@@ -2,6 +2,7 @@
 #define __CONCRETE_INSTRUCTION_H__
 #include "AbstractInstruction.h"
 class Data8;
+class Immediate8;
 class NoOperation : public AbstractInstruction {
 public:
 	explicit NoOperation();
@@ -9,7 +10,7 @@ public:
 
 class IntegerDataTransmitted : public AbstractInstruction {
 public:
-
+	
 };
 
 #endif
