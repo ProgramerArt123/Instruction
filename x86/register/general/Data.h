@@ -7,11 +7,15 @@ namespace x86
 	{
 		namespace general
 		{
+			class DataLow;
+			class DataHigh;
 			class Data : public General16 {
 			public:
 				static Data &GetInstance();
 			private:
 				explicit Data();
+				DataLow &m_low;
+				DataHigh &m_high;
 			};
 		}
 	}
