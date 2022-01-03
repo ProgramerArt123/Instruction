@@ -71,7 +71,6 @@ int main(int argc, char *argv[])
 		out << move << std::endl;
 	}
 	const std::string &str =  out.str();
-	std::cout << str;
 	{
 		std::ofstream code("test.s");
 		if (!code.is_open()) {
@@ -83,6 +82,7 @@ int main(int argc, char *argv[])
 		code << "main:" << std::endl;
 		code << str;
 	}
+	system("cat -n test.s");
 	if (0==system("gcc test.s")) {
 		std::cout << "success" << std::endl;
 	}
