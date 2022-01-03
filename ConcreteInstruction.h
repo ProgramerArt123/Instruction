@@ -4,10 +4,16 @@
 class Immediate8;
 class Immediate16;
 class Immediate32;
-class General8;
-class General16;
-class General32;
-class Segment;
+namespace general
+{
+	class General8;
+	class General16;
+	class General32;	 
+}
+namespace segment
+{
+	class Segment;
+}
 class NoOperation : public AbstractInstruction {
 public:
 	explicit NoOperation();
@@ -15,21 +21,21 @@ public:
 
 class IntegerDataTransmitted : public AbstractInstruction {
 public:
-	explicit IntegerDataTransmitted(const Immediate8 &source, const General8 &destination);
-	explicit IntegerDataTransmitted(const Immediate16 &source, const General16 &destination);
-	explicit IntegerDataTransmitted(const Immediate32 &source, const General32 &destination);
+	explicit IntegerDataTransmitted(const Immediate8 &source, const general::General8 &destination);
+	explicit IntegerDataTransmitted(const Immediate16 &source, const general::General16 &destination);
+	explicit IntegerDataTransmitted(const Immediate32 &source, const general::General32 &destination);
 	
-	explicit IntegerDataTransmitted(const General8 &source, const General8 &destination);
-	explicit IntegerDataTransmitted(const General16 &source, const General16 &destination);
-	explicit IntegerDataTransmitted(const General32 &source, const General32 &destination);
+	explicit IntegerDataTransmitted(const general::General8 &source, const general::General8 &destination);
+	explicit IntegerDataTransmitted(const general::General16 &source, const general::General16 &destination);
+	explicit IntegerDataTransmitted(const general::General32 &source, const general::General32 &destination);
 	
-	explicit IntegerDataTransmitted(const General16 &source, const segment::Segment &destination);
-	explicit IntegerDataTransmitted(const segment::Segment &source, const General16 &destination);
+	explicit IntegerDataTransmitted(const general::General16 &source, const segment::Segment &destination);
+	explicit IntegerDataTransmitted(const segment::Segment &source, const general::General16 &destination);
 	
 	explicit IntegerDataTransmitted(const offset::Offset &source, const offset::Offset &destination);
 	
-	explicit IntegerDataTransmitted(const General16 &source, const offset::Offset &destination);
-	explicit IntegerDataTransmitted(const offset::Offset &source, const General16 &destination);
+	explicit IntegerDataTransmitted(const general::General16 &source, const offset::Offset &destination);
+	explicit IntegerDataTransmitted(const offset::Offset &source, const general::General16 &destination);
 	
 	explicit IntegerDataTransmitted(const segment::Segment &source, const offset::Offset &destination);
 	explicit IntegerDataTransmitted(const offset::Offset &source, const segment::Segment &destination);

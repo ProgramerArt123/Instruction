@@ -1,7 +1,10 @@
 #ifndef __ACCUMULATOR_EXTEND_64_H__
 #define __ACCUMULATOR_EXTEND_64_H__
 #include "General64.h"
-class AccumulatorExtend;
+namespace general
+{
+	class AccumulatorExtend;
+}
 namespace size64
 {
 	class AccumulatorExtend : public General64 {
@@ -9,7 +12,7 @@ namespace size64
 		static AccumulatorExtend &GetInstance();
 	private:
 		explicit AccumulatorExtend();
-		::AccumulatorExtend &m_low;
+		general::AccumulatorExtend &m_low;
 	};
 }
 #define RAX size64::AccumulatorExtend::GetInstance()

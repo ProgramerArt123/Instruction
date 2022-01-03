@@ -70,7 +70,7 @@ int main(int argc, char *argv[])
 		const IntegerDataTransmitted move(AX, SP);
 		out << move << std::endl;
 	}
-	const std::string &str =  out.str();
+	const std::string &str = out.str();
 	{
 		std::ofstream code("test.s");
 		if (!code.is_open()) {

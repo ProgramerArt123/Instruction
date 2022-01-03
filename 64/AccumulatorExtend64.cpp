@@ -1,4 +1,4 @@
-#include "../AccumulatorExtend.h"
+#include "../general/AccumulatorExtend.h"
 #include "AccumulatorExtend64.h"
 namespace size64
 {
@@ -7,7 +7,7 @@ namespace size64
 		return instance;
 	}
 	AccumulatorExtend::AccumulatorExtend()
-		: m_low(::AccumulatorExtend::GetInstance()) {
+		: m_low(general::AccumulatorExtend::GetInstance()) {
 		m_string.append("RAX");
 	}
 }
