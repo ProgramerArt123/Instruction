@@ -50,16 +50,28 @@ namespace x86
 	public:
 		explicit IntegerDataTransmittedFillSign(const  x86::reg::general::General8 &source, const  x86::reg::general::General16 &destination);
 		explicit IntegerDataTransmittedFillSign(const  x86::reg::general::General8 &source, const  x86::reg::general::General32 &destination);
+		explicit IntegerDataTransmittedFillSign(const  x86::reg::general::General8 &source, const  x86::reg::segment::Segment &destination);
 		explicit IntegerDataTransmittedFillSign(const  x86::reg::general::General16 &source, const  x86::reg::general::General32 &destination);
-	
-		explicit IntegerDataTransmittedFillSign(const  x86::reg::segment::Segment &source, const  x86::reg::general::General32 &destination);
-	
+		
 		explicit IntegerDataTransmittedFillSign(const x86::reg::offset::Offset16 &source, const x86::reg::offset::Offset32 &destination);
 	
 		explicit IntegerDataTransmittedFillSign(const x86::reg::general::General16 &source, const x86::reg::offset::Offset32 &destination);
 		explicit IntegerDataTransmittedFillSign(const x86::reg::offset::Offset16 &source, const  x86::reg::general::General32 &destination);
 	
-		explicit IntegerDataTransmittedFillSign(const  x86::reg::segment::Segment &source, const x86::reg::offset::Offset32 &destination);
+	};
+	
+	class IntegerDataTransmittedFillZero : public AbstractInstruction {
+	public:
+		explicit IntegerDataTransmittedFillZero(const  x86::reg::general::General8 &source, const  x86::reg::general::General16 &destination);
+		explicit IntegerDataTransmittedFillZero(const  x86::reg::general::General8 &source, const  x86::reg::general::General32 &destination);
+		explicit IntegerDataTransmittedFillZero(const  x86::reg::general::General8 &source, const  x86::reg::segment::Segment &destination);
+		explicit IntegerDataTransmittedFillZero(const  x86::reg::general::General16 &source, const  x86::reg::general::General32 &destination);
+		
+		explicit IntegerDataTransmittedFillZero(const x86::reg::offset::Offset16 &source, const x86::reg::offset::Offset32 &destination);
+	
+		explicit IntegerDataTransmittedFillZero(const x86::reg::general::General16 &source, const x86::reg::offset::Offset32 &destination);
+		explicit IntegerDataTransmittedFillZero(const x86::reg::offset::Offset16 &source, const  x86::reg::general::General32 &destination);
+	
 	};
 }
 

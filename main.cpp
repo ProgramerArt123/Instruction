@@ -162,6 +162,22 @@ int main(int argc, char *argv[])
 		const x86::IntegerDataTransmittedFillSign move(AX, EDI);
 		out << move << std::endl;
 	}
+	{
+		const x86::IntegerDataTransmittedFillSign move(AX, EDX);
+		out << move << std::endl;
+	}
+	{
+		const x86::IntegerDataTransmittedFillSign move(DI, EAX);
+		out << move << std::endl;
+	}
+	{
+		const x86::IntegerDataTransmittedFillZero move(AX, EDX);
+		out << move << std::endl;
+	}
+	{
+		const x86::IntegerDataTransmittedFillZero move(DI, EAX);
+		out << move << std::endl;
+	}
 	const std::string &str = out.str();
 	{
 		std::ofstream code("test.s");

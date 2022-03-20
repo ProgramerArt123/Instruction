@@ -113,15 +113,16 @@ namespace x86
 		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Transmitted_8__16_Fill_Sign(), source, destination)
 	{
 	}
+	IntegerDataTransmittedFillSign::IntegerDataTransmittedFillSign(const  x86::reg::general::General8 &source, const  x86::reg::segment::Segment &destination) 
+		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Transmitted_8__16_Fill_Sign(), source, destination)
+	{
+		
+	}
 	IntegerDataTransmittedFillSign::IntegerDataTransmittedFillSign(const  x86::reg::general::General16 &source, const  x86::reg::general::General32 &destination)
 		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Transmitted_8__16_Fill_Sign(), source, destination)
 	{
 	}
-	
-	IntegerDataTransmittedFillSign::IntegerDataTransmittedFillSign(const  x86::reg::segment::Segment &source, const  x86::reg::general::General32 &destination)
-		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Transmitted_8__16_Fill_Sign(), source, destination)
-	{
-	}
+
 	
 	IntegerDataTransmittedFillSign::IntegerDataTransmittedFillSign(const x86::reg::offset::Offset16 &source, const x86::reg::offset::Offset32 &destination)
 		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Transmitted_8__16_Fill_Sign(), source, destination)
@@ -137,8 +138,35 @@ namespace x86
 	{
 	}
 	
-	IntegerDataTransmittedFillSign::IntegerDataTransmittedFillSign(const  x86::reg::segment::Segment &source, const x86::reg::offset::Offset32 &destination)
-		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Transmitted_8__16_Fill_Sign(), source, destination)
+	IntegerDataTransmittedFillZero::IntegerDataTransmittedFillZero(const  x86::reg::general::General8 &source, const  x86::reg::general::General16 &destination)
+		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Transmitted_8__16_Fill_Zero(), source, destination)
 	{
 	}
+	IntegerDataTransmittedFillZero::IntegerDataTransmittedFillZero(const  x86::reg::general::General8 &source, const  x86::reg::general::General32 &destination)
+		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Transmitted_8__16_Fill_Zero(), source, destination)
+	{
+	}
+	IntegerDataTransmittedFillZero::IntegerDataTransmittedFillZero(const  x86::reg::general::General8 &source, const  x86::reg::segment::Segment &destination)
+		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Transmitted_8__16_Fill_Zero(), source, destination)
+	{
+	}
+	IntegerDataTransmittedFillZero::IntegerDataTransmittedFillZero(const  x86::reg::general::General16 &source, const  x86::reg::general::General32 &destination)
+		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Transmitted_8__16_Fill_Zero(), source, destination)
+	{
+	}
+		
+	IntegerDataTransmittedFillZero::IntegerDataTransmittedFillZero(const x86::reg::offset::Offset16 &source, const x86::reg::offset::Offset32 &destination)
+		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Transmitted_8__16_Fill_Zero(), source, destination)
+	{
+	}
+	
+	IntegerDataTransmittedFillZero::IntegerDataTransmittedFillZero(const x86::reg::general::General16 &source, const x86::reg::offset::Offset32 &destination)
+		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Transmitted_8__16_Fill_Zero(), source, destination)
+	{
+	}
+	IntegerDataTransmittedFillZero::IntegerDataTransmittedFillZero(const x86::reg::offset::Offset16 &source, const  x86::reg::general::General32 &destination)
+		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Transmitted_8__16_Fill_Zero(), source, destination)
+	{
+	}
+
 }
