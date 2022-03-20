@@ -45,6 +45,22 @@ namespace x86
 		explicit IntegerDataTransmitted(const  x86::reg::segment::Segment &source, const x86::reg::offset::Offset16 &destination);
 		explicit IntegerDataTransmitted(const x86::reg::offset::Offset16 &source, const  x86::reg::segment::Segment &destination);
 	};
+	
+	class IntegerDataTransmittedFillSign : public AbstractInstruction {
+	public:
+		explicit IntegerDataTransmittedFillSign(const  x86::reg::general::General8 &source, const  x86::reg::general::General16 &destination);
+		explicit IntegerDataTransmittedFillSign(const  x86::reg::general::General8 &source, const  x86::reg::general::General32 &destination);
+		explicit IntegerDataTransmittedFillSign(const  x86::reg::general::General16 &source, const  x86::reg::general::General32 &destination);
+	
+		explicit IntegerDataTransmittedFillSign(const  x86::reg::segment::Segment &source, const  x86::reg::general::General32 &destination);
+	
+		explicit IntegerDataTransmittedFillSign(const x86::reg::offset::Offset16 &source, const x86::reg::offset::Offset32 &destination);
+	
+		explicit IntegerDataTransmittedFillSign(const x86::reg::general::General16 &source, const x86::reg::offset::Offset32 &destination);
+		explicit IntegerDataTransmittedFillSign(const x86::reg::offset::Offset16 &source, const  x86::reg::general::General32 &destination);
+	
+		explicit IntegerDataTransmittedFillSign(const  x86::reg::segment::Segment &source, const x86::reg::offset::Offset32 &destination);
+	};
 }
 
 #endif

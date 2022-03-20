@@ -29,7 +29,7 @@ namespace x86
 				 *MOVZX reg32,reg/mem8
 				 *MOVZX reg32,reg/mem16
 				 *MOVZX reg16,reg/mem8*/
-				const char *Transmitted_8__16_Fill_0() {
+				const char *Transmitted_8__16_Fill_Zero() {
 					return "MOVZX";
 				}
 
