@@ -1,6 +1,7 @@
 #include "Define.h"
-#include "x86/register/segment/Data.h"
+#include "x86/register/general/General32.h"
 #include "x86/register/segment/Segment.h"
+#include "x86/register/offset/Offset32.h"
 #include "x86/immediate/Immediate.h"
 #include "Memory.h"
 namespace x86
@@ -26,7 +27,6 @@ namespace x86
 		}
 
 		Memory::Memory(x86::reg::segment::Data &base, x86::reg::segment::Segment &segment) {
-	
 		}
 		Memory::Memory(x86::reg::segment::Data &base, x86::immediate::Immediate &disp, x86::reg::segment::Segment &segment) {
 	
@@ -40,7 +40,8 @@ namespace x86
 		Memory::Memory(x86::reg::segment::Data &base, x86::reg::segment::Data &index, x86::immediate::Immediate &scale, x86::reg::segment::Segment &segment) {
 	
 		}
-		Memory::Memory(x86::reg::segment::Data &base, x86::immediate::Immediate &disp, x86::reg::segment::Data &index, x86::immediate::Immediate &scale, x86::reg::segment::Segment &segment) {
+		Memory::Memory(const x86::reg::general::General32 &base, const x86::immediate::Immediate &disp, const x86::reg::offset::Offset32 &index, x86::immediate::Immediate &scale, const x86::reg::segment::Segment &segment) 
+		{
 		#if FORMAT=='A'
 			m_string.append(segment.String());
 			m_string.append(":");

@@ -178,6 +178,13 @@ int main(int argc, char *argv[])
 		const x86::IntegerDataTransmittedFillZero move(DI, EAX);
 		out << move << std::endl;
 	}
+	{
+		x86::immediate::ImmediateSigned8 disp(0);
+		x86::immediate::ImmediateSigned8 scale(1);
+		const x86::memory::Memory mem(EBX, disp, ESI, scale, DS);
+		const x86::IntegerDataTransmitted move(AL, mem);
+		out << move << std::endl;
+	}
 	const std::string &str = out.str();
 	{
 		std::ofstream code("test.s");
