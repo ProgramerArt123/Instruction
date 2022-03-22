@@ -36,11 +36,6 @@ namespace x86
 	{
 	
 	}
-	IntegerDataTransmitted::IntegerDataTransmitted(const x86::reg::general::General8 &source, const x86::memory::Memory &destination)
-		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Transmitted_8__16__32(), source, destination)
-	{
-		
-	}
 	IntegerDataTransmitted::IntegerDataTransmitted(const x86::reg::general::General16 &source, const  x86::reg::general::General16 &destination)
 		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Transmitted_8__16__32(), source, destination)
 		
@@ -110,6 +105,16 @@ namespace x86
 		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Transmitted_8__16__32(), source, destination)
 		
 	{
+	}
+	IntegerDataTransmitted::IntegerDataTransmitted(const x86::reg::general::General8 &source, const x86::memory::Memory &destination)
+		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Transmitted_8__16__32(), source, destination)
+	{
+		
+	}
+	IntegerDataTransmitted::IntegerDataTransmitted(const x86::memory::Memory &source, const x86::reg::general::General8 &destination) 
+		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Transmitted_8__16__32(), source, destination)
+	{
+		
 	}
 	IntegerDataTransmittedFillSign::IntegerDataTransmittedFillSign(const  x86::reg::general::General8 &source, const  x86::reg::general::General16 &destination)
 		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Transmitted_8__16_Fill_Sign(), source, destination)

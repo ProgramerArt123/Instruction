@@ -192,6 +192,74 @@ int main(int argc, char *argv[])
 		const x86::IntegerDataTransmitted move(AL, mem);
 		out << move << std::endl;
 	}
+	{
+		x86::immediate::ImmediateSigned8 disp(0);
+		x86::immediate::ImmediateSigned8 scale(1);
+		const x86::memory::Memory mem(EDI, disp, EAX, scale, DS);
+		const x86::IntegerDataTransmitted move(AL, mem);
+		out << move << std::endl;
+	}
+	{
+		x86::immediate::ImmediateSigned8 disp(0);
+		x86::immediate::ImmediateSigned8 scale(1);
+		const x86::memory::Memory mem(EDI, disp, ESI, scale, DS);
+		{
+			const x86::IntegerDataTransmitted move(AL, mem);
+			out << move << std::endl;
+		}
+		{
+			const x86::IntegerDataTransmitted move(mem, AH);
+			out << move << std::endl;
+		}
+	}
+	{
+		x86::immediate::ImmediateSigned8 scale(1);
+		const x86::memory::Memory mem(EBX, ESI, scale, DS);
+		const x86::IntegerDataTransmitted move(AL, mem);
+		out << move << std::endl;
+	}
+	{
+		x86::immediate::ImmediateSigned8 scale(1);
+		const x86::memory::Memory mem(EBX, EAX, scale, DS);
+		const x86::IntegerDataTransmitted move(AL, mem);
+		out << move << std::endl;
+	}
+	{
+		x86::immediate::ImmediateSigned8 scale(1);
+		const x86::memory::Memory mem(ESI, EBX, scale, DS);
+		const x86::IntegerDataTransmitted move(AL, mem);
+		out << move << std::endl;
+	}
+	{
+		x86::immediate::ImmediateSigned8 scale(1);
+		const x86::memory::Memory mem(ESI, EDI, scale, DS);
+		const x86::IntegerDataTransmitted move(AL, mem);
+		out << move << std::endl;
+	}
+	{
+		x86::immediate::ImmediateSigned8 disp(0);
+		const x86::memory::Memory mem(EBX, disp, EBP, DS);
+		const x86::IntegerDataTransmitted move(AL, mem);
+		out << move << std::endl;
+	}
+	{
+		x86::immediate::ImmediateSigned8 disp(0);
+		const x86::memory::Memory mem(EBX, disp, EAX,  DS);
+		const x86::IntegerDataTransmitted move(AL, mem);
+		out << move << std::endl;
+	}
+	{
+		x86::immediate::ImmediateSigned8 disp(0);
+		const x86::memory::Memory mem(EBP, disp, EBX, DS);
+		const x86::IntegerDataTransmitted move(AL, mem);
+		out << move << std::endl;
+	}
+	{
+		x86::immediate::ImmediateSigned8 disp(0);
+		const x86::memory::Memory mem(EBP, disp, ESI, SS);
+		const x86::IntegerDataTransmitted move(AL, mem);
+		out << move << std::endl;
+	}
 	const std::string &str = out.str();
 	{
 		std::ofstream code("test.s");

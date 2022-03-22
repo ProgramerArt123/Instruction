@@ -35,7 +35,6 @@ namespace x86
 		explicit IntegerDataTransmitted(const x86::immediate::Immediate32 &source, const  x86::reg::general::General32 &destination);
 	
 		explicit IntegerDataTransmitted(const  x86::reg::general::General8 &source, const  x86::reg::general::General8 &destination);
-		explicit IntegerDataTransmitted(const x86::reg::general::General8 &source, const x86::memory::Memory &destination);
 		explicit IntegerDataTransmitted(const  x86::reg::general::General16 &source, const  x86::reg::general::General16 &destination);
 		explicit IntegerDataTransmitted(const  x86::reg::general::General32 &source, const  x86::reg::general::General32 &destination);
 	
@@ -52,6 +51,9 @@ namespace x86
 	
 		explicit IntegerDataTransmitted(const  x86::reg::segment::Segment &source, const x86::reg::offset::Offset16 &destination);
 		explicit IntegerDataTransmitted(const x86::reg::offset::Offset16 &source, const  x86::reg::segment::Segment &destination);
+		
+		explicit IntegerDataTransmitted(const x86::reg::general::General8 &source, const x86::memory::Memory &destination);
+		explicit IntegerDataTransmitted(const x86::memory::Memory &source, const x86::reg::general::General8 &destination);
 	};
 	
 	class IntegerDataTransmittedFillSign : public AbstractInstruction {
