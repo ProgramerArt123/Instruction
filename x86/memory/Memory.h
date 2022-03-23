@@ -33,9 +33,20 @@ namespace x86
 			explicit Memory(x86::reg::segment::Data &base, x86::reg::segment::Data &index, x86::immediate::Immediate &scale);
 			explicit Memory(x86::reg::segment::Data &base, x86::immediate::Immediate &disp, x86::reg::segment::Data &index, x86::immediate::Immediate &scale);
 
-			explicit Memory(x86::reg::segment::Data &base, x86::reg::segment::Segment &segment);
-			explicit Memory(x86::reg::segment::Data &base, x86::immediate::Immediate &disp, x86::reg::segment::Segment &segment);
-			explicit Memory(x86::reg::segment::Data &base, x86::reg::segment::Data &index, x86::reg::segment::Segment &segment);
+			
+			
+			explicit Memory(const x86::reg::general::General32 &base, const x86::reg::segment::Segment &segment);
+			explicit Memory(const x86::reg::offset::Offset32 &base, const x86::reg::segment::Segment &segment);
+			
+			
+			explicit Memory(const x86::reg::general::General32 &base, const x86::immediate::Immediate &disp, const x86::reg::segment::Segment &segment);
+			explicit Memory(const x86::reg::offset::Offset32 &base, const x86::immediate::Immediate &disp, const x86::reg::segment::Segment &segment);
+			
+			
+			explicit Memory(const x86::reg::general::General32 &base, const x86::reg::offset::Offset32 &index, x86::reg::segment::Segment &segment);
+			explicit Memory(const x86::reg::general::General32 &base, const x86::reg::general::General32 &index, x86::reg::segment::Segment &segment);
+			explicit Memory(const x86::reg::offset::Offset32 &base, const x86::reg::general::General32 &index, x86::reg::segment::Segment &segment);
+			explicit Memory(const x86::reg::offset::Offset32 &base, const x86::reg::offset::Offset32 &index, x86::reg::segment::Segment &segment);
 			
 			
 			explicit Memory(const x86::reg::general::General32 &base, const x86::immediate::Immediate &disp, const x86::reg::offset::Offset32 &index, const x86::reg::segment::Segment &segment);
