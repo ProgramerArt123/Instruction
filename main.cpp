@@ -302,6 +302,116 @@ int main(int argc, char *argv[])
 		const x86::IntegerDataTransmitted move(BH, mem);
 		out << move << std::endl;
 	}
+	{
+		x86::immediate::ImmediateSigned8 disp(0);
+		const x86::memory::Memory mem(EAX, disp, EDI, ES);
+		const x86::IntegerDataTransmitted move(BH, mem);
+		out << move << std::endl;
+	}
+	{
+		x86::immediate::ImmediateSigned8 disp(0);
+		const x86::memory::Memory mem(EAX, disp, EBX, ES);
+		const x86::IntegerDataTransmitted move(BH, mem);
+		out << move << std::endl;
+	}
+	{
+		x86::immediate::ImmediateSigned8 disp(0);
+		const x86::memory::Memory mem(ESI, disp, EBX, ES);
+		const x86::IntegerDataTransmitted move(BH, mem);
+		out << move << std::endl;
+	}
+	{
+		x86::immediate::ImmediateSigned8 disp(0);
+		const x86::memory::Memory mem(ESI, disp, EDI, ES);
+		const x86::IntegerDataTransmitted move(BH, mem);
+		out << move << std::endl;
+	}
+	{
+		const x86::memory::Memory mem(EAX, EDI, ES);
+		const x86::IntegerDataTransmitted move(BH, mem);
+		out << move << std::endl;
+	}
+	{
+		const x86::memory::Memory mem(EAX, EBX, ES);
+		const x86::IntegerDataTransmitted move(BH, mem);
+		out << move << std::endl;
+	}
+	{
+		const x86::memory::Memory mem(ESI, EBX, ES);
+		const x86::IntegerDataTransmitted move(BH, mem);
+		out << move << std::endl;
+	}
+	{
+		const x86::memory::Memory mem(ESI,EDI, ES);
+		const x86::IntegerDataTransmitted move(BH, mem);
+		out << move << std::endl;
+	}
+	{
+		x86::immediate::ImmediateSigned8 disp(0);
+		const x86::memory::Memory mem(EAX, disp, EDI);
+		const x86::IntegerDataTransmitted move(BH, mem);
+		out << move << std::endl;
+	}
+	{
+		x86::immediate::ImmediateSigned8 disp(0);
+		const x86::memory::Memory mem(EAX, disp, EBX);
+		const x86::IntegerDataTransmitted move(BH, mem);
+		out << move << std::endl;
+	}
+	{
+		x86::immediate::ImmediateSigned8 disp(0);
+		const x86::memory::Memory mem(ESI, disp, EBX);
+		const x86::IntegerDataTransmitted move(BH, mem);
+		out << move << std::endl;
+	}
+	{
+		x86::immediate::ImmediateSigned8 disp(0);
+		const x86::memory::Memory mem(ESI, disp, EDI);
+		const x86::IntegerDataTransmitted move(BH, mem);
+		out << move << std::endl;
+	}
+	{
+		const x86::memory::Memory mem(EAX, EBP);
+		const x86::IntegerDataTransmitted move(BH, mem);
+		out << move << std::endl;
+	}
+	{
+		const x86::memory::Memory mem(EAX, EBX);
+		const x86::IntegerDataTransmitted move(BH, mem);
+		out << move << std::endl;
+	}
+	{
+		const x86::memory::Memory mem(ESI, EBX);
+		const x86::IntegerDataTransmitted move(BH, mem);
+		out << move << std::endl;
+	}
+	{
+		const x86::memory::Memory mem(ESI, EBP);
+		const x86::IntegerDataTransmitted move(BH, mem);
+		out << move << std::endl;
+	}
+	{
+		x86::immediate::ImmediateSigned8 disp(0);
+		const x86::memory::Memory mem(EDI, disp);
+		const x86::IntegerDataTransmitted move(BH, mem);
+		out << move << std::endl;
+	}
+	{
+		x86::immediate::ImmediateSigned8 disp(0);
+		const x86::memory::Memory mem(EAX, disp);
+		const x86::IntegerDataTransmitted move(BH, mem);
+		out << move << std::endl;
+	}
+	{
+		const x86::memory::Memory mem(EBP);
+		const x86::IntegerDataTransmitted move(BH, mem);
+		out << move << std::endl;
+	}
+	{
+		const x86::memory::Memory mem(EAX);
+		const x86::IntegerDataTransmitted move(BH, mem);
+		out << move << std::endl;
+	}
 	const std::string &str = out.str();
 	{
 		std::ofstream code("test.s");
