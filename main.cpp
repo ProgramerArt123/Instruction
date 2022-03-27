@@ -195,7 +195,7 @@ int main(int argc, char *argv[])
 	{
 		x86::immediate::ImmediateSigned8 disp(0);
 		x86::immediate::ImmediateSigned8 scale(1);
-		const x86::memory::Memory mem(EDI, disp, EAX, scale, DS);
+		const x86::memory::Memory mem(ESP, disp, EAX, scale, DS);
 		const x86::IntegerDataTransmitted move(AL, mem);
 		out << move << std::endl;
 	}
