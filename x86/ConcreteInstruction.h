@@ -13,15 +13,22 @@ namespace x86
 	{		
 		class Memory;
 	}
-	namespace general
+	namespace reg
 	{
-		class General8;
-		class General16;
-		class General32;	 
-	}
-	namespace segment
-	{
-		class Segment;
+		namespace general
+		{
+			class General8;
+			class General16;
+			class General32;	 
+		}
+		namespace offset
+		{
+			class Offset8;
+		}
+		namespace segment
+		{
+			class Segment;
+		}
 	}
 	class NoOperation : public AbstractInstruction {
 	public:
@@ -31,6 +38,7 @@ namespace x86
 	class IntegerDataTransmitted : public AbstractInstruction {
 	public:
 		explicit IntegerDataTransmitted(const x86::immediate::Immediate8 &source, const x86::reg::general::General8 &destination);
+		explicit IntegerDataTransmitted(const x86::immediate::Immediate8 &source, const x86::reg::offset::Offset8 &destination);
 		explicit IntegerDataTransmitted(const x86::immediate::Immediate16 &source, const  x86::reg::general::General16 &destination);
 		explicit IntegerDataTransmitted(const x86::immediate::Immediate32 &source, const  x86::reg::general::General32 &destination);
 	

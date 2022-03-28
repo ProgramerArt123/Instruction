@@ -8,7 +8,7 @@ namespace x86
 		namespace offset
 		{
 			class Offset16 : public Offset {
-			public:
+			protected:
 				explicit Offset16();
 
 			};

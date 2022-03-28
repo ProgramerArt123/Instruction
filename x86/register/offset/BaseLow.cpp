@@ -1,0 +1,17 @@
+#include "BaseLow.h"
+namespace x86
+{
+	namespace reg
+	{
+		namespace offset
+		{
+			BaseLow &BaseLow::GetInstance() {
+				static BaseLow instance;
+				return instance;
+			}
+			BaseLow::BaseLow() {
+				m_string.append("BPL");
+			}
+		}
+	}
+}
