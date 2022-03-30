@@ -420,6 +420,10 @@ int main(int argc, char *argv[])
 		const x86::IntegerDataTransmitted move(x86::immediate::ImmediateSigned8(1), DIL);
 		out << move << std::endl;
 	}
+	{
+		const x86::IntegerDataTransmitted move(x86::immediate::ImmediateSigned8(1), SIL);
+		out << move << std::endl;
+	}
 	const std::string &str = out.str();
 	{
 		std::ofstream code("test.s");

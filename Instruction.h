@@ -34,6 +34,7 @@
 #include "x86/register/offset/BaseLow.h"
 #include "x86/register/offset/Base.h"
 #include "x86/register/offset/BaseExtend.h"
+#include "x86/register/offset/SourceLow.h"
 #include "x86/register/offset/Source.h"
 #include "x86/register/offset/SourceExtend.h"
 #include "x86/register/offset/DestinationLow.h"
