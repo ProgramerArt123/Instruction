@@ -29,6 +29,7 @@
 #include "x86/register/segment/Data.h"
 #include "x86/register/segment/Stack.h"
 #include "x86/register/segment/Extra.h"
+#include "x86/register/segment/Extra2.h"
 #include "x86/register/offset/StackLow.h"
 #include "x86/register/offset/Stack.h"
 #include "x86/register/offset/StackExtend.h"
