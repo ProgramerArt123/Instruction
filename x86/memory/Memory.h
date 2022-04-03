@@ -1,6 +1,6 @@
 #ifndef __X86_MEMORY_H__
 #define __X86_MEMORY_H__
-#include "x86/Operand.h"
+#include "x86/operand/Operand.h"
 namespace x86
 {
 	namespace reg

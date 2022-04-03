@@ -1,5 +1,5 @@
 #include "x86/register/general/DataExtend.h"
-#include "Extra.h"
+#include "ExtraExtend64.h"
 namespace x86
 {
 	namespace reg
@@ -8,11 +8,11 @@ namespace x86
 		{
 			namespace size64
 			{
-				Extra &Extra::GetInstance() {
-					static size64::Extra instance;
+				ExtraExtend &ExtraExtend::GetInstance() {
+					static size64::ExtraExtend instance;
 					return instance;
 				}
-				Extra::Extra() {
+				ExtraExtend::ExtraExtend() {
 					m_string.append("R8");
 				}
 			}

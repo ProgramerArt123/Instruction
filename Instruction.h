@@ -1,6 +1,6 @@
 #ifndef __INSTRUCTION_H__
 #define __INSTRUCTION_H__
-#include "x86/Operand.h"
+#include "x86/operand/Operand.h"
 #include "x86/register/Register.h"
 #include "x86/immediate/Immediate.h"
 #include "x86/memory/Memory.h"
@@ -63,7 +63,7 @@
 #include "x86/register/general/64/BaseExtend64.h"
 #include "x86/register/general/64/CountExtend64.h"
 #include "x86/register/general/64/DataExtend64.h"
-#include "x86/register/general/64/Extra.h"
-#include "x86/ConcreteInstruction.h"
-#include "x86/64/ConcreteInstruction.h"
+#include "x86/register/general/64/ExtraExtend64.h"
+#include "x86/instruction/ConcreteInstruction.h"
+#include "x86/instruction/64/ConcreteInstruction.h"
 #endif

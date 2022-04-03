@@ -1,5 +1,5 @@
 #include "Define.h"
-#include "x86/ProcessorControl.h"
+#include "x86/instruction/ProcessorControl.h"
 #include "x86/mnemonic/32/IntegerDataTransmitted.h"
 #include "Instruction.h"
 #include "ConcreteInstruction.h"

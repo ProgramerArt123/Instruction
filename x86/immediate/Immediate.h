@@ -1,6 +1,6 @@
 #ifndef __X86_IMMEDIATE_H__
 #define __X86_IMMEDIATE_H__
-#include "x86/Operand.h"
+#include "x86/operand/Operand.h"
 namespace x86
 {
 	namespace immediate {
