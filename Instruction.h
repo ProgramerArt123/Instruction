@@ -63,6 +63,7 @@
 #include "x86/register/general/64/BaseExtend64.h"
 #include "x86/register/general/64/CountExtend64.h"
 #include "x86/register/general/64/DataExtend64.h"
+#include "x86/register/general/64/Extra.h"
 #include "x86/ConcreteInstruction.h"
 #include "x86/64/ConcreteInstruction.h"
 #endif
