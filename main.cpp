@@ -440,6 +440,10 @@ int main(int argc, char *argv[])
 		const x86::size64::IntegerDataTransmitted move(x86::immediate::size64::ImmediateSigned64(3), R8);
 		out << move << std::endl;
 	}
+	{
+		const x86::IntegerDataTransmitted move(x86::immediate::ImmediateSigned32(3), R8D);
+		out << move << std::endl;
+	}
 	const std::string &str = out.str();
 	{
 		std::ofstream code("test.s");
