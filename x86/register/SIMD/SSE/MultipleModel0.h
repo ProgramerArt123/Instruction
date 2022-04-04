@@ -20,6 +20,6 @@ namespace x86
 	}
 }
 
-#define XMM0 x86::reg::SIMD::XMM::MultipleModel0::GetInstance()
+#define XMM0 x86::reg::SIMD::SSE::MultipleModel0::GetInstance()
 
 #endif

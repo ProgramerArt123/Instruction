@@ -14,7 +14,7 @@ namespace x86
 				}
 			
 				MultipleModel0::MultipleModel0() {
-					m_string.append("XMM0");
+					m_string.append("MM0");
 				}
 			}
 		}
