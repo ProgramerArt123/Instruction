@@ -1,5 +1,5 @@
-#ifndef __X86_REGISTER_SIMD_XMM_MULTIPLE_MODEL_0_H__
-#define __X86_REGISTER_SIMD_XMM_MULTIPLE_MODEL_0_H__
+#ifndef __X86_REGISTER_SIMD_SSE_MULTIPLE_MODEL_0_H__
+#define __X86_REGISTER_SIMD_SSE_MULTIPLE_MODEL_0_H__
 #include "MultipleModel.h"
 namespace x86
 {
@@ -7,7 +7,7 @@ namespace x86
 	{
 		namespace SIMD
 		{
-			namespace XMM
+			namespace SSE
 			{
 				class MultipleModel0 : public MultipleModel {
 				public:
@@ -20,6 +20,6 @@ namespace x86
 	}
 }
 
-#define MM0 x86::reg::SIMD::XMM::MultipleModel0::GetInstance()
+#define XMM0 x86::reg::SIMD::XMM::MultipleModel0::GetInstance()
 
 #endif

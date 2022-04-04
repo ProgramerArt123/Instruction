@@ -6,7 +6,7 @@ namespace x86
 	{
 		namespace SIMD
 		{
-			namespace XMM
+			namespace SSE
 			{
 				MultipleModel0 &MultipleModel0::GetInstance() {
 					static MultipleModel0 instance;
@@ -14,7 +14,7 @@ namespace x86
 				}
 			
 				MultipleModel0::MultipleModel0() {
-					m_string.append("XMM0");
+					m_string.append("MM0");
 				}
 			}
 		}
