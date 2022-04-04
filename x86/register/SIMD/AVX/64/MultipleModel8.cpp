@@ -6,7 +6,7 @@ namespace x86
 	{
 		namespace SIMD
 		{
-			namespace SSE
+			namespace AVX
 			{
 				namespace size64
 				{
@@ -16,7 +16,7 @@ namespace x86
 					}
 			
 					MultipleModel8::MultipleModel8() {
-						m_string.append("XMM8");
+						m_string.append("YMM8");
 					}
 				}
 			}
