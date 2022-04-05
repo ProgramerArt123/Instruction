@@ -5,10 +5,13 @@ namespace x86
 	{
 		namespace SIMD
 		{
-			namespace SSE
+			namespace AVX
 			{
-				MultipleModel::MultipleModel() {
+				namespace AVX
+				{
+					MultipleModel::MultipleModel() {
 	
+					}
 				}
 			}
 		}
