@@ -6,6 +6,7 @@ namespace x86
 	namespace memory {
 		class Memory8 : public Memory {
 		public:
+			using Memory::Memory;
 			const char *SizeString() const;
 		};
 		

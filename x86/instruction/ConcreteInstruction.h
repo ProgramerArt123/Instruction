@@ -13,6 +13,8 @@ namespace x86
 	{		
 		class Memory;
 		class Memory8;
+		class Memory16;
+		class Memory32;
 	}
 	namespace reg
 	{
@@ -95,7 +97,8 @@ namespace x86
 	
 	class PushDataToStack : public AbstractInstruction {
 	public:
-		explicit PushDataToStack(const x86::reg::classic::general::General8 &source);
+		explicit PushDataToStack(const x86::memory::Memory8 &source);
+		
 	};
 }
 

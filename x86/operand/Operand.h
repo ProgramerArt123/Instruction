@@ -8,6 +8,7 @@ namespace x86
 	public:
 		const char *String() const;
 		virtual const char *PureString() const;
+		virtual const char *SizeString() const;
 	protected:
 		explicit Operand();
 		virtual ~Operand();

@@ -96,7 +96,6 @@ namespace x86
 			explicit Memory(const x86::reg::classic::offset::Offset32 &base, const x86::immediate::Immediate &disp, const x86::reg::classic::general::General32 &index, x86::immediate::Immediate &scale, const x86::reg::classic::segment::Segment &segment);
 			explicit Memory(const x86::reg::classic::offset::Offset32 &base, const x86::immediate::Immediate &disp, const x86::reg::classic::offset::Address32 &index, x86::immediate::Immediate &scale, const x86::reg::classic::segment::Segment &segment);
 			
-			virtual const char *SizeString() const;
 		};
 		
 	}

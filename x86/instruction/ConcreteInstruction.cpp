@@ -184,9 +184,8 @@ namespace x86
 		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Transmitted_8__16_Fill_Zero(), source, destination)
 	{
 	}
-
-	PushDataToStack::PushDataToStack(const x86::reg::classic::general::General8 &source)
-		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Push_Stack_8__16(), source)
+	PushDataToStack::PushDataToStack(const x86::memory::Memory8 &source)
+		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Push_Stack_8__16(), source, source.SizeString())
 	{
 		
 	}

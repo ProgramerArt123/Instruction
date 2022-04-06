@@ -13,4 +13,7 @@ namespace x86
 	const char *Operand::PureString()  const {
 		return String();
 	}
+	const char *Operand::SizeString() const {
+		return "WORD";
+	}
 }

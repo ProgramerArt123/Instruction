@@ -444,6 +444,12 @@ int main(int argc, char *argv[])
 		const x86::IntegerDataTransmitted move(x86::immediate::ImmediateSigned32(3), R8D);
 		out << move << std::endl;
 	}
+
+	{
+		const x86::memory::Memory8 mem(EBP);
+		const x86::PushDataToStack push(mem);
+		out << push << std::endl;
+	}
 	const std::string &str = out.str();
 	{
 		std::ofstream code("test.s");

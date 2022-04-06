@@ -489,8 +489,5 @@ namespace x86
 #else
 #endif
 		}
-		const char *Memory::SizeString() const {
-			return "WORD";
-		}
 	}
 }
