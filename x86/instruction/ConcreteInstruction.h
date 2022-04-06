@@ -12,6 +12,7 @@ namespace x86
 	namespace memory
 	{		
 		class Memory;
+		class Memory8;
 	}
 	namespace reg
 	{
@@ -90,6 +91,11 @@ namespace x86
 		explicit IntegerDataTransmittedFillZero(const x86::reg::classic::general::General16 &source, const x86::reg::classic::offset::Offset32 &destination);
 		explicit IntegerDataTransmittedFillZero(const x86::reg::classic::offset::Offset16 &source, const  x86::reg::classic::general::General32 &destination);
 	
+	};
+	
+	class PushDataToStack : public AbstractInstruction {
+	public:
+		explicit PushDataToStack(const x86::reg::classic::general::General8 &source);
 	};
 }
 

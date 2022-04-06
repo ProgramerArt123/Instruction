@@ -185,4 +185,10 @@ namespace x86
 	{
 	}
 
+	PushDataToStack::PushDataToStack(const x86::reg::classic::general::General8 &source)
+		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Push_Stack_8__16(), source)
+	{
+		
+	}
+
 }
