@@ -15,9 +15,9 @@ public:
 	
 protected:
 	explicit AbstractInstruction(const char *mnemonic);
-	explicit AbstractInstruction(const char *mnemonic, const x86::Operand &source, const char *size = "");
-	explicit AbstractInstruction(const char *mnemonic, const x86::Operand &source, const x86::Operand &destination, const char *size = "");
-	explicit AbstractInstruction(const char *mnemonic, const x86::Operand &source, const x86::Operand &destination, const x86::Operand &auxiliary, const char *size = "");
+	explicit AbstractInstruction(const char *mnemonic, const x86::Operand &source, bool isPure = false);
+	explicit AbstractInstruction(const char *mnemonic, const x86::Operand &source, const x86::Operand &destination);
+	explicit AbstractInstruction(const char *mnemonic, const x86::Operand &source, const x86::Operand &destination, const x86::Operand &auxiliary);
 	virtual ~AbstractInstruction();
 	std::string m_string;
 };

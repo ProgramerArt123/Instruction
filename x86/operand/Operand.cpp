@@ -14,6 +14,6 @@ namespace x86
 		return String();
 	}
 	const char *Operand::SizeString() const {
-		return "WORD";
+		return "";
 	}
 }

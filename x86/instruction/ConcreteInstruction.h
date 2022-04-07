@@ -98,7 +98,12 @@ namespace x86
 	class PushDataToStack : public AbstractInstruction {
 	public:
 		explicit PushDataToStack(const x86::memory::Memory8 &source);
+		explicit PushDataToStack(const x86::memory::Memory16 &source);
+		explicit PushDataToStack(const x86::memory::Memory32 &source);
 		
+		explicit PushDataToStack(const x86::reg::Register &source);
+		
+		explicit PushDataToStack(const x86::immediate::Immediate32 &source);
 	};
 }
 

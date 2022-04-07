@@ -450,6 +450,28 @@ int main(int argc, char *argv[])
 		const x86::PushDataToStack push(mem);
 		out << push << std::endl;
 	}
+	{
+		const x86::memory::Memory16 mem(EBP);
+		const x86::PushDataToStack push(mem);
+		out << push << std::endl;
+	} 
+	{
+		const x86::memory::Memory32 mem(EBP);
+		const x86::PushDataToStack push(mem);
+		out << push << std::endl;
+	}
+	{
+		const x86::PushDataToStack push(EAX);
+		out << push << std::endl;
+	}
+	{
+		const x86::PushDataToStack push(ESP);
+		out << push << std::endl;
+	}
+	{
+		const x86::PushDataToStack push(x86::immediate::ImmediateSigned32(3));
+		out << push << std::endl;
+	}
 	const std::string &str = out.str();
 	{
 		std::ofstream code("test.s");

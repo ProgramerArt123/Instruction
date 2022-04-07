@@ -6,8 +6,7 @@ namespace x86
 {
 	namespace immediate {
 		class Immediate8 : public Immediate {
-		public:
-			const char *SizeString() const;
+
 		protected:
 			explicit Immediate8();
 		};

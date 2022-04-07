@@ -185,8 +185,26 @@ namespace x86
 	{
 	}
 	PushDataToStack::PushDataToStack(const x86::memory::Memory8 &source)
-		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Push_Stack_8__16(), source, source.SizeString())
+		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Push_Stack_8__16(), source)
 	{
+		
+	}
+	PushDataToStack::PushDataToStack(const x86::memory::Memory16 &source)
+		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Push_Stack_8__16(), source) {
+		
+	}
+	PushDataToStack::PushDataToStack(const x86::memory::Memory32 &source)
+		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Push_Stack_8__16(), source)
+	{
+		
+	}
+	PushDataToStack::PushDataToStack(const x86::reg::Register &source) 
+		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Push_Stack_8__16(), source, true)
+	{
+		
+	}
+	PushDataToStack::PushDataToStack(const x86::immediate::Immediate32 &source)
+		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Push_Stack_8__16(), source) {
 		
 	}
 
