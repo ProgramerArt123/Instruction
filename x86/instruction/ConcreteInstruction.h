@@ -95,15 +95,24 @@ namespace x86
 	
 	};
 	
-	class PushDataToStack : public AbstractInstruction {
+	class PushIntegerToStack : public AbstractInstruction {
 	public:
-		explicit PushDataToStack(const x86::memory::Memory8 &source);
-		explicit PushDataToStack(const x86::memory::Memory16 &source);
-		explicit PushDataToStack(const x86::memory::Memory32 &source);
+		explicit PushIntegerToStack(const x86::memory::Memory8 &source);
+		explicit PushIntegerToStack(const x86::memory::Memory16 &source);
+		explicit PushIntegerToStack(const x86::memory::Memory32 &source);
 		
-		explicit PushDataToStack(const x86::reg::Register &source);
+		explicit PushIntegerToStack(const x86::reg::Register &source);
 		
-		explicit PushDataToStack(const x86::immediate::Immediate32 &source);
+		explicit PushIntegerToStack(const x86::immediate::Immediate32 &source);
+	};
+	
+	class PopIntegerFromStack : public AbstractInstruction {
+	public:
+		explicit PopIntegerFromStack(const x86::memory::Memory8 &source);
+		explicit PopIntegerFromStack(const x86::memory::Memory16 &source);
+		explicit PopIntegerFromStack(const x86::memory::Memory32 &source);
+		
+		explicit PopIntegerFromStack(const x86::reg::Register &source);
 	};
 }
 

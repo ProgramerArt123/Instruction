@@ -37,7 +37,7 @@ namespace x86
 				 *PUSH reg/mem16
 				 *PUSH reg/mem32
 				 *PUSH inm32*/
-				const char *Push_Stack_8__16() {
+				const char *Push_Stack_8__16__32() {
 					return "PUSH";
 				}
 

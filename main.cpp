@@ -447,31 +447,56 @@ int main(int argc, char *argv[])
 
 	{
 		const x86::memory::Memory8 mem(EBP);
-		const x86::PushDataToStack push(mem);
+		const x86::PushIntegerToStack push(mem);
 		out << push << std::endl;
 	}
 	{
 		const x86::memory::Memory16 mem(EBP);
-		const x86::PushDataToStack push(mem);
+		const x86::PushIntegerToStack push(mem);
 		out << push << std::endl;
 	} 
 	{
 		const x86::memory::Memory32 mem(EBP);
-		const x86::PushDataToStack push(mem);
+		const x86::PushIntegerToStack push(mem);
 		out << push << std::endl;
 	}
 	{
-		const x86::PushDataToStack push(EAX);
+		const x86::PushIntegerToStack push(EAX);
 		out << push << std::endl;
 	}
 	{
-		const x86::PushDataToStack push(ESP);
+		const x86::PushIntegerToStack push(ESP);
 		out << push << std::endl;
 	}
 	{
-		const x86::PushDataToStack push(x86::immediate::ImmediateSigned32(3));
+		const x86::PushIntegerToStack push(x86::immediate::ImmediateSigned32(3));
 		out << push << std::endl;
 	}
+	
+	{
+		const x86::memory::Memory8 mem(EBP);
+		const x86::PopIntegerFromStack pop(mem);
+		out << pop << std::endl;
+	}
+	{
+		const x86::memory::Memory16 mem(EBP);
+		const x86::PopIntegerFromStack pop(mem);
+		out << pop << std::endl;
+	} 
+	{
+		const x86::memory::Memory32 mem(EBP);
+		const x86::PopIntegerFromStack pop(mem);
+		out << pop << std::endl;
+	}
+	{
+		const x86::PopIntegerFromStack pop(EAX);
+		out << pop << std::endl;
+	}
+	{
+		const x86::PopIntegerFromStack pop(ESP);
+		out << pop << std::endl;
+	}
+	
 	const std::string &str = out.str();
 	{
 		std::ofstream code("test.s");

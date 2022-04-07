@@ -184,28 +184,46 @@ namespace x86
 		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Transmitted_8__16_Fill_Zero(), source, destination)
 	{
 	}
-	PushDataToStack::PushDataToStack(const x86::memory::Memory8 &source)
-		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Push_Stack_8__16(), source)
+	PushIntegerToStack::PushIntegerToStack(const x86::memory::Memory8 &source)
+		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Push_Stack_8__16__32(), source)
 	{
 		
 	}
-	PushDataToStack::PushDataToStack(const x86::memory::Memory16 &source)
-		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Push_Stack_8__16(), source) {
+	PushIntegerToStack::PushIntegerToStack(const x86::memory::Memory16 &source)
+		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Push_Stack_8__16__32(), source) {
 		
 	}
-	PushDataToStack::PushDataToStack(const x86::memory::Memory32 &source)
-		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Push_Stack_8__16(), source)
+	PushIntegerToStack::PushIntegerToStack(const x86::memory::Memory32 &source)
+		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Push_Stack_8__16__32(), source)
 	{
 		
 	}
-	PushDataToStack::PushDataToStack(const x86::reg::Register &source) 
-		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Push_Stack_8__16(), source, true)
+	PushIntegerToStack::PushIntegerToStack(const x86::reg::Register &source) 
+		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Push_Stack_8__16__32(), source, true)
 	{
 		
 	}
-	PushDataToStack::PushDataToStack(const x86::immediate::Immediate32 &source)
-		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Push_Stack_8__16(), source) {
+	PushIntegerToStack::PushIntegerToStack(const x86::immediate::Immediate32 &source)
+		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Push_Stack_8__16__32(), source) {
 		
 	}
-
+	PopIntegerFromStack::PopIntegerFromStack(const x86::memory::Memory8 &source)
+		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Pop_Stack_8__16(), source)
+	{
+		
+	}
+	PopIntegerFromStack::PopIntegerFromStack(const x86::memory::Memory16 &source)
+		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Pop_Stack_8__16(), source) {
+		
+	}
+	PopIntegerFromStack::PopIntegerFromStack(const x86::memory::Memory32 &source)
+		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Pop_Stack_8__16(), source)
+	{
+		
+	}
+	PopIntegerFromStack::PopIntegerFromStack(const x86::reg::Register &source) 
+		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Pop_Stack_8__16(), source, true)
+	{
+		
+	}
 }
