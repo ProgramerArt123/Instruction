@@ -127,6 +127,10 @@ namespace x86
 	public:
 		explicit PushGeneralOffsetDoubleWordToStack();
 	};
+	class PopGeneralOffsetDoubleWordFromStack : public AbstractInstruction {
+	public:
+		explicit PopGeneralOffsetDoubleWordFromStack();
+	};
 }
 
 #endif

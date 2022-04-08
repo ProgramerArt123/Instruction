@@ -241,4 +241,9 @@ namespace x86
 	{
 		
 	}
+	PopGeneralOffsetDoubleWordFromStack::PopGeneralOffsetDoubleWordFromStack()
+		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Pop_Stack_All_32_Registers()) 
+	{
+		
+	}
 }
