@@ -11,7 +11,7 @@ namespace x86
 				const char *Transmitted_8__16_Fill_Sign();
 				const char *Transmitted_8__16_Fill_Zero();
 				const char *Push_Stack_8__16__32();
-				const char *Pop_Stack_8__16();
+				const char *Pop_Stack_8__16__32();
 				const char *Push_Stack_All_16_Registers();
 				const char *Pop_Stack_All_16_Registers();
 				const char *Push_Stack_All_32_Registers();

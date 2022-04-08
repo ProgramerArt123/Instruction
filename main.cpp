@@ -496,6 +496,10 @@ int main(int argc, char *argv[])
 		const x86::PopIntegerFromStack pop(ESP);
 		out << pop << std::endl;
 	}
+	{
+		//const x86::PushGeneralOffsetWordToStack push;
+		//out << push << std::endl;
+	}
 	
 	const std::string &str = out.str();
 	{

@@ -44,7 +44,7 @@ namespace x86
 				/*
 				 *POP reg/mem16
 				 *POP reg/mem32*/
-				const char *Pop_Stack_8__16() {
+				const char *Pop_Stack_8__16__32() {
 					return "POP";
 				}
 				//∞—AX,CX,DX,BX,SP,BP,SI,DI“¿¥Œ—π»Î∂—’ª

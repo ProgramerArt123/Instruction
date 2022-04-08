@@ -114,6 +114,11 @@ namespace x86
 		
 		explicit PopIntegerFromStack(const x86::reg::Register &source);
 	};
+	
+	class PushGeneralOffsetWordToStack : public AbstractInstruction {
+	public:
+		explicit PushGeneralOffsetWordToStack();
+	};
 }
 
 #endif
