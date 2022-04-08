@@ -119,6 +119,10 @@ namespace x86
 	public:
 		explicit PushGeneralOffsetWordToStack();
 	};
+	class PopGeneralOffsetWordFromStack : public AbstractInstruction {
+	public:
+		explicit PopGeneralOffsetWordFromStack();
+	};
 }
 
 #endif

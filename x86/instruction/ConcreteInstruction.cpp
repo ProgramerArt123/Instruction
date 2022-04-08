@@ -230,4 +230,9 @@ namespace x86
 		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Push_Stack_All_16_Registers()) {
 		
 	}
+	PopGeneralOffsetWordFromStack::PopGeneralOffsetWordFromStack()
+		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Pop_Stack_All_16_Registers())
+	{
+		
+	}
 }
