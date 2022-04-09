@@ -331,4 +331,96 @@ namespace x86
 	{
 		
 	}
+	CompareAccumulatorTransmitted::CompareAccumulatorTransmitted(const x86::reg::classic::general::General8 &source, const x86::reg::classic::general::General8 &destination)
+		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Transmitted_8__16__32_If_Not_Equal_A_ZF(), source, destination) 
+	{
+		
+	}
+	CompareAccumulatorTransmitted::CompareAccumulatorTransmitted(const x86::reg::classic::general::General8 &source, const x86::reg::classic::offset::Offset8 &destination)
+		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Transmitted_8__16__32_If_Not_Equal_A_ZF(), source, destination) 
+	{
+		
+	}
+	CompareAccumulatorTransmitted::CompareAccumulatorTransmitted(const x86::reg::classic::general::General8 &source, const x86::memory::Memory8 &destination) 
+		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Transmitted_8__16__32_If_Not_Equal_A_ZF(), source, destination) 
+	{
+		
+	}
+	CompareAccumulatorTransmitted::CompareAccumulatorTransmitted(const x86::reg::classic::offset::Offset8 &source, const x86::reg::classic::offset::Offset8 &destination)
+		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Transmitted_8__16__32_If_Not_Equal_A_ZF(), source, destination) 
+	{
+		
+	}
+	CompareAccumulatorTransmitted::CompareAccumulatorTransmitted(const x86::reg::classic::offset::Offset8 &source, const x86::reg::classic::general::General8 &destination)
+		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Transmitted_8__16__32_If_Not_Equal_A_ZF(), source, destination) 
+	{
+		
+	}
+	CompareAccumulatorTransmitted::CompareAccumulatorTransmitted(const x86::reg::classic::offset::Offset8 &source, const x86::memory::Memory8 &destination)
+		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Transmitted_8__16__32_If_Not_Equal_A_ZF(), source, destination) 
+	{
+		
+	}
+	CompareAccumulatorTransmitted::CompareAccumulatorTransmitted(const x86::reg::classic::general::General16 &source, const x86::reg::classic::general::General16 &destination)
+		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Transmitted_8__16__32_If_Not_Equal_A_ZF(), source, destination) 
+	{
+		
+	}
+	CompareAccumulatorTransmitted::CompareAccumulatorTransmitted(const x86::reg::classic::general::General16 &source, const x86::reg::classic::offset::Offset16 &destination)
+		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Transmitted_8__16__32_If_Not_Equal_A_ZF(), source, destination) 
+	{
+		
+	}
+	CompareAccumulatorTransmitted::CompareAccumulatorTransmitted(const x86::reg::classic::general::General16 &source, const x86::memory::Memory16 &destination)
+		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Transmitted_8__16__32_If_Not_Equal_A_ZF(), source, destination) 
+	{
+		
+	}
+		
+	CompareAccumulatorTransmitted::CompareAccumulatorTransmitted(const x86::reg::classic::offset::Offset16 &source, const x86::reg::classic::offset::Offset16 &destination)
+		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Transmitted_8__16__32_If_Not_Equal_A_ZF(), source, destination) 
+	{
+		
+	}
+	CompareAccumulatorTransmitted::CompareAccumulatorTransmitted(const x86::reg::classic::offset::Offset16 &source, const x86::reg::classic::general::General16 &destination)
+		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Transmitted_8__16__32_If_Not_Equal_A_ZF(), source, destination) 
+	{
+		
+	}
+	CompareAccumulatorTransmitted::CompareAccumulatorTransmitted(const x86::reg::classic::offset::Offset16 &source, const x86::memory::Memory16 &destination)
+		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Transmitted_8__16__32_If_Not_Equal_A_ZF(), source, destination) 
+	{
+		
+	}
+	CompareAccumulatorTransmitted::CompareAccumulatorTransmitted(const x86::reg::classic::general::General32 &source, const x86::reg::classic::general::General32 &destination)
+		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Transmitted_8__16__32_If_Not_Equal_A_ZF(), source, destination) 
+	{
+		
+	}
+	CompareAccumulatorTransmitted::CompareAccumulatorTransmitted(const x86::reg::classic::general::General32 &source, const x86::reg::classic::offset::Offset32 &destination)
+		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Transmitted_8__16__32_If_Not_Equal_A_ZF(), source, destination) 
+	{
+		
+	}
+	CompareAccumulatorTransmitted::CompareAccumulatorTransmitted(const x86::reg::classic::general::General32 &source, const x86::memory::Memory32 &destination)
+		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Transmitted_8__16__32_If_Not_Equal_A_ZF(), source, destination) 
+	{
+		
+	}
+		
+	CompareAccumulatorTransmitted::CompareAccumulatorTransmitted(const x86::reg::classic::offset::Offset32 &source, const x86::reg::classic::offset::Offset32 &destination)
+		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Transmitted_8__16__32_If_Not_Equal_A_ZF(), source, destination) 
+	{
+		
+	}
+	CompareAccumulatorTransmitted::CompareAccumulatorTransmitted(const x86::reg::classic::offset::Offset32 &source, const x86::reg::classic::general::General32 &destination)
+		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Transmitted_8__16__32_If_Not_Equal_A_ZF(), source, destination) 
+	{
+		
+	}
+	CompareAccumulatorTransmitted::CompareAccumulatorTransmitted(const x86::reg::classic::offset::Offset32 &source, const x86::memory::Memory32 &destination)
+		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Transmitted_8__16__32_If_Not_Equal_A_ZF(), source, destination) 
+	{
+		
+	}
 }

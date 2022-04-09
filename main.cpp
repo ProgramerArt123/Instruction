@@ -564,6 +564,89 @@ int main(int argc, char *argv[])
 		const x86::SwapGeneralOffsetMemory swap(EDI, x86::memory::Memory32(EBP));
 		out << swap << std::endl;
 	}
+	{
+		const x86::SwapGeneralOffsetMemory swap(ESI, EDI);
+		out << swap << std::endl;
+	}
+	{
+		const x86::SwapGeneralOffsetMemory swap(EDI, x86::memory::Memory32(EBP));
+		out << swap << std::endl;
+	}
+	{
+		const x86::CompareAccumulatorTransmitted mov(AL, AH);
+		out << mov << std::endl;
+	}
+	{
+		const x86::CompareAccumulatorTransmitted mov(AL, SIL);
+		out << mov << std::endl;
+	}
+	{
+		const x86::CompareAccumulatorTransmitted mov(AL, x86::memory::Memory8(EBP));
+		out << mov << std::endl;
+	}
+	{
+		const x86::CompareAccumulatorTransmitted mov(SIL, DIL);
+		out << mov << std::endl;
+	}
+	{
+		const x86::CompareAccumulatorTransmitted mov(SIL, AL);
+		out << mov << std::endl;
+	}
+	{
+		const x86::CompareAccumulatorTransmitted mov(BPL, x86::memory::Memory8(EBP));
+		out << mov << std::endl;
+	}
+	
+	{
+		const x86::CompareAccumulatorTransmitted mov(AX, DX);
+		out << mov << std::endl;
+	}
+	{
+		const x86::CompareAccumulatorTransmitted mov(CX, SP);
+		out << mov << std::endl;
+	}
+	{
+		const x86::CompareAccumulatorTransmitted mov(BX, x86::memory::Memory16(EBP));
+		out << mov << std::endl;
+	}
+	{
+		const x86::CompareAccumulatorTransmitted mov(SP, BP);
+		out << mov << std::endl;
+	}
+	{
+		const x86::CompareAccumulatorTransmitted mov(BP, DX);
+		out << mov << std::endl;
+	}
+	{
+		const x86::CompareAccumulatorTransmitted mov(SP, x86::memory::Memory16(EBP));
+		out << mov << std::endl;
+	}
+	
+	{
+		const x86::CompareAccumulatorTransmitted mov(EAX, EDX);
+		out << mov << std::endl;
+	}
+	{
+		const x86::CompareAccumulatorTransmitted mov(ECX, ESP);
+		out << mov << std::endl;
+	}
+	{
+		const x86::CompareAccumulatorTransmitted mov(EBX, x86::memory::Memory32(EBP));
+		out << mov << std::endl;
+	}
+	{
+		const x86::CompareAccumulatorTransmitted mov(ESP, EBP);
+		out << mov << std::endl;
+	}
+	{
+		const x86::CompareAccumulatorTransmitted mov(EBP, EDX);
+		out << mov << std::endl;
+	}
+	{
+		const x86::CompareAccumulatorTransmitted mov(ESP, x86::memory::Memory32(EBP));
+		out << mov << std::endl;
+	}
+	
 	const std::string &str = out.str();
 	{
 		std::ofstream code("test.s");
