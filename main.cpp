@@ -647,6 +647,82 @@ int main(int argc, char *argv[])
 		out << mov << std::endl;
 	}
 	
+	
+	{
+		const x86::SwapAdd add(AL, AH);
+		out << add << std::endl;
+	}
+	{
+		const x86::SwapAdd add(AL, SIL);
+		out << add << std::endl;
+	}
+	{
+		const x86::SwapAdd add(AL, x86::memory::Memory8(EBP));
+		out << add << std::endl;
+	}
+	{
+		const x86::SwapAdd add(SIL, DIL);
+		out << add << std::endl;
+	}
+	{
+		const x86::SwapAdd add(SIL, AL);
+		out << add << std::endl;
+	}
+	{
+		const x86::SwapAdd add(BPL, x86::memory::Memory8(EBP));
+		out << add << std::endl;
+	}
+	
+	{
+		const x86::SwapAdd add(AX, DX);
+		out << add << std::endl;
+	}
+	{
+		const x86::SwapAdd add(CX, SP);
+		out << add << std::endl;
+	}
+	{
+		const x86::SwapAdd add(BX, x86::memory::Memory16(EBP));
+		out << add << std::endl;
+	}
+	{
+		const x86::SwapAdd add(SP, BP);
+		out << add << std::endl;
+	}
+	{
+		const x86::SwapAdd add(BP, DX);
+		out << add << std::endl;
+	}
+	{
+		const x86::SwapAdd add(SP, x86::memory::Memory16(EBP));
+		out << add << std::endl;
+	}
+	
+	{
+		const x86::SwapAdd add(EAX, EDX);
+		out << add << std::endl;
+	}
+	{
+		const x86::SwapAdd add(ECX, ESP);
+		out << add << std::endl;
+	}
+	{
+		const x86::SwapAdd add(EBX, x86::memory::Memory32(EBP));
+		out << add << std::endl;
+	}
+	{
+		const x86::SwapAdd add(ESP, EBP);
+		out << add << std::endl;
+	}
+	{
+		const x86::SwapAdd add(EBP, EDX);
+		out << add << std::endl;
+	}
+	{
+		const x86::SwapAdd add(ESP, x86::memory::Memory32(EBP));
+		out << add << std::endl;
+	}
+	
 	const std::string &str = out.str();
 	{
 		std::ofstream code("test.s");

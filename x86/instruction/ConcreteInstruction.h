@@ -194,5 +194,32 @@ namespace x86
 		explicit CompareAccumulatorTransmitted(const x86::reg::classic::offset::Offset32 &source, const x86::reg::classic::general::General32 &destination);
 		explicit CompareAccumulatorTransmitted(const x86::reg::classic::offset::Offset32 &source, const x86::memory::Memory32 &destination);
 	};
+	
+	class SwapAdd :public AbstractInstruction {
+	public:
+		explicit SwapAdd(const x86::reg::classic::general::General8 &source, const x86::reg::classic::general::General8 &destination);
+		explicit SwapAdd(const x86::reg::classic::general::General8 &source, const x86::reg::classic::offset::Offset8 &destination);
+		explicit SwapAdd(const x86::reg::classic::general::General8 &source, const x86::memory::Memory8 &destination);
+		
+		explicit SwapAdd(const x86::reg::classic::offset::Offset8 &source, const x86::reg::classic::offset::Offset8 &destination);
+		explicit SwapAdd(const x86::reg::classic::offset::Offset8 &source, const x86::reg::classic::general::General8 &destination);
+		explicit SwapAdd(const x86::reg::classic::offset::Offset8 &source, const x86::memory::Memory8 &destination);
+		
+		explicit SwapAdd(const x86::reg::classic::general::General16 &source, const x86::reg::classic::general::General16 &destination);
+		explicit SwapAdd(const x86::reg::classic::general::General16 &source, const x86::reg::classic::offset::Offset16 &destination);
+		explicit SwapAdd(const x86::reg::classic::general::General16 &source, const x86::memory::Memory16 &destination);
+		
+		explicit SwapAdd(const x86::reg::classic::offset::Offset16 &source, const x86::reg::classic::offset::Offset16 &destination);
+		explicit SwapAdd(const x86::reg::classic::offset::Offset16 &source, const x86::reg::classic::general::General16 &destination);
+		explicit SwapAdd(const x86::reg::classic::offset::Offset16 &source, const x86::memory::Memory16 &destination);
+		
+		explicit SwapAdd(const x86::reg::classic::general::General32 &source, const x86::reg::classic::general::General32 &destination);
+		explicit SwapAdd(const x86::reg::classic::general::General32 &source, const x86::reg::classic::offset::Offset32 &destination);
+		explicit SwapAdd(const x86::reg::classic::general::General32 &source, const x86::memory::Memory32 &destination);
+		
+		explicit SwapAdd(const x86::reg::classic::offset::Offset32 &source, const x86::reg::classic::offset::Offset32 &destination);
+		explicit SwapAdd(const x86::reg::classic::offset::Offset32 &source, const x86::reg::classic::general::General32 &destination);
+		explicit SwapAdd(const x86::reg::classic::offset::Offset32 &source, const x86::memory::Memory32 &destination);
+	};
 }
 #endif
