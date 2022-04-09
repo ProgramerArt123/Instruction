@@ -195,7 +195,7 @@ namespace x86
 		explicit CompareAccumulatorTransmitted(const x86::reg::classic::offset::Offset32 &source, const x86::memory::Memory32 &destination);
 	};
 	
-	class SwapAdd :public AbstractInstruction {
+	class SwapAdd : public AbstractInstruction {
 	public:
 		explicit SwapAdd(const x86::reg::classic::general::General8 &source, const x86::reg::classic::general::General8 &destination);
 		explicit SwapAdd(const x86::reg::classic::general::General8 &source, const x86::reg::classic::offset::Offset8 &destination);
@@ -220,6 +220,11 @@ namespace x86
 		explicit SwapAdd(const x86::reg::classic::offset::Offset32 &source, const x86::reg::classic::offset::Offset32 &destination);
 		explicit SwapAdd(const x86::reg::classic::offset::Offset32 &source, const x86::reg::classic::general::General32 &destination);
 		explicit SwapAdd(const x86::reg::classic::offset::Offset32 &source, const x86::memory::Memory32 &destination);
+	};
+	
+	class TransmittedByteToAL : public AbstractInstruction {
+	public:
+		explicit TransmittedByteToAL();
 	};
 }
 #endif

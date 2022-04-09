@@ -516,4 +516,9 @@ namespace x86
 	{
 		
 	}
+	TransmittedByteToAL::TransmittedByteToAL()
+		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Transmitted_8_To_AL_From_DS()) 
+	{
+		
+	}
 }

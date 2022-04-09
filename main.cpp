@@ -723,6 +723,12 @@ int main(int argc, char *argv[])
 		out << add << std::endl;
 	}
 	
+	{
+		const x86::TransmittedByteToAL mov;
+		out << mov << std::endl;
+	}
+
+	
 	const std::string &str = out.str();
 	{
 		std::ofstream code("test.s");
