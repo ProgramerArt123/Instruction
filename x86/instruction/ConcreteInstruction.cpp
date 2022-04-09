@@ -246,4 +246,14 @@ namespace x86
 	{
 		
 	}
+	ReverseRegister32Bytes::ReverseRegister32Bytes(const x86::reg::classic::general::General32 &source)
+		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Reverse_32_Register_8(), source) 
+	{
+		
+	}
+	ReverseRegister32Bytes::ReverseRegister32Bytes(const x86::reg::classic::offset::Offset32 &source)
+		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Reverse_32_Register_8(), source) 
+	{
+		
+	}
 }

@@ -131,6 +131,11 @@ namespace x86
 	public:
 		explicit PopGeneralOffsetDoubleWordFromStack();
 	};
+	class ReverseRegister32Bytes : public AbstractInstruction {
+	public:
+		explicit ReverseRegister32Bytes(const x86::reg::classic::general::General32 &source);
+		explicit ReverseRegister32Bytes(const x86::reg::classic::offset::Offset32 &source);
+	};
 }
 
 #endif

@@ -496,6 +496,14 @@ int main(int argc, char *argv[])
 		const x86::PopIntegerFromStack pop(ESP);
 		out << pop << std::endl;
 	}
+	{
+		const x86::ReverseRegister32Bytes reverse(EAX);
+		out << reverse << std::endl;
+	}
+	{
+		const x86::ReverseRegister32Bytes reverse(ESI);
+		out << reverse << std::endl;
+	}
 	
 	
 	const std::string &str = out.str();
