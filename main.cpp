@@ -740,6 +740,19 @@ int main(int argc, char *argv[])
 		const x86::ReadFromIOPortToAccumulator in(x86::immediate::ImmediateSigned8(1), EAX);
 		out << in << std::endl;
 	}
+	
+	
+	{
+		out << x86::WriteFromAccumulatorToIOPort(AL, x86::immediate::ImmediateSigned8(1)) << std::endl;
+	}
+	{
+		out << x86::WriteFromAccumulatorToIOPort(AX, x86::immediate::ImmediateSigned8(1)) << std::endl;
+	}
+	{
+		out << x86::WriteFromAccumulatorToIOPort(EAX, x86::immediate::ImmediateSigned8(1)) << std::endl;
+	}
+	
+	
 	const std::string &str = out.str();
 	{
 		std::ofstream code("test.s");

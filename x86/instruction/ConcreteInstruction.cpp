@@ -536,4 +536,19 @@ namespace x86
 	{
 		
 	}
+	WriteFromAccumulatorToIOPort::WriteFromAccumulatorToIOPort(const x86::reg::classic::general::AccumulatorLow &source, const x86::immediate::Immediate8 &destination)
+		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Write_8__16__32_To_IO_PORT(), source, destination) 
+	{
+		
+	}
+	WriteFromAccumulatorToIOPort::WriteFromAccumulatorToIOPort(const x86::reg::classic::general::Accumulator &source, const x86::immediate::Immediate8 &destination)
+		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Write_8__16__32_To_IO_PORT(), source, destination) 
+	{
+		
+	}
+	WriteFromAccumulatorToIOPort::WriteFromAccumulatorToIOPort(const x86::reg::classic::general::AccumulatorExtend &source, const x86::immediate::Immediate8 &destination)
+		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Write_8__16__32_To_IO_PORT(), source, destination) 
+	{
+		
+	}
 }

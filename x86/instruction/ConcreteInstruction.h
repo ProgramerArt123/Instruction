@@ -233,5 +233,12 @@ namespace x86
 		explicit ReadFromIOPortToAccumulator(const x86::immediate::Immediate8 &source, const x86::reg::classic::general::Accumulator &destination);
 		explicit ReadFromIOPortToAccumulator(const x86::immediate::Immediate8 &source, const x86::reg::classic::general::AccumulatorExtend &destination);
 	};
+	
+	class WriteFromAccumulatorToIOPort : public AbstractInstruction {
+	public:
+		explicit WriteFromAccumulatorToIOPort(const x86::reg::classic::general::AccumulatorLow &source, const x86::immediate::Immediate8 &destination);
+		explicit WriteFromAccumulatorToIOPort(const x86::reg::classic::general::Accumulator &source, const x86::immediate::Immediate8 &destination);
+		explicit WriteFromAccumulatorToIOPort(const x86::reg::classic::general::AccumulatorExtend &source, const x86::immediate::Immediate8 &destination);
+	};
 }
 #endif
