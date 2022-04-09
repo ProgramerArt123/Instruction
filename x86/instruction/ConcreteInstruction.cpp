@@ -521,4 +521,19 @@ namespace x86
 	{
 		
 	}
+	ReadFromIOPortToAccumulator::ReadFromIOPortToAccumulator(const x86::immediate::Immediate8 &source, const x86::reg::classic::general::AccumulatorLow &destination)
+		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Read_8__16__32_From_IO_PORT(), source, destination) 
+	{
+		
+	}
+	ReadFromIOPortToAccumulator::ReadFromIOPortToAccumulator(const x86::immediate::Immediate8 &source, const x86::reg::classic::general::Accumulator &destination)
+		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Read_8__16__32_From_IO_PORT(), source, destination) 
+	{
+		
+	}
+	ReadFromIOPortToAccumulator::ReadFromIOPortToAccumulator(const x86::immediate::Immediate8 &source, const x86::reg::classic::general::AccumulatorExtend &destination)
+		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Read_8__16__32_From_IO_PORT(), source, destination) 
+	{
+		
+	}
 }

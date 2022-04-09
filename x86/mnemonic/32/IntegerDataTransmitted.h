@@ -21,8 +21,8 @@ namespace x86
 				const char *Transmitted_8__16__32_If_Not_Equal_A_ZF();
 				const char *Swap_8__16__32_Add();
 				const char *Transmitted_8_To_AL_From_DS();
-				const char *Read_8__16_From_IO_PORT();
-				const char *Write_8__16_To_IO_PORT();
+				const char *Read_8__16__32_From_IO_PORT();
+				const char *Write_8__16__32_To_IO_PORT();
 				const char *Load_Effective_Address_16__32();
 				const char *Load_Effective_Address_32_DS();
 				const char *Load_Effective_Address_32_ES();

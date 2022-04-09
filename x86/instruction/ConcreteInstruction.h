@@ -226,5 +226,12 @@ namespace x86
 	public:
 		explicit TransmittedByteToAL();
 	};
+	
+	class ReadFromIOPortToAccumulator : public AbstractInstruction {
+	public:
+		explicit ReadFromIOPortToAccumulator(const x86::immediate::Immediate8 &source, const x86::reg::classic::general::AccumulatorLow &destination);
+		explicit ReadFromIOPortToAccumulator(const x86::immediate::Immediate8 &source, const x86::reg::classic::general::Accumulator &destination);
+		explicit ReadFromIOPortToAccumulator(const x86::immediate::Immediate8 &source, const x86::reg::classic::general::AccumulatorExtend &destination);
+	};
 }
 #endif

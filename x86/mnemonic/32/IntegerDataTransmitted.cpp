@@ -85,11 +85,11 @@ namespace x86
 					return "XLAT";
 				}
 				//从端口输入一个字节或字到AL或AX中。源操作数是端口地址，可以是8位的常量或者DX中的一个16位地址。
-				const char *Read_8__16_From_IO_PORT() {
+				const char *Read_8__16__32_From_IO_PORT() {
 					return "IN";
 				}
 				//将累加器中的一个字节或字输出到端口。端口地址如果在范围0-FFh之间，可以是一个常量，也可以在DX中存放0-FFFFh之间的端口地址。
-				const char *Write_8__16_To_IO_PORT() {
+				const char *Write_8__16__32_To_IO_PORT() {
 					return "OUT";
 				}
 				//装入有效地址.例: LEA DX,string ;把偏移地址存到DX.

@@ -728,7 +728,18 @@ int main(int argc, char *argv[])
 		out << mov << std::endl;
 	}
 
-	
+	{
+		const x86::ReadFromIOPortToAccumulator in(x86::immediate::ImmediateSigned8(1), AL);
+		out << in << std::endl;
+	}
+	{
+		const x86::ReadFromIOPortToAccumulator in(x86::immediate::ImmediateSigned8(1), AX);
+		out << in << std::endl;
+	}
+	{
+		const x86::ReadFromIOPortToAccumulator in(x86::immediate::ImmediateSigned8(1), EAX);
+		out << in << std::endl;
+	}
 	const std::string &str = out.str();
 	{
 		std::ofstream code("test.s");
