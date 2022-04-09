@@ -18,19 +18,22 @@ namespace x86
 	}
 	namespace reg
 	{
-		namespace general
+		namespace classic
 		{
-			class General8;
-			class General16;
-			class General32;	 
-		}
-		namespace offset
-		{
-			class Offset8;
-		}
-		namespace segment
-		{
-			class Segment;
+			namespace general
+			{
+				class General8;
+				class General16;
+				class General32;	 
+			}
+			namespace offset
+			{
+				class Offset8;
+			}
+			namespace segment
+			{
+				class Segment;
+			}
 		}
 	}
 	class NoOperation : public AbstractInstruction {
@@ -136,6 +139,34 @@ namespace x86
 		explicit ReverseRegister32Bytes(const x86::reg::classic::general::General32 &source);
 		explicit ReverseRegister32Bytes(const x86::reg::classic::offset::Offset32 &source);
 	};
+	class SwapGeneralOffsetMemory : public AbstractInstruction {
+	public:
+		explicit SwapGeneralOffsetMemory(const x86::reg::classic::general::General8 &source, const x86::reg::classic::general::General8 &destination);
+		explicit SwapGeneralOffsetMemory(const x86::reg::classic::general::General8 &source, const x86::reg::classic::offset::Offset8 &destination);
+		explicit SwapGeneralOffsetMemory(const x86::reg::classic::general::General8 &source, const x86::memory::Memory8 &destination);
+		
+		
+		explicit SwapGeneralOffsetMemory(const x86::reg::classic::general::General16 &source, const x86::reg::classic::general::General16 &destination);
+		explicit SwapGeneralOffsetMemory(const x86::reg::classic::general::General16 &source, const x86::reg::classic::offset::Offset16 &destination);
+		explicit SwapGeneralOffsetMemory(const x86::reg::classic::general::General16 &source, const x86::memory::Memory16 &destination);
+		
+		
+		explicit SwapGeneralOffsetMemory(const x86::reg::classic::general::General32 &source, const x86::reg::classic::general::General32 &destination);
+		explicit SwapGeneralOffsetMemory(const x86::reg::classic::general::General32 &source, const x86::reg::classic::offset::Offset32 &destination);
+		explicit SwapGeneralOffsetMemory(const x86::reg::classic::general::General32 &source, const x86::memory::Memory32 &destination);
+		
+		
+		explicit SwapGeneralOffsetMemory(const x86::reg::classic::offset::Offset8 &source, const x86::reg::classic::offset::Offset8 &destination);
+		explicit SwapGeneralOffsetMemory(const x86::reg::classic::offset::Offset8 &source, const x86::memory::Memory8 &destination);
+		
+		
+		explicit SwapGeneralOffsetMemory(const x86::reg::classic::offset::Offset16 &source, const x86::reg::classic::offset::Offset16 &destination);
+		explicit SwapGeneralOffsetMemory(const x86::reg::classic::offset::Offset16 &source, const x86::memory::Memory16 &destination);
+		
+		
+		explicit SwapGeneralOffsetMemory(const x86::reg::classic::offset::Offset32 &source, const x86::reg::classic::offset::Offset32 &destination);
+		explicit SwapGeneralOffsetMemory(const x86::reg::classic::offset::Offset32 &source, const x86::memory::Memory32 &destination);
+		
+	};
 }
-
 #endif

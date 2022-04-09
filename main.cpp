@@ -504,8 +504,66 @@ int main(int argc, char *argv[])
 		const x86::ReverseRegister32Bytes reverse(ESI);
 		out << reverse << std::endl;
 	}
-	
-	
+	{
+		const x86::SwapGeneralOffsetMemory swap(AL, AH);
+		out << swap << std::endl;
+	}
+	{
+		const x86::SwapGeneralOffsetMemory swap(AL, SIL);
+		out << swap << std::endl;
+	}
+	{
+		const x86::SwapGeneralOffsetMemory swap(AL, x86::memory::Memory8(EBP));
+		out << swap << std::endl;
+	}
+	{
+		const x86::SwapGeneralOffsetMemory swap(AX, BX);
+		out << swap << std::endl;
+	}
+	{
+		const x86::SwapGeneralOffsetMemory swap(AX, SI);
+		out << swap << std::endl;
+	}
+	{
+		const x86::SwapGeneralOffsetMemory swap(AX, x86::memory::Memory16(EBP));
+		out << swap << std::endl;
+	}
+	{
+		const x86::SwapGeneralOffsetMemory swap(EAX, EBX);
+		out << swap << std::endl;
+	}
+	{
+		const x86::SwapGeneralOffsetMemory swap(EAX, ESI);
+		out << swap << std::endl;
+	}
+	{
+		const x86::SwapGeneralOffsetMemory swap(EAX, x86::memory::Memory32(EBP));
+		out << swap << std::endl;
+	}
+	{
+		const x86::SwapGeneralOffsetMemory swap(SIL, DIL);
+		out << swap << std::endl;
+	}
+	{
+		const x86::SwapGeneralOffsetMemory swap(DIL, x86::memory::Memory8(EBP));
+		out << swap << std::endl;
+	}
+	{
+		const x86::SwapGeneralOffsetMemory swap(SI, DI);
+		out << swap << std::endl;
+	}
+	{
+		const x86::SwapGeneralOffsetMemory swap(DI, x86::memory::Memory16(EBP));
+		out << swap << std::endl;
+	}
+	{
+		const x86::SwapGeneralOffsetMemory swap(ESI, EDI);
+		out << swap << std::endl;
+	}
+	{
+		const x86::SwapGeneralOffsetMemory swap(EDI, x86::memory::Memory32(EBP));
+		out << swap << std::endl;
+	}
 	const std::string &str = out.str();
 	{
 		std::ofstream code("test.s");
