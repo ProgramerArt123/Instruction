@@ -563,12 +563,17 @@ namespace x86
 		
 	}
 	LoadPointerToDS::LoadPointerToDS(const x86::memory::Memory &source, const x86::reg::classic::general::General16 &destination)
-		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Load_Effective_Address_16_DS(), source, destination) 
+		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Load_Effective_Address_32_DS(), source, destination) 
 	{
 		
 	}
 	LoadPointerToES::LoadPointerToES(const x86::memory::Memory &source, const x86::reg::classic::general::General16 &destination)
-		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Load_Effective_Address_16_ES(), source, destination) 
+		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Load_Effective_Address_32_ES(), source, destination) 
+	{
+		
+	}
+	LoadPointerToFS::LoadPointerToFS(const x86::memory::Memory &source, const x86::reg::classic::general::General16 &destination)
+		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Load_Effective_Address_32_FS(), source, destination) 
 	{
 		
 	}

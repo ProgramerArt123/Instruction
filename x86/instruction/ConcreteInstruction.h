@@ -256,5 +256,10 @@ namespace x86
 	public:
 		explicit LoadPointerToES(const x86::memory::Memory &source, const x86::reg::classic::general::General16 &destination);
 	};
+	
+	class LoadPointerToFS : public AbstractInstruction {
+	public:
+		explicit LoadPointerToFS(const x86::memory::Memory &source, const x86::reg::classic::general::General16 &destination);
+	};
 }
 #endif
