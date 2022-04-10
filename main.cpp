@@ -753,6 +753,13 @@ int main(int argc, char *argv[])
 	}
 	
 	
+	{
+		out << x86::LoadEffectiveAddress(x86::memory::Memory8(EAX), AX) << std::endl;
+	}
+	{
+		out << x86::LoadEffectiveAddress(x86::memory::Memory32(EAX), EAX) << std::endl;
+	}
+	
 	const std::string &str = out.str();
 	{
 		std::ofstream code("test.s");

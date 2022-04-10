@@ -551,4 +551,15 @@ namespace x86
 	{
 		
 	}
+	
+	LoadEffectiveAddress::LoadEffectiveAddress(const x86::memory::Memory &source, const x86::reg::classic::general::General16 &destination)
+		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Load_Effective_Address_16__32(), source, destination) 
+	{
+		
+	}
+	LoadEffectiveAddress::LoadEffectiveAddress(const x86::memory::Memory &source, const x86::reg::classic::general::General32 &destination)
+		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Load_Effective_Address_16__32(), source, destination) 
+	{
+		
+	}
 }

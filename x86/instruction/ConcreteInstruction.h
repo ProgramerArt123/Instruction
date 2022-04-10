@@ -240,5 +240,11 @@ namespace x86
 		explicit WriteFromAccumulatorToIOPort(const x86::reg::classic::general::Accumulator &source, const x86::immediate::Immediate8 &destination);
 		explicit WriteFromAccumulatorToIOPort(const x86::reg::classic::general::AccumulatorExtend &source, const x86::immediate::Immediate8 &destination);
 	};
+	
+	class LoadEffectiveAddress : public AbstractInstruction {
+	public:
+		explicit LoadEffectiveAddress(const x86::memory::Memory &source, const x86::reg::classic::general::General16 &destination);
+		explicit LoadEffectiveAddress(const x86::memory::Memory &source, const x86::reg::classic::general::General32 &destination);
+	};
 }
 #endif
