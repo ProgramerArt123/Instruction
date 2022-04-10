@@ -567,4 +567,9 @@ namespace x86
 	{
 		
 	}
+	LoadPointerToES::LoadPointerToES(const x86::memory::Memory &source, const x86::reg::classic::general::General16 &destination)
+		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Load_Effective_Address_16_ES(), source, destination) 
+	{
+		
+	}
 }

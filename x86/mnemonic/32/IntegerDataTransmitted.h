@@ -25,7 +25,7 @@ namespace x86
 				const char *Write_8__16__32_To_IO_PORT();
 				const char *Load_Effective_Address_16__32();
 				const char *Load_Effective_Address_16_DS();
-				const char *Load_Effective_Address_32_ES();
+				const char *Load_Effective_Address_16_ES();
 				const char *Load_Effective_Address_32_FS();
 				const char *Load_Effective_Address_32_GS();
 				const char *Load_Effective_Address_32_SS();
