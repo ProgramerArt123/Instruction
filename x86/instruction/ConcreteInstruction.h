@@ -246,5 +246,10 @@ namespace x86
 		explicit LoadEffectiveAddress(const x86::memory::Memory &source, const x86::reg::classic::general::General16 &destination);
 		explicit LoadEffectiveAddress(const x86::memory::Memory &source, const x86::reg::classic::general::General32 &destination);
 	};
+	
+	class LoadPointerToDS : public AbstractInstruction {
+	public:
+		explicit LoadPointerToDS(const x86::memory::Memory &source, const x86::reg::classic::general::General16 &destination);
+	};
 }
 #endif

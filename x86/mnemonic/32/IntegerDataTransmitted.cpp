@@ -97,7 +97,7 @@ namespace x86
 					return "LEA";
 				}
 				//传送目标指针,把指针内容装入DS.例: LDS SI,string ;把段地址:偏移地址存到DS:SI. 
-				const char *Load_Effective_Address_32_DS() {
+				const char *Load_Effective_Address_16_DS() {
 					return "LDS";
 				}
 				//传送目标指针,把指针内容装入ES.例: LES DI,string ;把段地址:偏移地址存到ES:DI. 

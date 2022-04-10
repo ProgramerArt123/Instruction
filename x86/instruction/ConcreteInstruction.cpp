@@ -562,4 +562,9 @@ namespace x86
 	{
 		
 	}
+	LoadPointerToDS::LoadPointerToDS(const x86::memory::Memory &source, const x86::reg::classic::general::General16 &destination)
+		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Load_Effective_Address_16_DS(), source, destination) 
+	{
+		
+	}
 }
