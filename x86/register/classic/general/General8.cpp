@@ -7,9 +7,11 @@ namespace x86
 		{
 			namespace general
 			{
+
 				General8::General8() {
 
 				}
+				
 			}
 		}
 	}

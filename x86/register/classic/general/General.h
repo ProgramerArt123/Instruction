@@ -12,7 +12,7 @@ namespace x86
 				class General : public Register {
 				protected:
 					explicit General();
-
+					
 				};
 			}
 		}

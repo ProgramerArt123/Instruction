@@ -7,10 +7,12 @@ namespace x86
 		{
 			namespace general
 			{
+			
 				General16::General16() {
 
 				}
 			}
+			
 		}
 	}
 }

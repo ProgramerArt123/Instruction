@@ -4,7 +4,7 @@
 namespace x86
 {
 	namespace immediate {
-		class Immediate : public Operand {
+		class Immediate : public operand::Operand {
 		public:
 			const char *PureString() const override;
 		protected:

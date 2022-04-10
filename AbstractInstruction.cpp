@@ -5,7 +5,7 @@
 AbstractInstruction::AbstractInstruction(const char *mnemonic) {
 		m_string = mnemonic;
 }
-AbstractInstruction::AbstractInstruction(const char *mnemonic, const x86::Operand &source, bool isPure) {
+AbstractInstruction::AbstractInstruction(const char *mnemonic, const x86::operand::Operand &source, bool isPure) {
 	if (!isPure) {
 		m_string = std::string(mnemonic) + "\t" + source.SizeString() + " " + source.String();
 	}
@@ -13,14 +13,14 @@ AbstractInstruction::AbstractInstruction(const char *mnemonic, const x86::Operan
 		m_string = std::string(mnemonic) + "\t" + source.SizeString() + " " + source.PureString();
 	}
 }
-AbstractInstruction::AbstractInstruction(const char *mnemonic, const x86::Operand &source, const x86::Operand &destination) {
+AbstractInstruction::AbstractInstruction(const char *mnemonic, const x86::operand::Operand &source, const x86::operand::Operand &destination) {
 #if FORMAT=='A'
 	m_string = std::string(mnemonic) + "\t" + source.SizeString() + " " + source.String() + ", " + destination.SizeString() + " " + destination.String();
 #else
 	m_string = std::string(mnemonic) + "\t" + destination.SizeString() + " " + destination.String() + ", " + source.String();
 #endif
 }
-AbstractInstruction::AbstractInstruction(const char *mnemonic, const x86::Operand &source, const x86::Operand &destination, const x86::Operand &auxiliary) {
+AbstractInstruction::AbstractInstruction(const char *mnemonic, const x86::operand::Operand &source, const x86::operand::Operand &destination, const x86::operand::Operand &auxiliary) {
 	
 }
 AbstractInstruction::~AbstractInstruction() {

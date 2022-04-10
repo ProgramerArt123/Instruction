@@ -9,10 +9,12 @@ namespace x86
 		{
 			namespace general
 			{
-				class General32 : public General {
-				protected:
-					explicit General32();
-				};
+			
+					class General32 : public General {
+					protected:
+						explicit General32();
+					};
+				
 			}
 		}
 	}

@@ -5,7 +5,7 @@ namespace x86
 {
 	namespace reg
 	{
-		class Register : public Operand {
+		class Register : virtual public operand::Operand {
 		public:
 			const char *PureString() const override;
 		protected:
