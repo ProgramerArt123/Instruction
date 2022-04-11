@@ -582,4 +582,9 @@ namespace x86
 	{
 		
 	}
+	LoadPointerToSS::LoadPointerToSS(const x86::memory::Memory &source, const x86::reg::classic::general::operation::Operation16 &destination)
+		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Load_Effective_Address_32_SS(), source, destination) 
+	{
+		
+	}
 }

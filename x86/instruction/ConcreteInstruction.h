@@ -266,5 +266,10 @@ namespace x86
 	public:
 		explicit LoadPointerToGS(const x86::memory::Memory &source, const x86::reg::classic::general::operation::Operation16 &destination);
 	};
+	
+	class LoadPointerToSS : public AbstractInstruction {
+	public:
+		explicit LoadPointerToSS(const x86::memory::Memory &source, const x86::reg::classic::general::operation::Operation16 &destination);
+	};
 }
 #endif
