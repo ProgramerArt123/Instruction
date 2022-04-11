@@ -10,7 +10,6 @@ namespace x86
 		{
 			namespace general
 			{
-	
 				class General8 : public General, public operand::RegMem8 {
 				protected:
 					explicit General8();
