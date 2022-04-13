@@ -281,5 +281,9 @@ namespace x86
 	public:
 		explicit SaveFlagsFromAH();
 	};
+	class PushFlagsWordToStack : public AbstractInstruction {
+	public:
+		explicit PushFlagsWordToStack();
+	};
 }
 #endif

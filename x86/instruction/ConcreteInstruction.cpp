@@ -598,4 +598,9 @@ namespace x86
 	{
 		
 	}
+	PushFlagsWordToStack::PushFlagsWordToStack()
+		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Push_Stack_16_Flags()) 
+	{
+		
+	}
 }
