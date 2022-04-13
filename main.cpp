@@ -762,6 +762,9 @@ int main(int argc, char *argv[])
 	{
 		out << x86::LoadFlagsToAH() << std::endl;
 	}
+	{
+		out << x86::SaveFlagsFromAH() << std::endl;
+	}
 	const std::string &str = out.str();
 	{
 		std::ofstream code("test.s");

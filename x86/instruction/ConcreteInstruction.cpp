@@ -593,4 +593,9 @@ namespace x86
 	{
 		
 	}
+	SaveFlagsFromAH::SaveFlagsFromAH()
+		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Save_Flags_From_AH()) 
+	{
+		
+	}
 }

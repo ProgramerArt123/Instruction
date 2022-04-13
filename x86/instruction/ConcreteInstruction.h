@@ -276,5 +276,10 @@ namespace x86
 	public:
 		explicit LoadFlagsToAH();
 	};
+	
+	class SaveFlagsFromAH : public AbstractInstruction {
+	public:
+		explicit SaveFlagsFromAH();
+	};
 }
 #endif
