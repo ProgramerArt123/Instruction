@@ -587,4 +587,10 @@ namespace x86
 	{
 		
 	}
+	
+	LoadFlagsToAH::LoadFlagsToAH()
+		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Load_Flags_To_AH()) 
+	{
+		
+	}
 }
