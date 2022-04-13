@@ -285,5 +285,9 @@ namespace x86
 	public:
 		explicit PushFlagsWordToStack();
 	};
+	class PopFlagsWordFromStack : public AbstractInstruction {
+	public:
+		explicit PopFlagsWordFromStack();
+	};
 }
 #endif

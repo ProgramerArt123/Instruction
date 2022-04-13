@@ -603,4 +603,9 @@ namespace x86
 	{
 		
 	}
+	PopFlagsWordFromStack::PopFlagsWordFromStack()
+		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Pop_Stack_16_Flags()) 
+	{
+		
+	}
 }
