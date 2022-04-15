@@ -315,6 +315,13 @@ namespace x86
 		explicit IntegerAddCarray(const x86::immediate::Immediate16 &source, const x86::operand::RegMem16 &destination);
 		explicit IntegerAddCarray(const x86::immediate::Immediate32 &source, const x86::operand::RegMem32 &destination);
 	};
+	
+	class IntegerIncrease : public AbstractInstruction {
+	public:
+		explicit IntegerIncrease(const x86::reg::classic::general::General8 &source);
+		explicit IntegerIncrease(const x86::reg::classic::general::General16 &source);
+		explicit IntegerIncrease(const x86::reg::classic::general::General32 &source);
+	};
 
 }
 #endif

@@ -791,6 +791,12 @@ int main(int argc, char *argv[])
 		out << x86::IntegerAddCarray(x86::immediate::ImmediateSigned32(1), EAX) << std::endl;
 	}
 	
+	{
+		out << x86::IntegerIncrease(EAX) << std::endl;
+	}
+	{
+		out << x86::IntegerIncrease(DH) << std::endl;
+	}
 	const std::string &str = out.str();
 	{
 		std::ofstream code("test.s");

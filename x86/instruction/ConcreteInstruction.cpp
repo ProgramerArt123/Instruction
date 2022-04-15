@@ -669,4 +669,19 @@ namespace x86
 	{
 		
 	}
+	IntegerIncrease::IntegerIncrease(const x86::reg::classic::general::General8 &source)
+		: AbstractInstruction(x86::mnemonic::size32::integer_arithmetic::Increase_8__16__32(), source) 
+	{
+		
+	}
+	IntegerIncrease::IntegerIncrease(const x86::reg::classic::general::General16 &source)
+		: AbstractInstruction(x86::mnemonic::size32::integer_arithmetic::Increase_8__16__32(), source) 
+	{
+		
+	}
+	IntegerIncrease::IntegerIncrease(const x86::reg::classic::general::General32 &source)
+		: AbstractInstruction(x86::mnemonic::size32::integer_arithmetic::Increase_8__16__32(), source) 
+	{
+		
+	}
 }
