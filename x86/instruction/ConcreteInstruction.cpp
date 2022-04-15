@@ -1,6 +1,7 @@
 #include "Define.h"
 #include "x86/instruction/ProcessorControl.h"
 #include "x86/mnemonic/32/IntegerDataTransmitted.h"
+#include "x86/mnemonic/32/IntegerArithmetic.h"
 #include "Instruction.h"
 #include "ConcreteInstruction.h"
 namespace x86
@@ -615,6 +616,31 @@ namespace x86
 	}
 	PopFlagsDoubleWordFromStack::PopFlagsDoubleWordFromStack()
 		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Pop_Stack_32_Flags()) 
+	{
+		
+	}
+	IntegerAdd::IntegerAdd(const x86::immediate::Immediate8 &source, const x86::operand::RegMem8 &destination)
+		: AbstractInstruction(x86::mnemonic::size32::integer_arithmetic::Add_8__16__32(), source, destination) 
+	{
+		
+	}
+	IntegerAdd::IntegerAdd(const x86::immediate::Immediate8 &source, const x86::operand::RegMem16 &destination)
+		: AbstractInstruction(x86::mnemonic::size32::integer_arithmetic::Add_8__16__32(), source, destination) 
+	{
+		
+	}
+	IntegerAdd::IntegerAdd(const x86::immediate::Immediate8 &source, const x86::operand::RegMem32 &destination)
+		: AbstractInstruction(x86::mnemonic::size32::integer_arithmetic::Add_8__16__32(), source, destination) 
+	{
+		
+	}
+	IntegerAdd::IntegerAdd(const x86::immediate::Immediate16 &source, const x86::operand::RegMem16 &destination)
+		: AbstractInstruction(x86::mnemonic::size32::integer_arithmetic::Add_8__16__32(), source, destination) 
+	{
+		
+	}
+	IntegerAdd::IntegerAdd(const x86::immediate::Immediate32 &source, const x86::operand::RegMem32 &destination)
+		: AbstractInstruction(x86::mnemonic::size32::integer_arithmetic::Add_8__16__32(), source, destination) 
 	{
 		
 	}

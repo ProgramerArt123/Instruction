@@ -771,6 +771,15 @@ int main(int argc, char *argv[])
 	{
 		out << x86::PopFlagsWordFromStack() << std::endl;
 	}
+	{
+		out << x86::IntegerAdd(x86::immediate::ImmediateSigned8(0), AL) << std::endl;
+	}
+	{
+		out << x86::IntegerAdd(x86::immediate::ImmediateSigned16(0), AX) << std::endl;
+	}
+	{
+		out << x86::IntegerAdd(x86::immediate::ImmediateSigned32(0), EAX) << std::endl;
+	}
 	
 	const std::string &str = out.str();
 	{
