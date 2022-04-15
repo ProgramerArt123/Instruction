@@ -771,6 +771,7 @@ int main(int argc, char *argv[])
 	{
 		out << x86::PopFlagsWordFromStack() << std::endl;
 	}
+	
 	const std::string &str = out.str();
 	{
 		std::ofstream code("test.s");

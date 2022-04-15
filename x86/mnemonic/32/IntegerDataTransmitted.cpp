@@ -129,10 +129,10 @@ namespace x86
 					return "POPF";
 				}
 				const char *Push_Stack_32_Flags() {
-					return "PUSHD";
+					return "PUSHFD";
 				}
 				const char *Pop_Stack_32_Flags() {
-					return "POPD";
+					return "POPFD";
 				}
 			}
 		}
