@@ -293,5 +293,9 @@ namespace x86
 	public:
 		explicit PushFlagsDoubleWordToStack();
 	};
+	class PopFlagsDoubleWordFromStack : public AbstractInstruction {
+	public:
+		explicit PopFlagsDoubleWordFromStack();
+	};
 }
 #endif

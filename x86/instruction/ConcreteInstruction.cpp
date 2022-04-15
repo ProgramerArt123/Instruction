@@ -613,4 +613,9 @@ namespace x86
 	{
 		
 	}
+	PopFlagsDoubleWordFromStack::PopFlagsDoubleWordFromStack()
+		: AbstractInstruction(x86::mnemonic::size32::integer_data_transmitted::Pop_Stack_32_Flags()) 
+	{
+		
+	}
 }
