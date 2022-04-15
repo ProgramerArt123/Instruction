@@ -684,4 +684,9 @@ namespace x86
 	{
 		
 	}
+	AddConvertASCIIFormat::AddConvertASCIIFormat()
+		: AbstractInstruction(x86::mnemonic::size32::integer_arithmetic::Convert_ASCII_Format_Add_AL_AF_CF()) 
+	{
+		
+	}
 }

@@ -322,6 +322,11 @@ namespace x86
 		explicit IntegerIncrease(const x86::reg::classic::general::General16 &source);
 		explicit IntegerIncrease(const x86::reg::classic::general::General32 &source);
 	};
+	
+	class AddConvertASCIIFormat : public AbstractInstruction {
+	public:
+		explicit AddConvertASCIIFormat();
+	};
 
 }
 #endif
