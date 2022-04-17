@@ -342,5 +342,14 @@ namespace x86
 		explicit IntegerSub(const x86::immediate::Immediate32 &source, const x86::operand::RegMem32 &destination);
 	};
 	
+	class IntegerSubCarray : public AbstractInstruction {
+	public:
+		explicit IntegerSubCarray(const x86::immediate::Immediate8 &source, const x86::operand::RegMem8 &destination);
+		explicit IntegerSubCarray(const x86::immediate::Immediate8 &source, const x86::operand::RegMem16 &destination);
+		explicit IntegerSubCarray(const x86::immediate::Immediate8 &source, const x86::operand::RegMem32 &destination);
+		explicit IntegerSubCarray(const x86::immediate::Immediate16 &source, const x86::operand::RegMem16 &destination);
+		explicit IntegerSubCarray(const x86::immediate::Immediate32 &source, const x86::operand::RegMem32 &destination);
+	};
+	
 }
 #endif

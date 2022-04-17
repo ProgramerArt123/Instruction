@@ -719,4 +719,30 @@ namespace x86
 	{
 		
 	}
+	
+	IntegerSubCarray::IntegerSubCarray(const x86::immediate::Immediate8 &source, const x86::operand::RegMem8 &destination)
+		: AbstractInstruction(x86::mnemonic::size32::integer_arithmetic::Sub_8__16__32_CF(), source, destination) 
+	{
+		
+	}
+	IntegerSubCarray::IntegerSubCarray(const x86::immediate::Immediate8 &source, const x86::operand::RegMem16 &destination)
+		: AbstractInstruction(x86::mnemonic::size32::integer_arithmetic::Sub_8__16__32_CF(), source, destination) 
+	{
+		
+	}
+	IntegerSubCarray::IntegerSubCarray(const x86::immediate::Immediate8 &source, const x86::operand::RegMem32 &destination)
+		: AbstractInstruction(x86::mnemonic::size32::integer_arithmetic::Sub_8__16__32_CF(), source, destination) 
+	{
+		
+	}
+	IntegerSubCarray::IntegerSubCarray(const x86::immediate::Immediate16 &source, const x86::operand::RegMem16 &destination)
+		: AbstractInstruction(x86::mnemonic::size32::integer_arithmetic::Sub_8__16__32_CF(), source, destination) 
+	{
+		
+	}
+	IntegerSubCarray::IntegerSubCarray(const x86::immediate::Immediate32 &source, const x86::operand::RegMem32 &destination)
+		: AbstractInstruction(x86::mnemonic::size32::integer_arithmetic::Sub_8__16__32_CF(), source, destination) 
+	{
+		
+	}
 }
