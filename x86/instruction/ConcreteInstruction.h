@@ -327,6 +327,11 @@ namespace x86
 	public:
 		explicit AddConvertASCIIFormat();
 	};
+	
+	class AddConvertDecimalFormat : public AbstractInstruction {
+	public:
+		explicit AddConvertDecimalFormat();
+	};
 
 }
 #endif

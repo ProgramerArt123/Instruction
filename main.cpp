@@ -797,6 +797,7 @@ int main(int argc, char *argv[])
 	{
 		out << x86::IntegerIncrease(DH) << std::endl;
 	}
+	
 		
 	const std::string &str = out.str();
 	{
