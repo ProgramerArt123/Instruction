@@ -333,5 +333,14 @@ namespace x86
 		explicit AddConvertDecimalFormat();
 	};
 
+	class IntegerSub : public AbstractInstruction {
+	public:
+		explicit IntegerSub(const x86::immediate::Immediate8 &source, const x86::operand::RegMem8 &destination);
+		explicit IntegerSub(const x86::immediate::Immediate8 &source, const x86::operand::RegMem16 &destination);
+		explicit IntegerSub(const x86::immediate::Immediate8 &source, const x86::operand::RegMem32 &destination);
+		explicit IntegerSub(const x86::immediate::Immediate16 &source, const x86::operand::RegMem16 &destination);
+		explicit IntegerSub(const x86::immediate::Immediate32 &source, const x86::operand::RegMem32 &destination);
+	};
+	
 }
 #endif

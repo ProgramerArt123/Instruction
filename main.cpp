@@ -799,6 +799,16 @@ int main(int argc, char *argv[])
 	}
 	
 		
+	{
+		out << x86::IntegerSub(x86::immediate::ImmediateSigned8(1), AL) << std::endl;
+	}
+	{
+		out << x86::IntegerSub(x86::immediate::ImmediateSigned16(-1), AX) << std::endl;
+	}
+	{
+		out << x86::IntegerSub(x86::immediate::ImmediateSigned32(1), EAX) << std::endl;
+	}
+	
 	const std::string &str = out.str();
 	{
 		std::ofstream code("test.s");
