@@ -819,6 +819,14 @@ int main(int argc, char *argv[])
 		out << x86::IntegerSubCarray(x86::immediate::ImmediateSigned32(1), EAX) << std::endl;
 	}
 	
+	{
+		out << x86::IntegerDecrease(EAX) << std::endl;
+	}
+	{
+		out << x86::IntegerDecrease(DH) << std::endl;
+	}
+	
+	
 	const std::string &str = out.str();
 	{
 		std::ofstream code("test.s");

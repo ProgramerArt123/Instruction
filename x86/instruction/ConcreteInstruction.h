@@ -350,6 +350,12 @@ namespace x86
 		explicit IntegerSubCarray(const x86::immediate::Immediate16 &source, const x86::operand::RegMem16 &destination);
 		explicit IntegerSubCarray(const x86::immediate::Immediate32 &source, const x86::operand::RegMem32 &destination);
 	};
+	class IntegerDecrease : public AbstractInstruction {
+	public:
+		explicit IntegerDecrease(const x86::reg::classic::general::General8 &source);
+		explicit IntegerDecrease(const x86::reg::classic::general::General16 &source);
+		explicit IntegerDecrease(const x86::reg::classic::general::General32 &source);
+	};
 	
 }
 #endif

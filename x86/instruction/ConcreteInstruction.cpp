@@ -745,4 +745,19 @@ namespace x86
 	{
 		
 	}
+	IntegerDecrease::IntegerDecrease(const x86::reg::classic::general::General8 &source)
+		: AbstractInstruction(x86::mnemonic::size32::integer_arithmetic::Decrease_8__16__32(), source) 
+	{
+		
+	}
+	IntegerDecrease::IntegerDecrease(const x86::reg::classic::general::General16 &source)
+		: AbstractInstruction(x86::mnemonic::size32::integer_arithmetic::Decrease_8__16__32(), source) 
+	{
+		
+	}
+	IntegerDecrease::IntegerDecrease(const x86::reg::classic::general::General32 &source)
+		: AbstractInstruction(x86::mnemonic::size32::integer_arithmetic::Decrease_8__16__32(), source) 
+	{
+		
+	}
 }
