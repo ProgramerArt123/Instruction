@@ -760,4 +760,34 @@ namespace x86
 	{
 		
 	}
+	IntegerNegation::IntegerNegation(const x86::reg::classic::general::General8 &source)
+		: AbstractInstruction(x86::mnemonic::size32::integer_arithmetic::Negation_8__16__32_CF(), source) 
+	{
+		
+	}
+	IntegerNegation::IntegerNegation(const x86::reg::classic::general::General16 &source)
+		: AbstractInstruction(x86::mnemonic::size32::integer_arithmetic::Negation_8__16__32_CF(), source) 
+	{
+		
+	}
+	IntegerNegation::IntegerNegation(const x86::reg::classic::general::General32 &source)
+		: AbstractInstruction(x86::mnemonic::size32::integer_arithmetic::Negation_8__16__32_CF(), source) 
+	{
+		
+	}
+	Compare::Compare(const x86::immediate::Immediate8 &source, const x86::operand::RegMem8 &destination)
+		: AbstractInstruction(x86::mnemonic::size32::integer_arithmetic::Compare_Value_8__16__32(), source, destination) 
+	{
+		
+	}
+	Compare::Compare(const x86::immediate::Immediate16 &source, const x86::operand::RegMem16 &destination)
+		: AbstractInstruction(x86::mnemonic::size32::integer_arithmetic::Compare_Value_8__16__32(), source, destination) 
+	{
+		
+	}
+	Compare::Compare(const x86::immediate::Immediate32 &source, const x86::operand::RegMem32 &destination)
+		: AbstractInstruction(x86::mnemonic::size32::integer_arithmetic::Compare_Value_8__16__32(), source, destination) 
+	{
+		
+	}
 }

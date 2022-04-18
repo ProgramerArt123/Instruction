@@ -826,7 +826,29 @@ int main(int argc, char *argv[])
 		out << x86::IntegerDecrease(DH) << std::endl;
 	}
 	
+	{
+		out << x86::IntegerNegation(EAX) << std::endl;
+	}
 	
+	{
+		out << x86::Compare(x86::immediate::ImmediateSigned8(1), AL) << std::endl;
+	}
+	{
+		out << x86::Compare(x86::immediate::ImmediateSigned16(-1), AX) << std::endl;
+	}
+	{
+		out << x86::Compare(x86::immediate::ImmediateSigned32(1), EAX) << std::endl;
+	}
+	{
+		out << x86::Compare(x86::immediate::ImmediateSigned8(1), x86::memory::Memory8(EAX)) << std::endl;
+	}
+	{
+		out << x86::Compare(x86::immediate::ImmediateSigned16(-1), x86::memory::Memory16(EAX)) << std::endl;
+	}
+	{
+		out << x86::Compare(x86::immediate::ImmediateSigned32(1), x86::memory::Memory32(EAX)) << std::endl;
+	}
+
 	const std::string &str = out.str();
 	{
 		std::ofstream code("test.s");

@@ -357,5 +357,19 @@ namespace x86
 		explicit IntegerDecrease(const x86::reg::classic::general::General32 &source);
 	};
 	
+	class IntegerNegation : public AbstractInstruction {
+	public:
+		explicit IntegerNegation(const x86::reg::classic::general::General8 &source);
+		explicit IntegerNegation(const x86::reg::classic::general::General16 &source);
+		explicit IntegerNegation(const x86::reg::classic::general::General32 &source);
+	};
+	
+	class Compare : public AbstractInstruction {
+	public:
+		explicit Compare(const x86::immediate::Immediate8 &source, const x86::operand::RegMem8 &destination);
+		explicit Compare(const x86::immediate::Immediate16 &source, const x86::operand::RegMem16 &destination);
+		explicit Compare(const x86::immediate::Immediate32 &source, const x86::operand::RegMem32 &destination);
+	};
+	
 }
 #endif
