@@ -370,6 +370,9 @@ namespace x86
 		explicit Compare(const x86::immediate::Immediate16 &source, const x86::operand::RegMem16 &destination);
 		explicit Compare(const x86::immediate::Immediate32 &source, const x86::operand::RegMem32 &destination);
 	};
-	
+	class SubConvertASCIIFormat : public AbstractInstruction {
+	public:
+		explicit SubConvertASCIIFormat();
+	};
 }
 #endif

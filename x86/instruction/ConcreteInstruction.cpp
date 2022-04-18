@@ -790,4 +790,9 @@ namespace x86
 	{
 		
 	}
+	SubConvertASCIIFormat::SubConvertASCIIFormat()
+		: AbstractInstruction(x86::mnemonic::size32::integer_arithmetic::Convert_ASCII_Format_Sub_AL_AF_CF()) 
+	{
+		
+	}
 }
