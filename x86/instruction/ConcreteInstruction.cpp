@@ -800,4 +800,33 @@ namespace x86
 	{
 
 	}
+	UnsignedIntegerMultiply::UnsignedIntegerMultiply(const x86::reg::classic::general::General8 &source)
+		: AbstractInstruction(x86::mnemonic::size32::integer_arithmetic::Unsigned_Multiply_8__16__32(),source)
+		, m_result_low(AL)
+		, m_result_high(AH)
+	{
+
+	}
+	UnsignedIntegerMultiply::UnsignedIntegerMultiply(const x86::reg::classic::general::General16 &source)
+		: AbstractInstruction(x86::mnemonic::size32::integer_arithmetic::Unsigned_Multiply_8__16__32(), source)
+		, m_result_low(AX)
+		, m_result_high(DX)
+	{
+
+	}
+	UnsignedIntegerMultiply::UnsignedIntegerMultiply(const x86::reg::classic::general::General32 &source)
+		: AbstractInstruction(x86::mnemonic::size32::integer_arithmetic::Unsigned_Multiply_8__16__32(), source)
+		, m_result_low(EAX)
+		, m_result_high(EDX)
+	{
+
+	}
+	const reg::classic::general::General &UnsignedIntegerMultiply::ResultLow()const
+	{
+		return m_result_low;
+	}
+	const reg::classic::general::General &UnsignedIntegerMultiply::ResultHigh()const
+	{
+		return m_result_high;
+	}
 }

@@ -849,6 +849,17 @@ int main(int argc, char *argv[])
 		out << x86::Compare(x86::immediate::ImmediateSigned32(1), x86::memory::Memory32(EAX)) << std::endl;
 	}
 
+	
+	{
+		out << x86::UnsignedIntegerMultiply(DL) << std::endl;
+	}
+	{
+		out << x86::UnsignedIntegerMultiply(DX) << std::endl;
+	}
+	{
+		out << x86::UnsignedIntegerMultiply(EDX) << std::endl;
+	}
+	
 	const std::string &str = out.str();
 	{
 		std::ofstream code("test.s");

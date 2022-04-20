@@ -25,6 +25,7 @@ namespace x86
 				class Operation8;
 				class Operation16;
 				class Operation32;	 
+				class General;
 			}
 			namespace offset
 			{
@@ -378,6 +379,20 @@ namespace x86
 	class SubConvertDecimalFormat : public AbstractInstruction {
 	public:
 		explicit SubConvertDecimalFormat();
+	};
+	
+	class UnsignedIntegerMultiply : public AbstractInstruction {
+	public:
+		explicit UnsignedIntegerMultiply(const x86::reg::classic::general::General8 &source);
+		explicit UnsignedIntegerMultiply(const x86::reg::classic::general::General16 &source);
+		explicit UnsignedIntegerMultiply(const x86::reg::classic::general::General32 &source);
+		
+		const reg::classic::general::General &ResultLow()const;
+		const reg::classic::general::General &ResultHigh()const;
+	
+	private:
+		const reg::classic::general::General &m_result_low;
+		const reg::classic::general::General &m_result_high;
 	};
 }
 #endif
