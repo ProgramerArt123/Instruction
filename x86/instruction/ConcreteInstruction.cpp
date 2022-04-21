@@ -829,4 +829,35 @@ namespace x86
 	{
 		return m_result_high;
 	}
+	
+	
+	SignedIntegerMultiply::SignedIntegerMultiply(const x86::reg::classic::general::General8 &source)
+		: AbstractInstruction(x86::mnemonic::size32::integer_arithmetic::Signed_Multiply_8__16__32_CF_OF(), source)
+		, m_result_low(AL)
+		, m_result_high(AH)
+	{
+
+	}
+	SignedIntegerMultiply::SignedIntegerMultiply(const x86::reg::classic::general::General16 &source)
+		: AbstractInstruction(x86::mnemonic::size32::integer_arithmetic::Signed_Multiply_8__16__32_CF_OF(), source)
+		, m_result_low(AX)
+		, m_result_high(DX)
+	{
+
+	}
+	SignedIntegerMultiply::SignedIntegerMultiply(const x86::reg::classic::general::General32 &source)
+		: AbstractInstruction(x86::mnemonic::size32::integer_arithmetic::Signed_Multiply_8__16__32_CF_OF(), source)
+		, m_result_low(EAX)
+		, m_result_high(EDX)
+	{
+
+	}
+	const reg::classic::general::General &SignedIntegerMultiply::ResultLow()const
+	{
+		return m_result_low;
+	}
+	const reg::classic::general::General &SignedIntegerMultiply::ResultHigh()const
+	{
+		return m_result_high;
+	}
 }

@@ -394,5 +394,19 @@ namespace x86
 		const reg::classic::general::General &m_result_low;
 		const reg::classic::general::General &m_result_high;
 	};
+	
+	class SignedIntegerMultiply : public AbstractInstruction {
+	public:
+		explicit SignedIntegerMultiply(const x86::reg::classic::general::General8 &source);
+		explicit SignedIntegerMultiply(const x86::reg::classic::general::General16 &source);
+		explicit SignedIntegerMultiply(const x86::reg::classic::general::General32 &source);
+		
+		const reg::classic::general::General &ResultLow()const;
+		const reg::classic::general::General &ResultHigh()const;
+	
+	private:
+		const reg::classic::general::General &m_result_low;
+		const reg::classic::general::General &m_result_high;
+	};
 }
 #endif

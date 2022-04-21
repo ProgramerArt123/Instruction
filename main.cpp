@@ -860,6 +860,17 @@ int main(int argc, char *argv[])
 		out << x86::UnsignedIntegerMultiply(EDX) << std::endl;
 	}
 	
+	
+	{
+		out << x86::SignedIntegerMultiply(DL) << std::endl;
+	}
+	{
+		out << x86::SignedIntegerMultiply(DX) << std::endl;
+	}
+	{
+		out << x86::SignedIntegerMultiply(EDX) << std::endl;
+	}
+	
 	const std::string &str = out.str();
 	{
 		std::ofstream code("test.s");
