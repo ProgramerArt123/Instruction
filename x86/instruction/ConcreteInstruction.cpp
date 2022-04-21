@@ -860,4 +860,9 @@ namespace x86
 	{
 		return m_result_high;
 	}
+	MulConvertASCIIFormat::MulConvertASCIIFormat()
+		: AbstractInstruction(x86::mnemonic::size32::integer_arithmetic::Convert_ASCII_Format_Mul_SF_ZF_PF()) 
+	{
+		
+	}
 }

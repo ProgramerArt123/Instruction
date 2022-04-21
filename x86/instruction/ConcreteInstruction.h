@@ -408,5 +408,11 @@ namespace x86
 		const reg::classic::general::General &m_result_low;
 		const reg::classic::general::General &m_result_high;
 	};
+	
+	class MulConvertASCIIFormat : public AbstractInstruction {
+	public:
+		explicit MulConvertASCIIFormat();
+	};
+
 }
 #endif
