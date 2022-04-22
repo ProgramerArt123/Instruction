@@ -865,4 +865,34 @@ namespace x86
 	{
 		
 	}
+	
+	UnsignedIntegerDivide::UnsignedIntegerDivide(const x86::reg::classic::general::General8 &source)
+		: AbstractInstruction(x86::mnemonic::size32::integer_arithmetic::Unsigned_Divide_8__16__32(), source)
+		, m_quotient(AL)
+		, m_remainder(AH)
+	{
+
+	}
+	UnsignedIntegerDivide::UnsignedIntegerDivide(const x86::reg::classic::general::General16 &source)
+		: AbstractInstruction(x86::mnemonic::size32::integer_arithmetic::Unsigned_Divide_8__16__32(), source)
+		, m_quotient(AX)
+		, m_remainder(DX)
+	{
+
+	}
+	UnsignedIntegerDivide::UnsignedIntegerDivide(const x86::reg::classic::general::General32 &source)
+		: AbstractInstruction(x86::mnemonic::size32::integer_arithmetic::Unsigned_Divide_8__16__32(), source)
+		, m_quotient(EAX)
+		, m_remainder(EDX)
+	{
+
+	}
+	const reg::classic::general::General &UnsignedIntegerDivide::Quotient()const
+	{
+		return m_quotient;
+	}
+	const reg::classic::general::General &UnsignedIntegerDivide::Remainder()const
+	{
+		return m_remainder;
+	}
 }

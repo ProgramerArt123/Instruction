@@ -413,6 +413,20 @@ namespace x86
 	public:
 		explicit MulConvertASCIIFormat();
 	};
+	
+	class UnsignedIntegerDivide : public AbstractInstruction {
+	public:
+		explicit UnsignedIntegerDivide(const x86::reg::classic::general::General8 &source);
+		explicit UnsignedIntegerDivide(const x86::reg::classic::general::General16 &source);
+		explicit UnsignedIntegerDivide(const x86::reg::classic::general::General32 &source);
+		
+		const reg::classic::general::General &Quotient()const;
+		const reg::classic::general::General &Remainder()const;
+	
+	private:
+		const reg::classic::general::General &m_quotient;
+		const reg::classic::general::General &m_remainder;
+	};
 
 }
 #endif

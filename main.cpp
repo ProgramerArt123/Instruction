@@ -871,6 +871,17 @@ int main(int argc, char *argv[])
 		out << x86::SignedIntegerMultiply(EDX) << std::endl;
 	}
 	
+	
+	{
+		out << x86::UnsignedIntegerDivide(DL) << std::endl;
+	}
+	{
+		out << x86::UnsignedIntegerDivide(DX) << std::endl;
+	}
+	{
+		out << x86::UnsignedIntegerDivide(EDX) << std::endl;
+	}
+	
 	const std::string &str = out.str();
 	{
 		std::ofstream code("test.s");
