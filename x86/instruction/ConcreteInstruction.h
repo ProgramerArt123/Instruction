@@ -427,6 +427,20 @@ namespace x86
 		const reg::classic::general::General &m_quotient;
 		const reg::classic::general::General &m_remainder;
 	};
+	
+	class SignedIntegerDivide : public AbstractInstruction {
+	public:
+		explicit SignedIntegerDivide(const x86::reg::classic::general::General8 &source);
+		explicit SignedIntegerDivide(const x86::reg::classic::general::General16 &source);
+		explicit SignedIntegerDivide(const x86::reg::classic::general::General32 &source);
+		
+		const reg::classic::general::General &Quotient()const;
+		const reg::classic::general::General &Remainder()const;
+	
+	private:
+		const reg::classic::general::General &m_quotient;
+		const reg::classic::general::General &m_remainder;
+	};
 
 }
 #endif

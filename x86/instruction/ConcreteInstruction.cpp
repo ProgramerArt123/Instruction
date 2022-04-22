@@ -895,4 +895,35 @@ namespace x86
 	{
 		return m_remainder;
 	}
+	
+	
+	SignedIntegerDivide::SignedIntegerDivide(const x86::reg::classic::general::General8 &source)
+		: AbstractInstruction(x86::mnemonic::size32::integer_arithmetic::Signed_Divide_8__16__32(), source)
+		, m_quotient(AL)
+		, m_remainder(AH)
+	{
+
+	}
+	SignedIntegerDivide::SignedIntegerDivide(const x86::reg::classic::general::General16 &source)
+		: AbstractInstruction(x86::mnemonic::size32::integer_arithmetic::Signed_Divide_8__16__32(), source)
+		, m_quotient(AX)
+		, m_remainder(DX)
+	{
+
+	}
+	SignedIntegerDivide::SignedIntegerDivide(const x86::reg::classic::general::General32 &source)
+		: AbstractInstruction(x86::mnemonic::size32::integer_arithmetic::Signed_Divide_8__16__32(), source)
+		, m_quotient(EAX)
+		, m_remainder(EDX)
+	{
+
+	}
+	const reg::classic::general::General &SignedIntegerDivide::Quotient()const
+	{
+		return m_quotient;
+	}
+	const reg::classic::general::General &SignedIntegerDivide::Remainder()const
+	{
+		return m_remainder;
+	}
 }
