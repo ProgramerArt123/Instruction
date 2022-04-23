@@ -447,5 +447,13 @@ namespace x86
 		explicit DivideConvertASCIIFormat();
 		explicit DivideConvertASCIIFormat(const x86::immediate::Immediate8& source);
 	};
+	
+	class ConvertByteToWord : public AbstractInstruction {
+	public:
+		explicit ConvertByteToWord();
+		const reg::classic::general::operation::Accumulator &Result()const;
+	private:
+		const reg::classic::general::operation::Accumulator &m_result;
+	};
 }
 #endif

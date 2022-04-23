@@ -937,4 +937,13 @@ namespace x86
 	{
 
 	}
+	ConvertByteToWord::ConvertByteToWord()
+		: AbstractInstruction(x86::mnemonic::size32::integer_arithmetic::Convert_Byte_To_Word_AX()),
+		m_result(AX)
+	{
+
+	}
+	const reg::classic::general::operation::Accumulator &ConvertByteToWord::Result()const {
+		return m_result;
+	}
 }
