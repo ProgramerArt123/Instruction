@@ -4,8 +4,8 @@ namespace x86
 {
 	namespace mnemonic {
 		namespace size32 {
-			class IntegerLogical {
-			public:
+			namespace integer_logic
+			{
 				const char *And_8__16__32();
 				const char *Inclusive_Or_8__16__32();
 				const char *Exclusive_Or_8__16__32();
@@ -19,7 +19,7 @@ namespace x86
 				const char *Bits_Move_Right_Roll_8__16__32_OF_CF();
 				const char *Bits_CF_Move_Left_Roll_8__16__32_OF_CF();
 				const char *Bits_CF_Move_Right_Roll_8__16__32_OF_CF();
-			};
+			}
 		}
 	}
 }

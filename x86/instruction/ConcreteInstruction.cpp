@@ -2,6 +2,7 @@
 #include "x86/instruction/ProcessorControl.h"
 #include "x86/mnemonic/32/IntegerDataTransmitted.h"
 #include "x86/mnemonic/32/IntegerArithmetic.h"
+#include "x86/mnemonic/32/IntegerLogical.h"
 #include "Instruction.h"
 #include "ConcreteInstruction.h"
 namespace x86
@@ -971,5 +972,35 @@ namespace x86
 	const reg::classic::general::operation::Data &ConvertWordToDoubleData::ResultHigh()const
 	{
 		return m_result_high;
+	}
+	
+	LogicalAND::LogicalAND(const x86::immediate::Immediate8 &source, const x86::operand::RegMem8 &destination)
+		: AbstractInstruction(x86::mnemonic::size32::integer_logic::And_8__16__32(), source, destination)
+	{
+		
+	}
+		
+	LogicalAND::LogicalAND(const x86::immediate::Immediate8 &source, const x86::operand::RegMem16 &destination)
+		: AbstractInstruction(x86::mnemonic::size32::integer_logic::And_8__16__32(), source, destination)
+	{
+		
+	}
+		
+	LogicalAND::LogicalAND(const x86::immediate::Immediate8 &source, const x86::operand::RegMem32 &destination)
+		: AbstractInstruction(x86::mnemonic::size32::integer_logic::And_8__16__32(), source, destination)
+	{
+		
+	}
+	
+	LogicalAND::LogicalAND(const x86::immediate::Immediate16 &source, const x86::operand::RegMem16 &destination)
+		: AbstractInstruction(x86::mnemonic::size32::integer_logic::And_8__16__32(), source, destination)
+	{
+		
+	}
+		
+	LogicalAND::LogicalAND(const x86::immediate::Immediate32 &source, const x86::operand::RegMem32 &destination)
+		: AbstractInstruction(x86::mnemonic::size32::integer_logic::And_8__16__32(), source, destination)
+	{
+		
 	}
 }

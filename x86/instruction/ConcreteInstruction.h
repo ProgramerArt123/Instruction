@@ -474,5 +474,18 @@ namespace x86
 		const reg::classic::general::operation::Accumulator &m_result_low;
 		const reg::classic::general::operation::Data &m_result_high;
 	};
+	
+	class LogicalAND : public AbstractInstruction {
+	public:
+		explicit LogicalAND(const x86::immediate::Immediate8 &source, const x86::operand::RegMem8 &destination);
+		
+		explicit LogicalAND(const x86::immediate::Immediate8 &source, const x86::operand::RegMem16 &destination);
+		
+		explicit LogicalAND(const x86::immediate::Immediate8 &source, const x86::operand::RegMem32 &destination);
+		
+		explicit LogicalAND(const x86::immediate::Immediate16 &source, const x86::operand::RegMem16 &destination);
+		
+		explicit LogicalAND(const x86::immediate::Immediate32 &source, const x86::operand::RegMem32 &destination);
+	};
 }
 #endif

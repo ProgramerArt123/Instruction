@@ -904,6 +904,19 @@ int main(int argc, char *argv[])
 		out << x86::ConvertWordToDoubleData() << std::endl;
 	}
 	
+	{
+		out << x86::LogicalAND(x86::immediate::ImmediateSigned8(1), AL) << std::endl;
+	}
+	{
+		out << x86::LogicalAND(x86::immediate::ImmediateUnSigned8(1), x86::memory::Memory32(EAX)) << std::endl;
+	}
+	{
+		out << x86::LogicalAND(x86::immediate::ImmediateUnSigned16(1), x86::memory::Memory16(EAX)) << std::endl;
+	}
+	{
+		out << x86::LogicalAND(x86::immediate::ImmediateUnSigned32(1), x86::memory::Memory32(EAX)) << std::endl;
+	}
+	
 	const std::string &str = out.str();
 	{
 		std::ofstream code("test.s");
