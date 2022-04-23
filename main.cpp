@@ -896,6 +896,10 @@ int main(int argc, char *argv[])
 		out << x86::ConvertByteToWord() << std::endl;
 	}
 	
+	{
+		out << x86::ConvertWordToDouble() << std::endl;
+	}
+	
 	const std::string &str = out.str();
 	{
 		std::ofstream code("test.s");

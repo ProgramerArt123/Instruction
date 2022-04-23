@@ -946,4 +946,14 @@ namespace x86
 	const reg::classic::general::operation::Accumulator &ConvertByteToWord::Result()const {
 		return m_result;
 	}
+	
+	ConvertWordToDouble::ConvertWordToDouble()
+		: AbstractInstruction(x86::mnemonic::size32::integer_arithmetic::Convert_Word_To_Doubleword_EAX())
+		, m_result(EAX)
+	{
+
+	}
+	const reg::classic::general::operation::AccumulatorExtend &ConvertWordToDouble::Result()const {
+		return m_result;
+	}
 }

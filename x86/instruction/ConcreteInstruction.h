@@ -455,5 +455,13 @@ namespace x86
 	private:
 		const reg::classic::general::operation::Accumulator &m_result;
 	};
+	
+	class ConvertWordToDouble : public AbstractInstruction {
+	public:
+		explicit ConvertWordToDouble();
+		const reg::classic::general::operation::AccumulatorExtend &Result()const;
+	private:
+		const reg::classic::general::operation::AccumulatorExtend &m_result;
+	};
 }
 #endif
