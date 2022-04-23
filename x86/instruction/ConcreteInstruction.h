@@ -442,5 +442,10 @@ namespace x86
 		const reg::classic::general::General &m_remainder;
 	};
 
+	class DivideConvertASCIIFormat : public AbstractInstruction {
+	public:
+		explicit DivideConvertASCIIFormat();
+		explicit DivideConvertASCIIFormat(const x86::immediate::Immediate8& source);
+	};
 }
 #endif

@@ -926,4 +926,15 @@ namespace x86
 	{
 		return m_remainder;
 	}
+
+	DivideConvertASCIIFormat::DivideConvertASCIIFormat()
+		: AbstractInstruction(x86::mnemonic::size32::integer_arithmetic::Convert_ASCII_Format_Div_SF_ZF_PF())
+	{
+
+	}
+	DivideConvertASCIIFormat::DivideConvertASCIIFormat(const x86::immediate::Immediate8 &source)
+		: AbstractInstruction(x86::mnemonic::size32::integer_arithmetic::Convert_ASCII_Format_Div_SF_ZF_PF(), source)
+	{
+
+	}
 }

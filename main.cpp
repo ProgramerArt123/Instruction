@@ -882,8 +882,6 @@ int main(int argc, char *argv[])
 		out << x86::UnsignedIntegerDivide(EDX) << std::endl;
 	}
 	
-	
-		
 	{
 		out << x86::SignedIntegerDivide(DL) << std::endl;
 	}
