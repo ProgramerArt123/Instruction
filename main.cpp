@@ -897,7 +897,11 @@ int main(int argc, char *argv[])
 	}
 	
 	{
-		out << x86::ConvertWordToDouble() << std::endl;
+		out << x86::ConvertWordToDoubleAccumulator() << std::endl;
+	}
+	
+	{
+		out << x86::ConvertWordToDoubleData() << std::endl;
 	}
 	
 	const std::string &str = out.str();

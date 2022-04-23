@@ -456,12 +456,23 @@ namespace x86
 		const reg::classic::general::operation::Accumulator &m_result;
 	};
 	
-	class ConvertWordToDouble : public AbstractInstruction {
+	class ConvertWordToDoubleAccumulator : public AbstractInstruction {
 	public:
-		explicit ConvertWordToDouble();
+		explicit ConvertWordToDoubleAccumulator();
 		const reg::classic::general::operation::AccumulatorExtend &Result()const;
 	private:
 		const reg::classic::general::operation::AccumulatorExtend &m_result;
+	};
+	
+	class ConvertWordToDoubleData : public AbstractInstruction {
+	public:
+		explicit ConvertWordToDoubleData();
+		const reg::classic::general::operation::Accumulator &ResultLow()const;
+		const reg::classic::general::operation::Data &ResultHigh()const;
+	
+	private:
+		const reg::classic::general::operation::Accumulator &m_result_low;
+		const reg::classic::general::operation::Data &m_result_high;
 	};
 }
 #endif

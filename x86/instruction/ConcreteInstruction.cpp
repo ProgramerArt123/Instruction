@@ -947,13 +947,29 @@ namespace x86
 		return m_result;
 	}
 	
-	ConvertWordToDouble::ConvertWordToDouble()
+	ConvertWordToDoubleAccumulator::ConvertWordToDoubleAccumulator()
 		: AbstractInstruction(x86::mnemonic::size32::integer_arithmetic::Convert_Word_To_Doubleword_EAX())
 		, m_result(EAX)
 	{
 
 	}
-	const reg::classic::general::operation::AccumulatorExtend &ConvertWordToDouble::Result()const {
+	const reg::classic::general::operation::AccumulatorExtend &ConvertWordToDoubleAccumulator::Result()const {
 		return m_result;
+	}
+	
+	ConvertWordToDoubleData::ConvertWordToDoubleData()
+		: AbstractInstruction(x86::mnemonic::size32::integer_arithmetic::Convert_Word_To_Doubleword_DX_AX())
+		, m_result_low(AX)
+		, m_result_high(DX)
+	{
+		
+	}
+	const reg::classic::general::operation::Accumulator &ConvertWordToDoubleData::ResultLow()const
+	{
+		return m_result_low;
+	}
+	const reg::classic::general::operation::Data &ConvertWordToDoubleData::ResultHigh()const
+	{
+		return m_result_high;
 	}
 }
