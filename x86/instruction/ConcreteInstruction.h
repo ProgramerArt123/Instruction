@@ -500,5 +500,18 @@ namespace x86
 
 		explicit LogicalInclusiveOR(const x86::immediate::Immediate32 &source, const x86::operand::RegMem32 &destination);
 	};
+	
+	class LogicalExclusiveOR : public AbstractInstruction {
+	public:
+		explicit LogicalExclusiveOR(const x86::immediate::Immediate8 &source, const x86::operand::RegMem8 &destination);
+
+		explicit LogicalExclusiveOR(const x86::immediate::Immediate8 &source, const x86::operand::RegMem16 &destination);
+
+		explicit LogicalExclusiveOR(const x86::immediate::Immediate8 &source, const x86::operand::RegMem32 &destination);
+
+		explicit LogicalExclusiveOR(const x86::immediate::Immediate16 &source, const x86::operand::RegMem16 &destination);
+
+		explicit LogicalExclusiveOR(const x86::immediate::Immediate32 &source, const x86::operand::RegMem32 &destination);
+	};
 }
 #endif
