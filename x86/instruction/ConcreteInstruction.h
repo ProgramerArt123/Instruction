@@ -522,5 +522,14 @@ namespace x86
 
 		explicit LogicalNOT(const x86::reg::classic::general::General32 &source);
 	};
-	}
+	
+	class LogicalCompare : public AbstractInstruction {
+	public:
+		explicit LogicalCompare(const x86::immediate::Immediate8 &source, const x86::reg::classic::general::General8 &destination);
+
+		explicit LogicalCompare(const x86::immediate::Immediate16 &source, const x86::reg::classic::general::General16 &destination);
+
+		explicit LogicalCompare(const x86::immediate::Immediate32 &source, const x86::reg::classic::general::General32 &destination);
+	};
+}
 #endif

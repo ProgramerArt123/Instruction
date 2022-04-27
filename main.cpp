@@ -953,6 +953,18 @@ int main(int argc, char *argv[])
 	{
 		out << x86::LogicalNOT(EAX) << std::endl;
 	}
+	
+	{
+		out << x86::LogicalCompare(x86::immediate::ImmediateSigned8(1), AL) << std::endl;
+	}
+	{
+		out << x86::LogicalCompare(x86::immediate::ImmediateUnSigned16(1), AX) << std::endl;
+	}
+	{
+		out << x86::LogicalCompare(x86::immediate::ImmediateUnSigned32(1), EAX) << std::endl;
+	}
+	
+	
 	const std::string &str = out.str();
 	{
 		std::ofstream code("test.s");

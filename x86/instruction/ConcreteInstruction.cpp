@@ -1081,4 +1081,23 @@ namespace x86
 	{
 
 	}
+	
+	LogicalCompare::LogicalCompare(const x86::immediate::Immediate8 &source, const x86::reg::classic::general::General8 &destination)
+		: AbstractInstruction(x86::mnemonic::size32::integer_logic::Compare_Value_8__16__32_SF_ZF_PF(), source, destination)
+	{
+
+	}
+
+	LogicalCompare::LogicalCompare(const x86::immediate::Immediate16 &source, const x86::reg::classic::general::General16 &destination)
+		: AbstractInstruction(x86::mnemonic::size32::integer_logic::Compare_Value_8__16__32_SF_ZF_PF(), source, destination)
+	{
+
+	}
+
+	LogicalCompare::LogicalCompare(const x86::immediate::Immediate32 &source, const x86::reg::classic::general::General32 &destination)
+		: AbstractInstruction(x86::mnemonic::size32::integer_logic::Compare_Value_8__16__32_SF_ZF_PF(), source, destination)
+	{
+
+	}
+	
 }
