@@ -531,5 +531,14 @@ namespace x86
 
 		explicit LogicalCompare(const x86::immediate::Immediate32 &source, const x86::reg::classic::general::General32 &destination);
 	};
+	
+	class BitsMoveLeft : public AbstractInstruction {
+	public:
+		explicit BitsMoveLeft(const x86::immediate::Immediate8 &source, const x86::reg::classic::general::General8 &destination);
+
+		explicit BitsMoveLeft(const x86::immediate::Immediate8 &source, const x86::reg::classic::general::General16 &destination);
+
+		explicit BitsMoveLeft(const x86::immediate::Immediate8 &source, const x86::reg::classic::general::General32 &destination);
+	};
 }
 #endif
