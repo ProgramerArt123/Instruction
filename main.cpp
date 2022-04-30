@@ -22,10 +22,10 @@ int main(int argc, char *argv[])
 		const x86::IntegerDataTransmitted move(x86::immediate::ImmediateUnSigned32(3), EAX);
 		out << move << std::endl;
 	}
-	{
-		const x86::size64::IntegerDataTransmitted move(x86::immediate::size64::ImmediateSigned64(3), RAX);
-		out << move << std::endl;
-	}
+//	{
+//		const x86::size64::IntegerDataTransmitted move(x86::immediate::size64::ImmediateSigned64(3), RAX);
+//		out << move << std::endl;
+//	}
 	{
 		const x86::IntegerDataTransmitted move(AX, CS);
 		out << move << std::endl;
@@ -90,18 +90,18 @@ int main(int argc, char *argv[])
 		const x86::IntegerDataTransmitted move(EAX, EBX);
 		out << move << std::endl;
 	} 
-	{
-		const x86::size64::IntegerDataTransmitted move(RAX, RBX);
-		out << move << std::endl;
-	}
-	{
-		const x86::size64::IntegerDataTransmitted move(RAX, SS);
-		out << move << std::endl;
-	}
-	{
-		const x86::size64::IntegerDataTransmitted move(RAX, RCX);
-		out << move << std::endl;
-	}
+//	{
+//		const x86::size64::IntegerDataTransmitted move(RAX, RBX);
+//		out << move << std::endl;
+//	}
+//	{
+//		const x86::size64::IntegerDataTransmitted move(RAX, SS);
+//		out << move << std::endl;
+//	}
+//	{
+//		const x86::size64::IntegerDataTransmitted move(RAX, RCX);
+//		out << move << std::endl;
+//	}
 	{
 		const x86::IntegerDataTransmitted move(AX, CX);
 		out << move << std::endl;
@@ -138,10 +138,10 @@ int main(int argc, char *argv[])
 		const x86::IntegerDataTransmitted move(EAX, EDX);
 		out << move << std::endl;
 	}
-	{
-		const x86::size64::IntegerDataTransmitted move(RAX, RDX);
-		out << move << std::endl;
-	}
+//	{
+//		const x86::size64::IntegerDataTransmitted move(RAX, RDX);
+//		out << move << std::endl;
+//	}
 	{
 		const x86::IntegerDataTransmitted move(EAX, EBP);
 		out << move << std::endl;
@@ -412,22 +412,22 @@ int main(int argc, char *argv[])
 		const x86::IntegerDataTransmitted move(BH, mem);
 		out << move << std::endl;
 	}
-	{
-		const x86::IntegerDataTransmitted move(x86::immediate::ImmediateSigned8(1), BPL);
-		out << move << std::endl;
-	}
-	{
-		const x86::IntegerDataTransmitted move(x86::immediate::ImmediateSigned8(1), DIL);
-		out << move << std::endl;
-	}
-	{
-		const x86::IntegerDataTransmitted move(x86::immediate::ImmediateSigned8(1), SIL);
-		out << move << std::endl;
-	}
-	{
-		const x86::IntegerDataTransmitted move(x86::immediate::ImmediateSigned8(1), SPL);
-		out << move << std::endl;
-	}
+//	{
+//		const x86::IntegerDataTransmitted move(x86::immediate::ImmediateSigned8(1), BPL);
+//		out << move << std::endl;
+//	}
+//	{
+//		const x86::IntegerDataTransmitted move(x86::immediate::ImmediateSigned8(1), DIL);
+//		out << move << std::endl;
+//	}
+//	{
+//		const x86::IntegerDataTransmitted move(x86::immediate::ImmediateSigned8(1), SIL);
+//		out << move << std::endl;
+//	}
+//	{
+//		const x86::IntegerDataTransmitted move(x86::immediate::ImmediateSigned8(1), SPL);
+//		out << move << std::endl;
+//	}
 	{
 		const x86::IntegerDataTransmitted move(AX, FS);
 		out << move << std::endl;
@@ -436,14 +436,14 @@ int main(int argc, char *argv[])
 		const x86::IntegerDataTransmitted move(GS, BX);
 		out << move << std::endl;
 	}
-	{
-		const x86::size64::IntegerDataTransmitted move(x86::immediate::size64::ImmediateSigned64(3), R8);
-		out << move << std::endl;
-	}
-	{
-		const x86::IntegerDataTransmitted move(x86::immediate::ImmediateSigned32(3), R8D);
-		out << move << std::endl;
-	}
+//	{
+//		const x86::size64::IntegerDataTransmitted move(x86::immediate::size64::ImmediateSigned64(3), R8);
+//		out << move << std::endl;
+//	}
+//	{
+//		const x86::IntegerDataTransmitted move(x86::immediate::ImmediateSigned32(3), R8D);
+//		out << move << std::endl;
+//	}
 
 	{
 		const x86::memory::Memory8 mem(EBP);
@@ -508,10 +508,10 @@ int main(int argc, char *argv[])
 		const x86::SwapOperationOffsetMemory swap(AL, AH);
 		out << swap << std::endl;
 	}
-	{
-		const x86::SwapOperationOffsetMemory swap(AL, SIL);
-		out << swap << std::endl;
-	}
+//	{
+//		const x86::SwapOperationOffsetMemory swap(AL, SIL);
+//		out << swap << std::endl;
+//	}
 	{
 		const x86::SwapOperationOffsetMemory swap(AL, x86::memory::Memory8(EBP));
 		out << swap << std::endl;
@@ -540,14 +540,14 @@ int main(int argc, char *argv[])
 		const x86::SwapOperationOffsetMemory swap(EAX, x86::memory::Memory32(EBP));
 		out << swap << std::endl;
 	}
-	{
-		const x86::SwapOperationOffsetMemory swap(SIL, DIL);
-		out << swap << std::endl;
-	}
-	{
-		const x86::SwapOperationOffsetMemory swap(DIL, x86::memory::Memory8(EBP));
-		out << swap << std::endl;
-	}
+//	{
+//		const x86::SwapOperationOffsetMemory swap(SIL, DIL);
+//		out << swap << std::endl;
+//	}
+//	{
+//		const x86::SwapOperationOffsetMemory swap(DIL, x86::memory::Memory8(EBP));
+//		out << swap << std::endl;
+//	}
 	{
 		const x86::SwapOperationOffsetMemory swap(SI, DI);
 		out << swap << std::endl;
@@ -576,26 +576,26 @@ int main(int argc, char *argv[])
 		const x86::CompareAccumulatorTransmitted mov(AL, AH);
 		out << mov << std::endl;
 	}
-	{
-		const x86::CompareAccumulatorTransmitted mov(AL, SIL);
-		out << mov << std::endl;
-	}
+//	{
+//		const x86::CompareAccumulatorTransmitted mov(AL, SIL);
+//		out << mov << std::endl;
+//	}
 	{
 		const x86::CompareAccumulatorTransmitted mov(AL, x86::memory::Memory8(EBP));
 		out << mov << std::endl;
 	}
-	{
-		const x86::CompareAccumulatorTransmitted mov(SIL, DIL);
-		out << mov << std::endl;
-	}
-	{
-		const x86::CompareAccumulatorTransmitted mov(SIL, AL);
-		out << mov << std::endl;
-	}
-	{
-		const x86::CompareAccumulatorTransmitted mov(BPL, x86::memory::Memory8(EBP));
-		out << mov << std::endl;
-	}
+//	{
+//		const x86::CompareAccumulatorTransmitted mov(SIL, DIL);
+//		out << mov << std::endl;
+//	}
+//	{
+//		const x86::CompareAccumulatorTransmitted mov(SIL, AL);
+//		out << mov << std::endl;
+//	}
+//	{
+//		const x86::CompareAccumulatorTransmitted mov(BPL, x86::memory::Memory8(EBP));
+//		out << mov << std::endl;
+//	}
 	
 	{
 		const x86::CompareAccumulatorTransmitted mov(AX, DX);
@@ -652,26 +652,26 @@ int main(int argc, char *argv[])
 		const x86::SwapAdd add(AL, AH);
 		out << add << std::endl;
 	}
-	{
-		const x86::SwapAdd add(AL, SIL);
-		out << add << std::endl;
-	}
+//	{
+//		const x86::SwapAdd add(AL, SIL);
+//		out << add << std::endl;
+//	}
 	{
 		const x86::SwapAdd add(AL, x86::memory::Memory8(EBP));
 		out << add << std::endl;
 	}
-	{
-		const x86::SwapAdd add(SIL, DIL);
-		out << add << std::endl;
-	}
-	{
-		const x86::SwapAdd add(SIL, AL);
-		out << add << std::endl;
-	}
-	{
-		const x86::SwapAdd add(BPL, x86::memory::Memory8(EBP));
-		out << add << std::endl;
-	}
+//	{
+//		const x86::SwapAdd add(SIL, DIL);
+//		out << add << std::endl;
+//	}
+//	{
+//		const x86::SwapAdd add(SIL, AL);
+//		out << add << std::endl;
+//	}
+//	{
+//		const x86::SwapAdd add(BPL, x86::memory::Memory8(EBP));
+//		out << add << std::endl;
+//	}
 	
 	{
 		const x86::SwapAdd add(AX, DX);
@@ -974,6 +974,14 @@ int main(int argc, char *argv[])
 		out << x86::BitsMoveLeft(x86::immediate::ImmediateUnSigned8(1), EAX) << std::endl;
 	}
 	
+	{
+		out << x86::AddConvertASCIIFormat() << std::endl;
+	}
+	
+	{
+		out << x86::AddConvertDecimalFormat() << std::endl;
+	}
+	
 	
 	const std::string &str = out.str();
 	{
@@ -985,7 +993,7 @@ int main(int argc, char *argv[])
 		code << str;
 	}
 	system("cat -n test.s");
-	if (0==system("as test.s")) {
+	if (0==system("as -W test.s")) {
 		std::cout << "success" << std::endl;
 	}
 	return 0;
