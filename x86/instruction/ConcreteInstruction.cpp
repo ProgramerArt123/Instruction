@@ -1184,4 +1184,22 @@ namespace x86
 	{
 
 	}
+	
+	BitsRollRight::BitsRollRight(const x86::immediate::Immediate8 &source, const x86::reg::classic::general::General8 &destination)
+		: AbstractInstruction(x86::mnemonic::size32::integer_logic::Bits_Move_Right_Roll_8__16__32_OF_CF(), source, destination)
+	{
+
+	}
+
+	BitsRollRight::BitsRollRight(const x86::immediate::Immediate8 &source, const x86::reg::classic::general::General16 &destination)
+		: AbstractInstruction(x86::mnemonic::size32::integer_logic::Bits_Move_Right_Roll_8__16__32_OF_CF(), source, destination)
+	{
+
+	}
+
+	BitsRollRight::BitsRollRight(const x86::immediate::Immediate8 &source, const x86::reg::classic::general::General32 &destination)
+		: AbstractInstruction(x86::mnemonic::size32::integer_logic::Bits_Move_Right_Roll_8__16__32_OF_CF(), source, destination)
+	{
+
+	}
 }
