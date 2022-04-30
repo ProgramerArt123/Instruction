@@ -549,5 +549,14 @@ namespace x86
 
 		explicit BitsMoveLeftSign(const x86::immediate::Immediate8 &source, const x86::reg::classic::general::General32 &destination);
 	};
+	
+	class BitsMoveRight : public AbstractInstruction {
+	public:
+		explicit BitsMoveRight(const x86::immediate::Immediate8 &source, const x86::reg::classic::general::General8 &destination);
+
+		explicit BitsMoveRight(const x86::immediate::Immediate8 &source, const x86::reg::classic::general::General16 &destination);
+
+		explicit BitsMoveRight(const x86::immediate::Immediate8 &source, const x86::reg::classic::general::General32 &destination);
+	};
 }
 #endif

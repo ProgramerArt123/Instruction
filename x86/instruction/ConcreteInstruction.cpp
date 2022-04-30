@@ -1135,4 +1135,19 @@ namespace x86
 	{
 
 	}
+	BitsMoveRight::BitsMoveRight(const x86::immediate::Immediate8 &source, const x86::reg::classic::general::General8 &destination)
+		: AbstractInstruction(x86::mnemonic::size32::integer_logic::Bits_Move_Right_8__16__32_SF_ZF_PF(), source, destination)
+	{
+
+	}
+	BitsMoveRight::BitsMoveRight(const x86::immediate::Immediate8 &source, const x86::reg::classic::general::General16 &destination)
+		: AbstractInstruction(x86::mnemonic::size32::integer_logic::Bits_Move_Right_8__16__32_SF_ZF_PF(), source, destination)
+	{
+
+	}
+	BitsMoveRight::BitsMoveRight(const x86::immediate::Immediate8 &source, const x86::reg::classic::general::General32 &destination)
+		: AbstractInstruction(x86::mnemonic::size32::integer_logic::Bits_Move_Right_8__16__32_SF_ZF_PF(), source, destination)
+	{
+
+	}
 }
