@@ -802,7 +802,7 @@ namespace x86
 
 	}
 	UnsignedIntegerMultiply::UnsignedIntegerMultiply(const x86::reg::classic::general::General8 &source)
-		: AbstractInstruction(x86::mnemonic::size32::integer_arithmetic::Unsigned_Multiply_8__16__32(),source)
+		: AbstractInstruction(x86::mnemonic::size32::integer_arithmetic::Unsigned_Multiply_8__16__32(), source)
 		, m_result_low(AL)
 		, m_result_high(AH)
 	{
@@ -939,8 +939,8 @@ namespace x86
 
 	}
 	ConvertByteToWord::ConvertByteToWord()
-		: AbstractInstruction(x86::mnemonic::size32::integer_arithmetic::Convert_Byte_To_Word_AX()),
-		m_result(AX)
+		: AbstractInstruction(x86::mnemonic::size32::integer_arithmetic::Convert_Byte_To_Word_AX())
+		, m_result(AX)
 	{
 
 	}
@@ -1114,6 +1114,24 @@ namespace x86
 
 	BitsMoveLeft::BitsMoveLeft(const x86::immediate::Immediate8 &source, const x86::reg::classic::general::General32 &destination)
 		: AbstractInstruction(x86::mnemonic::size32::integer_logic::Bits_Move_Left_8__16__32_SF_ZF_PF(), source, destination)
+	{
+
+	}
+	
+	BitsMoveLeftSign::BitsMoveLeftSign(const x86::immediate::Immediate8 &source, const x86::reg::classic::general::General8 &destination)
+		: AbstractInstruction(x86::mnemonic::size32::integer_logic::Bits_Move_Left_Sign_8__16__32_SF_ZF_PF(), source, destination)
+	{
+
+	}
+
+	BitsMoveLeftSign::BitsMoveLeftSign(const x86::immediate::Immediate8 &source, const x86::reg::classic::general::General16 &destination)
+		: AbstractInstruction(x86::mnemonic::size32::integer_logic::Bits_Move_Left_Sign_8__16__32_SF_ZF_PF(), source, destination)
+	{
+
+	}
+
+	BitsMoveLeftSign::BitsMoveLeftSign(const x86::immediate::Immediate8 &source, const x86::reg::classic::general::General32 &destination)
+		: AbstractInstruction(x86::mnemonic::size32::integer_logic::Bits_Move_Left_Sign_8__16__32_SF_ZF_PF(), source, destination)
 	{
 
 	}
