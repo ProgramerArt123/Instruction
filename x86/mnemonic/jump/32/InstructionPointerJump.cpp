@@ -15,7 +15,7 @@ namespace x86
 				const char *Return_From_Procedure_16() {
 					return "RET";
 				}
-				const char *Return_From_Procedure_32() {
+				const char *Return_From_Procedure_20() {
 					return "RETF";
 				}
 				const char *Jump_If_Unsigned_Above_8() {

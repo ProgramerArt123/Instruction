@@ -638,6 +638,11 @@ namespace x86
 		public:
 			explicit ReturnNearFromProcedure();
 		};
+		
+		class ReturnFarFromProcedure : public AbstractInstruction {
+		public:
+			explicit ReturnFarFromProcedure();
+		};
 	}
 }
 #endif

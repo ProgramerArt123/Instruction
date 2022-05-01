@@ -1291,5 +1291,11 @@ namespace x86
 		{
 
 		}
+		
+		ReturnFarFromProcedure::ReturnFarFromProcedure()
+			: AbstractInstruction(x86::mnemonic::jump::size32::Return_From_Procedure_20())
+		{
+
+		}
 	}
 }
