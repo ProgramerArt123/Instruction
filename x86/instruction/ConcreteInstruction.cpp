@@ -1299,7 +1299,13 @@ namespace x86
 		}
 		
 		JumpIfUnsignedAbove::JumpIfUnsignedAbove(const x86::label::CodeLabel &source) 
-			: AbstractInstruction(x86::mnemonic::jump::size32::Jump_If_Unsigned_Above_8__16__32(), source)
+			: AbstractInstruction(x86::mnemonic::jump::size32::Jump_If_Unsigned_Above_8(), source)
+		{
+
+		}
+		
+		JumpIfUnsignedAboveEqual::JumpIfUnsignedAboveEqual(const x86::label::CodeLabel &source) 
+			: AbstractInstruction(x86::mnemonic::jump::size32::Jump_If_Unsigned_Above__Equal_8(), source)
 		{
 
 		}

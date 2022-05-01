@@ -10,7 +10,7 @@ namespace x86
 				const char *Call_Procedure_16__32();
 				const char *Return_From_Procedure_16();
 				const char *Return_From_Procedure_20();
-				const char *Jump_If_Unsigned_Above_8__16__32();
+				const char *Jump_If_Unsigned_Above_8();
 				const char *Jump_If_Unsigned_Above__Equal_8();
 				const char *Jump_If_Unsigned_Below_8();
 				const char *Jump_If_Unsigned_Below__Equal_8();

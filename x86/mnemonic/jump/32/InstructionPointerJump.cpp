@@ -17,7 +17,7 @@ namespace x86
 				const char *Return_From_Procedure_20() {
 					return "RETF";
 				}
-				const char *Jump_If_Unsigned_Above_8__16__32() {
+				const char *Jump_If_Unsigned_Above_8() {
 					return "JA";
 				}
 				const char *Jump_If_Unsigned_Above__Equal_8() {
