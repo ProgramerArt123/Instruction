@@ -7,6 +7,7 @@
 #include "x86/memory/Memory8.h"
 #include "x86/memory/Memory16.h"
 #include "x86/memory/Memory32.h"
+#include "x86/label/CodeLabel.h"
 #include "x86/register/classic/general/General.h"
 #include "x86/register/classic/segment/Segment.h"
 #include "x86/register/classic/general/offset/Offset8.h"

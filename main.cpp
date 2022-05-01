@@ -1061,6 +1061,11 @@ int main(int argc, char *argv[])
 	{
 		out << x86::instruction::InstructionPointerJump(x86::memory::Memory32(EBP)) << std::endl;
 	}
+	{
+		const x86::label::CodeLabel label("label");
+		out << label << std::endl;
+		out << x86::instruction::InstructionPointerJump(label) << std::endl;
+	}
 	
 	const std::string &str = out.str();
 	{

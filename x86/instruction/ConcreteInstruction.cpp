@@ -1240,6 +1240,11 @@ namespace x86
 		{
 
 		}
+		InstructionPointerJump::InstructionPointerJump(const x86::label::CodeLabel &source) 
+			: AbstractInstruction(x86::mnemonic::jump::size32::Jump_8__16__32(), source)
+		{
+
+		}
 		InstructionPointerJump::InstructionPointerJump(const x86::memory::Memory8 &source)
 			: AbstractInstruction(x86::mnemonic::jump::size32::Jump_8__16__32(), source)
 		{

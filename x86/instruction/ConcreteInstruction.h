@@ -37,6 +37,10 @@ namespace x86
 			}
 		}
 	}
+	namespace label 
+	{
+		class CodeLabel;
+	}
 	namespace instruction
 	{
 		class NoOperation : public AbstractInstruction {
@@ -608,11 +612,13 @@ namespace x86
 		
 		class InstructionPointerJump : public AbstractInstruction {
 		public:
+			explicit InstructionPointerJump(const x86::label::CodeLabel &source);
 			explicit InstructionPointerJump(const x86::memory::Memory8 &source);
 
 			explicit InstructionPointerJump(const x86::memory::Memory16 &source);
 
 			explicit InstructionPointerJump(const x86::memory::Memory32 &source);
+			
 		};
 	}
 }
