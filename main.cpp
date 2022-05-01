@@ -1067,6 +1067,22 @@ int main(int argc, char *argv[])
 		out << x86::instruction::InstructionPointerJump(label) << std::endl;
 	}
 	
+	
+	{
+		out << x86::instruction::CallProcedure(x86::memory::Memory8(EBP)) << std::endl;
+	}
+	{
+		out << x86::instruction::CallProcedure(x86::memory::Memory16(EBP)) << std::endl;
+	}
+	{
+		out << x86::instruction::CallProcedure(x86::memory::Memory32(EBP)) << std::endl;
+	}
+	{
+		const x86::label::CodeLabel label("procedure");
+		out << label << std::endl;
+		out << x86::instruction::CallProcedure(label) << std::endl;
+	}
+	
 	const std::string &str = out.str();
 	{
 		std::ofstream code("test.s");

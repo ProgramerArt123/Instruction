@@ -613,11 +613,24 @@ namespace x86
 		class InstructionPointerJump : public AbstractInstruction {
 		public:
 			explicit InstructionPointerJump(const x86::label::CodeLabel &source);
+			
 			explicit InstructionPointerJump(const x86::memory::Memory8 &source);
 
 			explicit InstructionPointerJump(const x86::memory::Memory16 &source);
 
 			explicit InstructionPointerJump(const x86::memory::Memory32 &source);
+			
+		};
+		
+		class CallProcedure : public AbstractInstruction {
+		public:
+			explicit CallProcedure(const x86::label::CodeLabel &source);
+			
+			explicit CallProcedure(const x86::memory::Memory8 &source);
+
+			explicit CallProcedure(const x86::memory::Memory16 &source);
+
+			explicit CallProcedure(const x86::memory::Memory32 &source);
 			
 		};
 	}

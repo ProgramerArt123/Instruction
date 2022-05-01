@@ -1262,5 +1262,28 @@ namespace x86
 		{
 
 		}
+		
+		CallProcedure::CallProcedure(const x86::label::CodeLabel &source) 
+			: AbstractInstruction(x86::mnemonic::jump::size32::Call_Procedure_16__32(), source)
+		{
+
+		}
+		CallProcedure::CallProcedure(const x86::memory::Memory8 &source)
+			: AbstractInstruction(x86::mnemonic::jump::size32::Call_Procedure_16__32(), source)
+		{
+
+		}
+
+		CallProcedure::CallProcedure(const x86::memory::Memory16 &source)
+			: AbstractInstruction(x86::mnemonic::jump::size32::Call_Procedure_16__32(), source)
+		{
+
+		}
+
+		CallProcedure::CallProcedure(const x86::memory::Memory32 &source)
+			: AbstractInstruction(x86::mnemonic::jump::size32::Call_Procedure_16__32(), source)
+		{
+
+		}
 	}
 }
