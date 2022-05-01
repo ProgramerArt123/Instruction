@@ -8,7 +8,6 @@ namespace x86
 				const char *Jump_8__16__32() {
 					return "JMP";
 				}
-
 				const char *Call_Procedure_16__32() {
 					return "CALL";
 				}
@@ -18,7 +17,7 @@ namespace x86
 				const char *Return_From_Procedure_20() {
 					return "RETF";
 				}
-				const char *Jump_If_Unsigned_Above_8() {
+				const char *Jump_If_Unsigned_Above_8__16__32() {
 					return "JA";
 				}
 				const char *Jump_If_Unsigned_Above__Equal_8() {

@@ -643,6 +643,11 @@ namespace x86
 		public:
 			explicit ReturnFarFromProcedure();
 		};
+		
+		class JumpIfUnsignedAbove : public AbstractInstruction {
+		public:
+			explicit JumpIfUnsignedAbove(const x86::label::CodeLabel &source);
+		};
 	}
 }
 #endif
