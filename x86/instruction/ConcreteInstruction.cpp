@@ -1285,5 +1285,11 @@ namespace x86
 		{
 
 		}
+		
+		ReturnNearFromProcedure::ReturnNearFromProcedure()
+			: AbstractInstruction(x86::mnemonic::jump::size32::Return_From_Procedure_16())
+		{
+
+		}
 	}
 }

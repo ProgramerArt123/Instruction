@@ -633,6 +633,11 @@ namespace x86
 			explicit CallProcedure(const x86::memory::Memory32 &source);
 			
 		};
+		
+		class ReturnNearFromProcedure : public AbstractInstruction {
+		public:
+			explicit ReturnNearFromProcedure();
+		};
 	}
 }
 #endif

@@ -1082,6 +1082,9 @@ int main(int argc, char *argv[])
 		out << label << std::endl;
 		out << x86::instruction::CallProcedure(label) << std::endl;
 	}
+	{
+		out << x86::instruction::ReturnNearFromProcedure() << std::endl;
+	}
 	
 	const std::string &str = out.str();
 	{
