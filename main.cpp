@@ -1042,6 +1042,16 @@ int main(int argc, char *argv[])
 		out << x86::BitsCarrayRollLeft(x86::immediate::ImmediateUnSigned8(1), EAX) << std::endl;
 	}
 	
+	{
+		out << x86::BitsCarrayRollRight(x86::immediate::ImmediateSigned8(1), AL) << std::endl;
+	}
+	{
+		out << x86::BitsCarrayRollRight(x86::immediate::ImmediateUnSigned8(1), AX) << std::endl;
+	}
+	{
+		out << x86::BitsCarrayRollRight(x86::immediate::ImmediateUnSigned8(1), EAX) << std::endl;
+	}
+	
 	
 	const std::string &str = out.str();
 	{
