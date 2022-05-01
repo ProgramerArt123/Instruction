@@ -585,5 +585,14 @@ namespace x86
 
 		explicit BitsRollRight(const x86::immediate::Immediate8 &source, const x86::reg::classic::general::General32 &destination);
 	};
+	
+	class BitsCarrayRollLeft : public AbstractInstruction {
+	public:
+		explicit BitsCarrayRollLeft(const x86::immediate::Immediate8 &source, const x86::reg::classic::general::General8 &destination);
+
+		explicit BitsCarrayRollLeft(const x86::immediate::Immediate8 &source, const x86::reg::classic::general::General16 &destination);
+
+		explicit BitsCarrayRollLeft(const x86::immediate::Immediate8 &source, const x86::reg::classic::general::General32 &destination);
+	};
 }
 #endif
