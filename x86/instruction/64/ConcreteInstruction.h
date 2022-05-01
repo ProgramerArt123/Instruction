@@ -7,13 +7,13 @@ namespace x86
 	{
 		class Immediate64;
 		class Operation64;
-		class IntegerDataTransmitted : public AbstractInstruction {
+		class DataTransmitted : public AbstractInstruction {
 		public:
-			explicit IntegerDataTransmitted(const x86::immediate::size64::Immediate64 &source, const x86::reg::classic::general::operation::size64::Operation64 &destination);
-			explicit IntegerDataTransmitted(const x86::reg::classic::general::operation::size64::Operation64 &source, const x86::reg::classic::general::operation::size64::Operation64 &destination);
+			explicit DataTransmitted(const x86::immediate::size64::Immediate64 &source, const x86::reg::classic::general::operation::size64::Operation64 &destination);
+			explicit DataTransmitted(const x86::reg::classic::general::operation::size64::Operation64 &source, const x86::reg::classic::general::operation::size64::Operation64 &destination);
 			
-			explicit IntegerDataTransmitted(const x86::reg::classic::general::operation::size64::Operation64 &source, const x86::reg::classic::segment::Segment &destination);
-			explicit IntegerDataTransmitted(const x86::reg::classic::segment::Segment &source, const x86::reg::classic::general::operation::size64::Operation64 &destination);
+			explicit DataTransmitted(const x86::reg::classic::general::operation::size64::Operation64 &source, const x86::reg::classic::segment::Segment &destination);
+			explicit DataTransmitted(const x86::reg::classic::segment::Segment &source, const x86::reg::classic::general::operation::size64::Operation64 &destination);
 		};
 	}
 }
