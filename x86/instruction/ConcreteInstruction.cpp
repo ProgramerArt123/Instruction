@@ -1315,5 +1315,11 @@ namespace x86
 		{
 
 		}
+		
+		JumpIfUnsignedBelowEqual::JumpIfUnsignedBelowEqual(const x86::label::CodeLabel &source) 
+			: AbstractInstruction(x86::mnemonic::jump::size32::Jump_If_Unsigned_Below__Equal_8(), source)
+		{
+
+		}
 	}
 }
