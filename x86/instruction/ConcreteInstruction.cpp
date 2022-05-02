@@ -1327,5 +1327,11 @@ namespace x86
 		{
 
 		}
+		
+		JumpIfSignedGreaterEqual::JumpIfSignedGreaterEqual(const x86::label::CodeLabel &source) 
+			: AbstractInstruction(x86::mnemonic::jump::size32::Jump_If_Signed_Greater__Equal_8(), source)
+		{
+
+		}
 	}
 }

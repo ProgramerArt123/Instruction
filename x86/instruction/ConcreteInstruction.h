@@ -668,6 +668,11 @@ namespace x86
 		public:
 			explicit JumpIfSignedGreater(const x86::label::CodeLabel &source);
 		};
+		
+		class JumpIfSignedGreaterEqual : public AbstractInstruction {
+		public:
+			explicit JumpIfSignedGreaterEqual(const x86::label::CodeLabel &source);
+		};
 	}
 }
 #endif
