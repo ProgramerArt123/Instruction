@@ -1351,5 +1351,11 @@ namespace x86
 		{
 
 		}
+		
+		JumpIfNotEqual::JumpIfNotEqual(const x86::label::CodeLabel &source) 
+			: AbstractInstruction(x86::mnemonic::jump::size32::Jump_If_Not_Equal_8(), source)
+		{
+
+		}
 	}
 }

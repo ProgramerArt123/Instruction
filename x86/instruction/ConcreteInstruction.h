@@ -688,6 +688,11 @@ namespace x86
 		public:
 			explicit JumpIfEqual(const x86::label::CodeLabel &source);
 		};
+		
+		class JumpIfNotEqual : public AbstractInstruction {
+		public:
+			explicit JumpIfNotEqual(const x86::label::CodeLabel &source);
+		};
 	}
 }
 #endif
