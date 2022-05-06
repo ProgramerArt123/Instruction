@@ -1333,5 +1333,11 @@ namespace x86
 		{
 
 		}
+		
+		JumpIfSignedLess::JumpIfSignedLess(const x86::label::CodeLabel &source) 
+			: AbstractInstruction(x86::mnemonic::jump::size32::Jump_If_Signed_Less_8(), source)
+		{
+
+		}
 	}
 }
