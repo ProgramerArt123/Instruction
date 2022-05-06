@@ -1357,5 +1357,11 @@ namespace x86
 		{
 
 		}
+		
+		JumpIfCarry::JumpIfCarry(const x86::label::CodeLabel &source) 
+			: AbstractInstruction(x86::mnemonic::jump::size32::Jump_If_Carry_8(), source)
+		{
+
+		}
 	}
 }
