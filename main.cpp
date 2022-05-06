@@ -1131,6 +1131,12 @@ int main(int argc, char *argv[])
 		out << x86::instruction::JumpIfSignedLess(label) << std::endl;
 	}
 	
+	{
+		const x86::label::CodeLabel label("less_equal");
+		out << label << std::endl;
+		out << x86::instruction::JumpIfSignedLessEqual(label) << std::endl;
+	}
+	
 	const std::string &str = out.str();
 	{
 		std::ofstream code("test.s");
