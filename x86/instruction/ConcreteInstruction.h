@@ -718,6 +718,11 @@ namespace x86
 		public:
 			explicit JumpIfParity(const x86::label::CodeLabel &source);
 		};
+		
+		class JumpIfNotParity : public AbstractInstruction {
+		public:
+			explicit JumpIfNotParity(const x86::label::CodeLabel &source);
+		};
 	}
 }
 #endif
