@@ -1161,6 +1161,12 @@ int main(int argc, char *argv[])
 		out << x86::instruction::JumpIfNotCarry(label) << std::endl;
 	}
 	
+	{
+		const x86::label::CodeLabel label("overflow");
+		out << label << std::endl;
+		out << x86::instruction::JumpIfOverflow(label) << std::endl;
+	}
+	
 	const std::string &str = out.str();
 	{
 		std::ofstream code("test.s");
