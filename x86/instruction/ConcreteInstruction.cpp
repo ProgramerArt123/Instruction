@@ -1375,5 +1375,11 @@ namespace x86
 		{
 
 		}
+		
+		JumpIfNotOverflow::JumpIfNotOverflow(const x86::label::CodeLabel &source) 
+			: AbstractInstruction(x86::mnemonic::jump::size32::Jump_If_Not_Overflow_8(), source)
+		{
+
+		}
 	}
 }

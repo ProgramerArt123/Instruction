@@ -708,6 +708,11 @@ namespace x86
 		public:
 			explicit JumpIfOverflow(const x86::label::CodeLabel &source);
 		};
+		
+		class JumpIfNotOverflow : public AbstractInstruction {
+		public:
+			explicit JumpIfNotOverflow(const x86::label::CodeLabel &source);
+		};
 	}
 }
 #endif
