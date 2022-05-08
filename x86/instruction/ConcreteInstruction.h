@@ -742,6 +742,11 @@ namespace x86
 		public:
 			explicit LoopCounterAndZero(const x86::label::CodeLabel &source);
 		};
+		
+		class LoopCounterAndNotZero : public AbstractInstruction {
+		public:
+			explicit LoopCounterAndNotZero(const x86::label::CodeLabel &source);
+		};
 	}
 }
 #endif

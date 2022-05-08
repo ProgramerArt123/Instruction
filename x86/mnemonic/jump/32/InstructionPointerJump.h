@@ -30,7 +30,7 @@ namespace x86
 				const char *Jump_If_Not_Signed_8();
 				const char *Loop_ECX_8();
 				const char *Loop_ECX_ZF_8();
-				const char *Loop_ECX_NOT_ZF_8();
+				const char *Loop_ECX_Not_ZF_8();
 				const char *Jump_NOT_CX_8();
 				const char *Jump_NOT_ECX_8();
 				const char *Call_Interrupt_Procedure_8();
