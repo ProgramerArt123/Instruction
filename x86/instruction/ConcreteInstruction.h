@@ -732,6 +732,11 @@ namespace x86
 		public:
 			explicit JumpIfNotSigned(const x86::label::CodeLabel &source);
 		};
+		
+		class LoopCounter : public AbstractInstruction {
+		public:
+			explicit LoopCounter(const x86::label::CodeLabel &source);
+		};
 	}
 }
 #endif

@@ -1405,5 +1405,11 @@ namespace x86
 		{
 
 		}
+		
+		LoopCounter::LoopCounter(const x86::label::CodeLabel &source) 
+			: AbstractInstruction(x86::mnemonic::jump::size32::Loop_ECX_8(), source)
+		{
+
+		}
 	}
 }
