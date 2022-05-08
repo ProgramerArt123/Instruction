@@ -728,6 +728,10 @@ namespace x86
 		public:
 			explicit JumpIfSigned(const x86::label::CodeLabel &source);
 		};
+		class JumpIfNotSigned : public AbstractInstruction {
+		public:
+			explicit JumpIfNotSigned(const x86::label::CodeLabel &source);
+		};
 	}
 }
 #endif

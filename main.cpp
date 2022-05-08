@@ -1191,6 +1191,12 @@ int main(int argc, char *argv[])
 		out << x86::instruction::JumpIfSigned(label) << std::endl;
 	}
 	
+	{
+		const x86::label::CodeLabel label("not_signed");
+		out << label << std::endl;
+		out << x86::instruction::JumpIfNotSigned(label) << std::endl;
+	}
+	
 	const std::string &str = out.str();
 	{
 		std::ofstream code("test.s");
