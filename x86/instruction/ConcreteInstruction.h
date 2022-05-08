@@ -757,6 +757,11 @@ namespace x86
 		public:
 			explicit JumpIfECXZero(const x86::label::CodeLabel &source);
 		};
+		
+		class CallInterruptProcedure : public AbstractInstruction {
+		public:
+			explicit CallInterruptProcedure(const x86::immediate::Immediate8 &source);
+		};
 	}
 }
 #endif

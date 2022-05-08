@@ -1434,5 +1434,11 @@ namespace x86
 		{
 
 		}
+		
+		CallInterruptProcedure::CallInterruptProcedure(const x86::immediate::Immediate8 &source) 
+			: AbstractInstruction(x86::mnemonic::jump::size32::Call_Interrupt_Procedure_8(), source)
+		{
+
+		}
 	}
 }
