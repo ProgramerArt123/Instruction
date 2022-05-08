@@ -1446,5 +1446,11 @@ namespace x86
 		{
 
 		}
+		
+		InterruptReturn::InterruptReturn() 
+			: AbstractInstruction(x86::mnemonic::jump::size32::Interrupt_Return_20())
+		{
+
+		}
 	}
 }

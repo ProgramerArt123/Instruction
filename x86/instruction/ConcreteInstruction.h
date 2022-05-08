@@ -767,6 +767,11 @@ namespace x86
 		public:
 			explicit CallInterruptProcedureIfOverflow();
 		};
+		
+		class InterruptReturn : public AbstractInstruction {
+		public:
+			explicit InterruptReturn();
+		};
 	}
 }
 #endif

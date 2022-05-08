@@ -35,7 +35,7 @@ namespace x86
 				const char *Jump_ECX_Zero_8();
 				const char *Call_Interrupt_Procedure_8();
 				const char *Call_Interrupt_Procedure_If_Overflow();
-				const char *Interrupt_Return_16();
+				const char *Interrupt_Return_20();
 			};
 		}
 	}
