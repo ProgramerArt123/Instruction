@@ -1231,6 +1231,10 @@ int main(int argc, char *argv[])
 		out << x86::instruction::CallInterruptProcedure(x86::immediate::ImmediateUnSigned8(3)) << std::endl;
 	}
 	
+	{
+		out << x86::instruction::CallInterruptProcedureIfOverflow() << std::endl;
+	}
+	
 	const std::string &str = out.str();
 	{
 		std::ofstream code("test.s");

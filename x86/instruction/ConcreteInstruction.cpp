@@ -1440,5 +1440,11 @@ namespace x86
 		{
 
 		}
+		
+		CallInterruptProcedureIfOverflow::CallInterruptProcedureIfOverflow() 
+			: AbstractInstruction(x86::mnemonic::jump::size32::Call_Interrupt_Procedure_If_Overflow())
+		{
+
+		}
 	}
 }

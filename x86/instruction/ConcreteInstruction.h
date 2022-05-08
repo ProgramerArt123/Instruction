@@ -762,6 +762,11 @@ namespace x86
 		public:
 			explicit CallInterruptProcedure(const x86::immediate::Immediate8 &source);
 		};
+		
+		class CallInterruptProcedureIfOverflow : public AbstractInstruction {
+		public:
+			explicit CallInterruptProcedureIfOverflow();
+		};
 	}
 }
 #endif
