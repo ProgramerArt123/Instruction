@@ -1411,5 +1411,10 @@ namespace x86
 		{
 
 		}
+		LoopCounterAndZero::LoopCounterAndZero(const x86::label::CodeLabel &source) 
+			: AbstractInstruction(x86::mnemonic::jump::size32::Loop_ECX_ZF_8(), source)
+		{
+
+		}
 	}
 }

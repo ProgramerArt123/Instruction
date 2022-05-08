@@ -75,10 +75,10 @@ namespace x86
 					return "LOOP";
 				}
 				const char *Loop_ECX_ZF_8() {
-					return "LOOPE";
+					return "LOOPZ";
 				}
 				const char *Loop_ECX_NOT_ZF_8() {
-					return "LOOPNE";
+					return "LOOPNZ";
 				}
 				const char *Jump_NOT_CX_8() {
 					return "JCXZ";

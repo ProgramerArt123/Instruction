@@ -1203,6 +1203,12 @@ int main(int argc, char *argv[])
 		out << x86::instruction::LoopCounter(label) << std::endl;
 	}
 	
+	{
+		const x86::label::CodeLabel label("counter_zero");
+		out << label << std::endl;
+		out << x86::instruction::LoopCounterAndZero(label) << std::endl;
+	}
+	
 	const std::string &str = out.str();
 	{
 		std::ofstream code("test.s");
