@@ -1184,6 +1184,12 @@ int main(int argc, char *argv[])
 		out << label << std::endl;
 		out << x86::instruction::JumpIfNotParity(label) << std::endl;
 	}
+		
+	{
+		const x86::label::CodeLabel label("signed");
+		out << label << std::endl;
+		out << x86::instruction::JumpIfSigned(label) << std::endl;
+	}
 	
 	const std::string &str = out.str();
 	{
