@@ -84,7 +84,7 @@ namespace x86
 					return "JCXZ";
 				}
 
-				const char *Jump_NOT_ECX_8() {
+				const char *Jump_ECX_Zero_8() {
 					return "JECXZ";
 				}
 				const char *Call_Interrupt_Procedure_8() {

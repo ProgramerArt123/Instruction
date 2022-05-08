@@ -1428,5 +1428,11 @@ namespace x86
 		{
 
 		}
+		
+		JumpIfECXZero::JumpIfECXZero(const x86::label::CodeLabel &source) 
+			: AbstractInstruction(x86::mnemonic::jump::size32::Jump_ECX_Zero_8(), source)
+		{
+
+		}
 	}
 }

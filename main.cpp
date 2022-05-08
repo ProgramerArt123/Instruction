@@ -1221,6 +1221,12 @@ int main(int argc, char *argv[])
 		out << x86::instruction::JumpIfCXZero(label) << std::endl;
 	}
 	
+	{
+		const x86::label::CodeLabel label("ecx_zero");
+		out << label << std::endl;
+		out << x86::instruction::JumpIfECXZero(label) << std::endl;
+	}
+	
 	const std::string &str = out.str();
 	{
 		std::ofstream code("test.s");

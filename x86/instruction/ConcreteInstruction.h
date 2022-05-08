@@ -752,6 +752,11 @@ namespace x86
 		public:
 			explicit JumpIfCXZero(const x86::label::CodeLabel &source);
 		};
+		
+		class JumpIfECXZero : public AbstractInstruction {
+		public:
+			explicit JumpIfECXZero(const x86::label::CodeLabel &source);
+		};
 	}
 }
 #endif

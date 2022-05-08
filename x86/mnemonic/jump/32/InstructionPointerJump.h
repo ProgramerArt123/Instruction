@@ -32,7 +32,7 @@ namespace x86
 				const char *Loop_ECX_ZF_8();
 				const char *Loop_ECX_Not_ZF_8();
 				const char *Jump_CX_Zero_8();
-				const char *Jump_NOT_ECX_8();
+				const char *Jump_ECX_Zero_8();
 				const char *Call_Interrupt_Procedure_8();
 				const char *Call_Interrupt_Procedure_If_Overflow();
 				const char *Interrupt_Return_16();
