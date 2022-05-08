@@ -747,6 +747,11 @@ namespace x86
 		public:
 			explicit LoopCounterAndNotZero(const x86::label::CodeLabel &source);
 		};
+		
+		class JumpIfCXZero : public AbstractInstruction {
+		public:
+			explicit JumpIfCXZero(const x86::label::CodeLabel &source);
+		};
 	}
 }
 #endif

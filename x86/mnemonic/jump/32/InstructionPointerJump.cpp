@@ -80,7 +80,7 @@ namespace x86
 				const char *Loop_ECX_Not_ZF_8() {
 					return "LOOPNZ";
 				}
-				const char *Jump_NOT_CX_8() {
+				const char *Jump_CX_Zero_8() {
 					return "JCXZ";
 				}
 
