@@ -1247,6 +1247,10 @@ int main(int argc, char *argv[])
 		out << x86::instruction::TransmittedWords() << std::endl;
 	}
 	
+	{
+		out << x86::instruction::TransmittedDWords() << std::endl;
+	}
+	
 	const std::string &str = out.str();
 	{
 		std::ofstream code("test.s");
