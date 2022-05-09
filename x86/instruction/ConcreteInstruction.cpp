@@ -4,6 +4,7 @@
 #include "x86/mnemonic/integer/32/Arithmetic.h"
 #include "x86/mnemonic/integer/32/Logical.h"
 #include "x86/mnemonic/jump/32/InstructionPointerJump.h"
+#include "x86/mnemonic/string/Operation.h"
 #include "Instruction.h"
 #include "ConcreteInstruction.h"
 namespace x86
@@ -1451,6 +1452,26 @@ namespace x86
 			: AbstractInstruction(x86::mnemonic::jump::size32::Interrupt_Return_20())
 		{
 
+		}
+		
+		TransmittedBytes::TransmittedBytes() 
+			: AbstractInstruction(x86::mnemonic::string::Transmitted_8()),
+			m_from_segment(DS), m_from_offset(ESI), m_to_segment(ES), m_to_offset(EDI)
+		{
+
+		}
+		
+		const reg::classic::segment::Segment &TransmittedBytes::FromSegment()const {
+			return m_from_segment;
+		}
+		const reg::classic::general::offset::Address32 &TransmittedBytes::FromOffset()const {
+			return m_from_offset;
+		}
+		const reg::classic::segment::Segment &TransmittedBytes::ToSegment()const {
+			return m_to_segment;
+		}
+		const reg::classic::general::offset::Address32 &TransmittedBytes::ToOffset()const {
+			return m_to_offset;
 		}
 	}
 }

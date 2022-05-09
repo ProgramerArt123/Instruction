@@ -26,11 +26,15 @@ namespace x86
 				class Operation16;
 				class Operation32;	 
 				class General;
+				namespace offset
+				{
+					class Offset8;
+					class Offset16;
+					class Offset32;
+					class Address32;
+				}
 			}
-			namespace offset
-			{
-				class Offset8;
-			}
+
 			namespace segment
 			{
 				class Segment;
@@ -771,6 +775,21 @@ namespace x86
 		class InterruptReturn : public AbstractInstruction {
 		public:
 			explicit InterruptReturn();
+		};
+		
+		class TransmittedBytes : public AbstractInstruction {
+		public:
+			explicit TransmittedBytes();
+			const reg::classic::segment::Segment &FromSegment()const;
+			const reg::classic::general::offset::Address32 &FromOffset()const;
+			const reg::classic::segment::Segment &ToSegment()const;
+			const reg::classic::general::offset::Address32 &ToOffset()const;
+	
+		private:
+			const reg::classic::segment::Segment &m_from_segment;
+			const reg::classic::general::offset::Address32 &m_from_offset;
+			const reg::classic::segment::Segment &m_to_segment;
+			const reg::classic::general::offset::Address32 &m_to_offset;
 		};
 	}
 }
