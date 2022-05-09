@@ -1473,5 +1473,28 @@ namespace x86
 		const reg::classic::general::offset::Address32 &TransmittedBytes::ToOffset()const {
 			return m_to_offset;
 		}
+		
+		TransmittedWords::TransmittedWords() 
+			: AbstractInstruction(x86::mnemonic::string::Transmitted_16())
+			, m_from_segment(DS)
+			, m_from_offset(ESI)
+			, m_to_segment(ES)
+			, m_to_offset(EDI)
+		{
+
+		}
+		
+		const reg::classic::segment::Segment &TransmittedWords::FromSegment()const {
+			return m_from_segment;
+		}
+		const reg::classic::general::offset::Address32 &TransmittedWords::FromOffset()const {
+			return m_from_offset;
+		}
+		const reg::classic::segment::Segment &TransmittedWords::ToSegment()const {
+			return m_to_segment;
+		}
+		const reg::classic::general::offset::Address32 &TransmittedWords::ToOffset()const {
+			return m_to_offset;
+		}
 	}
 }

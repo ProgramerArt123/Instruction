@@ -791,6 +791,21 @@ namespace x86
 			const reg::classic::segment::Segment &m_to_segment;
 			const reg::classic::general::offset::Address32 &m_to_offset;
 		};
+		
+		class TransmittedWords : public AbstractInstruction {
+		public:
+			explicit TransmittedWords();
+			const reg::classic::segment::Segment &FromSegment()const;
+			const reg::classic::general::offset::Address32 &FromOffset()const;
+			const reg::classic::segment::Segment &ToSegment()const;
+			const reg::classic::general::offset::Address32 &ToOffset()const;
+	
+		private:
+			const reg::classic::segment::Segment &m_from_segment;
+			const reg::classic::general::offset::Address32 &m_from_offset;
+			const reg::classic::segment::Segment &m_to_segment;
+			const reg::classic::general::offset::Address32 &m_to_offset;
+		};
 	}
 }
 #endif
