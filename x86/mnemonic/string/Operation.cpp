@@ -21,7 +21,7 @@ namespace x86
 			const char *Compare_Bytes_32_CF_OF_SF_ZF_AF_PF() {
 				return "CMPSD";
 			}
-			const char *Compare_AX_Bytes_8_CF_OF_SF_ZF_AF_PF() {
+			const char *Compare_AL_Byte_CF_OF_SF_ZF_AF_PF() {
 				return "SCASB";
 			}
 			const char *Compare_AX_Bytes_16_CF_OF_SF_ZF_AF_PF() {

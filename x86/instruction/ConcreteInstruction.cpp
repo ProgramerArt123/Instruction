@@ -1589,5 +1589,20 @@ namespace x86
 		const reg::classic::general::offset::Address32 &CompareDWords::ToOffset()const {
 			return m_to_offset;
 		}
+		
+		CompareALByte::CompareALByte() 
+			: AbstractInstruction(x86::mnemonic::string::Compare_AL_Byte_CF_OF_SF_ZF_AF_PF())
+			, m_to_segment(ES)
+			, m_to_offset(EDI)
+		{
+
+		}
+		
+		const reg::classic::segment::Segment &CompareALByte::ToSegment()const {
+			return m_to_segment;
+		}
+		const reg::classic::general::offset::Address32 &CompareALByte::ToOffset()const {
+			return m_to_offset;
+		}
 	}
 }
