@@ -1255,6 +1255,10 @@ int main(int argc, char *argv[])
 		out << x86::instruction::CompareBytes() << std::endl;
 	}
 	
+	{
+		out << x86::instruction::CompareWords() << std::endl;
+	}
+	
 	const std::string &str = out.str();
 	{
 		std::ofstream code("test.s");
