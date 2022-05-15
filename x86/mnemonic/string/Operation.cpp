@@ -12,13 +12,13 @@ namespace x86
 			const char *Transmitted_32() {
 				return "MOVSD";
 			}
-			const char *Compare_Bytes_8_CF_OF_SF_ZF_AF_PF() {
+			const char *Compare_Bytes_CF_OF_SF_ZF_AF_PF() {
 				return "CMPSB";
 			}
-			const char *Compare_Bytes_16_CF_OF_SF_ZF_AF_PF() {
+			const char *Compare_Words_CF_OF_SF_ZF_AF_PF() {
 				return "CMPSW";
 			}
-			const char *Compare_Bytes_32_CF_OF_SF_ZF_AF_PF() {
+			const char *Compare_DWords_CF_OF_SF_ZF_AF_PF() {
 				return "CMPSD";
 			}
 			const char *Compare_AL_Byte_CF_OF_SF_ZF_AF_PF() {
@@ -33,7 +33,7 @@ namespace x86
 			const char *Load_Byte_To_AL_From_DS_ESI() {
 				return "LODSB";
 			}
-			const char *Load_16_To_AX_From_DS_ESI() {
+			const char *Load_Word_To_AX_From_DS_ESI() {
 				return "LODSW";
 			}
 			const char *Load_32_To_EAX_From_DS_ESI() {

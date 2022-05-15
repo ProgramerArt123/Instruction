@@ -1522,7 +1522,7 @@ namespace x86
 		
 		
 		CompareBytes::CompareBytes() 
-			: AbstractInstruction(x86::mnemonic::string::Compare_Bytes_8_CF_OF_SF_ZF_AF_PF())
+			: AbstractInstruction(x86::mnemonic::string::Compare_Bytes_CF_OF_SF_ZF_AF_PF())
 			, m_from_segment(DS)
 			, m_from_offset(ESI)
 			, m_to_segment(ES)
@@ -1545,7 +1545,7 @@ namespace x86
 		}
 		
 		CompareWords::CompareWords() 
-			: AbstractInstruction(x86::mnemonic::string::Compare_Bytes_16_CF_OF_SF_ZF_AF_PF())
+			: AbstractInstruction(x86::mnemonic::string::Compare_Words_CF_OF_SF_ZF_AF_PF())
 			, m_from_segment(DS)
 			, m_from_offset(ESI)
 			, m_to_segment(ES)
@@ -1568,7 +1568,7 @@ namespace x86
 		}
 		
 		CompareDWords::CompareDWords() 
-			: AbstractInstruction(x86::mnemonic::string::Compare_Bytes_32_CF_OF_SF_ZF_AF_PF())
+			: AbstractInstruction(x86::mnemonic::string::Compare_DWords_CF_OF_SF_ZF_AF_PF())
 			, m_from_segment(DS)
 			, m_from_offset(ESI)
 			, m_to_segment(ES)
@@ -1647,6 +1647,21 @@ namespace x86
 			return m_to_segment;
 		}
 		const reg::classic::general::offset::Address32 &SaveByteAL::ToOffset()const {
+			return m_to_offset;
+		}
+		
+		SaveWordAX::SaveWordAX() 
+			: AbstractInstruction(x86::mnemonic::string::Load_Word_To_AX_From_DS_ESI())
+			, m_to_segment(DS)
+			, m_to_offset(ESI)
+		{
+
+		}
+		
+		const reg::classic::segment::Segment &SaveWordAX::ToSegment()const {
+			return m_to_segment;
+		}
+		const reg::classic::general::offset::Address32 &SaveWordAX::ToOffset()const {
 			return m_to_offset;
 		}
 	}
