@@ -45,7 +45,7 @@ namespace x86
 			const char *Store_Word_To_ES_EDI_From_AX() {
 				return "STOSW";
 			}
-			const char *Store_32_To_ES_EDI_From_EAX() {
+			const char *Store_DWord_To_ES_EDI_From_EAX() {
 				return "STOSD";
 			}
 			const char *Repeat_Prefix_ECX() {

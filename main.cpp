@@ -1287,6 +1287,10 @@ int main(int argc, char *argv[])
 		out << x86::instruction::SaveWordAddress() << std::endl;
 	}
 	
+	{
+		out << x86::instruction::TransmittedBytes().SetPrefix(x86::instruction::RepeatCounterPrefix()) << std::endl;
+	}
+	
 	const std::string &str = out.str();
 	{
 		std::ofstream code("test.s");

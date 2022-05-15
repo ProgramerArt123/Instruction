@@ -1460,7 +1460,6 @@ namespace x86
 		{
 
 		}
-		
 		const reg::classic::segment::Segment &TransmittedBytes::FromSegment()const {
 			return m_from_segment;
 		}
@@ -1472,6 +1471,10 @@ namespace x86
 		}
 		const reg::classic::general::offset::Address32 &TransmittedBytes::ToOffset()const {
 			return m_to_offset;
+		}
+		TransmittedBytes &TransmittedBytes::SetPrefix(const RepeatCounterPrefix &prefix) {
+			m_string = std::string(prefix.String()) + '\t' + m_string;
+			return *this;
 		}
 		
 		TransmittedWords::TransmittedWords() 
@@ -1708,6 +1711,32 @@ namespace x86
 		}
 		const reg::classic::general::offset::Address32 &SaveWordAddress::ToOffset()const {
 			return m_to_offset;
+		}
+		
+		SaveDWordAddress::SaveDWordAddress() 
+			: AbstractInstruction(x86::mnemonic::string::Store_DWord_To_ES_EDI_From_EAX())
+			, m_to_segment(ES)
+			, m_to_offset(EDI)
+		{
+
+		}
+		
+		const reg::classic::segment::Segment &SaveDWordAddress::ToSegment()const {
+			return m_to_segment;
+		}
+		const reg::classic::general::offset::Address32 &SaveDWordAddress::ToOffset()const {
+			return m_to_offset;
+		}
+		
+		RepeatCounterPrefix::RepeatCounterPrefix() 
+			: AbstractInstruction(x86::mnemonic::string::Repeat_Prefix_ECX())
+			, m_counter(ECX)
+		{
+
+		}
+		
+		const reg::classic::general::operation::CountExtend &RepeatCounterPrefix::Counter()const {
+			return m_counter;
 		}
 	}
 }

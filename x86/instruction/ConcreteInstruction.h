@@ -777,6 +777,8 @@ namespace x86
 			explicit InterruptReturn();
 		};
 		
+		class RepeatCounterPrefix;
+		
 		class TransmittedBytes : public AbstractInstruction {
 		public:
 			explicit TransmittedBytes();
@@ -784,7 +786,7 @@ namespace x86
 			const reg::classic::general::offset::Address32 &FromOffset()const;
 			const reg::classic::segment::Segment &ToSegment()const;
 			const reg::classic::general::offset::Address32 &ToOffset()const;
-	
+			TransmittedBytes &SetPrefix(const RepeatCounterPrefix &prefix);
 		private:
 			const reg::classic::segment::Segment &m_from_segment;
 			const reg::classic::general::offset::Address32 &m_from_offset;
@@ -907,6 +909,7 @@ namespace x86
 			const reg::classic::general::offset::Address32 &FromOffset()const;
 	
 		private:
+			
 			const reg::classic::segment::Segment &m_from_segment;
 			const reg::classic::general::offset::Address32 &m_from_offset;
 		};
@@ -955,6 +958,24 @@ namespace x86
 			const reg::classic::general::offset::Address32 &m_to_offset;
 		};
 		
+		class SaveDWordAddress : public AbstractInstruction {
+		public:
+			explicit SaveDWordAddress();
+			const reg::classic::segment::Segment &ToSegment()const;
+			const reg::classic::general::offset::Address32 &ToOffset()const;
+	
+		private:
+			const reg::classic::segment::Segment &m_to_segment;
+			const reg::classic::general::offset::Address32 &m_to_offset;
+		};
+		
+		class RepeatCounterPrefix : public AbstractInstruction {
+		public:
+			explicit RepeatCounterPrefix();
+			const reg::classic::general::operation::CountExtend &Counter()const;
+		private:
+			const reg::classic::general::operation::CountExtend &m_counter;
+		};
 	}
 }
 #endif
