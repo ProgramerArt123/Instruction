@@ -36,10 +36,10 @@ namespace x86
 			const char *Load_Word_To_AX_From_DS_ESI() {
 				return "LODSW";
 			}
-			const char *Load_32_To_EAX_From_DS_ESI() {
+			const char *Load_DWord_To_EAX_From_DS_ESI() {
 				return "LODSD";
 			}
-			const char *Store_8_To_ES_EDI_From_AL() {
+			const char *Store_Byte_To_ES_EDI_From_AL() {
 				return "STOSB";
 			}
 			const char *Store_16_To_ES_EDI_From_AX() {

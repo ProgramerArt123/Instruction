@@ -1637,31 +1637,61 @@ namespace x86
 		
 		SaveByteAL::SaveByteAL() 
 			: AbstractInstruction(x86::mnemonic::string::Load_Byte_To_AL_From_DS_ESI())
-			, m_to_segment(DS)
-			, m_to_offset(ESI)
+			, m_from_segment(DS)
+			, m_from_offset(ESI)
 		{
 
 		}
 		
-		const reg::classic::segment::Segment &SaveByteAL::ToSegment()const {
-			return m_to_segment;
+		const reg::classic::segment::Segment &SaveByteAL::FromSegment()const {
+			return m_from_segment;
 		}
-		const reg::classic::general::offset::Address32 &SaveByteAL::ToOffset()const {
-			return m_to_offset;
+		const reg::classic::general::offset::Address32 &SaveByteAL::FromOffset()const {
+			return m_from_offset;
 		}
 		
 		SaveWordAX::SaveWordAX() 
 			: AbstractInstruction(x86::mnemonic::string::Load_Word_To_AX_From_DS_ESI())
-			, m_to_segment(DS)
-			, m_to_offset(ESI)
+			, m_from_segment(DS)
+			, m_from_offset(ESI)
 		{
 
 		}
 		
-		const reg::classic::segment::Segment &SaveWordAX::ToSegment()const {
+		const reg::classic::segment::Segment &SaveWordAX::FromSegment()const {
+			return m_from_segment;
+		}
+		const reg::classic::general::offset::Address32 &SaveWordAX::FromOffset()const {
+			return m_from_offset;
+		}
+		
+		SaveDWordEAX::SaveDWordEAX() 
+			: AbstractInstruction(x86::mnemonic::string::Load_DWord_To_EAX_From_DS_ESI())
+			, m_from_segment(DS)
+			, m_from_offset(ESI)
+		{
+
+		}
+		
+		const reg::classic::segment::Segment &SaveDWordEAX::FromSegment()const {
+			return m_from_segment;
+		}
+		const reg::classic::general::offset::Address32 &SaveDWordEAX::FromOffset()const {
+			return m_from_offset;
+		}
+		
+		SaveByteAddress::SaveByteAddress() 
+			: AbstractInstruction(x86::mnemonic::string::Store_Byte_To_ES_EDI_From_AL())
+			, m_to_segment(ES)
+			, m_to_offset(EDI)
+		{
+
+		}
+		
+		const reg::classic::segment::Segment &SaveByteAddress::ToSegment()const {
 			return m_to_segment;
 		}
-		const reg::classic::general::offset::Address32 &SaveWordAX::ToOffset()const {
+		const reg::classic::general::offset::Address32 &SaveByteAddress::ToOffset()const {
 			return m_to_offset;
 		}
 	}

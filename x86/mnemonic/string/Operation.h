@@ -15,8 +15,8 @@ namespace x86
 				const char *Compare_EAX_DWord_CF_OF_SF_ZF_AF_PF();
 				const char *Load_Byte_To_AL_From_DS_ESI();
 				const char *Load_Word_To_AX_From_DS_ESI();
-				const char *Load_32_To_EAX_From_DS_ESI();
-				const char *Store_8_To_ES_EDI_From_AL();
+				const char *Load_DWord_To_EAX_From_DS_ESI();
+				const char *Store_Byte_To_ES_EDI_From_AL();
 				const char *Store_16_To_ES_EDI_From_AX();
 				const char *Store_32_To_ES_EDI_From_EAX();
 				const char *Repeat_Prefix_ECX();

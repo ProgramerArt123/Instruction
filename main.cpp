@@ -1279,6 +1279,10 @@ int main(int argc, char *argv[])
 		out << x86::instruction::SaveWordAX() << std::endl;
 	}
 	
+	{
+		out << x86::instruction::SaveByteAddress() << std::endl;
+	}
+	
 	const std::string &str = out.str();
 	{
 		std::ofstream code("test.s");

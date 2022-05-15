@@ -903,17 +903,39 @@ namespace x86
 		class SaveByteAL : public AbstractInstruction {
 		public:
 			explicit SaveByteAL();
-			const reg::classic::segment::Segment &ToSegment()const;
-			const reg::classic::general::offset::Address32 &ToOffset()const;
+			const reg::classic::segment::Segment &FromSegment()const;
+			const reg::classic::general::offset::Address32 &FromOffset()const;
 	
 		private:
-			const reg::classic::segment::Segment &m_to_segment;
-			const reg::classic::general::offset::Address32 &m_to_offset;
+			const reg::classic::segment::Segment &m_from_segment;
+			const reg::classic::general::offset::Address32 &m_from_offset;
 		};
 		
 		class SaveWordAX : public AbstractInstruction {
 		public:
 			explicit SaveWordAX();
+			const reg::classic::segment::Segment &FromSegment()const;
+			const reg::classic::general::offset::Address32 &FromOffset()const;
+	
+		private:
+			const reg::classic::segment::Segment &m_from_segment;
+			const reg::classic::general::offset::Address32 &m_from_offset;
+		};
+		
+		class SaveDWordEAX : public AbstractInstruction {
+		public:
+			explicit SaveDWordEAX();
+			const reg::classic::segment::Segment &FromSegment()const;
+			const reg::classic::general::offset::Address32 &FromOffset()const;
+	
+		private:
+			const reg::classic::segment::Segment &m_from_segment;
+			const reg::classic::general::offset::Address32 &m_from_offset;
+		};
+		
+		class SaveByteAddress : public AbstractInstruction {
+		public:
+			explicit SaveByteAddress();
 			const reg::classic::segment::Segment &ToSegment()const;
 			const reg::classic::general::offset::Address32 &ToOffset()const;
 	
