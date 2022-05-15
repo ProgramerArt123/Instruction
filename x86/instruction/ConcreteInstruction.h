@@ -888,6 +888,28 @@ namespace x86
 			const reg::classic::segment::Segment &m_to_segment;
 			const reg::classic::general::offset::Address32 &m_to_offset;
 		};
+		
+		class CompareEAXDWord : public AbstractInstruction {
+		public:
+			explicit CompareEAXDWord();
+			const reg::classic::segment::Segment &ToSegment()const;
+			const reg::classic::general::offset::Address32 &ToOffset()const;
+	
+		private:
+			const reg::classic::segment::Segment &m_to_segment;
+			const reg::classic::general::offset::Address32 &m_to_offset;
+		};
+		
+		class SaveByteAL : public AbstractInstruction {
+		public:
+			explicit SaveByteAL();
+			const reg::classic::segment::Segment &ToSegment()const;
+			const reg::classic::general::offset::Address32 &ToOffset()const;
+	
+		private:
+			const reg::classic::segment::Segment &m_to_segment;
+			const reg::classic::general::offset::Address32 &m_to_offset;
+		};
 	}
 }
 #endif

@@ -12,8 +12,8 @@ namespace x86
 				const char *Compare_Bytes_32_CF_OF_SF_ZF_AF_PF();
 				const char *Compare_AL_Byte_CF_OF_SF_ZF_AF_PF();
 				const char *Compare_AX_Word_CF_OF_SF_ZF_AF_PF();
-				const char *Compare_AX_Bytes_32_CF_OF_SF_ZF_AF_PF();
-				const char *Load_8_To_AL_From_DS_ESI();
+				const char *Compare_EAX_DWord_CF_OF_SF_ZF_AF_PF();
+				const char *Load_Byte_To_AL_From_DS_ESI();
 				const char *Load_16_To_AX_From_DS_ESI();
 				const char *Load_32_To_EAX_From_DS_ESI();
 				const char *Store_8_To_ES_EDI_From_AL();

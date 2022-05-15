@@ -1619,5 +1619,35 @@ namespace x86
 		const reg::classic::general::offset::Address32 &CompareAXWord::ToOffset()const {
 			return m_to_offset;
 		}
+		
+		CompareEAXDWord::CompareEAXDWord() 
+			: AbstractInstruction(x86::mnemonic::string::Compare_EAX_DWord_CF_OF_SF_ZF_AF_PF())
+			, m_to_segment(ES)
+			, m_to_offset(EDI)
+		{
+
+		}
+		
+		const reg::classic::segment::Segment &CompareEAXDWord::ToSegment()const {
+			return m_to_segment;
+		}
+		const reg::classic::general::offset::Address32 &CompareEAXDWord::ToOffset()const {
+			return m_to_offset;
+		}
+		
+		SaveByteAL::SaveByteAL() 
+			: AbstractInstruction(x86::mnemonic::string::Load_Byte_To_AL_From_DS_ESI())
+			, m_to_segment(DS)
+			, m_to_offset(ESI)
+		{
+
+		}
+		
+		const reg::classic::segment::Segment &SaveByteAL::ToSegment()const {
+			return m_to_segment;
+		}
+		const reg::classic::general::offset::Address32 &SaveByteAL::ToOffset()const {
+			return m_to_offset;
+		}
 	}
 }
