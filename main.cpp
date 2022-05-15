@@ -1283,6 +1283,10 @@ int main(int argc, char *argv[])
 		out << x86::instruction::SaveByteAddress() << std::endl;
 	}
 	
+	{
+		out << x86::instruction::SaveWordAddress() << std::endl;
+	}
+	
 	const std::string &str = out.str();
 	{
 		std::ofstream code("test.s");

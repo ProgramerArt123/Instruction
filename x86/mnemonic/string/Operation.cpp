@@ -42,7 +42,7 @@ namespace x86
 			const char *Store_Byte_To_ES_EDI_From_AL() {
 				return "STOSB";
 			}
-			const char *Store_16_To_ES_EDI_From_AX() {
+			const char *Store_Word_To_ES_EDI_From_AX() {
 				return "STOSW";
 			}
 			const char *Store_32_To_ES_EDI_From_EAX() {

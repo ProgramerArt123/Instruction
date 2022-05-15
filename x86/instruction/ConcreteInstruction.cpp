@@ -1694,5 +1694,20 @@ namespace x86
 		const reg::classic::general::offset::Address32 &SaveByteAddress::ToOffset()const {
 			return m_to_offset;
 		}
+		
+		SaveWordAddress::SaveWordAddress() 
+			: AbstractInstruction(x86::mnemonic::string::Store_Word_To_ES_EDI_From_AX())
+			, m_to_segment(ES)
+			, m_to_offset(EDI)
+		{
+
+		}
+		
+		const reg::classic::segment::Segment &SaveWordAddress::ToSegment()const {
+			return m_to_segment;
+		}
+		const reg::classic::general::offset::Address32 &SaveWordAddress::ToOffset()const {
+			return m_to_offset;
+		}
 	}
 }
