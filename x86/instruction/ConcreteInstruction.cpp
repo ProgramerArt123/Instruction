@@ -1474,6 +1474,13 @@ namespace x86
 		Destination::~Destination() {
 			
 		}
+		Prefix::Prefix(const char *mnemonic)
+			: AbstractInstruction(mnemonic) {
+			
+		}
+		Prefix::~Prefix() {
+			
+		}
 		const reg::classic::segment::Segment &Destination::Segment()const {
 			return m_segment;
 		}
@@ -1486,7 +1493,7 @@ namespace x86
 		{
 
 		}
-		TransmittedBytes &TransmittedBytes::SetPrefix(const RepeatCounterPrefix &prefix) {
+		TransmittedBytes &TransmittedBytes::SetPrefix(const Prefix &prefix) {
 			m_string = std::string(prefix.String()) + '\t' + m_string;
 			return *this;
 		}
@@ -1598,14 +1605,14 @@ namespace x86
 
 		}
 		
-		RepeatCounterPrefix::RepeatCounterPrefix() 
-			: AbstractInstruction(x86::mnemonic::string::Repeat_Prefix_ECX())
+		RepeatCounter::RepeatCounter() 
+			: Prefix(x86::mnemonic::string::Repeat_Prefix_ECX())
 			, m_counter(ECX)
 		{
 
 		}
 		
-		const reg::classic::general::operation::CountExtend &RepeatCounterPrefix::Counter()const {
+		const reg::classic::general::operation::CountExtend &RepeatCounter::Counter()const {
 			return m_counter;
 		}
 	}

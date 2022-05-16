@@ -1288,7 +1288,7 @@ int main(int argc, char *argv[])
 	}
 	
 	{
-		out << x86::instruction::TransmittedBytes().SetPrefix(x86::instruction::RepeatCounterPrefix()) << std::endl;
+		out << x86::instruction::TransmittedBytes().SetPrefix(x86::instruction::RepeatCounter()) << std::endl;
 	}
 	
 	const std::string &str = out.str();
