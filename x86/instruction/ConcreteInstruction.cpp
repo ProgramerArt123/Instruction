@@ -1487,19 +1487,29 @@ namespace x86
 		const reg::classic::general::offset::Address32 &Destination::Offset()const {
 			return m_offset;
 		}
+		
+		PrefixAble::PrefixAble(const char *mnemonic)
+			: AbstractInstruction(mnemonic) {
+			
+		}
+		PrefixAble::~PrefixAble() {
+			
+		}
+		AbstractInstruction &PrefixAble::SetPrefix(const Prefix &prefix) {
+			return *this;
+		}
+
 		TransmittedBytes::TransmittedBytes() 
-			: AbstractInstruction(x86::mnemonic::string::Transmitted_8()),
-			Source(DS,ESI), Destination(ES,EDI)
+			: PrefixAble(x86::mnemonic::string::Transmitted_8())
+			, Source(DS,ESI), Destination(ES,EDI)
 		{
 
 		}
-		TransmittedBytes &TransmittedBytes::SetPrefix(const Prefix &prefix) {
-			m_string = std::string(prefix.String()) + '\t' + m_string;
-			return *this;
-		}
+		
 		
 		TransmittedWords::TransmittedWords() 
-			: AbstractInstruction(x86::mnemonic::string::Transmitted_16()),
+			: PrefixAble(x86::mnemonic::string::Transmitted_16())
+			,
 			Source(DS, ESI), Destination(ES,EDI)
 		{
 
@@ -1507,7 +1517,8 @@ namespace x86
 		
 		
 		TransmittedDWords::TransmittedDWords() 
-			: AbstractInstruction(x86::mnemonic::string::Transmitted_32()),
+			: PrefixAble(x86::mnemonic::string::Transmitted_32())
+			,
 			Source(DS, ESI), Destination(ES,EDI)
 		{
 

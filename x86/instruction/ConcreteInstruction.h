@@ -805,18 +805,25 @@ namespace x86
 			virtual ~Prefix();
 		};
 		
-		class TransmittedBytes : public AbstractInstruction, public Source, public Destination {
+		class PrefixAble : public AbstractInstruction {
 		public:
-			explicit TransmittedBytes();
-			TransmittedBytes &SetPrefix(const Prefix &prefix);
+			AbstractInstruction &SetPrefix(const Prefix &prefix);
+		protected:
+			explicit PrefixAble(const char *mnemonic);
+			virtual ~PrefixAble();
 		};
 		
-		class TransmittedWords : public AbstractInstruction, public Source, public Destination {
+		class TransmittedBytes : public PrefixAble, public Source, public Destination {
+		public:
+			explicit TransmittedBytes();
+		};
+		
+		class TransmittedWords : public PrefixAble, public Source, public Destination {
 		public:
 			explicit TransmittedWords();
 		};
 		
-		class TransmittedDWords : public AbstractInstruction, public Source, public Destination {
+		class TransmittedDWords : public PrefixAble, public Source, public Destination {
 		public:
 			explicit TransmittedDWords();
 		};
