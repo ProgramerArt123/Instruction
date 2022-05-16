@@ -1466,17 +1466,25 @@ namespace x86
 		const reg::classic::general::offset::Address32 &Source::Offset()const {
 			return m_offset;
 		}
+		Destination::Destination(const reg::classic::segment::Segment &segment, const reg::classic::general::offset::Address32 &offset)
+			: m_segment(segment)
+			, m_offset(offset) {
+			
+		}
+		Destination::~Destination() {
+			
+		}
+		const reg::classic::segment::Segment &Destination::Segment()const {
+			return m_segment;
+		}
+		const reg::classic::general::offset::Address32 &Destination::Offset()const {
+			return m_offset;
+		}
 		TransmittedBytes::TransmittedBytes() 
 			: AbstractInstruction(x86::mnemonic::string::Transmitted_8()),
-			Source(DS,ESI), m_to_segment(ES), m_to_offset(EDI)
+			Source(DS,ESI), Destination(ES,EDI)
 		{
 
-		}
-		const reg::classic::segment::Segment &TransmittedBytes::ToSegment()const {
-			return m_to_segment;
-		}
-		const reg::classic::general::offset::Address32 &TransmittedBytes::ToOffset()const {
-			return m_to_offset;
 		}
 		TransmittedBytes &TransmittedBytes::SetPrefix(const RepeatCounterPrefix &prefix) {
 			m_string = std::string(prefix.String()) + '\t' + m_string;
@@ -1485,218 +1493,109 @@ namespace x86
 		
 		TransmittedWords::TransmittedWords() 
 			: AbstractInstruction(x86::mnemonic::string::Transmitted_16()),
-			Source(DS, ESI)
-			, m_to_segment(ES)
-			, m_to_offset(EDI)
+			Source(DS, ESI), Destination(ES,EDI)
 		{
 
 		}
 		
-		const reg::classic::segment::Segment &TransmittedWords::ToSegment()const {
-			return m_to_segment;
-		}
-		const reg::classic::general::offset::Address32 &TransmittedWords::ToOffset()const {
-			return m_to_offset;
-		}
 		
 		TransmittedDWords::TransmittedDWords() 
 			: AbstractInstruction(x86::mnemonic::string::Transmitted_32()),
-			Source(DS, ESI)
-			, m_to_segment(ES)
-			, m_to_offset(EDI)
+			Source(DS, ESI), Destination(ES,EDI)
 		{
 
-		}
-		
-		const reg::classic::segment::Segment &TransmittedDWords::ToSegment()const {
-			return m_to_segment;
-		}
-		const reg::classic::general::offset::Address32 &TransmittedDWords::ToOffset()const {
-			return m_to_offset;
 		}
 		
 		
 		CompareBytes::CompareBytes() 
 			: AbstractInstruction(x86::mnemonic::string::Compare_Bytes_CF_OF_SF_ZF_AF_PF())
-			, Source(DS, ESI)
-			, m_to_segment(ES)
-			, m_to_offset(EDI)
+			, Source(DS, ESI), Destination(ES, EDI)
 		{
 
-		}
-		
-		const reg::classic::segment::Segment &CompareBytes::ToSegment()const {
-			return m_to_segment;
-		}
-		const reg::classic::general::offset::Address32 &CompareBytes::ToOffset()const {
-			return m_to_offset;
 		}
 		
 		CompareWords::CompareWords() 
 			: AbstractInstruction(x86::mnemonic::string::Compare_Words_CF_OF_SF_ZF_AF_PF())
 			, Source(DS, ESI)
-			, m_to_segment(ES)
-			, m_to_offset(EDI)
+			, Destination(ES, EDI)
 		{
 
-		}
-		
-		const reg::classic::segment::Segment &CompareWords::ToSegment()const {
-			return m_to_segment;
-		}
-		const reg::classic::general::offset::Address32 &CompareWords::ToOffset()const {
-			return m_to_offset;
 		}
 		
 		CompareDWords::CompareDWords() 
 			: AbstractInstruction(x86::mnemonic::string::Compare_DWords_CF_OF_SF_ZF_AF_PF())
 			, Source(DS, ESI)
-			, m_to_segment(ES)
-			, m_to_offset(EDI)
+			, Destination(ES, EDI)
 		{
 
 		}
 		
-		const reg::classic::segment::Segment &CompareDWords::ToSegment()const {
-			return m_to_segment;
-		}
-		const reg::classic::general::offset::Address32 &CompareDWords::ToOffset()const {
-			return m_to_offset;
-		}
 		
 		CompareALByte::CompareALByte() 
-			: AbstractInstruction(x86::mnemonic::string::Compare_AL_Byte_CF_OF_SF_ZF_AF_PF())
-			, m_to_segment(ES)
-			, m_to_offset(EDI)
+			: AbstractInstruction(x86::mnemonic::string::Compare_AL_Byte_CF_OF_SF_ZF_AF_PF())			
+			, Destination(ES, EDI)
 		{
 
 		}
 		
-		const reg::classic::segment::Segment &CompareALByte::ToSegment()const {
-			return m_to_segment;
-		}
-		const reg::classic::general::offset::Address32 &CompareALByte::ToOffset()const {
-			return m_to_offset;
-		}
 		
 		CompareAXWord::CompareAXWord() 
 			: AbstractInstruction(x86::mnemonic::string::Compare_AX_Word_CF_OF_SF_ZF_AF_PF())
-			, m_to_segment(ES)
-			, m_to_offset(EDI)
+			, Destination(ES, EDI)
 		{
 
-		}
-		
-		const reg::classic::segment::Segment &CompareAXWord::ToSegment()const {
-			return m_to_segment;
-		}
-		const reg::classic::general::offset::Address32 &CompareAXWord::ToOffset()const {
-			return m_to_offset;
 		}
 		
 		CompareEAXDWord::CompareEAXDWord() 
 			: AbstractInstruction(x86::mnemonic::string::Compare_EAX_DWord_CF_OF_SF_ZF_AF_PF())
-			, m_to_segment(ES)
-			, m_to_offset(EDI)
+			, Destination(ES, EDI)
 		{
 
 		}
 		
-		const reg::classic::segment::Segment &CompareEAXDWord::ToSegment()const {
-			return m_to_segment;
-		}
-		const reg::classic::general::offset::Address32 &CompareEAXDWord::ToOffset()const {
-			return m_to_offset;
-		}
 		
 		SaveByteAL::SaveByteAL() 
 			: AbstractInstruction(x86::mnemonic::string::Load_Byte_To_AL_From_DS_ESI())
-			, m_from_segment(DS)
-			, m_from_offset(ESI)
+			, Source(DS, ESI)
 		{
 
-		}
-		
-		const reg::classic::segment::Segment &SaveByteAL::FromSegment()const {
-			return m_from_segment;
-		}
-		const reg::classic::general::offset::Address32 &SaveByteAL::FromOffset()const {
-			return m_from_offset;
 		}
 		
 		SaveWordAX::SaveWordAX() 
 			: AbstractInstruction(x86::mnemonic::string::Load_Word_To_AX_From_DS_ESI())
-			, m_from_segment(DS)
-			, m_from_offset(ESI)
+			, Source(DS, ESI)
 		{
 
 		}
 		
-		const reg::classic::segment::Segment &SaveWordAX::FromSegment()const {
-			return m_from_segment;
-		}
-		const reg::classic::general::offset::Address32 &SaveWordAX::FromOffset()const {
-			return m_from_offset;
-		}
 		
 		SaveDWordEAX::SaveDWordEAX() 
 			: AbstractInstruction(x86::mnemonic::string::Load_DWord_To_EAX_From_DS_ESI())
-			, m_from_segment(DS)
-			, m_from_offset(ESI)
+			, Source(DS, ESI)
 		{
 
 		}
 		
-		const reg::classic::segment::Segment &SaveDWordEAX::FromSegment()const {
-			return m_from_segment;
-		}
-		const reg::classic::general::offset::Address32 &SaveDWordEAX::FromOffset()const {
-			return m_from_offset;
-		}
 		
 		SaveByteAddress::SaveByteAddress() 
 			: AbstractInstruction(x86::mnemonic::string::Store_Byte_To_ES_EDI_From_AL())
-			, m_to_segment(ES)
-			, m_to_offset(EDI)
+			, Destination(ES, EDI)
 		{
 
-		}
-		
-		const reg::classic::segment::Segment &SaveByteAddress::ToSegment()const {
-			return m_to_segment;
-		}
-		const reg::classic::general::offset::Address32 &SaveByteAddress::ToOffset()const {
-			return m_to_offset;
 		}
 		
 		SaveWordAddress::SaveWordAddress() 
 			: AbstractInstruction(x86::mnemonic::string::Store_Word_To_ES_EDI_From_AX())
-			, m_to_segment(ES)
-			, m_to_offset(EDI)
+			, Destination(ES, EDI)
 		{
 
-		}
-		
-		const reg::classic::segment::Segment &SaveWordAddress::ToSegment()const {
-			return m_to_segment;
-		}
-		const reg::classic::general::offset::Address32 &SaveWordAddress::ToOffset()const {
-			return m_to_offset;
 		}
 		
 		SaveDWordAddress::SaveDWordAddress() 
 			: AbstractInstruction(x86::mnemonic::string::Store_DWord_To_ES_EDI_From_EAX())
-			, m_to_segment(ES)
-			, m_to_offset(EDI)
+			, Destination(ES, EDI)
 		{
 
-		}
-		
-		const reg::classic::segment::Segment &SaveDWordAddress::ToSegment()const {
-			return m_to_segment;
-		}
-		const reg::classic::general::offset::Address32 &SaveDWordAddress::ToOffset()const {
-			return m_to_offset;
 		}
 		
 		RepeatCounterPrefix::RepeatCounterPrefix() 

@@ -790,171 +790,91 @@ namespace x86
 			const reg::classic::general::offset::Address32 &m_offset;
 		};
 		
-		class TransmittedBytes : public AbstractInstruction, public Source {
+		class Destination {
+		public:
+			const reg::classic::segment::Segment &Segment()const;
+			const reg::classic::general::offset::Address32 &Offset()const;
+		protected:
+			explicit Destination(const reg::classic::segment::Segment &segment, const reg::classic::general::offset::Address32 &offset);
+			virtual ~Destination();
+			const reg::classic::segment::Segment &m_segment;
+			const reg::classic::general::offset::Address32 &m_offset;
+		};
+		
+		class TransmittedBytes : public AbstractInstruction, public Source, public Destination {
 		public:
 			explicit TransmittedBytes();
-			const reg::classic::segment::Segment &ToSegment()const;
-			const reg::classic::general::offset::Address32 &ToOffset()const;
 			TransmittedBytes &SetPrefix(const RepeatCounterPrefix &prefix);
-		private:
-			const reg::classic::segment::Segment &m_to_segment;
-			const reg::classic::general::offset::Address32 &m_to_offset;
 		};
 		
-		class TransmittedWords : public AbstractInstruction, public Source {
+		class TransmittedWords : public AbstractInstruction, public Source, public Destination {
 		public:
 			explicit TransmittedWords();
-			const reg::classic::segment::Segment &ToSegment()const;
-			const reg::classic::general::offset::Address32 &ToOffset()const;
-	
-		private:
-			const reg::classic::segment::Segment &m_to_segment;
-			const reg::classic::general::offset::Address32 &m_to_offset;
 		};
 		
-		class TransmittedDWords : public AbstractInstruction, public Source {
+		class TransmittedDWords : public AbstractInstruction, public Source, public Destination {
 		public:
 			explicit TransmittedDWords();
-			const reg::classic::segment::Segment &ToSegment()const;
-			const reg::classic::general::offset::Address32 &ToOffset()const;
-	
-		private:
-			const reg::classic::segment::Segment &m_to_segment;
-			const reg::classic::general::offset::Address32 &m_to_offset;
 		};
 		
-		class CompareBytes : public AbstractInstruction, public Source {
+		class CompareBytes : public AbstractInstruction, public Source, public Destination {
 		public:
 			explicit CompareBytes();
-			
-			const reg::classic::segment::Segment &ToSegment()const;
-			const reg::classic::general::offset::Address32 &ToOffset()const;
-	
-		private:
-			const reg::classic::segment::Segment &m_to_segment;
-			const reg::classic::general::offset::Address32 &m_to_offset;
 		};
 		
-		class CompareWords : public AbstractInstruction, public Source {
+		class CompareWords : public AbstractInstruction, public Source, public Destination {
 		public:
 			explicit CompareWords();
-			const reg::classic::segment::Segment &ToSegment()const;
-			const reg::classic::general::offset::Address32 &ToOffset()const;
-	
-		private:
-			const reg::classic::segment::Segment &m_to_segment;
-			const reg::classic::general::offset::Address32 &m_to_offset;
 		};
 		
-		class CompareDWords : public AbstractInstruction, public Source {
+		class CompareDWords : public AbstractInstruction, public Source, public Destination {
 		public:
 			explicit CompareDWords();
-			const reg::classic::segment::Segment &ToSegment()const;
-			const reg::classic::general::offset::Address32 &ToOffset()const;
-	
-		private:
-			const reg::classic::segment::Segment &m_to_segment;
-			const reg::classic::general::offset::Address32 &m_to_offset;
 		};
 		
-		class CompareALByte : public AbstractInstruction {
+		class CompareALByte : public AbstractInstruction, public Destination {
 		public:
 			explicit CompareALByte();
-			const reg::classic::segment::Segment &ToSegment()const;
-			const reg::classic::general::offset::Address32 &ToOffset()const;
-	
-		private:
-			const reg::classic::segment::Segment &m_to_segment;
-			const reg::classic::general::offset::Address32 &m_to_offset;
 		};
 		
-		class CompareAXWord : public AbstractInstruction {
+		class CompareAXWord : public AbstractInstruction, public Destination {
 		public:
 			explicit CompareAXWord();
-			const reg::classic::segment::Segment &ToSegment()const;
-			const reg::classic::general::offset::Address32 &ToOffset()const;
-	
-		private:
-			const reg::classic::segment::Segment &m_to_segment;
-			const reg::classic::general::offset::Address32 &m_to_offset;
 		};
 		
-		class CompareEAXDWord : public AbstractInstruction {
+		class CompareEAXDWord : public AbstractInstruction, public Destination {
 		public:
 			explicit CompareEAXDWord();
-			const reg::classic::segment::Segment &ToSegment()const;
-			const reg::classic::general::offset::Address32 &ToOffset()const;
-	
-		private:
-			const reg::classic::segment::Segment &m_to_segment;
-			const reg::classic::general::offset::Address32 &m_to_offset;
 		};
 		
-		class SaveByteAL : public AbstractInstruction {
+		class SaveByteAL : public AbstractInstruction, public Source {
 		public:
 			explicit SaveByteAL();
-			const reg::classic::segment::Segment &FromSegment()const;
-			const reg::classic::general::offset::Address32 &FromOffset()const;
-	
-		private:
-			
-			const reg::classic::segment::Segment &m_from_segment;
-			const reg::classic::general::offset::Address32 &m_from_offset;
 		};
 		
-		class SaveWordAX : public AbstractInstruction {
+		class SaveWordAX : public AbstractInstruction, public Source {
 		public:
 			explicit SaveWordAX();
-			const reg::classic::segment::Segment &FromSegment()const;
-			const reg::classic::general::offset::Address32 &FromOffset()const;
-	
-		private:
-			const reg::classic::segment::Segment &m_from_segment;
-			const reg::classic::general::offset::Address32 &m_from_offset;
 		};
 		
-		class SaveDWordEAX : public AbstractInstruction {
+		class SaveDWordEAX : public AbstractInstruction, public Source {
 		public:
 			explicit SaveDWordEAX();
-			const reg::classic::segment::Segment &FromSegment()const;
-			const reg::classic::general::offset::Address32 &FromOffset()const;
-	
-		private:
-			const reg::classic::segment::Segment &m_from_segment;
-			const reg::classic::general::offset::Address32 &m_from_offset;
 		};
 		
-		class SaveByteAddress : public AbstractInstruction {
+		class SaveByteAddress : public AbstractInstruction, public Destination {
 		public:
 			explicit SaveByteAddress();
-			const reg::classic::segment::Segment &ToSegment()const;
-			const reg::classic::general::offset::Address32 &ToOffset()const;
-	
-		private:
-			const reg::classic::segment::Segment &m_to_segment;
-			const reg::classic::general::offset::Address32 &m_to_offset;
 		};
 		
-		class SaveWordAddress : public AbstractInstruction {
+		class SaveWordAddress : public AbstractInstruction, public Destination {
 		public:
 			explicit SaveWordAddress();
-			const reg::classic::segment::Segment &ToSegment()const;
-			const reg::classic::general::offset::Address32 &ToOffset()const;
-	
-		private:
-			const reg::classic::segment::Segment &m_to_segment;
-			const reg::classic::general::offset::Address32 &m_to_offset;
 		};
 		
-		class SaveDWordAddress : public AbstractInstruction {
+		class SaveDWordAddress : public AbstractInstruction, public Destination {
 		public:
 			explicit SaveDWordAddress();
-			const reg::classic::segment::Segment &ToSegment()const;
-			const reg::classic::general::offset::Address32 &ToOffset()const;
-	
-		private:
-			const reg::classic::segment::Segment &m_to_segment;
-			const reg::classic::general::offset::Address32 &m_to_offset;
 		};
 		
 		class RepeatCounterPrefix : public AbstractInstruction {
