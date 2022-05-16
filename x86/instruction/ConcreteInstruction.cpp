@@ -1453,18 +1453,24 @@ namespace x86
 		{
 
 		}
-		
+		Source::Source(const reg::classic::segment::Segment &segment, const reg::classic::general::offset::Address32 &offset):
+			m_segment(segment), m_offset(offset){
+			
+		}
+		Source::~Source() {
+			
+		}
+		const reg::classic::segment::Segment &Source::Segment()const {
+			return m_segment;
+		}
+		const reg::classic::general::offset::Address32 &Source::Offset()const {
+			return m_offset;
+		}
 		TransmittedBytes::TransmittedBytes() 
 			: AbstractInstruction(x86::mnemonic::string::Transmitted_8()),
-			m_from_segment(DS), m_from_offset(ESI), m_to_segment(ES), m_to_offset(EDI)
+			Source(DS,ESI), m_to_segment(ES), m_to_offset(EDI)
 		{
 
-		}
-		const reg::classic::segment::Segment &TransmittedBytes::FromSegment()const {
-			return m_from_segment;
-		}
-		const reg::classic::general::offset::Address32 &TransmittedBytes::FromOffset()const {
-			return m_from_offset;
 		}
 		const reg::classic::segment::Segment &TransmittedBytes::ToSegment()const {
 			return m_to_segment;
@@ -1478,21 +1484,14 @@ namespace x86
 		}
 		
 		TransmittedWords::TransmittedWords() 
-			: AbstractInstruction(x86::mnemonic::string::Transmitted_16())
-			, m_from_segment(DS)
-			, m_from_offset(ESI)
+			: AbstractInstruction(x86::mnemonic::string::Transmitted_16()),
+			Source(DS, ESI)
 			, m_to_segment(ES)
 			, m_to_offset(EDI)
 		{
 
 		}
 		
-		const reg::classic::segment::Segment &TransmittedWords::FromSegment()const {
-			return m_from_segment;
-		}
-		const reg::classic::general::offset::Address32 &TransmittedWords::FromOffset()const {
-			return m_from_offset;
-		}
 		const reg::classic::segment::Segment &TransmittedWords::ToSegment()const {
 			return m_to_segment;
 		}
@@ -1501,21 +1500,14 @@ namespace x86
 		}
 		
 		TransmittedDWords::TransmittedDWords() 
-			: AbstractInstruction(x86::mnemonic::string::Transmitted_32())
-			, m_from_segment(DS)
-			, m_from_offset(ESI)
+			: AbstractInstruction(x86::mnemonic::string::Transmitted_32()),
+			Source(DS, ESI)
 			, m_to_segment(ES)
 			, m_to_offset(EDI)
 		{
 
 		}
 		
-		const reg::classic::segment::Segment &TransmittedDWords::FromSegment()const {
-			return m_from_segment;
-		}
-		const reg::classic::general::offset::Address32 &TransmittedDWords::FromOffset()const {
-			return m_from_offset;
-		}
 		const reg::classic::segment::Segment &TransmittedDWords::ToSegment()const {
 			return m_to_segment;
 		}
@@ -1526,20 +1518,13 @@ namespace x86
 		
 		CompareBytes::CompareBytes() 
 			: AbstractInstruction(x86::mnemonic::string::Compare_Bytes_CF_OF_SF_ZF_AF_PF())
-			, m_from_segment(DS)
-			, m_from_offset(ESI)
+			, Source(DS, ESI)
 			, m_to_segment(ES)
 			, m_to_offset(EDI)
 		{
 
 		}
 		
-		const reg::classic::segment::Segment &CompareBytes::FromSegment()const {
-			return m_from_segment;
-		}
-		const reg::classic::general::offset::Address32 &CompareBytes::FromOffset()const {
-			return m_from_offset;
-		}
 		const reg::classic::segment::Segment &CompareBytes::ToSegment()const {
 			return m_to_segment;
 		}
@@ -1549,20 +1534,13 @@ namespace x86
 		
 		CompareWords::CompareWords() 
 			: AbstractInstruction(x86::mnemonic::string::Compare_Words_CF_OF_SF_ZF_AF_PF())
-			, m_from_segment(DS)
-			, m_from_offset(ESI)
+			, Source(DS, ESI)
 			, m_to_segment(ES)
 			, m_to_offset(EDI)
 		{
 
 		}
 		
-		const reg::classic::segment::Segment &CompareWords::FromSegment()const {
-			return m_from_segment;
-		}
-		const reg::classic::general::offset::Address32 &CompareWords::FromOffset()const {
-			return m_from_offset;
-		}
 		const reg::classic::segment::Segment &CompareWords::ToSegment()const {
 			return m_to_segment;
 		}
@@ -1572,20 +1550,13 @@ namespace x86
 		
 		CompareDWords::CompareDWords() 
 			: AbstractInstruction(x86::mnemonic::string::Compare_DWords_CF_OF_SF_ZF_AF_PF())
-			, m_from_segment(DS)
-			, m_from_offset(ESI)
+			, Source(DS, ESI)
 			, m_to_segment(ES)
 			, m_to_offset(EDI)
 		{
 
 		}
 		
-		const reg::classic::segment::Segment &CompareDWords::FromSegment()const {
-			return m_from_segment;
-		}
-		const reg::classic::general::offset::Address32 &CompareDWords::FromOffset()const {
-			return m_from_offset;
-		}
 		const reg::classic::segment::Segment &CompareDWords::ToSegment()const {
 			return m_to_segment;
 		}

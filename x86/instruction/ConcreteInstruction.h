@@ -779,92 +779,80 @@ namespace x86
 		
 		class RepeatCounterPrefix;
 		
-		class TransmittedBytes : public AbstractInstruction {
+		class Source {
+		public:
+			const reg::classic::segment::Segment &Segment()const;
+			const reg::classic::general::offset::Address32 &Offset()const;
+		protected:
+			explicit Source(const reg::classic::segment::Segment &segment, const reg::classic::general::offset::Address32 &offset);
+			virtual ~Source();
+			const reg::classic::segment::Segment &m_segment;
+			const reg::classic::general::offset::Address32 &m_offset;
+		};
+		
+		class TransmittedBytes : public AbstractInstruction, public Source {
 		public:
 			explicit TransmittedBytes();
-			const reg::classic::segment::Segment &FromSegment()const;
-			const reg::classic::general::offset::Address32 &FromOffset()const;
 			const reg::classic::segment::Segment &ToSegment()const;
 			const reg::classic::general::offset::Address32 &ToOffset()const;
 			TransmittedBytes &SetPrefix(const RepeatCounterPrefix &prefix);
 		private:
-			const reg::classic::segment::Segment &m_from_segment;
-			const reg::classic::general::offset::Address32 &m_from_offset;
 			const reg::classic::segment::Segment &m_to_segment;
 			const reg::classic::general::offset::Address32 &m_to_offset;
 		};
 		
-		class TransmittedWords : public AbstractInstruction {
+		class TransmittedWords : public AbstractInstruction, public Source {
 		public:
 			explicit TransmittedWords();
-			const reg::classic::segment::Segment &FromSegment()const;
-			const reg::classic::general::offset::Address32 &FromOffset()const;
 			const reg::classic::segment::Segment &ToSegment()const;
 			const reg::classic::general::offset::Address32 &ToOffset()const;
 	
 		private:
-			const reg::classic::segment::Segment &m_from_segment;
-			const reg::classic::general::offset::Address32 &m_from_offset;
 			const reg::classic::segment::Segment &m_to_segment;
 			const reg::classic::general::offset::Address32 &m_to_offset;
 		};
 		
-		class TransmittedDWords : public AbstractInstruction {
+		class TransmittedDWords : public AbstractInstruction, public Source {
 		public:
 			explicit TransmittedDWords();
-			const reg::classic::segment::Segment &FromSegment()const;
-			const reg::classic::general::offset::Address32 &FromOffset()const;
 			const reg::classic::segment::Segment &ToSegment()const;
 			const reg::classic::general::offset::Address32 &ToOffset()const;
 	
 		private:
-			const reg::classic::segment::Segment &m_from_segment;
-			const reg::classic::general::offset::Address32 &m_from_offset;
 			const reg::classic::segment::Segment &m_to_segment;
 			const reg::classic::general::offset::Address32 &m_to_offset;
 		};
 		
-		class CompareBytes : public AbstractInstruction {
+		class CompareBytes : public AbstractInstruction, public Source {
 		public:
 			explicit CompareBytes();
-			const reg::classic::segment::Segment &FromSegment()const;
-			const reg::classic::general::offset::Address32 &FromOffset()const;
+			
 			const reg::classic::segment::Segment &ToSegment()const;
 			const reg::classic::general::offset::Address32 &ToOffset()const;
 	
 		private:
-			const reg::classic::segment::Segment &m_from_segment;
-			const reg::classic::general::offset::Address32 &m_from_offset;
 			const reg::classic::segment::Segment &m_to_segment;
 			const reg::classic::general::offset::Address32 &m_to_offset;
 		};
 		
-		class CompareWords : public AbstractInstruction {
+		class CompareWords : public AbstractInstruction, public Source {
 		public:
 			explicit CompareWords();
-			const reg::classic::segment::Segment &FromSegment()const;
-			const reg::classic::general::offset::Address32 &FromOffset()const;
 			const reg::classic::segment::Segment &ToSegment()const;
 			const reg::classic::general::offset::Address32 &ToOffset()const;
 	
 		private:
-			const reg::classic::segment::Segment &m_from_segment;
-			const reg::classic::general::offset::Address32 &m_from_offset;
 			const reg::classic::segment::Segment &m_to_segment;
 			const reg::classic::general::offset::Address32 &m_to_offset;
 		};
 		
-		class CompareDWords : public AbstractInstruction {
+		class CompareDWords : public AbstractInstruction, public Source {
 		public:
 			explicit CompareDWords();
-			const reg::classic::segment::Segment &FromSegment()const;
-			const reg::classic::general::offset::Address32 &FromOffset()const;
 			const reg::classic::segment::Segment &ToSegment()const;
 			const reg::classic::general::offset::Address32 &ToOffset()const;
 	
 		private:
-			const reg::classic::segment::Segment &m_from_segment;
-			const reg::classic::general::offset::Address32 &m_from_offset;
 			const reg::classic::segment::Segment &m_to_segment;
 			const reg::classic::general::offset::Address32 &m_to_offset;
 		};
