@@ -1496,6 +1496,7 @@ namespace x86
 			
 		}
 		AbstractInstruction &PrefixAble::SetPrefix(const Prefix &prefix) {
+			m_string = std::string(prefix.String()) + '\t' + m_string;
 			return *this;
 		}
 
@@ -1638,6 +1639,13 @@ namespace x86
 	
 		RepeatCounterNotEqual::RepeatCounterNotEqual() 
 			: Counter(x86::mnemonic::string::Repeat_Prefix_Not_Equal_ZF_ECX())
+			
+		{
+
+		}
+		
+		RepeatCounterCarray::RepeatCounterCarray() 
+			: Counter(x86::mnemonic::string::Repeat_Prefix_CF_ECX())
 			
 		{
 
