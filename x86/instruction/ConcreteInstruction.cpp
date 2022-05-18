@@ -1526,14 +1526,14 @@ namespace x86
 		
 		
 		CompareBytes::CompareBytes() 
-			: AbstractInstruction(x86::mnemonic::string::Compare_Bytes_CF_OF_SF_ZF_AF_PF())
+			: PrefixAble(x86::mnemonic::string::Compare_Bytes_CF_OF_SF_ZF_AF_PF())
 			, Source(DS, ESI), Destination(ES, EDI)
 		{
 
 		}
 		
 		CompareWords::CompareWords() 
-			: AbstractInstruction(x86::mnemonic::string::Compare_Words_CF_OF_SF_ZF_AF_PF())
+			: PrefixAble(x86::mnemonic::string::Compare_Words_CF_OF_SF_ZF_AF_PF())
 			, Source(DS, ESI)
 			, Destination(ES, EDI)
 		{
@@ -1541,7 +1541,7 @@ namespace x86
 		}
 		
 		CompareDWords::CompareDWords() 
-			: AbstractInstruction(x86::mnemonic::string::Compare_DWords_CF_OF_SF_ZF_AF_PF())
+			: PrefixAble(x86::mnemonic::string::Compare_DWords_CF_OF_SF_ZF_AF_PF())
 			, Source(DS, ESI)
 			, Destination(ES, EDI)
 		{
@@ -1550,7 +1550,7 @@ namespace x86
 		
 		
 		CompareALByte::CompareALByte() 
-			: AbstractInstruction(x86::mnemonic::string::Compare_AL_Byte_CF_OF_SF_ZF_AF_PF())			
+			: PrefixAble(x86::mnemonic::string::Compare_AL_Byte_CF_OF_SF_ZF_AF_PF())			
 			, Destination(ES, EDI)
 		{
 
@@ -1558,14 +1558,14 @@ namespace x86
 		
 		
 		CompareAXWord::CompareAXWord() 
-			: AbstractInstruction(x86::mnemonic::string::Compare_AX_Word_CF_OF_SF_ZF_AF_PF())
+			: PrefixAble(x86::mnemonic::string::Compare_AX_Word_CF_OF_SF_ZF_AF_PF())
 			, Destination(ES, EDI)
 		{
 
 		}
 		
 		CompareEAXDWord::CompareEAXDWord() 
-			: AbstractInstruction(x86::mnemonic::string::Compare_EAX_DWord_CF_OF_SF_ZF_AF_PF())
+			: PrefixAble(x86::mnemonic::string::Compare_EAX_DWord_CF_OF_SF_ZF_AF_PF())
 			, Destination(ES, EDI)
 		{
 
@@ -1573,14 +1573,14 @@ namespace x86
 		
 		
 		SaveByteAL::SaveByteAL() 
-			: AbstractInstruction(x86::mnemonic::string::Load_Byte_To_AL_From_DS_ESI())
+			: PrefixAble(x86::mnemonic::string::Load_Byte_To_AL_From_DS_ESI())
 			, Source(DS, ESI)
 		{
 
 		}
 		
 		SaveWordAX::SaveWordAX() 
-			: AbstractInstruction(x86::mnemonic::string::Load_Word_To_AX_From_DS_ESI())
+			: PrefixAble(x86::mnemonic::string::Load_Word_To_AX_From_DS_ESI())
 			, Source(DS, ESI)
 		{
 
@@ -1588,7 +1588,7 @@ namespace x86
 		
 		
 		SaveDWordEAX::SaveDWordEAX() 
-			: AbstractInstruction(x86::mnemonic::string::Load_DWord_To_EAX_From_DS_ESI())
+			: PrefixAble(x86::mnemonic::string::Load_DWord_To_EAX_From_DS_ESI())
 			, Source(DS, ESI)
 		{
 
@@ -1596,35 +1596,41 @@ namespace x86
 		
 		
 		SaveByteAddress::SaveByteAddress() 
-			: AbstractInstruction(x86::mnemonic::string::Store_Byte_To_ES_EDI_From_AL())
+			: PrefixAble(x86::mnemonic::string::Store_Byte_To_ES_EDI_From_AL())
 			, Destination(ES, EDI)
 		{
 
 		}
 		
 		SaveWordAddress::SaveWordAddress() 
-			: AbstractInstruction(x86::mnemonic::string::Store_Word_To_ES_EDI_From_AX())
+			: PrefixAble(x86::mnemonic::string::Store_Word_To_ES_EDI_From_AX())
 			, Destination(ES, EDI)
 		{
 
 		}
 		
 		SaveDWordAddress::SaveDWordAddress() 
-			: AbstractInstruction(x86::mnemonic::string::Store_DWord_To_ES_EDI_From_EAX())
+			: PrefixAble(x86::mnemonic::string::Store_DWord_To_ES_EDI_From_EAX())
 			, Destination(ES, EDI)
 		{
 
 		}
-		
+		Counter::Counter(const char *mnemonic):
+			Prefix(mnemonic)
+			, m_count(ECX) {
+			
+		}
+		const reg::classic::general::operation::CountExtend &Counter::Count()const {
+			return m_count;
+		}
 		RepeatCounter::RepeatCounter() 
-			: Prefix(x86::mnemonic::string::Repeat_Prefix_ECX())
-			, m_counter(ECX)
+			: Counter(x86::mnemonic::string::Repeat_Prefix_ECX())
+			
 		{
 
 		}
 		
-		const reg::classic::general::operation::CountExtend &RepeatCounter::Counter()const {
-			return m_counter;
-		}
+	
+		
 	}
 }

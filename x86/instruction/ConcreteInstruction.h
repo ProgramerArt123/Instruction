@@ -828,73 +828,79 @@ namespace x86
 			explicit TransmittedDWords();
 		};
 		
-		class CompareBytes : public AbstractInstruction, public Source, public Destination {
+		class CompareBytes : public PrefixAble, public Source, public Destination {
 		public:
 			explicit CompareBytes();
 		};
 		
-		class CompareWords : public AbstractInstruction, public Source, public Destination {
+		class CompareWords : public PrefixAble, public Source, public Destination {
 		public:
 			explicit CompareWords();
 		};
 		
-		class CompareDWords : public AbstractInstruction, public Source, public Destination {
+		class CompareDWords : public PrefixAble, public Source, public Destination {
 		public:
 			explicit CompareDWords();
 		};
 		
-		class CompareALByte : public AbstractInstruction, public Destination {
+		class CompareALByte : public PrefixAble, public Destination {
 		public:
 			explicit CompareALByte();
 		};
 		
-		class CompareAXWord : public AbstractInstruction, public Destination {
+		class CompareAXWord : public PrefixAble, public Destination {
 		public:
 			explicit CompareAXWord();
 		};
 		
-		class CompareEAXDWord : public AbstractInstruction, public Destination {
+		class CompareEAXDWord : public PrefixAble, public Destination {
 		public:
 			explicit CompareEAXDWord();
 		};
 		
-		class SaveByteAL : public AbstractInstruction, public Source {
+		class SaveByteAL : public PrefixAble, public Source {
 		public:
 			explicit SaveByteAL();
 		};
 		
-		class SaveWordAX : public AbstractInstruction, public Source {
+		class SaveWordAX : public PrefixAble, public Source {
 		public:
 			explicit SaveWordAX();
 		};
 		
-		class SaveDWordEAX : public AbstractInstruction, public Source {
+		class SaveDWordEAX : public PrefixAble, public Source {
 		public:
 			explicit SaveDWordEAX();
 		};
 		
-		class SaveByteAddress : public AbstractInstruction, public Destination {
+		class SaveByteAddress : public PrefixAble, public Destination {
 		public:
 			explicit SaveByteAddress();
 		};
 		
-		class SaveWordAddress : public AbstractInstruction, public Destination {
+		class SaveWordAddress : public PrefixAble, public Destination {
 		public:
 			explicit SaveWordAddress();
 		};
 		
-		class SaveDWordAddress : public AbstractInstruction, public Destination {
+		class SaveDWordAddress : public PrefixAble, public Destination {
 		public:
 			explicit SaveDWordAddress();
 		};
 		
-		class RepeatCounter : public Prefix {
+		class Counter : public Prefix {
+		public:
+			explicit Counter(const char *mnemonic);
+			const reg::classic::general::operation::CountExtend &Count()const;
+		private:
+			const reg::classic::general::operation::CountExtend &m_count;
+		};
+		
+		class RepeatCounter : public Counter {
 		public:
 			explicit RepeatCounter();
-			const reg::classic::general::operation::CountExtend &Counter()const;
-		private:
-			const reg::classic::general::operation::CountExtend &m_counter;
 		};
+		
 	}
 }
 #endif
