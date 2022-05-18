@@ -1629,7 +1629,12 @@ namespace x86
 		{
 
 		}
-		
+		RepeatCounterEqual::RepeatCounterEqual() 
+			: Counter(x86::mnemonic::string::Repeat_Prefix_EQUAL_ZF_ECX())
+			
+		{
+
+		}
 	
 		
 	}

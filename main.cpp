@@ -1338,6 +1338,65 @@ int main(int argc, char *argv[])
 	}
 
 	
+	
+	
+	
+	
+	
+	
+	
+	{
+		out << x86::instruction::TransmittedBytes().SetPrefix(x86::instruction::RepeatCounterEqual()) << std::endl;
+	}
+	
+	{
+		out << x86::instruction::TransmittedWords().SetPrefix(x86::instruction::RepeatCounterEqual()) << std::endl;
+	}
+	
+	{
+		out << x86::instruction::TransmittedDWords().SetPrefix(x86::instruction::RepeatCounterEqual()) << std::endl;
+	}
+	
+	{
+		out << x86::instruction::CompareBytes().SetPrefix(x86::instruction::RepeatCounterEqual()) << std::endl;
+	}
+	
+	{
+		out << x86::instruction::CompareWords().SetPrefix(x86::instruction::RepeatCounterEqual()) << std::endl;
+	}
+	
+	{
+		out << x86::instruction::CompareDWords().SetPrefix(x86::instruction::RepeatCounterEqual()) << std::endl;
+	}
+	
+		
+	{
+		out << x86::instruction::CompareALByte().SetPrefix(x86::instruction::RepeatCounterEqual()) << std::endl;
+	}
+	
+	{
+		out << x86::instruction::CompareAXWord().SetPrefix(x86::instruction::RepeatCounterEqual()) << std::endl;
+	}
+	
+	{
+		out << x86::instruction::SaveByteAL().SetPrefix(x86::instruction::RepeatCounterEqual()) << std::endl;
+	}
+	
+	{
+		out << x86::instruction::SaveWordAX().SetPrefix(x86::instruction::RepeatCounterEqual()) << std::endl;
+	}
+	
+	
+	{
+		out << x86::instruction::SaveByteAddress().SetPrefix(x86::instruction::RepeatCounter()) << std::endl;
+	}
+	
+	{
+		out << x86::instruction::SaveWordAddress().SetPrefix(x86::instruction::RepeatCounter()) << std::endl;
+	}
+	
+	
+	
 	const std::string &str = out.str();
 	{
 		std::ofstream code("test.s");
