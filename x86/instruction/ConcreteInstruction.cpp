@@ -1630,12 +1630,17 @@ namespace x86
 
 		}
 		RepeatCounterEqual::RepeatCounterEqual() 
-			: Counter(x86::mnemonic::string::Repeat_Prefix_EQUAL_ZF_ECX())
+			: Counter(x86::mnemonic::string::Repeat_Prefix_Equal_ZF_ECX())
 			
 		{
 
 		}
 	
-		
+		RepeatCounterNotEqual::RepeatCounterNotEqual() 
+			: Counter(x86::mnemonic::string::Repeat_Prefix_Not_Equal_ZF_ECX())
+			
+		{
+
+		}
 	}
 }

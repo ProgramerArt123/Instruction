@@ -51,10 +51,10 @@ namespace x86
 			const char *Repeat_Prefix_ECX() {
 				return "REP";
 			}
-			const char *Repeat_Prefix_EQUAL_ZF_ECX() {
+			const char *Repeat_Prefix_Equal_ZF_ECX() {
 				return "REPE";
 			}
-			const char *Repeat_Prefix_NOT_EQUAL_ZF_ECX() {
+			const char *Repeat_Prefix_Not_Equal_ZF_ECX() {
 				return "REPNE";
 			}
 			const char *Repeat_Prefix_CF_ECX() {

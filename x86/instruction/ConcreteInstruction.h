@@ -906,6 +906,11 @@ namespace x86
 			explicit RepeatCounterEqual();
 		};
 		
+		class RepeatCounterNotEqual : public Counter {
+		public:
+			explicit RepeatCounterNotEqual();
+		};
+		
 	}
 }
 #endif

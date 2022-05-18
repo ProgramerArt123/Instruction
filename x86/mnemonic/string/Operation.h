@@ -20,8 +20,8 @@ namespace x86
 				const char *Store_Word_To_ES_EDI_From_AX();
 				const char *Store_DWord_To_ES_EDI_From_EAX();
 				const char *Repeat_Prefix_ECX();
-				const char *Repeat_Prefix_EQUAL_ZF_ECX();
-				const char *Repeat_Prefix_NOT_EQUAL_ZF_ECX();
+				const char *Repeat_Prefix_Equal_ZF_ECX();
+				const char *Repeat_Prefix_Not_Equal_ZF_ECX();
 				const char *Repeat_Prefix_CF_ECX();
 				const char *Repeat_Prefix_NOT_CF_ECX();
 		}
