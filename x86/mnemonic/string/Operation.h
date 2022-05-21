@@ -23,7 +23,7 @@ namespace x86
 				const char *Repeat_Prefix_Equal_ZF_ECX();
 				const char *Repeat_Prefix_Not_Equal_ZF_ECX();
 				const char *Repeat_Prefix_CF_ECX();
-				const char *Repeat_Prefix_NOT_CF_ECX();
+				const char *Repeat_Prefix_Not_CF_ECX();
 		}
 	}
 }

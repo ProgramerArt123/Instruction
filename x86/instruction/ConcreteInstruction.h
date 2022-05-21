@@ -915,6 +915,11 @@ namespace x86
 		public:
 			explicit RepeatCounterCarray();
 		};
+		
+		class RepeatCounterNotCarray : public Counter {
+		public:
+			explicit RepeatCounterNotCarray();
+		};
 	}
 }
 #endif

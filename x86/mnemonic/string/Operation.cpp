@@ -60,7 +60,7 @@ namespace x86
 			const char *Repeat_Prefix_CF_ECX() {
 				return "REPC";
 			}
-			const char *Repeat_Prefix_NOT_CF_ECX() {
+			const char *Repeat_Prefix_Not_CF_ECX() {
 				return "REPNC";
 			}
 		}

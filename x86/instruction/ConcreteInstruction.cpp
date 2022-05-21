@@ -1650,5 +1650,12 @@ namespace x86
 		{
 
 		}
+		
+		RepeatCounterNotCarray::RepeatCounterNotCarray() 
+			: Counter(x86::mnemonic::string::Repeat_Prefix_Not_CF_ECX())
+			
+		{
+
+		}
 	}
 }
