@@ -920,6 +920,15 @@ namespace x86
 		public:
 			explicit RepeatCounterNotCarray();
 		};
+		
+		namespace FPU
+		{
+			class LoadZero : public AbstractInstruction {
+			public:
+				explicit LoadZero();
+			};
+		}
+
 	}
 }
 #endif

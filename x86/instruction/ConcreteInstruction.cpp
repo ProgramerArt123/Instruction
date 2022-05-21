@@ -5,6 +5,7 @@
 #include "x86/mnemonic/integer/32/Logical.h"
 #include "x86/mnemonic/jump/32/InstructionPointerJump.h"
 #include "x86/mnemonic/string/Operation.h"
+#include "x86/mnemonic/FPU/DataTransmitted.h"
 #include "Instruction.h"
 #include "ConcreteInstruction.h"
 namespace x86
@@ -1656,6 +1657,14 @@ namespace x86
 			
 		{
 
+		}
+		namespace FPU
+		{
+			LoadZero::LoadZero() 
+				: AbstractInstruction(x86::mnemonic::FPU::data_transmitted::Load_Zero_To_ST0_C1())
+			{
+
+			}
 		}
 	}
 }
