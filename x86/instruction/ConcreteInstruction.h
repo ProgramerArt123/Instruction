@@ -927,6 +927,11 @@ namespace x86
 			public:
 				explicit LoadZero();
 			};
+			
+			class LoadOne : public AbstractInstruction {
+			public:
+				explicit LoadOne();
+			};
 		}
 
 	}

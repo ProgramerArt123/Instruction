@@ -1665,6 +1665,11 @@ namespace x86
 			{
 
 			}
+			LoadOne::LoadOne() 
+				: AbstractInstruction(x86::mnemonic::FPU::data_transmitted::Load_One_To_ST0_C1())
+			{
+
+			}
 		}
 	}
 }

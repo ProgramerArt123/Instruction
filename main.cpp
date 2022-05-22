@@ -1455,6 +1455,10 @@ int main(int argc, char *argv[])
 		out << x86::instruction::FPU::LoadZero() << std::endl;
 	}
 	
+	{
+		out << x86::instruction::FPU::LoadOne() << std::endl;
+	}
+	
 	
 	const std::string &str = out.str();
 	{
