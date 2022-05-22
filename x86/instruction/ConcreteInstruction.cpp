@@ -1681,6 +1681,12 @@ namespace x86
 			{
 
 			}
+			
+			LoadL2E::LoadL2E() 
+				: AbstractInstruction(x86::mnemonic::FPU::data_transmitted::Load_L2E_To_ST0_C1())
+			{
+
+			}
 		}
 	}
 }

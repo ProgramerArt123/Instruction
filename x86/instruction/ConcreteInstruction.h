@@ -942,6 +942,11 @@ namespace x86
 			public:
 				explicit LoadL2T();
 			};
+			
+			class LoadL2E : public AbstractInstruction {
+			public:
+				explicit LoadL2E();
+			};
 		}
 
 	}

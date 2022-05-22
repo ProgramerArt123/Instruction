@@ -1467,6 +1467,10 @@ int main(int argc, char *argv[])
 		out << x86::instruction::FPU::LoadL2T() << std::endl;
 	}
 	
+	{
+		out << x86::instruction::FPU::LoadL2E() << std::endl;
+	}
+	
 	const std::string &str = out.str();
 	{
 		std::ofstream code("test.s");
