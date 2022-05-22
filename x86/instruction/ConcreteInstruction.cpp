@@ -1687,6 +1687,12 @@ namespace x86
 			{
 
 			}
+			
+			LoadLG2::LoadLG2() 
+				: AbstractInstruction(x86::mnemonic::FPU::data_transmitted::Load_LG2_To_ST0_C1())
+			{
+
+			}
 		}
 	}
 }
