@@ -1675,6 +1675,12 @@ namespace x86
 			{
 
 			}
+			
+			LoadL2T::LoadL2T() 
+				: AbstractInstruction(x86::mnemonic::FPU::data_transmitted::Load_L2T_To_ST0_C1())
+			{
+
+			}
 		}
 	}
 }

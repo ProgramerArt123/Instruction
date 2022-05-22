@@ -937,6 +937,11 @@ namespace x86
 			public:
 				explicit LoadPI();
 			};
+			
+			class LoadL2T : public AbstractInstruction {
+			public:
+				explicit LoadL2T();
+			};
 		}
 
 	}
