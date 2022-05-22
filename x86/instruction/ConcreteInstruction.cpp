@@ -1693,6 +1693,12 @@ namespace x86
 			{
 
 			}
+			
+			LoadLN2::LoadLN2() 
+				: AbstractInstruction(x86::mnemonic::FPU::data_transmitted::Load_LN2_To_ST0_C1())
+			{
+
+			}
 		}
 	}
 }
