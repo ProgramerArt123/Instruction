@@ -1728,6 +1728,18 @@ namespace x86
 			{
 
 			}
+			
+			LoadLoadBinaryCodedDecimal::LoadLoadBinaryCodedDecimal(const x86::label::CodeLabel &source) 
+				: AbstractInstruction(x86::mnemonic::FPU::data_transmitted::Load_Binary_Coded_Decimal_80_C1(), source)
+			{
+
+			}
+			
+			LoadLoadBinaryCodedDecimal::LoadLoadBinaryCodedDecimal(const x86::memory::Memory &source) 
+				: AbstractInstruction(x86::mnemonic::FPU::data_transmitted::Load_Binary_Coded_Decimal_80_C1(), source)
+			{
+
+			}
 		}
 	}
 }

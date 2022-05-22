@@ -1493,6 +1493,12 @@ int main(int argc, char *argv[])
 		out << x86::instruction::FPU::LoadIntegerValue(x86::memory::Memory32(EAX)) << std::endl;
 	}
 	
+	{
+		out << x86::instruction::FPU::LoadLoadBinaryCodedDecimal(x86::label::CodeLabel("float")) << std::endl;
+		out << x86::instruction::FPU::LoadLoadBinaryCodedDecimal(x86::memory::Memory8(EAX)) << std::endl;
+		out << x86::instruction::FPU::LoadLoadBinaryCodedDecimal(x86::memory::Memory16(EAX)) << std::endl;
+		out << x86::instruction::FPU::LoadLoadBinaryCodedDecimal(x86::memory::Memory32(EAX)) << std::endl;
+	}
 	
 	const std::string &str = out.str();
 	{

@@ -975,6 +975,12 @@ namespace x86
 				explicit LoadIntegerValue(const x86::label::CodeLabel &source);
 				explicit LoadIntegerValue(const x86::memory::Memory &source);
 			};
+			
+			class LoadLoadBinaryCodedDecimal : public AbstractInstruction {
+			public:
+				explicit LoadLoadBinaryCodedDecimal(const x86::label::CodeLabel &source);
+				explicit LoadLoadBinaryCodedDecimal(const x86::memory::Memory &source);
+			};
 		}
 
 	}

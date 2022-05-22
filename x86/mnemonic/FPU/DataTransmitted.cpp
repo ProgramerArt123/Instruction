@@ -33,7 +33,7 @@ namespace x86
 				const char *Load_Integer_Value_16__32__64_C1() {
 					return "FILD";
 				}
-				const char *Load_Binary_Coded_Decimal_10_C1() {
+				const char *Load_Binary_Coded_Decimal_80_C1() {
 					return "FBLD";
 				}
 				const char *Store_Float_Value_4__8_C1() {
