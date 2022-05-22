@@ -15,6 +15,7 @@ namespace x86
 		class Memory8;
 		class Memory16;
 		class Memory32;
+		class Memory64;
 	}
 	namespace reg
 	{
@@ -967,13 +968,16 @@ namespace x86
 			public:
 				explicit LoadFloatValue(const x86::label::CodeLabel &source);
 				explicit LoadFloatValue(const x86::reg::FPU::Data &source);
-				explicit LoadFloatValue(const x86::memory::Memory &source);
+				explicit LoadFloatValue(const x86::memory::Memory32 &source);
+				explicit LoadFloatValue(const x86::memory::Memory64 &source);
 			};
 			
 			class LoadIntegerValue : public AbstractInstruction {
 			public:
 				explicit LoadIntegerValue(const x86::label::CodeLabel &source);
-				explicit LoadIntegerValue(const x86::memory::Memory &source);
+				explicit LoadIntegerValue(const x86::memory::Memory16 &source);
+				explicit LoadIntegerValue(const x86::memory::Memory32 &source);
+				explicit LoadIntegerValue(const x86::memory::Memory64 &source);
 			};
 			
 			class LoadLoadBinaryCodedDecimal : public AbstractInstruction {

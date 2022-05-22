@@ -1481,16 +1481,15 @@ int main(int argc, char *argv[])
 	{
 		out << x86::instruction::FPU::LoadFloatValue(x86::label::CodeLabel("float")) << std::endl;
 		out << x86::instruction::FPU::LoadFloatValue(ST0) << std::endl;
-		out << x86::instruction::FPU::LoadFloatValue(x86::memory::Memory8(EAX)) << std::endl;
-		out << x86::instruction::FPU::LoadFloatValue(x86::memory::Memory16(EAX)) << std::endl;
 		out << x86::instruction::FPU::LoadFloatValue(x86::memory::Memory32(EAX)) << std::endl;
+		out << x86::instruction::FPU::LoadFloatValue(x86::memory::Memory64(EAX)) << std::endl;
 	}
 	
 	{
 		out << x86::instruction::FPU::LoadIntegerValue(x86::label::CodeLabel("float")) << std::endl;
-		out << x86::instruction::FPU::LoadIntegerValue(x86::memory::Memory8(EAX)) << std::endl;
 		out << x86::instruction::FPU::LoadIntegerValue(x86::memory::Memory16(EAX)) << std::endl;
 		out << x86::instruction::FPU::LoadIntegerValue(x86::memory::Memory32(EAX)) << std::endl;
+		out << x86::instruction::FPU::LoadIntegerValue(x86::memory::Memory64(EAX)) << std::endl;
 	}
 	
 	{
