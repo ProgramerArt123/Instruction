@@ -1670,6 +1670,11 @@ namespace x86
 			{
 
 			}
+			LoadPI::LoadPI() 
+				: AbstractInstruction(x86::mnemonic::FPU::data_transmitted::Load_PI_To_ST0_C1())
+			{
+
+			}
 		}
 	}
 }

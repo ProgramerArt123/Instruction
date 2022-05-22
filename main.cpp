@@ -1459,6 +1459,10 @@ int main(int argc, char *argv[])
 		out << x86::instruction::FPU::LoadOne() << std::endl;
 	}
 	
+	{
+		out << x86::instruction::FPU::LoadPI() << std::endl;
+	}
+	
 	
 	const std::string &str = out.str();
 	{

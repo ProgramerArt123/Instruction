@@ -932,6 +932,11 @@ namespace x86
 			public:
 				explicit LoadOne();
 			};
+			
+			class LoadPI : public AbstractInstruction {
+			public:
+				explicit LoadPI();
+			};
 		}
 
 	}
