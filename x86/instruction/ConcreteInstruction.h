@@ -40,6 +40,11 @@ namespace x86
 				class Segment;
 			}
 		}
+		
+		namespace FPU
+		{
+			class Data;
+		}
 	}
 	namespace label 
 	{
@@ -956,6 +961,13 @@ namespace x86
 			class LoadLN2 : public AbstractInstruction {
 			public:
 				explicit LoadLN2();
+			};
+			
+			class LoadFloatValue : public AbstractInstruction {
+			public:
+				explicit LoadFloatValue(const x86::label::CodeLabel &source);
+				explicit LoadFloatValue(const x86::reg::FPU::Data &source);
+				explicit LoadFloatValue(const x86::memory::Memory &source);
 			};
 		}
 
