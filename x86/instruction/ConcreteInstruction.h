@@ -969,6 +969,12 @@ namespace x86
 				explicit LoadFloatValue(const x86::reg::FPU::Data &source);
 				explicit LoadFloatValue(const x86::memory::Memory &source);
 			};
+			
+			class LoadIntegerValue : public AbstractInstruction {
+			public:
+				explicit LoadIntegerValue(const x86::label::CodeLabel &source);
+				explicit LoadIntegerValue(const x86::memory::Memory &source);
+			};
 		}
 
 	}

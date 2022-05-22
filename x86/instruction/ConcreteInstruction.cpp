@@ -1701,18 +1701,30 @@ namespace x86
 			}
 			
 			LoadFloatValue::LoadFloatValue(const x86::label::CodeLabel &source) 
-				: AbstractInstruction(x86::mnemonic::FPU::data_transmitted::Load_Float_Value_4__8__10_C1(), source)
+				: AbstractInstruction(x86::mnemonic::FPU::data_transmitted::Load_Float_Value_32__64__80_C1(), source)
 			{
 
 			}
 			
 			LoadFloatValue::LoadFloatValue(const x86::reg::FPU::Data &source) 
-				: AbstractInstruction(x86::mnemonic::FPU::data_transmitted::Load_Float_Value_4__8__10_C1(), source)
+				: AbstractInstruction(x86::mnemonic::FPU::data_transmitted::Load_Float_Value_32__64__80_C1(), source)
 			{
 
 			}
 			LoadFloatValue::LoadFloatValue(const x86::memory::Memory &source) 
-				: AbstractInstruction(x86::mnemonic::FPU::data_transmitted::Load_Float_Value_4__8__10_C1(), source)
+				: AbstractInstruction(x86::mnemonic::FPU::data_transmitted::Load_Float_Value_32__64__80_C1(), source)
+			{
+
+			}
+			
+			LoadIntegerValue::LoadIntegerValue(const x86::label::CodeLabel &source) 
+				: AbstractInstruction(x86::mnemonic::FPU::data_transmitted::Load_Integer_Value_16__32__64_C1(), source)
+			{
+
+			}
+			
+			LoadIntegerValue::LoadIntegerValue(const x86::memory::Memory &source) 
+				: AbstractInstruction(x86::mnemonic::FPU::data_transmitted::Load_Integer_Value_16__32__64_C1(), source)
 			{
 
 			}

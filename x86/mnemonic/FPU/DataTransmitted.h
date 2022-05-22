@@ -13,8 +13,8 @@ namespace x86
 				const char *Load_L2E_To_ST0_C1();
 				const char *Load_LG2_To_ST0_C1();
 				const char *Load_LN2_To_ST0_C1();
-				const char *Load_Float_Value_4__8__10_C1();
-				const char *Load_Integer_Value_2__4__8_C1();
+				const char *Load_Float_Value_32__64__80_C1();
+				const char *Load_Integer_Value_16__32__64_C1();
 				const char *Load_Binary_Coded_Decimal_10_C1();
 				const char *Store_Float_Value_4__8_C1();
 				const char *Store_Integer_Value_4__8_C1();

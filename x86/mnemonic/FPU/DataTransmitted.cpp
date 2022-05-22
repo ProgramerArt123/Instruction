@@ -27,10 +27,10 @@ namespace x86
 					return "FLDLN2";
 				}
 
-				const char *Load_Float_Value_4__8__10_C1() {
+				const char *Load_Float_Value_32__64__80_C1() {
 					return "FLD";
 				}
-				const char *Load_Integer_Value_2__4__8_C1() {
+				const char *Load_Integer_Value_16__32__64_C1() {
 					return "FILD";
 				}
 				const char *Load_Binary_Coded_Decimal_10_C1() {
