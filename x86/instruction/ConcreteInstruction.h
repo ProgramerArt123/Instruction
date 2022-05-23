@@ -971,6 +971,7 @@ namespace x86
 				explicit LoadFloatValue(const x86::reg::FPU::Data &source);
 				explicit LoadFloatValue(const x86::memory::Memory32 &source);
 				explicit LoadFloatValue(const x86::memory::Memory64 &source);
+				explicit LoadFloatValue(const x86::memory::Memory80 &source);
 			};
 			
 			class LoadIntegerValue : public AbstractInstruction {
@@ -985,6 +986,13 @@ namespace x86
 			public:
 				explicit LoadLoadBinaryCodedDecimal(const x86::label::CodeLabel &source);
 				explicit LoadLoadBinaryCodedDecimal(const x86::memory::Memory80 &source);
+			};
+			
+			class SaveFloatValue : public AbstractInstruction {
+			public:
+				explicit SaveFloatValue(const x86::reg::FPU::Data &source);
+				explicit SaveFloatValue(const x86::memory::Memory32 &source);
+				explicit SaveFloatValue(const x86::memory::Memory64 &source);
 			};
 		}
 

@@ -1483,6 +1483,7 @@ int main(int argc, char *argv[])
 		out << x86::instruction::FPU::LoadFloatValue(ST0) << std::endl;
 		out << x86::instruction::FPU::LoadFloatValue(x86::memory::Memory32(EAX)) << std::endl;
 		out << x86::instruction::FPU::LoadFloatValue(x86::memory::Memory64(EAX)) << std::endl;
+		out << x86::instruction::FPU::LoadFloatValue(x86::memory::Memory80(EAX)) << std::endl;
 	}
 	
 	{
@@ -1495,6 +1496,12 @@ int main(int argc, char *argv[])
 	{
 		out << x86::instruction::FPU::LoadLoadBinaryCodedDecimal(x86::label::CodeLabel("float")) << std::endl;
 		out << x86::instruction::FPU::LoadLoadBinaryCodedDecimal(x86::memory::Memory80(EAX)) << std::endl;
+	}
+	
+	{
+		out << x86::instruction::FPU::SaveFloatValue(ST0) << std::endl;
+		out << x86::instruction::FPU::SaveFloatValue(x86::memory::Memory32(EAX)) << std::endl;
+		out << x86::instruction::FPU::SaveFloatValue(x86::memory::Memory64(EAX)) << std::endl;
 	}
 	
 	const std::string &str = out.str();
