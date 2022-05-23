@@ -16,6 +16,7 @@ namespace x86
 		class Memory16;
 		class Memory32;
 		class Memory64;
+		class Memory80;
 	}
 	namespace reg
 	{
@@ -983,7 +984,7 @@ namespace x86
 			class LoadLoadBinaryCodedDecimal : public AbstractInstruction {
 			public:
 				explicit LoadLoadBinaryCodedDecimal(const x86::label::CodeLabel &source);
-				explicit LoadLoadBinaryCodedDecimal(const x86::memory::Memory &source);
+				explicit LoadLoadBinaryCodedDecimal(const x86::memory::Memory80 &source);
 			};
 		}
 

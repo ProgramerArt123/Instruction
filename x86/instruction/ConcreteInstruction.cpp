@@ -1752,7 +1752,7 @@ namespace x86
 
 			}
 			
-			LoadLoadBinaryCodedDecimal::LoadLoadBinaryCodedDecimal(const x86::memory::Memory &source) 
+			LoadLoadBinaryCodedDecimal::LoadLoadBinaryCodedDecimal(const x86::memory::Memory80 &source) 
 				: AbstractInstruction(x86::mnemonic::FPU::data_transmitted::Load_Binary_Coded_Decimal_80_C1(), source)
 			{
 
