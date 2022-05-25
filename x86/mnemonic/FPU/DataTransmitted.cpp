@@ -39,7 +39,7 @@ namespace x86
 				const char *Store_Float_Value_32__64_C1() {
 					return "FST";
 				}
-				const char *Store_Integer_Value_4__8_C1() {
+				const char *Store_Integer_Value_16__32_C1() {
 					return "FIST";
 				}
 				const char *Store_Pop_Float_Value_Stack_4__8__10_C1() {

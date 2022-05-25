@@ -1778,6 +1778,16 @@ namespace x86
 			{
 
 			}
+			SaveIntegerValue::SaveIntegerValue(const x86::memory::Memory16 &source) 
+				: AbstractInstruction(x86::mnemonic::FPU::data_transmitted::Store_Integer_Value_16__32_C1(), source)
+			{
+
+			}
+			SaveIntegerValue::SaveIntegerValue(const x86::memory::Memory32 &source) 
+				: AbstractInstruction(x86::mnemonic::FPU::data_transmitted::Store_Integer_Value_16__32_C1(), source)
+			{
+
+			}
 		}
 	}
 }

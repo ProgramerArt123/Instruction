@@ -17,7 +17,7 @@ namespace x86
 				const char *Load_Integer_Value_16__32__64_C1();
 				const char *Load_Binary_Coded_Decimal_80_C1();
 				const char *Store_Float_Value_32__64_C1();
-				const char *Store_Integer_Value_4__8_C1();
+				const char *Store_Integer_Value_16__32_C1();
 				const char *Store_Pop_Float_Value_Stack_4__8__10_C1();
 				const char *Store_Pop_Integer_Value_2__4__8_C1();
 				const char *Store_Pop_Binary_Coded_Decimal_10_C1();

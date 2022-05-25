@@ -994,6 +994,12 @@ namespace x86
 				explicit SaveFloatValue(const x86::memory::Memory32 &source);
 				explicit SaveFloatValue(const x86::memory::Memory64 &source);
 			};
+			
+			class SaveIntegerValue : public AbstractInstruction {
+			public:
+				explicit SaveIntegerValue(const x86::memory::Memory16 &source);
+				explicit SaveIntegerValue(const x86::memory::Memory32 &source);
+			};
 		}
 
 	}
