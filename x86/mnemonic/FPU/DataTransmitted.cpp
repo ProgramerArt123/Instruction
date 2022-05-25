@@ -48,7 +48,7 @@ namespace x86
 				const char *Store_Pop_Integer_Value_16__32__64_C1() {
 					return "FISTP";
 				}
-				const char *Store_Pop_Binary_Coded_Decimal_10_C1() {
+				const char *Store_Pop_Binary_Coded_Decimal_80_C1() {
 					return "FBSTP";
 				}
 				const char *Move_If_Below_C1() {

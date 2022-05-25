@@ -1015,7 +1015,12 @@ namespace x86
 				explicit SaveIntegerValuePopStack(const x86::memory::Memory32 &source);
 				explicit SaveIntegerValuePopStack(const x86::memory::Memory64 &source);
 			};
-		}
+			
+			class SaveBinaryCodedDecimalPopStack : public AbstractInstruction {
+			public:
+				explicit SaveBinaryCodedDecimalPopStack(const x86::memory::Memory80 &source);
+			};
+	}
 
 	}
 }

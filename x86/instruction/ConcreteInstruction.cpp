@@ -1824,6 +1824,11 @@ namespace x86
 			{
 
 			}
+			SaveBinaryCodedDecimalPopStack::SaveBinaryCodedDecimalPopStack(const x86::memory::Memory80 &source) 
+				: AbstractInstruction(x86::mnemonic::FPU::data_transmitted::Store_Pop_Binary_Coded_Decimal_80_C1(), source)
+			{
+
+			}
 		}
 	}
 }
