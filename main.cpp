@@ -1509,6 +1509,13 @@ int main(int argc, char *argv[])
 		out << x86::instruction::FPU::SaveIntegerValue(x86::memory::Memory32(EAX)) << std::endl;
 	}
 	
+	{
+		out << x86::instruction::FPU::SaveFloatValuePopStack(ST0) << std::endl;
+		out << x86::instruction::FPU::SaveFloatValuePopStack(x86::memory::Memory32(EAX)) << std::endl;
+		out << x86::instruction::FPU::SaveFloatValuePopStack(x86::memory::Memory64(EAX)) << std::endl;
+		out << x86::instruction::FPU::SaveFloatValuePopStack(x86::memory::Memory80(EAX)) << std::endl;
+	}
+	
 	const std::string &str = out.str();
 	{
 		std::ofstream code("test.s");

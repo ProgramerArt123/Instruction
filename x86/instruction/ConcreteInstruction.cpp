@@ -1788,6 +1788,27 @@ namespace x86
 			{
 
 			}
+			
+			SaveFloatValuePopStack::SaveFloatValuePopStack(const x86::reg::FPU::Data &source) 
+				: AbstractInstruction(x86::mnemonic::FPU::data_transmitted::Store_Pop_Float_Value_Stack_32__64__80_C1(), source)
+			{
+
+			}
+			SaveFloatValuePopStack::SaveFloatValuePopStack(const x86::memory::Memory32 &source) 
+				: AbstractInstruction(x86::mnemonic::FPU::data_transmitted::Store_Pop_Float_Value_Stack_32__64__80_C1(), source)
+			{
+
+			}
+			SaveFloatValuePopStack::SaveFloatValuePopStack(const x86::memory::Memory64 &source) 
+				: AbstractInstruction(x86::mnemonic::FPU::data_transmitted::Store_Pop_Float_Value_Stack_32__64__80_C1(), source)
+			{
+
+			}
+			SaveFloatValuePopStack::SaveFloatValuePopStack(const x86::memory::Memory80 &source) 
+				: AbstractInstruction(x86::mnemonic::FPU::data_transmitted::Store_Pop_Float_Value_Stack_32__64__80_C1(), source)
+			{
+
+			}
 		}
 	}
 }
