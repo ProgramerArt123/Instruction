@@ -1008,6 +1008,13 @@ namespace x86
 				explicit SaveFloatValuePopStack(const x86::memory::Memory64 &source);
 				explicit SaveFloatValuePopStack(const x86::memory::Memory80 &source);
 			};
+			
+			class SaveIntegerValuePopStack : public AbstractInstruction {
+			public:
+				explicit SaveIntegerValuePopStack(const x86::memory::Memory16 &source);
+				explicit SaveIntegerValuePopStack(const x86::memory::Memory32 &source);
+				explicit SaveIntegerValuePopStack(const x86::memory::Memory64 &source);
+			};
 		}
 
 	}

@@ -1809,6 +1809,21 @@ namespace x86
 			{
 
 			}
+			SaveIntegerValuePopStack::SaveIntegerValuePopStack(const x86::memory::Memory16 &source) 
+				: AbstractInstruction(x86::mnemonic::FPU::data_transmitted::Store_Pop_Integer_Value_16__32__64_C1(), source)
+			{
+
+			}
+			SaveIntegerValuePopStack::SaveIntegerValuePopStack(const x86::memory::Memory32 &source) 
+				: AbstractInstruction(x86::mnemonic::FPU::data_transmitted::Store_Pop_Integer_Value_16__32__64_C1(), source)
+			{
+
+			}
+			SaveIntegerValuePopStack::SaveIntegerValuePopStack(const x86::memory::Memory64 &source) 
+				: AbstractInstruction(x86::mnemonic::FPU::data_transmitted::Store_Pop_Integer_Value_16__32__64_C1(), source)
+			{
+
+			}
 		}
 	}
 }

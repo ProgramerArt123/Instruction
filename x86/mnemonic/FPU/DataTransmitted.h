@@ -19,7 +19,7 @@ namespace x86
 				const char *Store_Float_Value_32__64_C1();
 				const char *Store_Integer_Value_16__32_C1();
 				const char *Store_Pop_Float_Value_Stack_32__64__80_C1();
-				const char *Store_Pop_Integer_Value_2__4__8_C1();
+				const char *Store_Pop_Integer_Value_16__32__64_C1();
 				const char *Store_Pop_Binary_Coded_Decimal_10_C1();
 				const char *Move_If_Below_C1();
 				const char *Move_If_Below__Equal_C1();
