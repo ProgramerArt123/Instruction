@@ -11,15 +11,15 @@ int main(int argc, char *argv[])
 		out << nop << std::endl;
 	}
 	{
-		const x86::instruction::DataTransmitted move(x86::immediate::ImmediateSigned8(1), AL);
+		const x86::instruction::integer::DataTransmitted move(x86::immediate::ImmediateSigned8(1), AL);
 		out << move << std::endl;
 	}
 	{
-		const x86::instruction::DataTransmitted move(x86::immediate::ImmediateSigned16(-2), AX);
+		const x86::instruction::integer::DataTransmitted move(x86::immediate::ImmediateSigned16(-2), AX);
 		out << move << std::endl;
 	}
 	{
-		const x86::instruction::DataTransmitted move(x86::immediate::ImmediateUnSigned32(3), EAX);
+		const x86::instruction::integer::DataTransmitted move(x86::immediate::ImmediateUnSigned32(3), EAX);
 		out << move << std::endl;
 	}
 //	{
@@ -27,67 +27,67 @@ int main(int argc, char *argv[])
 //		out << move << std::endl;
 //	}
 	{
-		const x86::instruction::DataTransmitted move(AX, CS);
+		const x86::instruction::integer::DataTransmitted move(AX, CS);
 		out << move << std::endl;
 	}
 	{
-		const x86::instruction::DataTransmitted move(CS, AX);
+		const x86::instruction::integer::DataTransmitted move(CS, AX);
 		out << move << std::endl;
 	}
 	{
-		const x86::instruction::DataTransmitted move(AX, DS);
+		const x86::instruction::integer::DataTransmitted move(AX, DS);
 		out << move << std::endl;
 	}
 	{
-		const x86::instruction::DataTransmitted move(DS, AX);
+		const x86::instruction::integer::DataTransmitted move(DS, AX);
 		out << move << std::endl;
 	}
 	{
-		const x86::instruction::DataTransmitted move(AX, SS);
+		const x86::instruction::integer::DataTransmitted move(AX, SS);
 		out << move << std::endl;
 	}
 	{
-		const x86::instruction::DataTransmitted move(SS, AX);
+		const x86::instruction::integer::DataTransmitted move(SS, AX);
 		out << move << std::endl;
 	}
 	{
-		const x86::instruction::DataTransmitted move(AX, ES);
+		const x86::instruction::integer::DataTransmitted move(AX, ES);
 		out << move << std::endl;
 	}
 	{
-		const x86::instruction::DataTransmitted move(ES, AX);
+		const x86::instruction::integer::DataTransmitted move(ES, AX);
 		out << move << std::endl;
 	}
 	{
-		const x86::instruction::DataTransmitted move(AL, BL);
+		const x86::instruction::integer::DataTransmitted move(AL, BL);
 		out << move << std::endl;
 	}
 	{
-		const x86::instruction::DataTransmitted move(BL, BH);
+		const x86::instruction::integer::DataTransmitted move(BL, BH);
 		out << move << std::endl;
 	}
 	{
-		const x86::instruction::DataTransmitted move(BX, AX);
+		const x86::instruction::integer::DataTransmitted move(BX, AX);
 		out << move << std::endl;
 	}
 	{
-		const x86::instruction::DataTransmitted move(AX, SP);
+		const x86::instruction::integer::DataTransmitted move(AX, SP);
 		out << move << std::endl;
 	}
 	{
-		const x86::instruction::DataTransmitted move(AX, BP);
+		const x86::instruction::integer::DataTransmitted move(AX, BP);
 		out << move << std::endl;
 	}
 	{
-		const x86::instruction::DataTransmitted move(AX, SI);
+		const x86::instruction::integer::DataTransmitted move(AX, SI);
 		out << move << std::endl;
 	}
 	{
-		const x86::instruction::DataTransmitted move(AX, DI);
+		const x86::instruction::integer::DataTransmitted move(AX, DI);
 		out << move << std::endl;
 	}
 	{
-		const x86::instruction::DataTransmitted move(EAX, EBX);
+		const x86::instruction::integer::DataTransmitted move(EAX, EBX);
 		out << move << std::endl;
 	} 
 //	{
@@ -103,39 +103,39 @@ int main(int argc, char *argv[])
 //		out << move << std::endl;
 //	}
 	{
-		const x86::instruction::DataTransmitted move(AX, CX);
+		const x86::instruction::integer::DataTransmitted move(AX, CX);
 		out << move << std::endl;
 	}
 	{
-		const x86::instruction::DataTransmitted move(AH, CL);
+		const x86::instruction::integer::DataTransmitted move(AH, CL);
 		out << move << std::endl;
 	}
 	{
-		const x86::instruction::DataTransmitted move(AH, CH);
+		const x86::instruction::integer::DataTransmitted move(AH, CH);
 		out << move << std::endl;
 	}
 	{
-		const x86::instruction::DataTransmitted move(EAX, ECX);
+		const x86::instruction::integer::DataTransmitted move(EAX, ECX);
 		out << move << std::endl;
 	}
 	{
-		const x86::instruction::DataTransmitted move(AX, DX);
+		const x86::instruction::integer::DataTransmitted move(AX, DX);
 		out << move << std::endl;
 	}
 	{
-		const x86::instruction::DataTransmitted move(DX, BX);
+		const x86::instruction::integer::DataTransmitted move(DX, BX);
 		out << move << std::endl;
 	}
 	{
-		const x86::instruction::DataTransmitted move(AL, DL);
+		const x86::instruction::integer::DataTransmitted move(AL, DL);
 		out << move << std::endl;
 	}
 	{
-		const x86::instruction::DataTransmitted move(AH, DH);
+		const x86::instruction::integer::DataTransmitted move(AH, DH);
 		out << move << std::endl;
 	}
 	{
-		const x86::instruction::DataTransmitted move(EAX, EDX);
+		const x86::instruction::integer::DataTransmitted move(EAX, EDX);
 		out << move << std::endl;
 	}
 //	{
@@ -143,60 +143,60 @@ int main(int argc, char *argv[])
 //		out << move << std::endl;
 //	}
 	{
-		const x86::instruction::DataTransmitted move(EAX, EBP);
+		const x86::instruction::integer::DataTransmitted move(EAX, EBP);
 		out << move << std::endl;
 	}
 	{
-		const x86::instruction::DataTransmitted move(EAX, ESP);
+		const x86::instruction::integer::DataTransmitted move(EAX, ESP);
 		out << move << std::endl;
 	}
 	{
-		const x86::instruction::DataTransmitted move(ESI, EAX);
+		const x86::instruction::integer::DataTransmitted move(ESI, EAX);
 		out << move << std::endl;
 	}
 	{
-		const x86::instruction::DataTransmitted move(EAX, EDI);
+		const x86::instruction::integer::DataTransmitted move(EAX, EDI);
 		out << move << std::endl;
 	}
 	{
-		const x86::instruction::DataTransmittedFillSign move(AX, EDI);
+		const x86::instruction::integer::DataTransmittedFillSign move(AX, EDI);
 		out << move << std::endl;
 	}
 	{
-		const x86::instruction::DataTransmittedFillSign move(AX, EDX);
+		const x86::instruction::integer::DataTransmittedFillSign move(AX, EDX);
 		out << move << std::endl;
 	}
 	{
-		const x86::instruction::DataTransmittedFillSign move(DI, EAX);
+		const x86::instruction::integer::DataTransmittedFillSign move(DI, EAX);
 		out << move << std::endl;
 	}
 	{
-		const x86::instruction::DataTransmittedFillZero move(AX, EDX);
+		const x86::instruction::integer::DataTransmittedFillZero move(AX, EDX);
 		out << move << std::endl;
 	}
 	{
-		const x86::instruction::DataTransmittedFillZero move(DI, EAX);
+		const x86::instruction::integer::DataTransmittedFillZero move(DI, EAX);
 		out << move << std::endl;
 	}
 	{
 		x86::immediate::ImmediateSigned8 disp(0);
 		x86::immediate::ImmediateSigned8 scale(1);
 		const x86::memory::Memory mem(EBX, disp, ESI, scale, DS);
-		const x86::instruction::DataTransmitted move(AL, mem);
+		const x86::instruction::integer::DataTransmitted move(AL, mem);
 		out << move << std::endl;
 	}
 	{
 		x86::immediate::ImmediateSigned8 disp(0);
 		x86::immediate::ImmediateSigned8 scale(1);
 		const x86::memory::Memory mem(EBX, disp, EAX, scale, DS);
-		const x86::instruction::DataTransmitted move(AL, mem);
+		const x86::instruction::integer::DataTransmitted move(AL, mem);
 		out << move << std::endl;
 	}
 	{
 		x86::immediate::ImmediateSigned8 disp(0);
 		x86::immediate::ImmediateSigned8 scale(1);
 		const x86::memory::Memory mem(ESP, disp, EAX, scale, DS);
-		const x86::instruction::DataTransmitted move(AL, mem);
+		const x86::instruction::integer::DataTransmitted move(AL, mem);
 		out << move << std::endl;
 	}
 	{
@@ -204,236 +204,236 @@ int main(int argc, char *argv[])
 		x86::immediate::ImmediateSigned8 scale(1);
 		const x86::memory::Memory mem(EDI, disp, ESI, scale, DS);
 		{
-			const x86::instruction::DataTransmitted move(AL, mem);
+			const x86::instruction::integer::DataTransmitted move(AL, mem);
 			out << move << std::endl;
 		}
 		{
-			const x86::instruction::DataTransmitted move(mem, AH);
+			const x86::instruction::integer::DataTransmitted move(mem, AH);
 			out << move << std::endl;
 		}
 	}
 	{
 		x86::immediate::ImmediateSigned8 scale(1);
 		const x86::memory::Memory mem(EBX, ESI, scale, DS);
-		const x86::instruction::DataTransmitted move(AL, mem);
+		const x86::instruction::integer::DataTransmitted move(AL, mem);
 		out << move << std::endl;
 	}
 	{
 		x86::immediate::ImmediateSigned8 scale(1);
 		const x86::memory::Memory mem(EBX, EAX, scale, DS);
-		const x86::instruction::DataTransmitted move(AL, mem);
+		const x86::instruction::integer::DataTransmitted move(AL, mem);
 		out << move << std::endl;
 	}
 	{
 		x86::immediate::ImmediateSigned8 scale(1);
 		const x86::memory::Memory mem(ESI, EBX, scale, DS);
-		const x86::instruction::DataTransmitted move(AL, mem);
+		const x86::instruction::integer::DataTransmitted move(AL, mem);
 		out << move << std::endl;
 	}
 	{
 		x86::immediate::ImmediateSigned8 scale(1);
 		const x86::memory::Memory mem(ESI, EDI, scale, DS);
-		const x86::instruction::DataTransmitted move(AL, mem);
+		const x86::instruction::integer::DataTransmitted move(AL, mem);
 		out << move << std::endl;
 	}
 	{
 		x86::immediate::ImmediateSigned8 disp(0);
 		const x86::memory::Memory mem(EBX, disp, EBP, DS);
-		const x86::instruction::DataTransmitted move(AL, mem);
+		const x86::instruction::integer::DataTransmitted move(AL, mem);
 		out << move << std::endl;
 	}
 	{
 		x86::immediate::ImmediateSigned8 disp(0);
 		const x86::memory::Memory mem(EBX, disp, EAX,  DS);
-		const x86::instruction::DataTransmitted move(AL, mem);
+		const x86::instruction::integer::DataTransmitted move(AL, mem);
 		out << move << std::endl;
 	}
 	{
 		x86::immediate::ImmediateSigned8 disp(0);
 		const x86::memory::Memory mem(EBP, disp, EBX, DS);
-		const x86::instruction::DataTransmitted move(AL, mem);
+		const x86::instruction::integer::DataTransmitted move(AL, mem);
 		out << move << std::endl;
 	}
 	{
 		x86::immediate::ImmediateSigned8 disp(0);
 		const x86::memory::Memory mem(EBP, disp, ESI, SS);
-		const x86::instruction::DataTransmitted move(AL, mem);
+		const x86::instruction::integer::DataTransmitted move(AL, mem);
 		out << move << std::endl;
 	}
 	{
 		const x86::memory::Memory mem(EBX, ESI, CS);
-		const x86::instruction::DataTransmitted move(AL, mem);
+		const x86::instruction::integer::DataTransmitted move(AL, mem);
 		out << move << std::endl;
 	}
 	{
 		const x86::memory::Memory mem(EBX, EAX, CS);
-		const x86::instruction::DataTransmitted move(AL, mem);
+		const x86::instruction::integer::DataTransmitted move(AL, mem);
 		out << move << std::endl;
 	}
 	{
 		const x86::memory::Memory mem(ESI, EDI, CS);
-		const x86::instruction::DataTransmitted move(AL, mem);
+		const x86::instruction::integer::DataTransmitted move(AL, mem);
 		out << move << std::endl;
 	}
 	{
 		const x86::memory::Memory mem(ESI, ECX, CS);
-		const x86::instruction::DataTransmitted move(AL, mem);
+		const x86::instruction::integer::DataTransmitted move(AL, mem);
 		out << move << std::endl;
 	}
 	{
 		x86::immediate::ImmediateSigned8 disp(0);
 		const x86::memory::Memory mem(EDX, disp, ES);
-		const x86::instruction::DataTransmitted move(BH, mem);
+		const x86::instruction::integer::DataTransmitted move(BH, mem);
 		out << move << std::endl;
 	}
 	{
 		const x86::memory::Memory mem(EDX, ES);
-		const x86::instruction::DataTransmitted move(BH, mem);
+		const x86::instruction::integer::DataTransmitted move(BH, mem);
 		out << move << std::endl;
 	}
 	{
 		const x86::memory::Memory mem(EDI, ES);
-		const x86::instruction::DataTransmitted move(BH, mem);
+		const x86::instruction::integer::DataTransmitted move(BH, mem);
 		out << move << std::endl;
 	}
 	{
 		x86::immediate::ImmediateSigned8 disp(0);
 		const x86::memory::Memory mem(ESI, disp, ES);
-		const x86::instruction::DataTransmitted move(BH, mem);
+		const x86::instruction::integer::DataTransmitted move(BH, mem);
 		out << move << std::endl;
 	}
 	{
 		x86::immediate::ImmediateSigned8 disp(0);
 		const x86::memory::Memory mem(EAX, disp, EDI, ES);
-		const x86::instruction::DataTransmitted move(BH, mem);
+		const x86::instruction::integer::DataTransmitted move(BH, mem);
 		out << move << std::endl;
 	}
 	{
 		x86::immediate::ImmediateSigned8 disp(0);
 		const x86::memory::Memory mem(EAX, disp, EBX, ES);
-		const x86::instruction::DataTransmitted move(BH, mem);
+		const x86::instruction::integer::DataTransmitted move(BH, mem);
 		out << move << std::endl;
 	}
 	{
 		x86::immediate::ImmediateSigned8 disp(0);
 		const x86::memory::Memory mem(ESI, disp, EBX, ES);
-		const x86::instruction::DataTransmitted move(BH, mem);
+		const x86::instruction::integer::DataTransmitted move(BH, mem);
 		out << move << std::endl;
 	}
 	{
 		x86::immediate::ImmediateSigned8 disp(0);
 		const x86::memory::Memory mem(ESI, disp, EDI, ES);
-		const x86::instruction::DataTransmitted move(BH, mem);
+		const x86::instruction::integer::DataTransmitted move(BH, mem);
 		out << move << std::endl;
 	}
 	{
 		const x86::memory::Memory mem(EAX, EDI, ES);
-		const x86::instruction::DataTransmitted move(BH, mem);
+		const x86::instruction::integer::DataTransmitted move(BH, mem);
 		out << move << std::endl;
 	}
 	{
 		const x86::memory::Memory mem(EAX, EBX, ES);
-		const x86::instruction::DataTransmitted move(BH, mem);
+		const x86::instruction::integer::DataTransmitted move(BH, mem);
 		out << move << std::endl;
 	}
 	{
 		const x86::memory::Memory mem(ESI, EBX, ES);
-		const x86::instruction::DataTransmitted move(BH, mem);
+		const x86::instruction::integer::DataTransmitted move(BH, mem);
 		out << move << std::endl;
 	}
 	{
 		const x86::memory::Memory mem(ESI,EDI, ES);
-		const x86::instruction::DataTransmitted move(BH, mem);
+		const x86::instruction::integer::DataTransmitted move(BH, mem);
 		out << move << std::endl;
 	}
 	{
 		x86::immediate::ImmediateSigned8 disp(0);
 		const x86::memory::Memory mem(EAX, disp, EDI);
-		const x86::instruction::DataTransmitted move(BH, mem);
+		const x86::instruction::integer::DataTransmitted move(BH, mem);
 		out << move << std::endl;
 	}
 	{
 		x86::immediate::ImmediateSigned8 disp(0);
 		const x86::memory::Memory mem(EAX, disp, EBX);
-		const x86::instruction::DataTransmitted move(BH, mem);
+		const x86::instruction::integer::DataTransmitted move(BH, mem);
 		out << move << std::endl;
 	}
 	{
 		x86::immediate::ImmediateSigned8 disp(0);
 		const x86::memory::Memory mem(ESI, disp, EBX);
-		const x86::instruction::DataTransmitted move(BH, mem);
+		const x86::instruction::integer::DataTransmitted move(BH, mem);
 		out << move << std::endl;
 	}
 	{
 		x86::immediate::ImmediateSigned8 disp(0);
 		const x86::memory::Memory mem(ESI, disp, EDI);
-		const x86::instruction::DataTransmitted move(BH, mem);
+		const x86::instruction::integer::DataTransmitted move(BH, mem);
 		out << move << std::endl;
 	}
 	{
 		const x86::memory::Memory mem(EAX, EBP);
-		const x86::instruction::DataTransmitted move(BH, mem);
+		const x86::instruction::integer::DataTransmitted move(BH, mem);
 		out << move << std::endl;
 	}
 	{
 		const x86::memory::Memory mem(EAX, EBX);
-		const x86::instruction::DataTransmitted move(BH, mem);
+		const x86::instruction::integer::DataTransmitted move(BH, mem);
 		out << move << std::endl;
 	}
 	{
 		const x86::memory::Memory mem(ESI, EBX);
-		const x86::instruction::DataTransmitted move(BH, mem);
+		const x86::instruction::integer::DataTransmitted move(BH, mem);
 		out << move << std::endl;
 	}
 	{
 		const x86::memory::Memory mem(ESI, EBP);
-		const x86::instruction::DataTransmitted move(BH, mem);
+		const x86::instruction::integer::DataTransmitted move(BH, mem);
 		out << move << std::endl;
 	}
 	{
 		x86::immediate::ImmediateSigned8 disp(0);
 		const x86::memory::Memory mem(EDI, disp);
-		const x86::instruction::DataTransmitted move(BH, mem);
+		const x86::instruction::integer::DataTransmitted move(BH, mem);
 		out << move << std::endl;
 	}
 	{
 		x86::immediate::ImmediateSigned8 disp(0);
 		const x86::memory::Memory mem(EAX, disp);
-		const x86::instruction::DataTransmitted move(BH, mem);
+		const x86::instruction::integer::DataTransmitted move(BH, mem);
 		out << move << std::endl;
 	}
 	{
 		const x86::memory::Memory mem(EBP);
-		const x86::instruction::DataTransmitted move(BH, mem);
+		const x86::instruction::integer::DataTransmitted move(BH, mem);
 		out << move << std::endl;
 	}
 	{
 		const x86::memory::Memory mem(EAX);
-		const x86::instruction::DataTransmitted move(BH, mem);
+		const x86::instruction::integer::DataTransmitted move(BH, mem);
 		out << move << std::endl;
 	}
 //	{
-//		const x86::instruction::DataTransmitted move(x86::immediate::ImmediateSigned8(1), BPL);
+//		const x86::instruction::integer::DataTransmitted move(x86::immediate::ImmediateSigned8(1), BPL);
 //		out << move << std::endl;
 //	}
 //	{
-//		const x86::instruction::DataTransmitted move(x86::immediate::ImmediateSigned8(1), DIL);
+//		const x86::instruction::integer::DataTransmitted move(x86::immediate::ImmediateSigned8(1), DIL);
 //		out << move << std::endl;
 //	}
 //	{
-//		const x86::instruction::DataTransmitted move(x86::immediate::ImmediateSigned8(1), SIL);
+//		const x86::instruction::integer::DataTransmitted move(x86::immediate::ImmediateSigned8(1), SIL);
 //		out << move << std::endl;
 //	}
 //	{
-//		const x86::instruction::DataTransmitted move(x86::immediate::ImmediateSigned8(1), SPL);
+//		const x86::instruction::integer::DataTransmitted move(x86::immediate::ImmediateSigned8(1), SPL);
 //		out << move << std::endl;
 //	}
 	{
-		const x86::instruction::DataTransmitted move(AX, FS);
+		const x86::instruction::integer::DataTransmitted move(AX, FS);
 		out << move << std::endl;
 	}
 	{
-		const x86::instruction::DataTransmitted move(GS, BX);
+		const x86::instruction::integer::DataTransmitted move(GS, BX);
 		out << move << std::endl;
 	}
 //	{
@@ -441,615 +441,615 @@ int main(int argc, char *argv[])
 //		out << move << std::endl;
 //	}
 //	{
-//		const x86::instruction::DataTransmitted move(x86::immediate::ImmediateSigned32(3), R8D);
+//		const x86::instruction::integer::DataTransmitted move(x86::immediate::ImmediateSigned32(3), R8D);
 //		out << move << std::endl;
 //	}
 
 	{
 		const x86::memory::Memory8 mem(EBP);
-		const x86::instruction::PushToStack push(mem);
+		const x86::instruction::integer::PushToStack push(mem);
 		out << push << std::endl;
 	}
 	{
 		const x86::memory::Memory16 mem(EBP);
-		const x86::instruction::PushToStack push(mem);
+		const x86::instruction::integer::PushToStack push(mem);
 		out << push << std::endl;
 	} 
 	{
 		const x86::memory::Memory32 mem(EBP);
-		const x86::instruction::PushToStack push(mem);
+		const x86::instruction::integer::PushToStack push(mem);
 		out << push << std::endl;
 	}
 	{
-		const x86::instruction::PushToStack push(EAX);
+		const x86::instruction::integer::PushToStack push(EAX);
 		out << push << std::endl;
 	}
 	{
-		const x86::instruction::PushToStack push(ESP);
+		const x86::instruction::integer::PushToStack push(ESP);
 		out << push << std::endl;
 	}
 	{
-		const x86::instruction::PushToStack push(x86::immediate::ImmediateSigned32(3));
+		const x86::instruction::integer::PushToStack push(x86::immediate::ImmediateSigned32(3));
 		out << push << std::endl;
 	}
 	
 	{
 		const x86::memory::Memory8 mem(EBP);
-		const x86::instruction::PopFromStack pop(mem);
+		const x86::instruction::integer::PopFromStack pop(mem);
 		out << pop << std::endl;
 	}
 	{
 		const x86::memory::Memory16 mem(EBP);
-		const x86::instruction::PopFromStack pop(mem);
+		const x86::instruction::integer::PopFromStack pop(mem);
 		out << pop << std::endl;
 	} 
 	{
 		const x86::memory::Memory32 mem(EBP);
-		const x86::instruction::PopFromStack pop(mem);
+		const x86::instruction::integer::PopFromStack pop(mem);
 		out << pop << std::endl;
 	}
 	{
-		const x86::instruction::PopFromStack pop(EAX);
+		const x86::instruction::integer::PopFromStack pop(EAX);
 		out << pop << std::endl;
 	}
 	{
-		const x86::instruction::PopFromStack pop(ESP);
+		const x86::instruction::integer::PopFromStack pop(ESP);
 		out << pop << std::endl;
 	}
 	{
-		const x86::instruction::ReverseRegister32Bytes reverse(EAX);
+		const x86::instruction::integer::ReverseRegister32Bytes reverse(EAX);
 		out << reverse << std::endl;
 	}
 	{
-		const x86::instruction::ReverseRegister32Bytes reverse(ESI);
+		const x86::instruction::integer::ReverseRegister32Bytes reverse(ESI);
 		out << reverse << std::endl;
 	}
 	{
-		const x86::instruction::SwapOperationOffsetMemory swap(AL, AH);
+		const x86::instruction::integer::SwapOperationOffsetMemory swap(AL, AH);
 		out << swap << std::endl;
 	}
 //	{
-//		const x86::instruction::SwapOperationOffsetMemory swap(AL, SIL);
+//		const x86::instruction::integer::SwapOperationOffsetMemory swap(AL, SIL);
 //		out << swap << std::endl;
 //	}
 	{
-		const x86::instruction::SwapOperationOffsetMemory swap(AL, x86::memory::Memory8(EBP));
+		const x86::instruction::integer::SwapOperationOffsetMemory swap(AL, x86::memory::Memory8(EBP));
 		out << swap << std::endl;
 	}
 	{
-		const x86::instruction::SwapOperationOffsetMemory swap(AX, BX);
+		const x86::instruction::integer::SwapOperationOffsetMemory swap(AX, BX);
 		out << swap << std::endl;
 	}
 	{
-		const x86::instruction::SwapOperationOffsetMemory swap(AX, SI);
+		const x86::instruction::integer::SwapOperationOffsetMemory swap(AX, SI);
 		out << swap << std::endl;
 	}
 	{
-		const x86::instruction::SwapOperationOffsetMemory swap(AX, x86::memory::Memory16(EBP));
+		const x86::instruction::integer::SwapOperationOffsetMemory swap(AX, x86::memory::Memory16(EBP));
 		out << swap << std::endl;
 	}
 	{
-		const x86::instruction::SwapOperationOffsetMemory swap(EAX, EBX);
+		const x86::instruction::integer::SwapOperationOffsetMemory swap(EAX, EBX);
 		out << swap << std::endl;
 	}
 	{
-		const x86::instruction::SwapOperationOffsetMemory swap(EAX, ESI);
+		const x86::instruction::integer::SwapOperationOffsetMemory swap(EAX, ESI);
 		out << swap << std::endl;
 	}
 	{
-		const x86::instruction::SwapOperationOffsetMemory swap(EAX, x86::memory::Memory32(EBP));
+		const x86::instruction::integer::SwapOperationOffsetMemory swap(EAX, x86::memory::Memory32(EBP));
 		out << swap << std::endl;
 	}
 //	{
-//		const x86::instruction::SwapOperationOffsetMemory swap(SIL, DIL);
+//		const x86::instruction::integer::SwapOperationOffsetMemory swap(SIL, DIL);
 //		out << swap << std::endl;
 //	}
 //	{
-//		const x86::instruction::SwapOperationOffsetMemory swap(DIL, x86::memory::Memory8(EBP));
+//		const x86::instruction::integer::SwapOperationOffsetMemory swap(DIL, x86::memory::Memory8(EBP));
 //		out << swap << std::endl;
 //	}
 	{
-		const x86::instruction::SwapOperationOffsetMemory swap(SI, DI);
+		const x86::instruction::integer::SwapOperationOffsetMemory swap(SI, DI);
 		out << swap << std::endl;
 	}
 	{
-		const x86::instruction::SwapOperationOffsetMemory swap(DI, x86::memory::Memory16(EBP));
+		const x86::instruction::integer::SwapOperationOffsetMemory swap(DI, x86::memory::Memory16(EBP));
 		out << swap << std::endl;
 	}
 	{
-		const x86::instruction::SwapOperationOffsetMemory swap(ESI, EDI);
+		const x86::instruction::integer::SwapOperationOffsetMemory swap(ESI, EDI);
 		out << swap << std::endl;
 	}
 	{
-		const x86::instruction::SwapOperationOffsetMemory swap(EDI, x86::memory::Memory32(EBP));
+		const x86::instruction::integer::SwapOperationOffsetMemory swap(EDI, x86::memory::Memory32(EBP));
 		out << swap << std::endl;
 	}
 	{
-		const x86::instruction::SwapOperationOffsetMemory swap(ESI, EDI);
+		const x86::instruction::integer::SwapOperationOffsetMemory swap(ESI, EDI);
 		out << swap << std::endl;
 	}
 	{
-		const x86::instruction::SwapOperationOffsetMemory swap(EDI, x86::memory::Memory32(EBP));
+		const x86::instruction::integer::SwapOperationOffsetMemory swap(EDI, x86::memory::Memory32(EBP));
 		out << swap << std::endl;
 	}
 	{
-		const x86::instruction::CompareAccumulatorTransmitted mov(AL, AH);
+		const x86::instruction::integer::CompareAccumulatorTransmitted mov(AL, AH);
 		out << mov << std::endl;
 	}
 //	{
-//		const x86::instruction::CompareAccumulatorTransmitted mov(AL, SIL);
+//		const x86::instruction::integer::CompareAccumulatorTransmitted mov(AL, SIL);
 //		out << mov << std::endl;
 //	}
 	{
-		const x86::instruction::CompareAccumulatorTransmitted mov(AL, x86::memory::Memory8(EBP));
+		const x86::instruction::integer::CompareAccumulatorTransmitted mov(AL, x86::memory::Memory8(EBP));
 		out << mov << std::endl;
 	}
 //	{
-//		const x86::instruction::CompareAccumulatorTransmitted mov(SIL, DIL);
+//		const x86::instruction::integer::CompareAccumulatorTransmitted mov(SIL, DIL);
 //		out << mov << std::endl;
 //	}
 //	{
-//		const x86::instruction::CompareAccumulatorTransmitted mov(SIL, AL);
+//		const x86::instruction::integer::CompareAccumulatorTransmitted mov(SIL, AL);
 //		out << mov << std::endl;
 //	}
 //	{
-//		const x86::instruction::CompareAccumulatorTransmitted mov(BPL, x86::memory::Memory8(EBP));
+//		const x86::instruction::integer::CompareAccumulatorTransmitted mov(BPL, x86::memory::Memory8(EBP));
 //		out << mov << std::endl;
 //	}
 	
 	{
-		const x86::instruction::CompareAccumulatorTransmitted mov(AX, DX);
+		const x86::instruction::integer::CompareAccumulatorTransmitted mov(AX, DX);
 		out << mov << std::endl;
 	}
 	{
-		const x86::instruction::CompareAccumulatorTransmitted mov(CX, SP);
+		const x86::instruction::integer::CompareAccumulatorTransmitted mov(CX, SP);
 		out << mov << std::endl;
 	}
 	{
-		const x86::instruction::CompareAccumulatorTransmitted mov(BX, x86::memory::Memory16(EBP));
+		const x86::instruction::integer::CompareAccumulatorTransmitted mov(BX, x86::memory::Memory16(EBP));
 		out << mov << std::endl;
 	}
 	{
-		const x86::instruction::CompareAccumulatorTransmitted mov(SP, BP);
+		const x86::instruction::integer::CompareAccumulatorTransmitted mov(SP, BP);
 		out << mov << std::endl;
 	}
 	{
-		const x86::instruction::CompareAccumulatorTransmitted mov(BP, DX);
+		const x86::instruction::integer::CompareAccumulatorTransmitted mov(BP, DX);
 		out << mov << std::endl;
 	}
 	{
-		const x86::instruction::CompareAccumulatorTransmitted mov(SP, x86::memory::Memory16(EBP));
-		out << mov << std::endl;
-	}
-	
-	{
-		const x86::instruction::CompareAccumulatorTransmitted mov(EAX, EDX);
-		out << mov << std::endl;
-	}
-	{
-		const x86::instruction::CompareAccumulatorTransmitted mov(ECX, ESP);
-		out << mov << std::endl;
-	}
-	{
-		const x86::instruction::CompareAccumulatorTransmitted mov(EBX, x86::memory::Memory32(EBP));
-		out << mov << std::endl;
-	}
-	{
-		const x86::instruction::CompareAccumulatorTransmitted mov(ESP, EBP);
-		out << mov << std::endl;
-	}
-	{
-		const x86::instruction::CompareAccumulatorTransmitted mov(EBP, EDX);
-		out << mov << std::endl;
-	}
-	{
-		const x86::instruction::CompareAccumulatorTransmitted mov(ESP, x86::memory::Memory32(EBP));
+		const x86::instruction::integer::CompareAccumulatorTransmitted mov(SP, x86::memory::Memory16(EBP));
 		out << mov << std::endl;
 	}
 	
+	{
+		const x86::instruction::integer::CompareAccumulatorTransmitted mov(EAX, EDX);
+		out << mov << std::endl;
+	}
+	{
+		const x86::instruction::integer::CompareAccumulatorTransmitted mov(ECX, ESP);
+		out << mov << std::endl;
+	}
+	{
+		const x86::instruction::integer::CompareAccumulatorTransmitted mov(EBX, x86::memory::Memory32(EBP));
+		out << mov << std::endl;
+	}
+	{
+		const x86::instruction::integer::CompareAccumulatorTransmitted mov(ESP, EBP);
+		out << mov << std::endl;
+	}
+	{
+		const x86::instruction::integer::CompareAccumulatorTransmitted mov(EBP, EDX);
+		out << mov << std::endl;
+	}
+	{
+		const x86::instruction::integer::CompareAccumulatorTransmitted mov(ESP, x86::memory::Memory32(EBP));
+		out << mov << std::endl;
+	}
+	
 	
 	{
-		const x86::instruction::SwapAdd add(AL, AH);
+		const x86::instruction::integer::SwapAdd add(AL, AH);
 		out << add << std::endl;
 	}
 //	{
-//		const x86::instruction::SwapAdd add(AL, SIL);
+//		const x86::instruction::integer::SwapAdd add(AL, SIL);
 //		out << add << std::endl;
 //	}
 	{
-		const x86::instruction::SwapAdd add(AL, x86::memory::Memory8(EBP));
+		const x86::instruction::integer::SwapAdd add(AL, x86::memory::Memory8(EBP));
 		out << add << std::endl;
 	}
 //	{
-//		const x86::instruction::SwapAdd add(SIL, DIL);
+//		const x86::instruction::integer::SwapAdd add(SIL, DIL);
 //		out << add << std::endl;
 //	}
 //	{
-//		const x86::instruction::SwapAdd add(SIL, AL);
+//		const x86::instruction::integer::SwapAdd add(SIL, AL);
 //		out << add << std::endl;
 //	}
 //	{
-//		const x86::instruction::SwapAdd add(BPL, x86::memory::Memory8(EBP));
+//		const x86::instruction::integer::SwapAdd add(BPL, x86::memory::Memory8(EBP));
 //		out << add << std::endl;
 //	}
 	
 	{
-		const x86::instruction::SwapAdd add(AX, DX);
+		const x86::instruction::integer::SwapAdd add(AX, DX);
 		out << add << std::endl;
 	}
 	{
-		const x86::instruction::SwapAdd add(CX, SP);
+		const x86::instruction::integer::SwapAdd add(CX, SP);
 		out << add << std::endl;
 	}
 	{
-		const x86::instruction::SwapAdd add(BX, x86::memory::Memory16(EBP));
+		const x86::instruction::integer::SwapAdd add(BX, x86::memory::Memory16(EBP));
 		out << add << std::endl;
 	}
 	{
-		const x86::instruction::SwapAdd add(SP, BP);
+		const x86::instruction::integer::SwapAdd add(SP, BP);
 		out << add << std::endl;
 	}
 	{
-		const x86::instruction::SwapAdd add(BP, DX);
+		const x86::instruction::integer::SwapAdd add(BP, DX);
 		out << add << std::endl;
 	}
 	{
-		const x86::instruction::SwapAdd add(SP, x86::memory::Memory16(EBP));
-		out << add << std::endl;
-	}
-	
-	{
-		const x86::instruction::SwapAdd add(EAX, EDX);
-		out << add << std::endl;
-	}
-	{
-		const x86::instruction::SwapAdd add(ECX, ESP);
-		out << add << std::endl;
-	}
-	{
-		const x86::instruction::SwapAdd add(EBX, x86::memory::Memory32(EBP));
-		out << add << std::endl;
-	}
-	{
-		const x86::instruction::SwapAdd add(ESP, EBP);
-		out << add << std::endl;
-	}
-	{
-		const x86::instruction::SwapAdd add(EBP, EDX);
-		out << add << std::endl;
-	}
-	{
-		const x86::instruction::SwapAdd add(ESP, x86::memory::Memory32(EBP));
+		const x86::instruction::integer::SwapAdd add(SP, x86::memory::Memory16(EBP));
 		out << add << std::endl;
 	}
 	
 	{
-		const x86::instruction::TransmittedByteToAL mov;
+		const x86::instruction::integer::SwapAdd add(EAX, EDX);
+		out << add << std::endl;
+	}
+	{
+		const x86::instruction::integer::SwapAdd add(ECX, ESP);
+		out << add << std::endl;
+	}
+	{
+		const x86::instruction::integer::SwapAdd add(EBX, x86::memory::Memory32(EBP));
+		out << add << std::endl;
+	}
+	{
+		const x86::instruction::integer::SwapAdd add(ESP, EBP);
+		out << add << std::endl;
+	}
+	{
+		const x86::instruction::integer::SwapAdd add(EBP, EDX);
+		out << add << std::endl;
+	}
+	{
+		const x86::instruction::integer::SwapAdd add(ESP, x86::memory::Memory32(EBP));
+		out << add << std::endl;
+	}
+	
+	{
+		const x86::instruction::integer::TransmittedByteToAL mov;
 		out << mov << std::endl;
 	}
 
 	{
-		const x86::instruction::ReadFromIOPortToAccumulator in(x86::immediate::ImmediateSigned8(1), AL);
+		const x86::instruction::integer::ReadFromIOPortToAccumulator in(x86::immediate::ImmediateSigned8(1), AL);
 		out << in << std::endl;
 	}
 	{
-		const x86::instruction::ReadFromIOPortToAccumulator in(x86::immediate::ImmediateSigned8(1), AX);
+		const x86::instruction::integer::ReadFromIOPortToAccumulator in(x86::immediate::ImmediateSigned8(1), AX);
 		out << in << std::endl;
 	}
 	{
-		const x86::instruction::ReadFromIOPortToAccumulator in(x86::immediate::ImmediateSigned8(1), EAX);
+		const x86::instruction::integer::ReadFromIOPortToAccumulator in(x86::immediate::ImmediateSigned8(1), EAX);
 		out << in << std::endl;
 	}
 	
 	
 	{
-		out << x86::instruction::WriteFromAccumulatorToIOPort(AL, x86::immediate::ImmediateSigned8(1)) << std::endl;
+		out << x86::instruction::integer::WriteFromAccumulatorToIOPort(AL, x86::immediate::ImmediateSigned8(1)) << std::endl;
 	}
 	{
-		out << x86::instruction::WriteFromAccumulatorToIOPort(AX, x86::immediate::ImmediateSigned8(1)) << std::endl;
+		out << x86::instruction::integer::WriteFromAccumulatorToIOPort(AX, x86::immediate::ImmediateSigned8(1)) << std::endl;
 	}
 	{
-		out << x86::instruction::WriteFromAccumulatorToIOPort(EAX, x86::immediate::ImmediateSigned8(1)) << std::endl;
-	}
-	
-	
-	{
-		out << x86::instruction::LoadEffectiveAddress(x86::memory::Memory8(EAX), AX) << std::endl;
-	}
-	{
-		out << x86::instruction::LoadEffectiveAddress(x86::memory::Memory32(EAX), EAX) << std::endl;
-	}
-	{
-		out << x86::instruction::LoadFlagsToAH() << std::endl;
-	}
-	{
-		out << x86::instruction::SaveFlagsFromAH() << std::endl;
-	}
-	{
-		out << x86::instruction::PushFlagsWordToStack() << std::endl;
-	}
-	{
-		out << x86::instruction::PopFlagsWordFromStack() << std::endl;
-	}
-	{
-		out << x86::instruction::Add(x86::immediate::ImmediateSigned8(0), AL) << std::endl;
-	}
-	{
-		out << x86::instruction::Add(x86::immediate::ImmediateSigned16(0), AX) << std::endl;
-	}
-	{
-		out << x86::instruction::Add(x86::immediate::ImmediateSigned32(0), EAX) << std::endl;
+		out << x86::instruction::integer::WriteFromAccumulatorToIOPort(EAX, x86::immediate::ImmediateSigned8(1)) << std::endl;
 	}
 	
+	
 	{
-		out << x86::instruction::AddCarray(x86::immediate::ImmediateSigned8(1), AL) << std::endl;
+		out << x86::instruction::integer::LoadEffectiveAddress(x86::memory::Memory8(EAX), AX) << std::endl;
 	}
 	{
-		out << x86::instruction::AddCarray(x86::immediate::ImmediateSigned16(-1), AX) << std::endl;
+		out << x86::instruction::integer::LoadEffectiveAddress(x86::memory::Memory32(EAX), EAX) << std::endl;
 	}
 	{
-		out << x86::instruction::AddCarray(x86::immediate::ImmediateSigned32(1), EAX) << std::endl;
+		out << x86::instruction::integer::LoadFlagsToAH() << std::endl;
+	}
+	{
+		out << x86::instruction::integer::SaveFlagsFromAH() << std::endl;
+	}
+	{
+		out << x86::instruction::integer::PushFlagsWordToStack() << std::endl;
+	}
+	{
+		out << x86::instruction::integer::PopFlagsWordFromStack() << std::endl;
+	}
+	{
+		out << x86::instruction::integer::Add(x86::immediate::ImmediateSigned8(0), AL) << std::endl;
+	}
+	{
+		out << x86::instruction::integer::Add(x86::immediate::ImmediateSigned16(0), AX) << std::endl;
+	}
+	{
+		out << x86::instruction::integer::Add(x86::immediate::ImmediateSigned32(0), EAX) << std::endl;
 	}
 	
 	{
-		out << x86::instruction::Increase(EAX) << std::endl;
+		out << x86::instruction::integer::AddCarray(x86::immediate::ImmediateSigned8(1), AL) << std::endl;
 	}
 	{
-		out << x86::instruction::Increase(DH) << std::endl;
+		out << x86::instruction::integer::AddCarray(x86::immediate::ImmediateSigned16(-1), AX) << std::endl;
+	}
+	{
+		out << x86::instruction::integer::AddCarray(x86::immediate::ImmediateSigned32(1), EAX) << std::endl;
+	}
+	
+	{
+		out << x86::instruction::integer::Increase(EAX) << std::endl;
+	}
+	{
+		out << x86::instruction::integer::Increase(DH) << std::endl;
 	}
 	
 		
 	{
-		out << x86::instruction::Sub(x86::immediate::ImmediateSigned8(1), AL) << std::endl;
+		out << x86::instruction::integer::Sub(x86::immediate::ImmediateSigned8(1), AL) << std::endl;
 	}
 	{
-		out << x86::instruction::Sub(x86::immediate::ImmediateSigned16(-1), AX) << std::endl;
+		out << x86::instruction::integer::Sub(x86::immediate::ImmediateSigned16(-1), AX) << std::endl;
 	}
 	{
-		out << x86::instruction::Sub(x86::immediate::ImmediateSigned32(1), EAX) << std::endl;
-	}
-	
-	{
-		out << x86::instruction::SubCarray(x86::immediate::ImmediateSigned8(1), AL) << std::endl;
-	}
-	{
-		out << x86::instruction::SubCarray(x86::immediate::ImmediateSigned16(-1), AX) << std::endl;
-	}
-	{
-		out << x86::instruction::SubCarray(x86::immediate::ImmediateSigned32(1), EAX) << std::endl;
+		out << x86::instruction::integer::Sub(x86::immediate::ImmediateSigned32(1), EAX) << std::endl;
 	}
 	
 	{
-		out << x86::instruction::Decrease(EAX) << std::endl;
+		out << x86::instruction::integer::SubCarray(x86::immediate::ImmediateSigned8(1), AL) << std::endl;
 	}
 	{
-		out << x86::instruction::Decrease(DH) << std::endl;
+		out << x86::instruction::integer::SubCarray(x86::immediate::ImmediateSigned16(-1), AX) << std::endl;
+	}
+	{
+		out << x86::instruction::integer::SubCarray(x86::immediate::ImmediateSigned32(1), EAX) << std::endl;
 	}
 	
 	{
-		out << x86::instruction::Negation(EAX) << std::endl;
+		out << x86::instruction::integer::Decrease(EAX) << std::endl;
+	}
+	{
+		out << x86::instruction::integer::Decrease(DH) << std::endl;
 	}
 	
 	{
-		out << x86::instruction::Compare(x86::immediate::ImmediateSigned8(1), AL) << std::endl;
+		out << x86::instruction::integer::Negation(EAX) << std::endl;
+	}
+	
+	{
+		out << x86::instruction::integer::Compare(x86::immediate::ImmediateSigned8(1), AL) << std::endl;
 	}
 	{
-		out << x86::instruction::Compare(x86::immediate::ImmediateSigned16(-1), AX) << std::endl;
+		out << x86::instruction::integer::Compare(x86::immediate::ImmediateSigned16(-1), AX) << std::endl;
 	}
 	{
-		out << x86::instruction::Compare(x86::immediate::ImmediateSigned32(1), EAX) << std::endl;
+		out << x86::instruction::integer::Compare(x86::immediate::ImmediateSigned32(1), EAX) << std::endl;
 	}
 	{
-		out << x86::instruction::Compare(x86::immediate::ImmediateSigned8(1), x86::memory::Memory8(EAX)) << std::endl;
+		out << x86::instruction::integer::Compare(x86::immediate::ImmediateSigned8(1), x86::memory::Memory8(EAX)) << std::endl;
 	}
 	{
-		out << x86::instruction::Compare(x86::immediate::ImmediateSigned16(-1), x86::memory::Memory16(EAX)) << std::endl;
+		out << x86::instruction::integer::Compare(x86::immediate::ImmediateSigned16(-1), x86::memory::Memory16(EAX)) << std::endl;
 	}
 	{
-		out << x86::instruction::Compare(x86::immediate::ImmediateSigned32(1), x86::memory::Memory32(EAX)) << std::endl;
+		out << x86::instruction::integer::Compare(x86::immediate::ImmediateSigned32(1), x86::memory::Memory32(EAX)) << std::endl;
 	}
 
 	
 	{
-		out << x86::instruction::UnsignedMultiply(DL) << std::endl;
+		out << x86::instruction::integer::UnsignedMultiply(DL) << std::endl;
 	}
 	{
-		out << x86::instruction::UnsignedMultiply(DX) << std::endl;
+		out << x86::instruction::integer::UnsignedMultiply(DX) << std::endl;
 	}
 	{
-		out << x86::instruction::UnsignedMultiply(EDX) << std::endl;
-	}
-	
-	
-	{
-		out << x86::instruction::SignedMultiply(DL) << std::endl;
-	}
-	{
-		out << x86::instruction::SignedMultiply(DX) << std::endl;
-	}
-	{
-		out << x86::instruction::SignedMultiply(EDX) << std::endl;
+		out << x86::instruction::integer::UnsignedMultiply(EDX) << std::endl;
 	}
 	
 	
 	{
-		out << x86::instruction::UnsignedDivide(DL) << std::endl;
+		out << x86::instruction::integer::SignedMultiply(DL) << std::endl;
 	}
 	{
-		out << x86::instruction::UnsignedDivide(DX) << std::endl;
+		out << x86::instruction::integer::SignedMultiply(DX) << std::endl;
 	}
 	{
-		out << x86::instruction::UnsignedDivide(EDX) << std::endl;
+		out << x86::instruction::integer::SignedMultiply(EDX) << std::endl;
+	}
+	
+	
+	{
+		out << x86::instruction::integer::UnsignedDivide(DL) << std::endl;
+	}
+	{
+		out << x86::instruction::integer::UnsignedDivide(DX) << std::endl;
+	}
+	{
+		out << x86::instruction::integer::UnsignedDivide(EDX) << std::endl;
 	}
 	
 	{
-		out << x86::instruction::SignedDivide(DL) << std::endl;
+		out << x86::instruction::integer::SignedDivide(DL) << std::endl;
 	}
 	{
-		out << x86::instruction::SignedDivide(DX) << std::endl;
+		out << x86::instruction::integer::SignedDivide(DX) << std::endl;
 	}
 	{
-		out << x86::instruction::SignedDivide(EDX) << std::endl;
-	}
-	
-	{
-		out << x86::instruction::ConvertByteToWord() << std::endl;
+		out << x86::instruction::integer::SignedDivide(EDX) << std::endl;
 	}
 	
 	{
-		out << x86::instruction::ConvertWordToDoubleAccumulator() << std::endl;
+		out << x86::instruction::integer::ConvertByteToWord() << std::endl;
 	}
 	
 	{
-		out << x86::instruction::ConvertWordToDoubleData() << std::endl;
+		out << x86::instruction::integer::ConvertWordToDoubleAccumulator() << std::endl;
 	}
 	
 	{
-		out << x86::instruction::LogicalAND(x86::immediate::ImmediateSigned8(1), AL) << std::endl;
+		out << x86::instruction::integer::ConvertWordToDoubleData() << std::endl;
+	}
+	
+	{
+		out << x86::instruction::integer::LogicalAND(x86::immediate::ImmediateSigned8(1), AL) << std::endl;
 	}
 	{
-		out << x86::instruction::LogicalAND(x86::immediate::ImmediateUnSigned8(1), x86::memory::Memory32(EAX)) << std::endl;
+		out << x86::instruction::integer::LogicalAND(x86::immediate::ImmediateUnSigned8(1), x86::memory::Memory32(EAX)) << std::endl;
 	}
 	{
-		out << x86::instruction::LogicalAND(x86::immediate::ImmediateUnSigned16(1), x86::memory::Memory16(EAX)) << std::endl;
+		out << x86::instruction::integer::LogicalAND(x86::immediate::ImmediateUnSigned16(1), x86::memory::Memory16(EAX)) << std::endl;
 	}
 	{
-		out << x86::instruction::LogicalAND(x86::immediate::ImmediateUnSigned32(1), x86::memory::Memory32(EAX)) << std::endl;
+		out << x86::instruction::integer::LogicalAND(x86::immediate::ImmediateUnSigned32(1), x86::memory::Memory32(EAX)) << std::endl;
 	}
 
 	{
-		out << x86::instruction::LogicalInclusiveOR(x86::immediate::ImmediateSigned8(1), AL) << std::endl;
+		out << x86::instruction::integer::LogicalInclusiveOR(x86::immediate::ImmediateSigned8(1), AL) << std::endl;
 	}
 	{
-		out << x86::instruction::LogicalInclusiveOR(x86::immediate::ImmediateUnSigned8(1), x86::memory::Memory32(EAX)) << std::endl;
+		out << x86::instruction::integer::LogicalInclusiveOR(x86::immediate::ImmediateUnSigned8(1), x86::memory::Memory32(EAX)) << std::endl;
 	}
 	{
-		out << x86::instruction::LogicalInclusiveOR(x86::immediate::ImmediateUnSigned16(1), x86::memory::Memory16(EAX)) << std::endl;
+		out << x86::instruction::integer::LogicalInclusiveOR(x86::immediate::ImmediateUnSigned16(1), x86::memory::Memory16(EAX)) << std::endl;
 	}
 	{
-		out << x86::instruction::LogicalInclusiveOR(x86::immediate::ImmediateUnSigned32(1), x86::memory::Memory32(EAX)) << std::endl;
-	}
-	
-	
-	{
-		out << x86::instruction::LogicalExclusiveOR(x86::immediate::ImmediateSigned8(1), AL) << std::endl;
-	}
-	{
-		out << x86::instruction::LogicalExclusiveOR(x86::immediate::ImmediateUnSigned8(1), x86::memory::Memory32(EAX)) << std::endl;
-	}
-	{
-		out << x86::instruction::LogicalExclusiveOR(x86::immediate::ImmediateUnSigned16(1), x86::memory::Memory16(EAX)) << std::endl;
-	}
-	{
-		out << x86::instruction::LogicalExclusiveOR(x86::immediate::ImmediateUnSigned32(1), x86::memory::Memory32(EAX)) << std::endl;
+		out << x86::instruction::integer::LogicalInclusiveOR(x86::immediate::ImmediateUnSigned32(1), x86::memory::Memory32(EAX)) << std::endl;
 	}
 	
+	
 	{
-		out << x86::instruction::LogicalNOT(AL) << std::endl;
+		out << x86::instruction::integer::LogicalExclusiveOR(x86::immediate::ImmediateSigned8(1), AL) << std::endl;
 	}
 	{
-		out << x86::instruction::LogicalNOT(AX) << std::endl;
+		out << x86::instruction::integer::LogicalExclusiveOR(x86::immediate::ImmediateUnSigned8(1), x86::memory::Memory32(EAX)) << std::endl;
 	}
 	{
-		out << x86::instruction::LogicalNOT(EAX) << std::endl;
+		out << x86::instruction::integer::LogicalExclusiveOR(x86::immediate::ImmediateUnSigned16(1), x86::memory::Memory16(EAX)) << std::endl;
+	}
+	{
+		out << x86::instruction::integer::LogicalExclusiveOR(x86::immediate::ImmediateUnSigned32(1), x86::memory::Memory32(EAX)) << std::endl;
 	}
 	
 	{
-		out << x86::instruction::LogicalCompare(x86::immediate::ImmediateSigned8(1), AL) << std::endl;
+		out << x86::instruction::integer::LogicalNOT(AL) << std::endl;
 	}
 	{
-		out << x86::instruction::LogicalCompare(x86::immediate::ImmediateUnSigned16(1), AX) << std::endl;
+		out << x86::instruction::integer::LogicalNOT(AX) << std::endl;
 	}
 	{
-		out << x86::instruction::LogicalCompare(x86::immediate::ImmediateUnSigned32(1), EAX) << std::endl;
-	}
-	
-	{
-		out << x86::instruction::BitsMoveLeft(x86::immediate::ImmediateSigned8(1), AL) << std::endl;
-	}
-	{
-		out << x86::instruction::BitsMoveLeft(x86::immediate::ImmediateUnSigned8(1), AX) << std::endl;
-	}
-	{
-		out << x86::instruction::BitsMoveLeft(x86::immediate::ImmediateUnSigned8(1), EAX) << std::endl;
+		out << x86::instruction::integer::LogicalNOT(EAX) << std::endl;
 	}
 	
 	{
-		out << x86::instruction::AddConvertASCIIFormat() << std::endl;
+		out << x86::instruction::integer::LogicalCompare(x86::immediate::ImmediateSigned8(1), AL) << std::endl;
+	}
+	{
+		out << x86::instruction::integer::LogicalCompare(x86::immediate::ImmediateUnSigned16(1), AX) << std::endl;
+	}
+	{
+		out << x86::instruction::integer::LogicalCompare(x86::immediate::ImmediateUnSigned32(1), EAX) << std::endl;
 	}
 	
 	{
-		out << x86::instruction::AddConvertDecimalFormat() << std::endl;
+		out << x86::instruction::integer::BitsMoveLeft(x86::immediate::ImmediateSigned8(1), AL) << std::endl;
+	}
+	{
+		out << x86::instruction::integer::BitsMoveLeft(x86::immediate::ImmediateUnSigned8(1), AX) << std::endl;
+	}
+	{
+		out << x86::instruction::integer::BitsMoveLeft(x86::immediate::ImmediateUnSigned8(1), EAX) << std::endl;
 	}
 	
 	{
-		out << x86::instruction::BitsMoveLeftSign(x86::immediate::ImmediateSigned8(1), AL) << std::endl;
-	}
-	{
-		out << x86::instruction::BitsMoveLeftSign(x86::immediate::ImmediateUnSigned8(1), AX) << std::endl;
-	}
-	{
-		out << x86::instruction::BitsMoveLeftSign(x86::immediate::ImmediateUnSigned8(1), EAX) << std::endl;
+		out << x86::instruction::integer::AddConvertASCIIFormat() << std::endl;
 	}
 	
 	{
-		out << x86::instruction::BitsMoveRight(x86::immediate::ImmediateSigned8(1), AL) << std::endl;
-	}
-	{
-		out << x86::instruction::BitsMoveRight(x86::immediate::ImmediateUnSigned8(1), AX) << std::endl;
-	}
-	{
-		out << x86::instruction::BitsMoveRight(x86::immediate::ImmediateUnSigned8(1), EAX) << std::endl;
+		out << x86::instruction::integer::AddConvertDecimalFormat() << std::endl;
 	}
 	
 	{
-		out << x86::instruction::BitsMoveRightSign(x86::immediate::ImmediateSigned8(1), AL) << std::endl;
+		out << x86::instruction::integer::BitsMoveLeftSign(x86::immediate::ImmediateSigned8(1), AL) << std::endl;
 	}
 	{
-		out << x86::instruction::BitsMoveRightSign(x86::immediate::ImmediateUnSigned8(1), AX) << std::endl;
+		out << x86::instruction::integer::BitsMoveLeftSign(x86::immediate::ImmediateUnSigned8(1), AX) << std::endl;
 	}
 	{
-		out << x86::instruction::BitsMoveRightSign(x86::immediate::ImmediateUnSigned8(1), EAX) << std::endl;
-	}
-	
-	{
-		out << x86::instruction::BitsRollLeft(x86::immediate::ImmediateSigned8(1), AL) << std::endl;
-	}
-	{
-		out << x86::instruction::BitsRollLeft(x86::immediate::ImmediateUnSigned8(1), AX) << std::endl;
-	}
-	{
-		out << x86::instruction::BitsRollLeft(x86::immediate::ImmediateUnSigned8(1), EAX) << std::endl;
+		out << x86::instruction::integer::BitsMoveLeftSign(x86::immediate::ImmediateUnSigned8(1), EAX) << std::endl;
 	}
 	
 	{
-		out << x86::instruction::BitsRollRight(x86::immediate::ImmediateSigned8(1), AL) << std::endl;
+		out << x86::instruction::integer::BitsMoveRight(x86::immediate::ImmediateSigned8(1), AL) << std::endl;
 	}
 	{
-		out << x86::instruction::BitsRollRight(x86::immediate::ImmediateUnSigned8(1), AX) << std::endl;
+		out << x86::instruction::integer::BitsMoveRight(x86::immediate::ImmediateUnSigned8(1), AX) << std::endl;
 	}
 	{
-		out << x86::instruction::BitsRollRight(x86::immediate::ImmediateUnSigned8(1), EAX) << std::endl;
-	}
-	
-	{
-		out << x86::instruction::BitsCarrayRollLeft(x86::immediate::ImmediateSigned8(1), AL) << std::endl;
-	}
-	{
-		out << x86::instruction::BitsCarrayRollLeft(x86::immediate::ImmediateUnSigned8(1), AX) << std::endl;
-	}
-	{
-		out << x86::instruction::BitsCarrayRollLeft(x86::immediate::ImmediateUnSigned8(1), EAX) << std::endl;
+		out << x86::instruction::integer::BitsMoveRight(x86::immediate::ImmediateUnSigned8(1), EAX) << std::endl;
 	}
 	
 	{
-		out << x86::instruction::BitsCarrayRollRight(x86::immediate::ImmediateSigned8(1), AL) << std::endl;
+		out << x86::instruction::integer::BitsMoveRightSign(x86::immediate::ImmediateSigned8(1), AL) << std::endl;
 	}
 	{
-		out << x86::instruction::BitsCarrayRollRight(x86::immediate::ImmediateUnSigned8(1), AX) << std::endl;
+		out << x86::instruction::integer::BitsMoveRightSign(x86::immediate::ImmediateUnSigned8(1), AX) << std::endl;
 	}
 	{
-		out << x86::instruction::BitsCarrayRollRight(x86::immediate::ImmediateUnSigned8(1), EAX) << std::endl;
+		out << x86::instruction::integer::BitsMoveRightSign(x86::immediate::ImmediateUnSigned8(1), EAX) << std::endl;
+	}
+	
+	{
+		out << x86::instruction::integer::BitsRollLeft(x86::immediate::ImmediateSigned8(1), AL) << std::endl;
+	}
+	{
+		out << x86::instruction::integer::BitsRollLeft(x86::immediate::ImmediateUnSigned8(1), AX) << std::endl;
+	}
+	{
+		out << x86::instruction::integer::BitsRollLeft(x86::immediate::ImmediateUnSigned8(1), EAX) << std::endl;
+	}
+	
+	{
+		out << x86::instruction::integer::BitsRollRight(x86::immediate::ImmediateSigned8(1), AL) << std::endl;
+	}
+	{
+		out << x86::instruction::integer::BitsRollRight(x86::immediate::ImmediateUnSigned8(1), AX) << std::endl;
+	}
+	{
+		out << x86::instruction::integer::BitsRollRight(x86::immediate::ImmediateUnSigned8(1), EAX) << std::endl;
+	}
+	
+	{
+		out << x86::instruction::integer::BitsCarrayRollLeft(x86::immediate::ImmediateSigned8(1), AL) << std::endl;
+	}
+	{
+		out << x86::instruction::integer::BitsCarrayRollLeft(x86::immediate::ImmediateUnSigned8(1), AX) << std::endl;
+	}
+	{
+		out << x86::instruction::integer::BitsCarrayRollLeft(x86::immediate::ImmediateUnSigned8(1), EAX) << std::endl;
+	}
+	
+	{
+		out << x86::instruction::integer::BitsCarrayRollRight(x86::immediate::ImmediateSigned8(1), AL) << std::endl;
+	}
+	{
+		out << x86::instruction::integer::BitsCarrayRollRight(x86::immediate::ImmediateUnSigned8(1), AX) << std::endl;
+	}
+	{
+		out << x86::instruction::integer::BitsCarrayRollRight(x86::immediate::ImmediateUnSigned8(1), EAX) << std::endl;
 	}
 	
 	{
