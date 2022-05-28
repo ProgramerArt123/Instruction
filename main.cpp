@@ -1240,101 +1240,101 @@ int main(int argc, char *argv[])
 	}
 	
 	{
-		out << x86::instruction::TransmittedBytes() << std::endl;
+		out << x86::instruction::string::TransmittedBytes() << std::endl;
 	}
 	
 	{
-		out << x86::instruction::TransmittedWords() << std::endl;
+		out << x86::instruction::string::TransmittedWords() << std::endl;
 	}
 	
 	{
-		out << x86::instruction::TransmittedDWords() << std::endl;
+		out << x86::instruction::string::TransmittedDWords() << std::endl;
 	}
 	
 	{
-		out << x86::instruction::CompareBytes() << std::endl;
+		out << x86::instruction::string::CompareBytes() << std::endl;
 	}
 	
 	{
-		out << x86::instruction::CompareWords() << std::endl;
+		out << x86::instruction::string::CompareWords() << std::endl;
 	}
 	
 	{
-		out << x86::instruction::CompareDWords() << std::endl;
+		out << x86::instruction::string::CompareDWords() << std::endl;
 	}
 	
 	{
-		out << x86::instruction::CompareALByte() << std::endl;
+		out << x86::instruction::string::CompareALByte() << std::endl;
 	}
 	
 	{
-		out << x86::instruction::CompareAXWord() << std::endl;
+		out << x86::instruction::string::CompareAXWord() << std::endl;
 	}
 	
 	{
-		out << x86::instruction::SaveByteAL() << std::endl;
+		out << x86::instruction::string::SaveByteAL() << std::endl;
 	}
 	
 	{
-		out << x86::instruction::SaveWordAX() << std::endl;
+		out << x86::instruction::string::SaveWordAX() << std::endl;
 	}
 	
 	{
-		out << x86::instruction::SaveByteAddress() << std::endl;
+		out << x86::instruction::string::SaveByteAddress() << std::endl;
 	}
 	
 	{
-		out << x86::instruction::SaveWordAddress() << std::endl;
+		out << x86::instruction::string::SaveWordAddress() << std::endl;
 	}
 	
 	{
-		out << x86::instruction::TransmittedBytes().SetPrefix(x86::instruction::RepeatCounter()) << std::endl;
+		out << x86::instruction::string::TransmittedBytes().SetPrefix(x86::instruction::string::RepeatCounter()) << std::endl;
 	}
 	
 	{
-		out << x86::instruction::TransmittedWords().SetPrefix(x86::instruction::RepeatCounter()) << std::endl;
+		out << x86::instruction::string::TransmittedWords().SetPrefix(x86::instruction::string::RepeatCounter()) << std::endl;
 	}
 	
 	{
-		out << x86::instruction::TransmittedDWords().SetPrefix(x86::instruction::RepeatCounter()) << std::endl;
+		out << x86::instruction::string::TransmittedDWords().SetPrefix(x86::instruction::string::RepeatCounter()) << std::endl;
 	}
 	
 	{
-		out << x86::instruction::CompareBytes().SetPrefix(x86::instruction::RepeatCounter()) << std::endl;
+		out << x86::instruction::string::CompareBytes().SetPrefix(x86::instruction::string::RepeatCounter()) << std::endl;
 	}
 	
 	{
-		out << x86::instruction::CompareWords().SetPrefix(x86::instruction::RepeatCounter()) << std::endl;
+		out << x86::instruction::string::CompareWords().SetPrefix(x86::instruction::string::RepeatCounter()) << std::endl;
 	}
 	
 	{
-		out << x86::instruction::CompareDWords().SetPrefix(x86::instruction::RepeatCounter()) << std::endl;
+		out << x86::instruction::string::CompareDWords().SetPrefix(x86::instruction::string::RepeatCounter()) << std::endl;
 	}
 	
 		
 	{
-		out << x86::instruction::CompareALByte().SetPrefix(x86::instruction::RepeatCounter()) << std::endl;
+		out << x86::instruction::string::CompareALByte().SetPrefix(x86::instruction::string::RepeatCounter()) << std::endl;
 	}
 	
 	{
-		out << x86::instruction::CompareAXWord().SetPrefix(x86::instruction::RepeatCounter()) << std::endl;
+		out << x86::instruction::string::CompareAXWord().SetPrefix(x86::instruction::string::RepeatCounter()) << std::endl;
 	}
 	
 	{
-		out << x86::instruction::SaveByteAL().SetPrefix(x86::instruction::RepeatCounter()) << std::endl;
+		out << x86::instruction::string::SaveByteAL().SetPrefix(x86::instruction::string::RepeatCounter()) << std::endl;
 	}
 	
 	{
-		out << x86::instruction::SaveWordAX().SetPrefix(x86::instruction::RepeatCounter()) << std::endl;
+		out << x86::instruction::string::SaveWordAX().SetPrefix(x86::instruction::string::RepeatCounter()) << std::endl;
 	}
 	
 	
 	{
-		out << x86::instruction::SaveByteAddress().SetPrefix(x86::instruction::RepeatCounter()) << std::endl;
+		out << x86::instruction::string::SaveByteAddress().SetPrefix(x86::instruction::string::RepeatCounter()) << std::endl;
 	}
 	
 	{
-		out << x86::instruction::SaveWordAddress().SetPrefix(x86::instruction::RepeatCounter()) << std::endl;
+		out << x86::instruction::string::SaveWordAddress().SetPrefix(x86::instruction::string::RepeatCounter()) << std::endl;
 	}
 
 	
@@ -1346,109 +1346,109 @@ int main(int argc, char *argv[])
 	
 	
 	{
-		out << x86::instruction::TransmittedBytes().SetPrefix(x86::instruction::RepeatCounterEqual()) << std::endl;
+		out << x86::instruction::string::TransmittedBytes().SetPrefix(x86::instruction::string::RepeatCounterEqual()) << std::endl;
 	}
 	
 	{
-		out << x86::instruction::TransmittedWords().SetPrefix(x86::instruction::RepeatCounterEqual()) << std::endl;
+		out << x86::instruction::string::TransmittedWords().SetPrefix(x86::instruction::string::RepeatCounterEqual()) << std::endl;
 	}
 	
 	{
-		out << x86::instruction::TransmittedDWords().SetPrefix(x86::instruction::RepeatCounterEqual()) << std::endl;
+		out << x86::instruction::string::TransmittedDWords().SetPrefix(x86::instruction::string::RepeatCounterEqual()) << std::endl;
 	}
 	
 	{
-		out << x86::instruction::CompareBytes().SetPrefix(x86::instruction::RepeatCounterEqual()) << std::endl;
+		out << x86::instruction::string::CompareBytes().SetPrefix(x86::instruction::string::RepeatCounterEqual()) << std::endl;
 	}
 	
 	{
-		out << x86::instruction::CompareWords().SetPrefix(x86::instruction::RepeatCounterEqual()) << std::endl;
+		out << x86::instruction::string::CompareWords().SetPrefix(x86::instruction::string::RepeatCounterEqual()) << std::endl;
 	}
 	
 	{
-		out << x86::instruction::CompareDWords().SetPrefix(x86::instruction::RepeatCounterEqual()) << std::endl;
-	}
-	
-		
-	{
-		out << x86::instruction::CompareALByte().SetPrefix(x86::instruction::RepeatCounterEqual()) << std::endl;
-	}
-	
-	{
-		out << x86::instruction::CompareAXWord().SetPrefix(x86::instruction::RepeatCounterEqual()) << std::endl;
-	}
-	
-	{
-		out << x86::instruction::SaveByteAL().SetPrefix(x86::instruction::RepeatCounterEqual()) << std::endl;
-	}
-	
-	{
-		out << x86::instruction::SaveWordAX().SetPrefix(x86::instruction::RepeatCounterEqual()) << std::endl;
-	}
-	
-	
-	{
-		out << x86::instruction::SaveByteAddress().SetPrefix(x86::instruction::RepeatCounter()) << std::endl;
-	}
-	
-	{
-		out << x86::instruction::SaveWordAddress().SetPrefix(x86::instruction::RepeatCounter()) << std::endl;
-	}
-	
-	
-	
-	
-	
-	
-	
-	{
-		out << x86::instruction::TransmittedBytes().SetPrefix(x86::instruction::RepeatCounterNotEqual()) << std::endl;
-	}
-	
-	{
-		out << x86::instruction::TransmittedWords().SetPrefix(x86::instruction::RepeatCounterNotEqual()) << std::endl;
-	}
-	
-	{
-		out << x86::instruction::TransmittedDWords().SetPrefix(x86::instruction::RepeatCounterNotEqual()) << std::endl;
-	}
-	
-	{
-		out << x86::instruction::CompareBytes().SetPrefix(x86::instruction::RepeatCounterNotEqual()) << std::endl;
-	}
-	
-	{
-		out << x86::instruction::CompareWords().SetPrefix(x86::instruction::RepeatCounterNotEqual()) << std::endl;
-	}
-	
-	{
-		out << x86::instruction::CompareDWords().SetPrefix(x86::instruction::RepeatCounterNotEqual()) << std::endl;
+		out << x86::instruction::string::CompareDWords().SetPrefix(x86::instruction::string::RepeatCounterEqual()) << std::endl;
 	}
 	
 		
 	{
-		out << x86::instruction::CompareALByte().SetPrefix(x86::instruction::RepeatCounterNotEqual()) << std::endl;
+		out << x86::instruction::string::CompareALByte().SetPrefix(x86::instruction::string::RepeatCounterEqual()) << std::endl;
 	}
 	
 	{
-		out << x86::instruction::CompareAXWord().SetPrefix(x86::instruction::RepeatCounterNotEqual()) << std::endl;
+		out << x86::instruction::string::CompareAXWord().SetPrefix(x86::instruction::string::RepeatCounterEqual()) << std::endl;
 	}
 	
 	{
-		out << x86::instruction::SaveByteAL().SetPrefix(x86::instruction::RepeatCounterNotEqual()) << std::endl;
+		out << x86::instruction::string::SaveByteAL().SetPrefix(x86::instruction::string::RepeatCounterEqual()) << std::endl;
 	}
 	
 	{
-		out << x86::instruction::SaveWordAX().SetPrefix(x86::instruction::RepeatCounterNotEqual()) << std::endl;
+		out << x86::instruction::string::SaveWordAX().SetPrefix(x86::instruction::string::RepeatCounterEqual()) << std::endl;
 	}
 	
 	
 	{
-		out << x86::instruction::SaveByteAddress().SetPrefix(x86::instruction::RepeatCounterNotEqual()) << std::endl;
+		out << x86::instruction::string::SaveByteAddress().SetPrefix(x86::instruction::string::RepeatCounter()) << std::endl;
 	}
 	
 	{
-		out << x86::instruction::SaveWordAddress().SetPrefix(x86::instruction::RepeatCounterNotEqual()) << std::endl;
+		out << x86::instruction::string::SaveWordAddress().SetPrefix(x86::instruction::string::RepeatCounter()) << std::endl;
+	}
+	
+	
+	
+	
+	
+	
+	
+	{
+		out << x86::instruction::string::TransmittedBytes().SetPrefix(x86::instruction::string::RepeatCounterNotEqual()) << std::endl;
+	}
+	
+	{
+		out << x86::instruction::string::TransmittedWords().SetPrefix(x86::instruction::string::RepeatCounterNotEqual()) << std::endl;
+	}
+	
+	{
+		out << x86::instruction::string::TransmittedDWords().SetPrefix(x86::instruction::string::RepeatCounterNotEqual()) << std::endl;
+	}
+	
+	{
+		out << x86::instruction::string::CompareBytes().SetPrefix(x86::instruction::string::RepeatCounterNotEqual()) << std::endl;
+	}
+	
+	{
+		out << x86::instruction::string::CompareWords().SetPrefix(x86::instruction::string::RepeatCounterNotEqual()) << std::endl;
+	}
+	
+	{
+		out << x86::instruction::string::CompareDWords().SetPrefix(x86::instruction::string::RepeatCounterNotEqual()) << std::endl;
+	}
+	
+		
+	{
+		out << x86::instruction::string::CompareALByte().SetPrefix(x86::instruction::string::RepeatCounterNotEqual()) << std::endl;
+	}
+	
+	{
+		out << x86::instruction::string::CompareAXWord().SetPrefix(x86::instruction::string::RepeatCounterNotEqual()) << std::endl;
+	}
+	
+	{
+		out << x86::instruction::string::SaveByteAL().SetPrefix(x86::instruction::string::RepeatCounterNotEqual()) << std::endl;
+	}
+	
+	{
+		out << x86::instruction::string::SaveWordAX().SetPrefix(x86::instruction::string::RepeatCounterNotEqual()) << std::endl;
+	}
+	
+	
+	{
+		out << x86::instruction::string::SaveByteAddress().SetPrefix(x86::instruction::string::RepeatCounterNotEqual()) << std::endl;
+	}
+	
+	{
+		out << x86::instruction::string::SaveWordAddress().SetPrefix(x86::instruction::string::RepeatCounterNotEqual()) << std::endl;
 	}
 	
 	{

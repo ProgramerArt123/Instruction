@@ -1460,212 +1460,215 @@ namespace x86
 
 			}
 		}
-		Source::Source(const reg::classic::segment::Segment &segment, const reg::classic::general::offset::Address32 &offset)
-			: m_segment(segment)
-			, m_offset(offset) {
+		namespace string
+		{
+			Source::Source(const reg::classic::segment::Segment &segment, const reg::classic::general::offset::Address32 &offset)
+				: m_segment(segment)
+				, m_offset(offset) {
 			
-		}
-		Source::~Source() {
+			}
+			Source::~Source() {
 			
-		}
-		const reg::classic::segment::Segment &Source::Segment()const {
-			return m_segment;
-		}
-		const reg::classic::general::offset::Address32 &Source::Offset()const {
-			return m_offset;
-		}
-		Destination::Destination(const reg::classic::segment::Segment &segment, const reg::classic::general::offset::Address32 &offset)
-			: m_segment(segment)
-			, m_offset(offset) {
+			}
+			const reg::classic::segment::Segment &Source::Segment()const {
+				return m_segment;
+			}
+			const reg::classic::general::offset::Address32 &Source::Offset()const {
+				return m_offset;
+			}
+			Destination::Destination(const reg::classic::segment::Segment &segment, const reg::classic::general::offset::Address32 &offset)
+				: m_segment(segment)
+				, m_offset(offset) {
 			
-		}
-		Destination::~Destination() {
+			}
+			Destination::~Destination() {
 			
-		}
-		Prefix::Prefix(const char *mnemonic)
-			: AbstractInstruction(mnemonic) {
+			}
+			Prefix::Prefix(const char *mnemonic)
+				: AbstractInstruction(mnemonic) {
 			
-		}
-		Prefix::~Prefix() {
+			}
+			Prefix::~Prefix() {
 			
-		}
-		const reg::classic::segment::Segment &Destination::Segment()const {
-			return m_segment;
-		}
-		const reg::classic::general::offset::Address32 &Destination::Offset()const {
-			return m_offset;
-		}
+			}
+			const reg::classic::segment::Segment &Destination::Segment()const {
+				return m_segment;
+			}
+			const reg::classic::general::offset::Address32 &Destination::Offset()const {
+				return m_offset;
+			}
 		
-		PrefixAble::PrefixAble(const char *mnemonic)
-			: AbstractInstruction(mnemonic) {
+			PrefixAble::PrefixAble(const char *mnemonic)
+				: AbstractInstruction(mnemonic) {
 			
-		}
-		PrefixAble::~PrefixAble() {
+			}
+			PrefixAble::~PrefixAble() {
 			
-		}
-		AbstractInstruction &PrefixAble::SetPrefix(const Prefix &prefix) {
-			m_string = std::string(prefix.String()) + '\t' + m_string;
-			return *this;
-		}
+			}
+			AbstractInstruction &PrefixAble::SetPrefix(const Prefix &prefix) {
+				m_string = std::string(prefix.String()) + '\t' + m_string;
+				return *this;
+			}
 
-		TransmittedBytes::TransmittedBytes() 
-			: PrefixAble(x86::mnemonic::string::Transmitted_8())
-			, Source(DS, ESI)
-			, Destination(ES, EDI)
-		{
+			TransmittedBytes::TransmittedBytes() 
+				: PrefixAble(x86::mnemonic::string::Transmitted_8())
+				, Source(DS, ESI)
+				, Destination(ES, EDI)
+			{
 
-		}
+			}
 		
 		
-		TransmittedWords::TransmittedWords() 
-			: PrefixAble(x86::mnemonic::string::Transmitted_16())
-			, Source(DS, ESI)
-			, Destination(ES, EDI)
-		{
+			TransmittedWords::TransmittedWords() 
+				: PrefixAble(x86::mnemonic::string::Transmitted_16())
+				, Source(DS, ESI)
+				, Destination(ES, EDI)
+			{
 
-		}
+			}
 		
 		
-		TransmittedDWords::TransmittedDWords() 
-			: PrefixAble(x86::mnemonic::string::Transmitted_32())
-			, Source(DS, ESI)
-			, Destination(ES, EDI)
-		{
+			TransmittedDWords::TransmittedDWords() 
+				: PrefixAble(x86::mnemonic::string::Transmitted_32())
+				, Source(DS, ESI)
+				, Destination(ES, EDI)
+			{
 
-		}
+			}
 		
 		
-		CompareBytes::CompareBytes() 
-			: PrefixAble(x86::mnemonic::string::Compare_Bytes_CF_OF_SF_ZF_AF_PF())
-			, Source(DS, ESI)
-			, Destination(ES, EDI)
-		{
+			CompareBytes::CompareBytes() 
+				: PrefixAble(x86::mnemonic::string::Compare_Bytes_CF_OF_SF_ZF_AF_PF())
+				, Source(DS, ESI)
+				, Destination(ES, EDI)
+			{
 
-		}
+			}
 		
-		CompareWords::CompareWords() 
-			: PrefixAble(x86::mnemonic::string::Compare_Words_CF_OF_SF_ZF_AF_PF())
-			, Source(DS, ESI)
-			, Destination(ES, EDI)
-		{
+			CompareWords::CompareWords() 
+				: PrefixAble(x86::mnemonic::string::Compare_Words_CF_OF_SF_ZF_AF_PF())
+				, Source(DS, ESI)
+				, Destination(ES, EDI)
+			{
 
-		}
+			}
 		
-		CompareDWords::CompareDWords() 
-			: PrefixAble(x86::mnemonic::string::Compare_DWords_CF_OF_SF_ZF_AF_PF())
-			, Source(DS, ESI)
-			, Destination(ES, EDI)
-		{
+			CompareDWords::CompareDWords() 
+				: PrefixAble(x86::mnemonic::string::Compare_DWords_CF_OF_SF_ZF_AF_PF())
+				, Source(DS, ESI)
+				, Destination(ES, EDI)
+			{
 
-		}
+			}
 		
 		
-		CompareALByte::CompareALByte() 
-			: PrefixAble(x86::mnemonic::string::Compare_AL_Byte_CF_OF_SF_ZF_AF_PF())			
-			, Destination(ES, EDI)
-		{
+			CompareALByte::CompareALByte() 
+				: PrefixAble(x86::mnemonic::string::Compare_AL_Byte_CF_OF_SF_ZF_AF_PF())			
+				, Destination(ES, EDI)
+			{
 
-		}
+			}
 		
 		
-		CompareAXWord::CompareAXWord() 
-			: PrefixAble(x86::mnemonic::string::Compare_AX_Word_CF_OF_SF_ZF_AF_PF())
-			, Destination(ES, EDI)
-		{
+			CompareAXWord::CompareAXWord() 
+				: PrefixAble(x86::mnemonic::string::Compare_AX_Word_CF_OF_SF_ZF_AF_PF())
+				, Destination(ES, EDI)
+			{
 
-		}
+			}
 		
-		CompareEAXDWord::CompareEAXDWord() 
-			: PrefixAble(x86::mnemonic::string::Compare_EAX_DWord_CF_OF_SF_ZF_AF_PF())
-			, Destination(ES, EDI)
-		{
+			CompareEAXDWord::CompareEAXDWord() 
+				: PrefixAble(x86::mnemonic::string::Compare_EAX_DWord_CF_OF_SF_ZF_AF_PF())
+				, Destination(ES, EDI)
+			{
 
-		}
+			}
 		
 		
-		SaveByteAL::SaveByteAL() 
-			: PrefixAble(x86::mnemonic::string::Load_Byte_To_AL_From_DS_ESI())
-			, Source(DS, ESI)
-		{
+			SaveByteAL::SaveByteAL() 
+				: PrefixAble(x86::mnemonic::string::Load_Byte_To_AL_From_DS_ESI())
+				, Source(DS, ESI)
+			{
 
-		}
+			}
 		
-		SaveWordAX::SaveWordAX() 
-			: PrefixAble(x86::mnemonic::string::Load_Word_To_AX_From_DS_ESI())
-			, Source(DS, ESI)
-		{
+			SaveWordAX::SaveWordAX() 
+				: PrefixAble(x86::mnemonic::string::Load_Word_To_AX_From_DS_ESI())
+				, Source(DS, ESI)
+			{
 
-		}
+			}
 		
 		
-		SaveDWordEAX::SaveDWordEAX() 
-			: PrefixAble(x86::mnemonic::string::Load_DWord_To_EAX_From_DS_ESI())
-			, Source(DS, ESI)
-		{
+			SaveDWordEAX::SaveDWordEAX() 
+				: PrefixAble(x86::mnemonic::string::Load_DWord_To_EAX_From_DS_ESI())
+				, Source(DS, ESI)
+			{
 
-		}
+			}
 		
 		
-		SaveByteAddress::SaveByteAddress() 
-			: PrefixAble(x86::mnemonic::string::Store_Byte_To_ES_EDI_From_AL())
-			, Destination(ES, EDI)
-		{
+			SaveByteAddress::SaveByteAddress() 
+				: PrefixAble(x86::mnemonic::string::Store_Byte_To_ES_EDI_From_AL())
+				, Destination(ES, EDI)
+			{
 
-		}
+			}
 		
-		SaveWordAddress::SaveWordAddress() 
-			: PrefixAble(x86::mnemonic::string::Store_Word_To_ES_EDI_From_AX())
-			, Destination(ES, EDI)
-		{
+			SaveWordAddress::SaveWordAddress() 
+				: PrefixAble(x86::mnemonic::string::Store_Word_To_ES_EDI_From_AX())
+				, Destination(ES, EDI)
+			{
 
-		}
+			}
 		
-		SaveDWordAddress::SaveDWordAddress() 
-			: PrefixAble(x86::mnemonic::string::Store_DWord_To_ES_EDI_From_EAX())
-			, Destination(ES, EDI)
-		{
+			SaveDWordAddress::SaveDWordAddress() 
+				: PrefixAble(x86::mnemonic::string::Store_DWord_To_ES_EDI_From_EAX())
+				, Destination(ES, EDI)
+			{
 
-		}
-		Counter::Counter(const char *mnemonic)
-			: Prefix(mnemonic)
-			, m_count(ECX) {
+			}
+			Counter::Counter(const char *mnemonic)
+				: Prefix(mnemonic)
+				, m_count(ECX) {
 			
-		}
-		const reg::classic::general::operation::CountExtend &Counter::Count()const {
-			return m_count;
-		}
-		RepeatCounter::RepeatCounter() 
-			: Counter(x86::mnemonic::string::Repeat_Prefix_ECX())
+			}
+			const reg::classic::general::operation::CountExtend &Counter::Count()const {
+				return m_count;
+			}
+			RepeatCounter::RepeatCounter() 
+				: Counter(x86::mnemonic::string::Repeat_Prefix_ECX())
 			
-		{
+			{
 
-		}
-		RepeatCounterEqual::RepeatCounterEqual() 
-			: Counter(x86::mnemonic::string::Repeat_Prefix_Equal_ZF_ECX())
+			}
+			RepeatCounterEqual::RepeatCounterEqual() 
+				: Counter(x86::mnemonic::string::Repeat_Prefix_Equal_ZF_ECX())
 			
-		{
+			{
 
-		}
+			}
 	
-		RepeatCounterNotEqual::RepeatCounterNotEqual() 
-			: Counter(x86::mnemonic::string::Repeat_Prefix_Not_Equal_ZF_ECX())
+			RepeatCounterNotEqual::RepeatCounterNotEqual() 
+				: Counter(x86::mnemonic::string::Repeat_Prefix_Not_Equal_ZF_ECX())
 			
-		{
+			{
 
-		}
+			}
 		
-		RepeatCounterCarray::RepeatCounterCarray() 
-			: Counter(x86::mnemonic::string::Repeat_Prefix_CF_ECX())
+			RepeatCounterCarray::RepeatCounterCarray() 
+				: Counter(x86::mnemonic::string::Repeat_Prefix_CF_ECX())
 			
-		{
+			{
 
-		}
+			}
 		
-		RepeatCounterNotCarray::RepeatCounterNotCarray() 
-			: Counter(x86::mnemonic::string::Repeat_Prefix_Not_CF_ECX())
+			RepeatCounterNotCarray::RepeatCounterNotCarray() 
+				: Counter(x86::mnemonic::string::Repeat_Prefix_Not_CF_ECX())
 			
-		{
+			{
 
+			}
 		}
 		namespace FPU
 		{

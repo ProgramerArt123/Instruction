@@ -788,151 +788,152 @@ namespace x86
 				explicit InterruptReturn();
 			};
 		}
+		namespace string
+		{
+			class Source {
+			public:
+				const reg::classic::segment::Segment &Segment()const;
+				const reg::classic::general::offset::Address32 &Offset()const;
+			protected:
+				explicit Source(const reg::classic::segment::Segment &segment, const reg::classic::general::offset::Address32 &offset);
+				virtual ~Source();
+				const reg::classic::segment::Segment &m_segment;
+				const reg::classic::general::offset::Address32 &m_offset;
+			};
 		
-		class Source {
-		public:
-			const reg::classic::segment::Segment &Segment()const;
-			const reg::classic::general::offset::Address32 &Offset()const;
-		protected:
-			explicit Source(const reg::classic::segment::Segment &segment, const reg::classic::general::offset::Address32 &offset);
-			virtual ~Source();
-			const reg::classic::segment::Segment &m_segment;
-			const reg::classic::general::offset::Address32 &m_offset;
-		};
+			class Destination {
+			public:
+				const reg::classic::segment::Segment &Segment()const;
+				const reg::classic::general::offset::Address32 &Offset()const;
+			protected:
+				explicit Destination(const reg::classic::segment::Segment &segment, const reg::classic::general::offset::Address32 &offset);
+				virtual ~Destination();
+				const reg::classic::segment::Segment &m_segment;
+				const reg::classic::general::offset::Address32 &m_offset;
+			};
 		
-		class Destination {
-		public:
-			const reg::classic::segment::Segment &Segment()const;
-			const reg::classic::general::offset::Address32 &Offset()const;
-		protected:
-			explicit Destination(const reg::classic::segment::Segment &segment, const reg::classic::general::offset::Address32 &offset);
-			virtual ~Destination();
-			const reg::classic::segment::Segment &m_segment;
-			const reg::classic::general::offset::Address32 &m_offset;
-		};
+			class Prefix : public AbstractInstruction {
+			protected:
+				explicit Prefix(const char *mnemonic);
+				virtual ~Prefix();
+			};
 		
-		class Prefix : public AbstractInstruction {
-		protected:
-			explicit Prefix(const char *mnemonic);
-			virtual ~Prefix();
-		};
+			class PrefixAble : public AbstractInstruction {
+			public:
+				AbstractInstruction &SetPrefix(const Prefix &prefix);
+			protected:
+				explicit PrefixAble(const char *mnemonic);
+				virtual ~PrefixAble();
+			};
 		
-		class PrefixAble : public AbstractInstruction {
-		public:
-			AbstractInstruction &SetPrefix(const Prefix &prefix);
-		protected:
-			explicit PrefixAble(const char *mnemonic);
-			virtual ~PrefixAble();
-		};
+			class TransmittedBytes : public PrefixAble, public Source, public Destination {
+			public:
+				explicit TransmittedBytes();
+			};
 		
-		class TransmittedBytes : public PrefixAble, public Source, public Destination {
-		public:
-			explicit TransmittedBytes();
-		};
+			class TransmittedWords : public PrefixAble, public Source, public Destination {
+			public:
+				explicit TransmittedWords();
+			};
 		
-		class TransmittedWords : public PrefixAble, public Source, public Destination {
-		public:
-			explicit TransmittedWords();
-		};
+			class TransmittedDWords : public PrefixAble, public Source, public Destination {
+			public:
+				explicit TransmittedDWords();
+			};
 		
-		class TransmittedDWords : public PrefixAble, public Source, public Destination {
-		public:
-			explicit TransmittedDWords();
-		};
+			class CompareBytes : public PrefixAble, public Source, public Destination {
+			public:
+				explicit CompareBytes();
+			};
 		
-		class CompareBytes : public PrefixAble, public Source, public Destination {
-		public:
-			explicit CompareBytes();
-		};
+			class CompareWords : public PrefixAble, public Source, public Destination {
+			public:
+				explicit CompareWords();
+			};
 		
-		class CompareWords : public PrefixAble, public Source, public Destination {
-		public:
-			explicit CompareWords();
-		};
+			class CompareDWords : public PrefixAble, public Source, public Destination {
+			public:
+				explicit CompareDWords();
+			};
 		
-		class CompareDWords : public PrefixAble, public Source, public Destination {
-		public:
-			explicit CompareDWords();
-		};
+			class CompareALByte : public PrefixAble, public Destination {
+			public:
+				explicit CompareALByte();
+			};
 		
-		class CompareALByte : public PrefixAble, public Destination {
-		public:
-			explicit CompareALByte();
-		};
+			class CompareAXWord : public PrefixAble, public Destination {
+			public:
+				explicit CompareAXWord();
+			};
 		
-		class CompareAXWord : public PrefixAble, public Destination {
-		public:
-			explicit CompareAXWord();
-		};
+			class CompareEAXDWord : public PrefixAble, public Destination {
+			public:
+				explicit CompareEAXDWord();
+			};
 		
-		class CompareEAXDWord : public PrefixAble, public Destination {
-		public:
-			explicit CompareEAXDWord();
-		};
+			class SaveByteAL : public PrefixAble, public Source {
+			public:
+				explicit SaveByteAL();
+			};
 		
-		class SaveByteAL : public PrefixAble, public Source {
-		public:
-			explicit SaveByteAL();
-		};
+			class SaveWordAX : public PrefixAble, public Source {
+			public:
+				explicit SaveWordAX();
+			};
 		
-		class SaveWordAX : public PrefixAble, public Source {
-		public:
-			explicit SaveWordAX();
-		};
+			class SaveDWordEAX : public PrefixAble, public Source {
+			public:
+				explicit SaveDWordEAX();
+			};
 		
-		class SaveDWordEAX : public PrefixAble, public Source {
-		public:
-			explicit SaveDWordEAX();
-		};
+			class SaveByteAddress : public PrefixAble, public Destination {
+			public:
+				explicit SaveByteAddress();
+			};
 		
-		class SaveByteAddress : public PrefixAble, public Destination {
-		public:
-			explicit SaveByteAddress();
-		};
+			class SaveWordAddress : public PrefixAble, public Destination {
+			public:
+				explicit SaveWordAddress();
+			};
 		
-		class SaveWordAddress : public PrefixAble, public Destination {
-		public:
-			explicit SaveWordAddress();
-		};
+			class SaveDWordAddress : public PrefixAble, public Destination {
+			public:
+				explicit SaveDWordAddress();
+			};
 		
-		class SaveDWordAddress : public PrefixAble, public Destination {
-		public:
-			explicit SaveDWordAddress();
-		};
+			class Counter : public Prefix {
+			public:
+				explicit Counter(const char *mnemonic);
+				const reg::classic::general::operation::CountExtend &Count()const;
+			private:
+				const reg::classic::general::operation::CountExtend &m_count;
+			};
 		
-		class Counter : public Prefix {
-		public:
-			explicit Counter(const char *mnemonic);
-			const reg::classic::general::operation::CountExtend &Count()const;
-		private:
-			const reg::classic::general::operation::CountExtend &m_count;
-		};
+			class RepeatCounter : public Counter {
+			public:
+				explicit RepeatCounter();
+			};
 		
-		class RepeatCounter : public Counter {
-		public:
-			explicit RepeatCounter();
-		};
+			class RepeatCounterEqual : public Counter {
+			public:
+				explicit RepeatCounterEqual();
+			};
 		
-		class RepeatCounterEqual : public Counter {
-		public:
-			explicit RepeatCounterEqual();
-		};
+			class RepeatCounterNotEqual : public Counter {
+			public:
+				explicit RepeatCounterNotEqual();
+			};
 		
-		class RepeatCounterNotEqual : public Counter {
-		public:
-			explicit RepeatCounterNotEqual();
-		};
+			class RepeatCounterCarray : public Counter {
+			public:
+				explicit RepeatCounterCarray();
+			};
 		
-		class RepeatCounterCarray : public Counter {
-		public:
-			explicit RepeatCounterCarray();
-		};
-		
-		class RepeatCounterNotCarray : public Counter {
-		public:
-			explicit RepeatCounterNotCarray();
-		};
-		
+			class RepeatCounterNotCarray : public Counter {
+			public:
+				explicit RepeatCounterNotCarray();
+			};
+		}
 		namespace FPU
 		{
 			class LoadZero : public AbstractInstruction {
