@@ -1841,13 +1841,18 @@ namespace x86
 			{
 
 			}
-			DataTransmittedMoveIfBlew::DataTransmittedMoveIfBlew(const x86::reg::FPU::Data &source, const x86::reg::FPU::Data &destination)
+			DataTransmittedIfBlew::DataTransmittedIfBlew(const x86::reg::FPU::Data &source, const x86::reg::FPU::Data &destination)
 				: AbstractInstruction(x86::mnemonic::FPU::data_transmitted::Move_If_Below_C1(), source, destination)
 			{
 				
 			}
-			DataTransmittedMoveIfBlewEqual::DataTransmittedMoveIfBlewEqual(const x86::reg::FPU::Data &source, const x86::reg::FPU::Data &destination)
+			DataTransmittedIfBlewEqual::DataTransmittedIfBlewEqual(const x86::reg::FPU::Data &source, const x86::reg::FPU::Data &destination)
 				: AbstractInstruction(x86::mnemonic::FPU::data_transmitted::Move_If_Below__Equal_C1(), source, destination)
+			{
+				
+			}
+			DataTransmittedIfEqual::DataTransmittedIfEqual(const x86::reg::FPU::Data &source, const x86::reg::FPU::Data &destination)
+				: AbstractInstruction(x86::mnemonic::FPU::data_transmitted::Move_If_Equal_C1(), source, destination)
 			{
 				
 			}

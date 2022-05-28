@@ -1027,14 +1027,19 @@ namespace x86
 				explicit SaveBinaryCodedDecimalPopStack(const x86::memory::Memory80 &source);
 			};
 			
-			class DataTransmittedMoveIfBlew : public AbstractInstruction {
+			class DataTransmittedIfBlew : public AbstractInstruction {
 			public:
-				explicit DataTransmittedMoveIfBlew(const x86::reg::FPU::Data &source, const x86::reg::FPU::Data &destination);
+				explicit DataTransmittedIfBlew(const x86::reg::FPU::Data &source, const x86::reg::FPU::Data &destination);
 			};
 			
-			class DataTransmittedMoveIfBlewEqual : public AbstractInstruction {
+			class DataTransmittedIfBlewEqual : public AbstractInstruction {
 			public:
-				explicit DataTransmittedMoveIfBlewEqual(const x86::reg::FPU::Data &source, const x86::reg::FPU::Data &destination);
+				explicit DataTransmittedIfBlewEqual(const x86::reg::FPU::Data &source, const x86::reg::FPU::Data &destination);
+			};
+			
+			class DataTransmittedIfEqual : public AbstractInstruction {
+			public:
+				explicit DataTransmittedIfEqual(const x86::reg::FPU::Data &source, const x86::reg::FPU::Data &destination);
 			};
 		}
 
