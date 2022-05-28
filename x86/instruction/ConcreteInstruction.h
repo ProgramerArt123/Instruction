@@ -623,168 +623,171 @@ namespace x86
 				explicit BitsCarrayRollRight(const x86::immediate::Immediate8 &source, const x86::reg::classic::general::General32 &destination);
 			};
 		}
-		class InstructionPointerJump : public AbstractInstruction {
-		public:
-			explicit InstructionPointerJump(const x86::label::CodeLabel &source);
+		namespace jump
+		{
+			class InstructionPointerJump : public AbstractInstruction {
+			public:
+				explicit InstructionPointerJump(const x86::label::CodeLabel &source);
 			
-			explicit InstructionPointerJump(const x86::memory::Memory8 &source);
+				explicit InstructionPointerJump(const x86::memory::Memory8 &source);
 
-			explicit InstructionPointerJump(const x86::memory::Memory16 &source);
+				explicit InstructionPointerJump(const x86::memory::Memory16 &source);
 
-			explicit InstructionPointerJump(const x86::memory::Memory32 &source);
+				explicit InstructionPointerJump(const x86::memory::Memory32 &source);
 			
-		};
+			};
 		
-		class CallProcedure : public AbstractInstruction {
-		public:
-			explicit CallProcedure(const x86::label::CodeLabel &source);
+			class CallProcedure : public AbstractInstruction {
+			public:
+				explicit CallProcedure(const x86::label::CodeLabel &source);
 			
-			explicit CallProcedure(const x86::memory::Memory8 &source);
+				explicit CallProcedure(const x86::memory::Memory8 &source);
 
-			explicit CallProcedure(const x86::memory::Memory16 &source);
+				explicit CallProcedure(const x86::memory::Memory16 &source);
 
-			explicit CallProcedure(const x86::memory::Memory32 &source);
+				explicit CallProcedure(const x86::memory::Memory32 &source);
 			
-		};
+			};
 		
-		class ReturnNearFromProcedure : public AbstractInstruction {
-		public:
-			explicit ReturnNearFromProcedure();
-		};
+			class ReturnNearFromProcedure : public AbstractInstruction {
+			public:
+				explicit ReturnNearFromProcedure();
+			};
 		
-		class ReturnFarFromProcedure : public AbstractInstruction {
-		public:
-			explicit ReturnFarFromProcedure();
-		};
+			class ReturnFarFromProcedure : public AbstractInstruction {
+			public:
+				explicit ReturnFarFromProcedure();
+			};
 		
-		class JumpIfUnsignedAbove : public AbstractInstruction {
-		public:
-			explicit JumpIfUnsignedAbove(const x86::label::CodeLabel &source);
-		};
+			class JumpIfUnsignedAbove : public AbstractInstruction {
+			public:
+				explicit JumpIfUnsignedAbove(const x86::label::CodeLabel &source);
+			};
 		
-		class JumpIfUnsignedAboveEqual : public AbstractInstruction {
-		public:
-			explicit JumpIfUnsignedAboveEqual(const x86::label::CodeLabel &source);
-		};
+			class JumpIfUnsignedAboveEqual : public AbstractInstruction {
+			public:
+				explicit JumpIfUnsignedAboveEqual(const x86::label::CodeLabel &source);
+			};
 		
-		class JumpIfUnsignedBelow : public AbstractInstruction {
-		public:
-			explicit JumpIfUnsignedBelow(const x86::label::CodeLabel &source);
-		};
+			class JumpIfUnsignedBelow : public AbstractInstruction {
+			public:
+				explicit JumpIfUnsignedBelow(const x86::label::CodeLabel &source);
+			};
 		
-		class JumpIfUnsignedBelowEqual : public AbstractInstruction {
-		public:
-			explicit JumpIfUnsignedBelowEqual(const x86::label::CodeLabel &source);
-		};
+			class JumpIfUnsignedBelowEqual : public AbstractInstruction {
+			public:
+				explicit JumpIfUnsignedBelowEqual(const x86::label::CodeLabel &source);
+			};
 		
-		class JumpIfSignedGreater : public AbstractInstruction {
-		public:
-			explicit JumpIfSignedGreater(const x86::label::CodeLabel &source);
-		};
+			class JumpIfSignedGreater : public AbstractInstruction {
+			public:
+				explicit JumpIfSignedGreater(const x86::label::CodeLabel &source);
+			};
 		
-		class JumpIfSignedGreaterEqual : public AbstractInstruction {
-		public:
-			explicit JumpIfSignedGreaterEqual(const x86::label::CodeLabel &source);
-		};
+			class JumpIfSignedGreaterEqual : public AbstractInstruction {
+			public:
+				explicit JumpIfSignedGreaterEqual(const x86::label::CodeLabel &source);
+			};
 		
-		class JumpIfSignedLess : public AbstractInstruction {
-		public:
-			explicit JumpIfSignedLess(const x86::label::CodeLabel &source);
-		};
+			class JumpIfSignedLess : public AbstractInstruction {
+			public:
+				explicit JumpIfSignedLess(const x86::label::CodeLabel &source);
+			};
 		
-		class JumpIfSignedLessEqual : public AbstractInstruction {
-		public:
-			explicit JumpIfSignedLessEqual(const x86::label::CodeLabel &source);
-		};
+			class JumpIfSignedLessEqual : public AbstractInstruction {
+			public:
+				explicit JumpIfSignedLessEqual(const x86::label::CodeLabel &source);
+			};
 		
-		class JumpIfEqual : public AbstractInstruction {
-		public:
-			explicit JumpIfEqual(const x86::label::CodeLabel &source);
-		};
+			class JumpIfEqual : public AbstractInstruction {
+			public:
+				explicit JumpIfEqual(const x86::label::CodeLabel &source);
+			};
 		
-		class JumpIfNotEqual : public AbstractInstruction {
-		public:
-			explicit JumpIfNotEqual(const x86::label::CodeLabel &source);
-		};
+			class JumpIfNotEqual : public AbstractInstruction {
+			public:
+				explicit JumpIfNotEqual(const x86::label::CodeLabel &source);
+			};
 		
-		class JumpIfCarry : public AbstractInstruction {
-		public:
-			explicit JumpIfCarry(const x86::label::CodeLabel &source);
-		};
+			class JumpIfCarry : public AbstractInstruction {
+			public:
+				explicit JumpIfCarry(const x86::label::CodeLabel &source);
+			};
 		
-		class JumpIfNotCarry : public AbstractInstruction {
-		public:
-			explicit JumpIfNotCarry(const x86::label::CodeLabel &source);
-		};
+			class JumpIfNotCarry : public AbstractInstruction {
+			public:
+				explicit JumpIfNotCarry(const x86::label::CodeLabel &source);
+			};
 		
-		class JumpIfOverflow : public AbstractInstruction {
-		public:
-			explicit JumpIfOverflow(const x86::label::CodeLabel &source);
-		};
+			class JumpIfOverflow : public AbstractInstruction {
+			public:
+				explicit JumpIfOverflow(const x86::label::CodeLabel &source);
+			};
 		
-		class JumpIfNotOverflow : public AbstractInstruction {
-		public:
-			explicit JumpIfNotOverflow(const x86::label::CodeLabel &source);
-		};
+			class JumpIfNotOverflow : public AbstractInstruction {
+			public:
+				explicit JumpIfNotOverflow(const x86::label::CodeLabel &source);
+			};
 		
-		class JumpIfParity : public AbstractInstruction {
-		public:
-			explicit JumpIfParity(const x86::label::CodeLabel &source);
-		};
+			class JumpIfParity : public AbstractInstruction {
+			public:
+				explicit JumpIfParity(const x86::label::CodeLabel &source);
+			};
 		
-		class JumpIfNotParity : public AbstractInstruction {
-		public:
-			explicit JumpIfNotParity(const x86::label::CodeLabel &source);
-		};
+			class JumpIfNotParity : public AbstractInstruction {
+			public:
+				explicit JumpIfNotParity(const x86::label::CodeLabel &source);
+			};
 		
-		class JumpIfSigned : public AbstractInstruction {
-		public:
-			explicit JumpIfSigned(const x86::label::CodeLabel &source);
-		};
-		class JumpIfNotSigned : public AbstractInstruction {
-		public:
-			explicit JumpIfNotSigned(const x86::label::CodeLabel &source);
-		};
+			class JumpIfSigned : public AbstractInstruction {
+			public:
+				explicit JumpIfSigned(const x86::label::CodeLabel &source);
+			};
+			class JumpIfNotSigned : public AbstractInstruction {
+			public:
+				explicit JumpIfNotSigned(const x86::label::CodeLabel &source);
+			};
 		
-		class LoopCounter : public AbstractInstruction {
-		public:
-			explicit LoopCounter(const x86::label::CodeLabel &source);
-		};
+			class LoopCounter : public AbstractInstruction {
+			public:
+				explicit LoopCounter(const x86::label::CodeLabel &source);
+			};
 		
-		class LoopCounterAndZero : public AbstractInstruction {
-		public:
-			explicit LoopCounterAndZero(const x86::label::CodeLabel &source);
-		};
+			class LoopCounterAndZero : public AbstractInstruction {
+			public:
+				explicit LoopCounterAndZero(const x86::label::CodeLabel &source);
+			};
 		
-		class LoopCounterAndNotZero : public AbstractInstruction {
-		public:
-			explicit LoopCounterAndNotZero(const x86::label::CodeLabel &source);
-		};
+			class LoopCounterAndNotZero : public AbstractInstruction {
+			public:
+				explicit LoopCounterAndNotZero(const x86::label::CodeLabel &source);
+			};
 		
-		class JumpIfCXZero : public AbstractInstruction {
-		public:
-			explicit JumpIfCXZero(const x86::label::CodeLabel &source);
-		};
+			class JumpIfCXZero : public AbstractInstruction {
+			public:
+				explicit JumpIfCXZero(const x86::label::CodeLabel &source);
+			};
 		
-		class JumpIfECXZero : public AbstractInstruction {
-		public:
-			explicit JumpIfECXZero(const x86::label::CodeLabel &source);
-		};
+			class JumpIfECXZero : public AbstractInstruction {
+			public:
+				explicit JumpIfECXZero(const x86::label::CodeLabel &source);
+			};
 		
-		class CallInterruptProcedure : public AbstractInstruction {
-		public:
-			explicit CallInterruptProcedure(const x86::immediate::Immediate8 &source);
-		};
+			class CallInterruptProcedure : public AbstractInstruction {
+			public:
+				explicit CallInterruptProcedure(const x86::immediate::Immediate8 &source);
+			};
 		
-		class CallInterruptProcedureIfOverflow : public AbstractInstruction {
-		public:
-			explicit CallInterruptProcedureIfOverflow();
-		};
+			class CallInterruptProcedureIfOverflow : public AbstractInstruction {
+			public:
+				explicit CallInterruptProcedureIfOverflow();
+			};
 		
-		class InterruptReturn : public AbstractInstruction {
-		public:
-			explicit InterruptReturn();
-		};
+			class InterruptReturn : public AbstractInstruction {
+			public:
+				explicit InterruptReturn();
+			};
+		}
 		
 		class Source {
 		public:

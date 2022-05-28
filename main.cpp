@@ -1053,190 +1053,190 @@ int main(int argc, char *argv[])
 	}
 	
 	{
-		out << x86::instruction::InstructionPointerJump(x86::memory::Memory8(EBP)) << std::endl;
+		out << x86::instruction::jump::InstructionPointerJump(x86::memory::Memory8(EBP)) << std::endl;
 	}
 	{
-		out << x86::instruction::InstructionPointerJump(x86::memory::Memory16(EBP)) << std::endl;
+		out << x86::instruction::jump::InstructionPointerJump(x86::memory::Memory16(EBP)) << std::endl;
 	}
 	{
-		out << x86::instruction::InstructionPointerJump(x86::memory::Memory32(EBP)) << std::endl;
+		out << x86::instruction::jump::InstructionPointerJump(x86::memory::Memory32(EBP)) << std::endl;
 	}
 	{
 		const x86::label::CodeLabel label("label");
 		out << label << std::endl;
-		out << x86::instruction::InstructionPointerJump(label) << std::endl;
+		out << x86::instruction::jump::InstructionPointerJump(label) << std::endl;
 	}
 	
 	
 	{
-		out << x86::instruction::CallProcedure(x86::memory::Memory8(EBP)) << std::endl;
+		out << x86::instruction::jump::CallProcedure(x86::memory::Memory8(EBP)) << std::endl;
 	}
 	{
-		out << x86::instruction::CallProcedure(x86::memory::Memory16(EBP)) << std::endl;
+		out << x86::instruction::jump::CallProcedure(x86::memory::Memory16(EBP)) << std::endl;
 	}
 	{
-		out << x86::instruction::CallProcedure(x86::memory::Memory32(EBP)) << std::endl;
+		out << x86::instruction::jump::CallProcedure(x86::memory::Memory32(EBP)) << std::endl;
 	}
 	{
 		const x86::label::CodeLabel label("procedure");
 		out << label << std::endl;
-		out << x86::instruction::CallProcedure(label) << std::endl;
+		out << x86::instruction::jump::CallProcedure(label) << std::endl;
 	}
 	{
-		out << x86::instruction::ReturnNearFromProcedure() << std::endl;
+		out << x86::instruction::jump::ReturnNearFromProcedure() << std::endl;
 	}
 	{
-		out << x86::instruction::ReturnFarFromProcedure() << std::endl;
+		out << x86::instruction::jump::ReturnFarFromProcedure() << std::endl;
 	}
 	
 	{
 		const x86::label::CodeLabel label("above");
 		out << label << std::endl;
-		out << x86::instruction::JumpIfUnsignedAbove(label) << std::endl;
+		out << x86::instruction::jump::JumpIfUnsignedAbove(label) << std::endl;
 	}
 	
 	{
 		const x86::label::CodeLabel label("above_equal");
 		out << label << std::endl;
-		out << x86::instruction::JumpIfUnsignedAboveEqual(label) << std::endl;
+		out << x86::instruction::jump::JumpIfUnsignedAboveEqual(label) << std::endl;
 	}
 	
 	{
 		const x86::label::CodeLabel label("below");
 		out << label << std::endl;
-		out << x86::instruction::JumpIfUnsignedBelow(label) << std::endl;
+		out << x86::instruction::jump::JumpIfUnsignedBelow(label) << std::endl;
 	}
 	
 	{
 		const x86::label::CodeLabel label("below_equal");
 		out << label << std::endl;
-		out << x86::instruction::JumpIfUnsignedBelowEqual(label) << std::endl;
+		out << x86::instruction::jump::JumpIfUnsignedBelowEqual(label) << std::endl;
 	}
 	
 	{
 		const x86::label::CodeLabel label("greater");
 		out << label << std::endl;
-		out << x86::instruction::JumpIfSignedGreater(label) << std::endl;
+		out << x86::instruction::jump::JumpIfSignedGreater(label) << std::endl;
 	}
 	
 	{
 		const x86::label::CodeLabel label("greater_equal");
 		out << label << std::endl;
-		out << x86::instruction::JumpIfSignedGreaterEqual(label) << std::endl;
+		out << x86::instruction::jump::JumpIfSignedGreaterEqual(label) << std::endl;
 	}
 	
 	{
 		const x86::label::CodeLabel label("less");
 		out << label << std::endl;
-		out << x86::instruction::JumpIfSignedLess(label) << std::endl;
+		out << x86::instruction::jump::JumpIfSignedLess(label) << std::endl;
 	}
 	
 	{
 		const x86::label::CodeLabel label("less_equal");
 		out << label << std::endl;
-		out << x86::instruction::JumpIfSignedLessEqual(label) << std::endl;
+		out << x86::instruction::jump::JumpIfSignedLessEqual(label) << std::endl;
 	}
 	
 	{
 		const x86::label::CodeLabel label("equal");
 		out << label << std::endl;
-		out << x86::instruction::JumpIfEqual(label) << std::endl;
+		out << x86::instruction::jump::JumpIfEqual(label) << std::endl;
 	}
 	
 	{
 		const x86::label::CodeLabel label("not_equal");
 		out << label << std::endl;
-		out << x86::instruction::JumpIfNotEqual(label) << std::endl;
+		out << x86::instruction::jump::JumpIfNotEqual(label) << std::endl;
 	}
 	
 	{
 		const x86::label::CodeLabel label("carry");
 		out << label << std::endl;
-		out << x86::instruction::JumpIfCarry(label) << std::endl;
+		out << x86::instruction::jump::JumpIfCarry(label) << std::endl;
 	}
 	
 	{
 		const x86::label::CodeLabel label("not_carry");
 		out << label << std::endl;
-		out << x86::instruction::JumpIfNotCarry(label) << std::endl;
+		out << x86::instruction::jump::JumpIfNotCarry(label) << std::endl;
 	}
 	
 	{
 		const x86::label::CodeLabel label("overflow");
 		out << label << std::endl;
-		out << x86::instruction::JumpIfOverflow(label) << std::endl;
+		out << x86::instruction::jump::JumpIfOverflow(label) << std::endl;
 	}
 	
 	{
 		const x86::label::CodeLabel label("not_overflow");
 		out << label << std::endl;
-		out << x86::instruction::JumpIfNotOverflow(label) << std::endl;
+		out << x86::instruction::jump::JumpIfNotOverflow(label) << std::endl;
 	}
 	
 	{
 		const x86::label::CodeLabel label("parity");
 		out << label << std::endl;
-		out << x86::instruction::JumpIfParity(label) << std::endl;
+		out << x86::instruction::jump::JumpIfParity(label) << std::endl;
 	}
 	
 	{
 		const x86::label::CodeLabel label("not_parity");
 		out << label << std::endl;
-		out << x86::instruction::JumpIfNotParity(label) << std::endl;
+		out << x86::instruction::jump::JumpIfNotParity(label) << std::endl;
 	}
 		
 	{
 		const x86::label::CodeLabel label("signed");
 		out << label << std::endl;
-		out << x86::instruction::JumpIfSigned(label) << std::endl;
+		out << x86::instruction::jump::JumpIfSigned(label) << std::endl;
 	}
 	
 	{
 		const x86::label::CodeLabel label("not_signed");
 		out << label << std::endl;
-		out << x86::instruction::JumpIfNotSigned(label) << std::endl;
+		out << x86::instruction::jump::JumpIfNotSigned(label) << std::endl;
 	}
 	
 	{
 		const x86::label::CodeLabel label("counter");
 		out << label << std::endl;
-		out << x86::instruction::LoopCounter(label) << std::endl;
+		out << x86::instruction::jump::LoopCounter(label) << std::endl;
 	}
 	
 	{
 		const x86::label::CodeLabel label("counter_zero");
 		out << label << std::endl;
-		out << x86::instruction::LoopCounterAndZero(label) << std::endl;
+		out << x86::instruction::jump::LoopCounterAndZero(label) << std::endl;
 	}
 	
 	{
 		const x86::label::CodeLabel label("counter_not_zero");
 		out << label << std::endl;
-		out << x86::instruction::LoopCounterAndNotZero(label) << std::endl;
+		out << x86::instruction::jump::LoopCounterAndNotZero(label) << std::endl;
 	}
 	
 	{
 		const x86::label::CodeLabel label("cx_zero");
 		out << label << std::endl;
-		out << x86::instruction::JumpIfCXZero(label) << std::endl;
+		out << x86::instruction::jump::JumpIfCXZero(label) << std::endl;
 	}
 	
 	{
 		const x86::label::CodeLabel label("ecx_zero");
 		out << label << std::endl;
-		out << x86::instruction::JumpIfECXZero(label) << std::endl;
+		out << x86::instruction::jump::JumpIfECXZero(label) << std::endl;
 	}
 	
 	{
-		out << x86::instruction::CallInterruptProcedure(x86::immediate::ImmediateUnSigned8(3)) << std::endl;
+		out << x86::instruction::jump::CallInterruptProcedure(x86::immediate::ImmediateUnSigned8(3)) << std::endl;
 	}
 	
 	{
-		out << x86::instruction::CallInterruptProcedureIfOverflow() << std::endl;
+		out << x86::instruction::jump::CallInterruptProcedureIfOverflow() << std::endl;
 	}
 	
 	{
-		out << x86::instruction::InterruptReturn() << std::endl;
+		out << x86::instruction::jump::InterruptReturn() << std::endl;
 	}
 	
 	{

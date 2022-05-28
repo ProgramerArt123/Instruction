@@ -1245,217 +1245,220 @@ namespace x86
 
 			}
 		}
-		InstructionPointerJump::InstructionPointerJump(const x86::label::CodeLabel &source) 
-			: AbstractInstruction(x86::mnemonic::jump::size32::Jump_8__16__32(), source)
+		namespace jump
 		{
+			InstructionPointerJump::InstructionPointerJump(const x86::label::CodeLabel &source) 
+				: AbstractInstruction(x86::mnemonic::jump::size32::Jump_8__16__32(), source)
+			{
 
-		}
-		InstructionPointerJump::InstructionPointerJump(const x86::memory::Memory8 &source)
-			: AbstractInstruction(x86::mnemonic::jump::size32::Jump_8__16__32(), source)
-		{
+			}
+			InstructionPointerJump::InstructionPointerJump(const x86::memory::Memory8 &source)
+				: AbstractInstruction(x86::mnemonic::jump::size32::Jump_8__16__32(), source)
+			{
 
-		}
+			}
 
-		InstructionPointerJump::InstructionPointerJump(const x86::memory::Memory16 &source)
-			: AbstractInstruction(x86::mnemonic::jump::size32::Jump_8__16__32(), source)
-		{
+			InstructionPointerJump::InstructionPointerJump(const x86::memory::Memory16 &source)
+				: AbstractInstruction(x86::mnemonic::jump::size32::Jump_8__16__32(), source)
+			{
 
-		}
+			}
 
-		InstructionPointerJump::InstructionPointerJump(const x86::memory::Memory32 &source)
-			: AbstractInstruction(x86::mnemonic::jump::size32::Jump_8__16__32(), source)
-		{
+			InstructionPointerJump::InstructionPointerJump(const x86::memory::Memory32 &source)
+				: AbstractInstruction(x86::mnemonic::jump::size32::Jump_8__16__32(), source)
+			{
 
-		}
+			}
 		
-		CallProcedure::CallProcedure(const x86::label::CodeLabel &source) 
-			: AbstractInstruction(x86::mnemonic::jump::size32::Call_Procedure_16__32(), source)
-		{
+			CallProcedure::CallProcedure(const x86::label::CodeLabel &source) 
+				: AbstractInstruction(x86::mnemonic::jump::size32::Call_Procedure_16__32(), source)
+			{
 
-		}
-		CallProcedure::CallProcedure(const x86::memory::Memory8 &source)
-			: AbstractInstruction(x86::mnemonic::jump::size32::Call_Procedure_16__32(), source)
-		{
+			}
+			CallProcedure::CallProcedure(const x86::memory::Memory8 &source)
+				: AbstractInstruction(x86::mnemonic::jump::size32::Call_Procedure_16__32(), source)
+			{
 
-		}
+			}
 
-		CallProcedure::CallProcedure(const x86::memory::Memory16 &source)
-			: AbstractInstruction(x86::mnemonic::jump::size32::Call_Procedure_16__32(), source)
-		{
+			CallProcedure::CallProcedure(const x86::memory::Memory16 &source)
+				: AbstractInstruction(x86::mnemonic::jump::size32::Call_Procedure_16__32(), source)
+			{
 
-		}
+			}
 
-		CallProcedure::CallProcedure(const x86::memory::Memory32 &source)
-			: AbstractInstruction(x86::mnemonic::jump::size32::Call_Procedure_16__32(), source)
-		{
+			CallProcedure::CallProcedure(const x86::memory::Memory32 &source)
+				: AbstractInstruction(x86::mnemonic::jump::size32::Call_Procedure_16__32(), source)
+			{
 
-		}
+			}
 		
-		ReturnNearFromProcedure::ReturnNearFromProcedure()
-			: AbstractInstruction(x86::mnemonic::jump::size32::Return_From_Procedure_16())
-		{
+			ReturnNearFromProcedure::ReturnNearFromProcedure()
+				: AbstractInstruction(x86::mnemonic::jump::size32::Return_From_Procedure_16())
+			{
 
-		}
+			}
 		
-		ReturnFarFromProcedure::ReturnFarFromProcedure()
-			: AbstractInstruction(x86::mnemonic::jump::size32::Return_From_Procedure_20())
-		{
+			ReturnFarFromProcedure::ReturnFarFromProcedure()
+				: AbstractInstruction(x86::mnemonic::jump::size32::Return_From_Procedure_20())
+			{
 
-		}
+			}
 		
-		JumpIfUnsignedAbove::JumpIfUnsignedAbove(const x86::label::CodeLabel &source) 
-			: AbstractInstruction(x86::mnemonic::jump::size32::Jump_If_Unsigned_Above_8(), source)
-		{
+			JumpIfUnsignedAbove::JumpIfUnsignedAbove(const x86::label::CodeLabel &source) 
+				: AbstractInstruction(x86::mnemonic::jump::size32::Jump_If_Unsigned_Above_8(), source)
+			{
 
-		}
+			}
 		
-		JumpIfUnsignedAboveEqual::JumpIfUnsignedAboveEqual(const x86::label::CodeLabel &source) 
-			: AbstractInstruction(x86::mnemonic::jump::size32::Jump_If_Unsigned_Above__Equal_8(), source)
-		{
+			JumpIfUnsignedAboveEqual::JumpIfUnsignedAboveEqual(const x86::label::CodeLabel &source) 
+				: AbstractInstruction(x86::mnemonic::jump::size32::Jump_If_Unsigned_Above__Equal_8(), source)
+			{
 
-		}
+			}
 		
-		JumpIfUnsignedBelow::JumpIfUnsignedBelow(const x86::label::CodeLabel &source) 
-			: AbstractInstruction(x86::mnemonic::jump::size32::Jump_If_Unsigned_Below_8(), source)
-		{
+			JumpIfUnsignedBelow::JumpIfUnsignedBelow(const x86::label::CodeLabel &source) 
+				: AbstractInstruction(x86::mnemonic::jump::size32::Jump_If_Unsigned_Below_8(), source)
+			{
 
-		}
+			}
 		
-		JumpIfUnsignedBelowEqual::JumpIfUnsignedBelowEqual(const x86::label::CodeLabel &source) 
-			: AbstractInstruction(x86::mnemonic::jump::size32::Jump_If_Unsigned_Below__Equal_8(), source)
-		{
+			JumpIfUnsignedBelowEqual::JumpIfUnsignedBelowEqual(const x86::label::CodeLabel &source) 
+				: AbstractInstruction(x86::mnemonic::jump::size32::Jump_If_Unsigned_Below__Equal_8(), source)
+			{
 
-		}
+			}
 		
-		JumpIfSignedGreater::JumpIfSignedGreater(const x86::label::CodeLabel &source) 
-			: AbstractInstruction(x86::mnemonic::jump::size32::Jump_If_Signed_Greater_8(), source)
-		{
+			JumpIfSignedGreater::JumpIfSignedGreater(const x86::label::CodeLabel &source) 
+				: AbstractInstruction(x86::mnemonic::jump::size32::Jump_If_Signed_Greater_8(), source)
+			{
 
-		}
+			}
 		
-		JumpIfSignedGreaterEqual::JumpIfSignedGreaterEqual(const x86::label::CodeLabel &source) 
-			: AbstractInstruction(x86::mnemonic::jump::size32::Jump_If_Signed_Greater__Equal_8(), source)
-		{
+			JumpIfSignedGreaterEqual::JumpIfSignedGreaterEqual(const x86::label::CodeLabel &source) 
+				: AbstractInstruction(x86::mnemonic::jump::size32::Jump_If_Signed_Greater__Equal_8(), source)
+			{
 
-		}
+			}
 		
-		JumpIfSignedLess::JumpIfSignedLess(const x86::label::CodeLabel &source) 
-			: AbstractInstruction(x86::mnemonic::jump::size32::Jump_If_Signed_Less_8(), source)
-		{
+			JumpIfSignedLess::JumpIfSignedLess(const x86::label::CodeLabel &source) 
+				: AbstractInstruction(x86::mnemonic::jump::size32::Jump_If_Signed_Less_8(), source)
+			{
 
-		}
+			}
 		
-		JumpIfSignedLessEqual::JumpIfSignedLessEqual(const x86::label::CodeLabel &source) 
-			: AbstractInstruction(x86::mnemonic::jump::size32::Jump_If_Signed_Less__Equal_8(), source)
-		{
+			JumpIfSignedLessEqual::JumpIfSignedLessEqual(const x86::label::CodeLabel &source) 
+				: AbstractInstruction(x86::mnemonic::jump::size32::Jump_If_Signed_Less__Equal_8(), source)
+			{
 
-		}
+			}
 		
-		JumpIfEqual::JumpIfEqual(const x86::label::CodeLabel &source) 
-			: AbstractInstruction(x86::mnemonic::jump::size32::Jump_If_Equal_8(), source)
-		{
+			JumpIfEqual::JumpIfEqual(const x86::label::CodeLabel &source) 
+				: AbstractInstruction(x86::mnemonic::jump::size32::Jump_If_Equal_8(), source)
+			{
 
-		}
+			}
 		
-		JumpIfNotEqual::JumpIfNotEqual(const x86::label::CodeLabel &source) 
-			: AbstractInstruction(x86::mnemonic::jump::size32::Jump_If_Not_Equal_8(), source)
-		{
+			JumpIfNotEqual::JumpIfNotEqual(const x86::label::CodeLabel &source) 
+				: AbstractInstruction(x86::mnemonic::jump::size32::Jump_If_Not_Equal_8(), source)
+			{
 
-		}
+			}
 		
-		JumpIfCarry::JumpIfCarry(const x86::label::CodeLabel &source) 
-			: AbstractInstruction(x86::mnemonic::jump::size32::Jump_If_Carry_8(), source)
-		{
+			JumpIfCarry::JumpIfCarry(const x86::label::CodeLabel &source) 
+				: AbstractInstruction(x86::mnemonic::jump::size32::Jump_If_Carry_8(), source)
+			{
 
-		}
+			}
 		
-		JumpIfNotCarry::JumpIfNotCarry(const x86::label::CodeLabel &source) 
-			: AbstractInstruction(x86::mnemonic::jump::size32::Jump_If_Not_Carry_8(), source)
-		{
+			JumpIfNotCarry::JumpIfNotCarry(const x86::label::CodeLabel &source) 
+				: AbstractInstruction(x86::mnemonic::jump::size32::Jump_If_Not_Carry_8(), source)
+			{
 
-		}
+			}
 		
-		JumpIfOverflow::JumpIfOverflow(const x86::label::CodeLabel &source) 
-			: AbstractInstruction(x86::mnemonic::jump::size32::Jump_If_Overflow_8(), source)
-		{
+			JumpIfOverflow::JumpIfOverflow(const x86::label::CodeLabel &source) 
+				: AbstractInstruction(x86::mnemonic::jump::size32::Jump_If_Overflow_8(), source)
+			{
 
-		}
+			}
 		
-		JumpIfNotOverflow::JumpIfNotOverflow(const x86::label::CodeLabel &source) 
-			: AbstractInstruction(x86::mnemonic::jump::size32::Jump_If_Not_Overflow_8(), source)
-		{
+			JumpIfNotOverflow::JumpIfNotOverflow(const x86::label::CodeLabel &source) 
+				: AbstractInstruction(x86::mnemonic::jump::size32::Jump_If_Not_Overflow_8(), source)
+			{
 
-		}
+			}
 		
-		JumpIfParity::JumpIfParity(const x86::label::CodeLabel &source) 
-			: AbstractInstruction(x86::mnemonic::jump::size32::Jump_If_Parity_8(), source)
-		{
+			JumpIfParity::JumpIfParity(const x86::label::CodeLabel &source) 
+				: AbstractInstruction(x86::mnemonic::jump::size32::Jump_If_Parity_8(), source)
+			{
 
-		}
+			}
 		
-		JumpIfNotParity::JumpIfNotParity(const x86::label::CodeLabel &source) 
-			: AbstractInstruction(x86::mnemonic::jump::size32::Jump_If_Not_Parity_8(), source)
-		{
+			JumpIfNotParity::JumpIfNotParity(const x86::label::CodeLabel &source) 
+				: AbstractInstruction(x86::mnemonic::jump::size32::Jump_If_Not_Parity_8(), source)
+			{
 
-		}
+			}
 		
-		JumpIfSigned::JumpIfSigned(const x86::label::CodeLabel &source) 
-			: AbstractInstruction(x86::mnemonic::jump::size32::Jump_If_Signed_8(), source)
-		{
+			JumpIfSigned::JumpIfSigned(const x86::label::CodeLabel &source) 
+				: AbstractInstruction(x86::mnemonic::jump::size32::Jump_If_Signed_8(), source)
+			{
 
-		}
+			}
 		
-		JumpIfNotSigned::JumpIfNotSigned(const x86::label::CodeLabel &source) 
-			: AbstractInstruction(x86::mnemonic::jump::size32::Jump_If_Not_Signed_8(), source)
-		{
+			JumpIfNotSigned::JumpIfNotSigned(const x86::label::CodeLabel &source) 
+				: AbstractInstruction(x86::mnemonic::jump::size32::Jump_If_Not_Signed_8(), source)
+			{
 
-		}
+			}
 		
-		LoopCounter::LoopCounter(const x86::label::CodeLabel &source) 
-			: AbstractInstruction(x86::mnemonic::jump::size32::Loop_ECX_8(), source)
-		{
+			LoopCounter::LoopCounter(const x86::label::CodeLabel &source) 
+				: AbstractInstruction(x86::mnemonic::jump::size32::Loop_ECX_8(), source)
+			{
 
-		}
-		LoopCounterAndZero::LoopCounterAndZero(const x86::label::CodeLabel &source) 
-			: AbstractInstruction(x86::mnemonic::jump::size32::Loop_ECX_ZF_8(), source)
-		{
+			}
+			LoopCounterAndZero::LoopCounterAndZero(const x86::label::CodeLabel &source) 
+				: AbstractInstruction(x86::mnemonic::jump::size32::Loop_ECX_ZF_8(), source)
+			{
 
-		}
+			}
 		
-		LoopCounterAndNotZero::LoopCounterAndNotZero(const x86::label::CodeLabel &source) 
-			: AbstractInstruction(x86::mnemonic::jump::size32::Loop_ECX_Not_ZF_8(), source)
-		{
+			LoopCounterAndNotZero::LoopCounterAndNotZero(const x86::label::CodeLabel &source) 
+				: AbstractInstruction(x86::mnemonic::jump::size32::Loop_ECX_Not_ZF_8(), source)
+			{
 
-		}
+			}
 		
-		JumpIfCXZero::JumpIfCXZero(const x86::label::CodeLabel &source) 
-			: AbstractInstruction(x86::mnemonic::jump::size32::Jump_CX_Zero_8(), source)
-		{
+			JumpIfCXZero::JumpIfCXZero(const x86::label::CodeLabel &source) 
+				: AbstractInstruction(x86::mnemonic::jump::size32::Jump_CX_Zero_8(), source)
+			{
 
-		}
+			}
 		
-		JumpIfECXZero::JumpIfECXZero(const x86::label::CodeLabel &source) 
-			: AbstractInstruction(x86::mnemonic::jump::size32::Jump_ECX_Zero_8(), source)
-		{
+			JumpIfECXZero::JumpIfECXZero(const x86::label::CodeLabel &source) 
+				: AbstractInstruction(x86::mnemonic::jump::size32::Jump_ECX_Zero_8(), source)
+			{
 
-		}
+			}
 		
-		CallInterruptProcedure::CallInterruptProcedure(const x86::immediate::Immediate8 &source) 
-			: AbstractInstruction(x86::mnemonic::jump::size32::Call_Interrupt_Procedure_8(), source)
-		{
+			CallInterruptProcedure::CallInterruptProcedure(const x86::immediate::Immediate8 &source) 
+				: AbstractInstruction(x86::mnemonic::jump::size32::Call_Interrupt_Procedure_8(), source)
+			{
 
-		}
+			}
 		
-		CallInterruptProcedureIfOverflow::CallInterruptProcedureIfOverflow() 
-			: AbstractInstruction(x86::mnemonic::jump::size32::Call_Interrupt_Procedure_If_Overflow())
-		{
+			CallInterruptProcedureIfOverflow::CallInterruptProcedureIfOverflow() 
+				: AbstractInstruction(x86::mnemonic::jump::size32::Call_Interrupt_Procedure_If_Overflow())
+			{
 
-		}
+			}
 		
-		InterruptReturn::InterruptReturn() 
-			: AbstractInstruction(x86::mnemonic::jump::size32::Interrupt_Return_20())
-		{
+			InterruptReturn::InterruptReturn() 
+				: AbstractInstruction(x86::mnemonic::jump::size32::Interrupt_Return_20())
+			{
 
+			}
 		}
 		Source::Source(const reg::classic::segment::Segment &segment, const reg::classic::general::offset::Address32 &offset)
 			: m_segment(segment)
