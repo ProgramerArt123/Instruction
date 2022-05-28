@@ -1861,6 +1861,16 @@ namespace x86
 			{
 				
 			}
+			DataTransmittedIfNotBlewEqual::DataTransmittedIfNotBlewEqual(const x86::reg::FPU::Data &source, const x86::reg::FPU::Data &destination)
+				: AbstractInstruction(x86::mnemonic::FPU::data_transmitted::Move_If_Not_Below_Not_Equal_C1(), source, destination)
+			{
+				
+			}
+			DataTransmittedIfNotEqual::DataTransmittedIfNotEqual(const x86::reg::FPU::Data &source, const x86::reg::FPU::Data &destination)
+				: AbstractInstruction(x86::mnemonic::FPU::data_transmitted::Move_If_Not_Equal_C1(), source, destination)
+			{
+				
+			}
 		}
 	}
 }
