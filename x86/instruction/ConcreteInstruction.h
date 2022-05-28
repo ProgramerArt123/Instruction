@@ -1041,6 +1041,11 @@ namespace x86
 			public:
 				explicit DataTransmittedIfEqual(const x86::reg::FPU::Data &source, const x86::reg::FPU::Data &destination);
 			};
+			
+			class DataTransmittedIfNotBlew : public AbstractInstruction {
+			public:
+				explicit DataTransmittedIfNotBlew(const x86::reg::FPU::Data &source, const x86::reg::FPU::Data &destination);
+			};
 		}
 
 	}
