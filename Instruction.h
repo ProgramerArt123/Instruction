@@ -20,6 +20,7 @@
 #include "x86/register/classic/general/operation/Operation32.h"
 #include "x86/register/FPU/data/Data.h"
 #include "x86/register/FPU/data/StackTop0.h"
+#include "x86/register/FPU/data/StackTop1.h"
 #include "x86/register/classic/general/operation/64/Operation64.h"
 #include "x86/immediate/Immediate8.h"
 #include "x86/immediate/Immediate16.h"

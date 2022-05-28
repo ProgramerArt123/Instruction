@@ -1829,6 +1829,11 @@ namespace x86
 			{
 
 			}
+			DataTransmittedMoveIfBlew::DataTransmittedMoveIfBlew(const x86::reg::FPU::Data &source, const x86::reg::FPU::Data &destination)
+				: AbstractInstruction(x86::mnemonic::FPU::data_transmitted::Move_If_Below_C1(), source, destination)
+			{
+				
+			}
 		}
 	}
 }

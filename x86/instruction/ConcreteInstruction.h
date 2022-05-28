@@ -1020,7 +1020,12 @@ namespace x86
 			public:
 				explicit SaveBinaryCodedDecimalPopStack(const x86::memory::Memory80 &source);
 			};
-	}
+			
+			class DataTransmittedMoveIfBlew : public AbstractInstruction {
+			public:
+				explicit DataTransmittedMoveIfBlew(const x86::reg::FPU::Data &source, const x86::reg::FPU::Data &destination);
+			};
+		}
 
 	}
 }
