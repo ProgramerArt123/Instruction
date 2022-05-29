@@ -1564,6 +1564,11 @@ int main(int argc, char *argv[])
 		out << x86::instruction::FPU::Add(ST0, ST1) << std::endl;
 	}
 	
+	{
+		out << x86::instruction::FPU::AddPopStack() << std::endl;
+		out << x86::instruction::FPU::AddPopStack(ST0, ST1) << std::endl;
+	}
+	
 	const std::string &str = out.str();
 	{
 		std::ofstream code("test.s");

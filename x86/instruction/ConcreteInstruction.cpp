@@ -1897,6 +1897,16 @@ namespace x86
 			{
 				
 			}
+			AddPopStack::AddPopStack()
+				: AbstractInstruction(x86::mnemonic::FPU::arithmetic::Add_Pop_Stack_ST_C1())
+			{
+				
+			}
+			AddPopStack::AddPopStack(const x86::reg::FPU::Data &source, const x86::reg::FPU::Data &destination)
+				: AbstractInstruction(x86::mnemonic::FPU::arithmetic::Add_Pop_Stack_ST_C1(), source, destination)
+			{
+				
+			}
 		}
 	}
 }

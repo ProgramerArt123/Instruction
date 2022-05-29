@@ -1069,6 +1069,12 @@ namespace x86
 				explicit Add(const x86::memory::Memory64 &source);
 				explicit Add(const x86::reg::FPU::Data &source, const x86::reg::FPU::Data &destination);
 			};
+			
+			class AddPopStack : public AbstractInstruction {
+			public:
+				explicit AddPopStack();
+				explicit AddPopStack(const x86::reg::FPU::Data &source, const x86::reg::FPU::Data &destination);
+			};
 		}
 
 	}
