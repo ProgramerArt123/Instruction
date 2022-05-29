@@ -1871,6 +1871,11 @@ namespace x86
 			{
 				
 			}
+			DataTransmittedIfUnordered::DataTransmittedIfUnordered(const x86::reg::FPU::Data &source, const x86::reg::FPU::Data &destination)
+				: AbstractInstruction(x86::mnemonic::FPU::data_transmitted::Move_If_Unordered_C1(), source, destination)
+			{
+				
+			}
 		}
 	}
 }

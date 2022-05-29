@@ -27,8 +27,8 @@ namespace x86
 				const char *Move_If_Not_Below_C1();
 				const char *Move_If_Not_Below_Not_Equal_C1();
 				const char *Move_If_Not_Equal_C1();
-				const char *Move_If_Not_Unordered_C1();
 				const char *Move_If_Unordered_C1();
+				const char *Move_If_Not_Unordered_C1();
 			}
 		}
 	}

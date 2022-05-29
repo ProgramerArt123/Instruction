@@ -69,11 +69,11 @@ namespace x86
 				const char *Move_If_Not_Equal_C1() {
 					return "FCMOVNE";
 				}
-				const char *Move_If_Not_Unordered_C1() {
-					return "FCMOVNU";
-				}
 				const char *Move_If_Unordered_C1() {
 					return "FCMOVU";
+				}
+				const char *Move_If_Not_Unordered_C1() {
+					return "FCMOVNU";
 				}
 			}
 		}
