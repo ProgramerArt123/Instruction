@@ -1059,6 +1059,10 @@ namespace x86
 			public:
 				explicit DataTransmittedIfUnordered(const x86::reg::FPU::Data &source, const x86::reg::FPU::Data &destination);
 			};
+			class DataTransmittedIfNotUnordered : public AbstractInstruction {
+			public:
+				explicit DataTransmittedIfNotUnordered(const x86::reg::FPU::Data &source, const x86::reg::FPU::Data &destination);
+			};
 		}
 
 	}
