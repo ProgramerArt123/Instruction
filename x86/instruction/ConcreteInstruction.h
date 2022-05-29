@@ -1063,6 +1063,12 @@ namespace x86
 			public:
 				explicit DataTransmittedIfNotUnordered(const x86::reg::FPU::Data &source, const x86::reg::FPU::Data &destination);
 			};
+			class Add : public AbstractInstruction {
+			public:
+				explicit Add(const x86::memory::Memory32 &source);
+				explicit Add(const x86::memory::Memory64 &source);
+				explicit Add(const x86::reg::FPU::Data &source, const x86::reg::FPU::Data &destination);
+			};
 		}
 
 	}

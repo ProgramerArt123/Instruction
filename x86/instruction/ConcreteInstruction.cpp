@@ -6,6 +6,7 @@
 #include "x86/mnemonic/jump/32/InstructionPointerJump.h"
 #include "x86/mnemonic/string/Operation.h"
 #include "x86/mnemonic/FPU/DataTransmitted.h"
+#include "x86/mnemonic/FPU/Arithmetic.h"
 #include "Instruction.h"
 #include "ConcreteInstruction.h"
 namespace x86
@@ -1878,6 +1879,21 @@ namespace x86
 			}
 			DataTransmittedIfNotUnordered::DataTransmittedIfNotUnordered(const x86::reg::FPU::Data &source, const x86::reg::FPU::Data &destination)
 				: AbstractInstruction(x86::mnemonic::FPU::data_transmitted::Move_If_Not_Unordered_C1(), source, destination)
+			{
+				
+			}
+			Add::Add(const x86::memory::Memory32 &source)
+				: AbstractInstruction(x86::mnemonic::FPU::arithmetic::Add_ST__Value_32__64_C1(), source)
+			{
+				
+			}
+			Add::Add(const x86::memory::Memory64 &source)
+				: AbstractInstruction(x86::mnemonic::FPU::arithmetic::Add_ST__Value_32__64_C1(), source)
+			{
+				
+			}
+			Add::Add(const x86::reg::FPU::Data &source, const x86::reg::FPU::Data &destination)
+				: AbstractInstruction(x86::mnemonic::FPU::arithmetic::Add_ST__Value_32__64_C1(), source, destination)
 			{
 				
 			}
