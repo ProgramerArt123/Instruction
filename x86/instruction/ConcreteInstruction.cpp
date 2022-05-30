@@ -1917,6 +1917,21 @@ namespace x86
 			{
 				
 			}
+			Sub::Sub(const x86::memory::Memory32 &source)
+				: AbstractInstruction(x86::mnemonic::FPU::arithmetic::Sub_ST__Value_32__64_C1(), source)
+			{
+				
+			}
+			Sub::Sub(const x86::memory::Memory64 &source)
+				: AbstractInstruction(x86::mnemonic::FPU::arithmetic::Sub_ST__Value_32__64_C1(), source)
+			{
+				
+			}
+			Sub::Sub(const x86::reg::FPU::Data &source, const x86::reg::FPU::Data &destination)
+				: AbstractInstruction(x86::mnemonic::FPU::arithmetic::Sub_ST__Value_32__64_C1(), source, destination)
+			{
+				
+			}
 		}
 	}
 }

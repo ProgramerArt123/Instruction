@@ -1081,6 +1081,13 @@ namespace x86
 				explicit AddInteger(const x86::memory::Memory32 &source);
 				explicit AddInteger(const x86::memory::Memory64 &source);
 			};
+			
+			class Sub : public AbstractInstruction {
+			public:
+				explicit Sub(const x86::memory::Memory32 &source);
+				explicit Sub(const x86::memory::Memory64 &source);
+				explicit Sub(const x86::reg::FPU::Data &source, const x86::reg::FPU::Data &destination);
+			};
 		}
 
 	}

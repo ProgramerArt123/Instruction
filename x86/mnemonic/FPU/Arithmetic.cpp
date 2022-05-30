@@ -16,7 +16,7 @@ namespace x86
 					return "FIADD";
 				}
 
-				const char *Sub_ST__Value_32_C1() {
+				const char *Sub_ST__Value_32__64_C1() {
 					return "FSUB";
 				}
 				const char *Sub_Pop_Stack_ST_C1() {
