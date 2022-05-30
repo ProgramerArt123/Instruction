@@ -7,12 +7,12 @@ namespace x86
 			namespace arithmetic {
 				const char *Add_ST__Value_32__64_C1();
 				const char *Add_Pop_Stack_ST_C1();
-				const char *Add_16__32_C1();
+				const char *Add_Integer_16__32_C1();
 				const char *Sub_ST__Value_32__64_C1();
 				const char *Sub_Pop_Stack_ST_C1();
+				const char *Sub_Integer_16__32_C1();
 				const char *Swap_Sub_ST__Value_32_C1();
 				const char *Swap_Sub_Pop_Stack_ST__Value_32_C1();
-				const char *Sub_Integer_16__32_C1();
 				const char *Swap_Sub_Integer_16__32_C1();
 				const char *Mul_ST__Value_32_C1();
 				const char *Mul_Pop_Stack_ST_C1();

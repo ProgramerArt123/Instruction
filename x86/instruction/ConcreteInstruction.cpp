@@ -1908,12 +1908,12 @@ namespace x86
 				
 			}
 			AddInteger::AddInteger(const x86::memory::Memory32 &source)
-				: AbstractInstruction(x86::mnemonic::FPU::arithmetic::Add_16__32_C1(), source)
+				: AbstractInstruction(x86::mnemonic::FPU::arithmetic::Add_Integer_16__32_C1(), source)
 			{
 				
 			}
 			AddInteger::AddInteger(const x86::memory::Memory64 &source)
-				: AbstractInstruction(x86::mnemonic::FPU::arithmetic::Add_16__32_C1(), source)
+				: AbstractInstruction(x86::mnemonic::FPU::arithmetic::Add_Integer_16__32_C1(), source)
 			{
 				
 			}
@@ -1939,6 +1939,16 @@ namespace x86
 			}
 			SubPopStack::SubPopStack(const x86::reg::FPU::Data &source, const x86::reg::FPU::Data &destination)
 				: AbstractInstruction(x86::mnemonic::FPU::arithmetic::Sub_Pop_Stack_ST_C1(), source, destination)
+			{
+				
+			}
+			SubInteger::SubInteger(const x86::memory::Memory32 &source)
+				: AbstractInstruction(x86::mnemonic::FPU::arithmetic::Sub_Integer_16__32_C1(), source)
+			{
+				
+			}
+			SubInteger::SubInteger(const x86::memory::Memory64 &source)
+				: AbstractInstruction(x86::mnemonic::FPU::arithmetic::Sub_Integer_16__32_C1(), source)
 			{
 				
 			}

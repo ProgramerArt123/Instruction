@@ -12,7 +12,7 @@ namespace x86
 					return "FADDP";
 				}
 
-				const char *Add_16__32_C1() {
+				const char *Add_Integer_16__32_C1() {
 					return "FIADD";
 				}
 
@@ -22,14 +22,14 @@ namespace x86
 				const char *Sub_Pop_Stack_ST_C1() {
 					return "FSUBP";
 				}
+				const char *Sub_Integer_16__32_C1() {
+					return "FISUB";
+				}
 				const char *Swap_Sub_ST__Value_32_C1() {
 					return "FSUBR";
 				}
 				const char *Swap_Sub_Pop_Stack_ST__Value_32_C1() {
 					return "FSUBRP";
-				}
-				const char *Sub_Integer_16__32_C1() {
-					return "FISUB";
 				}
 				const char *Swap_Sub_Integer_16__32_C1() {
 					return "FISUBR";
