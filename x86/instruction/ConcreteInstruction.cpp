@@ -1907,6 +1907,16 @@ namespace x86
 			{
 				
 			}
+			AddInteger::AddInteger(const x86::memory::Memory32 &source)
+				: AbstractInstruction(x86::mnemonic::FPU::arithmetic::Add_16__32_C1(), source)
+			{
+				
+			}
+			AddInteger::AddInteger(const x86::memory::Memory64 &source)
+				: AbstractInstruction(x86::mnemonic::FPU::arithmetic::Add_16__32_C1(), source)
+			{
+				
+			}
 		}
 	}
 }
