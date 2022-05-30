@@ -1580,6 +1580,11 @@ int main(int argc, char *argv[])
 		out << x86::instruction::FPU::Sub(ST0, ST1) << std::endl;
 	}
 	
+	{
+		out << x86::instruction::FPU::SubPopStack() << std::endl;
+		out << x86::instruction::FPU::SubPopStack(ST0, ST1) << std::endl;
+	}
+	
 	const std::string &str = out.str();
 	{
 		std::ofstream code("test.s");

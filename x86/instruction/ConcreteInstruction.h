@@ -1088,6 +1088,11 @@ namespace x86
 				explicit Sub(const x86::memory::Memory64 &source);
 				explicit Sub(const x86::reg::FPU::Data &source, const x86::reg::FPU::Data &destination);
 			};
+			class SubPopStack : public AbstractInstruction {
+			public:
+				explicit SubPopStack();
+				explicit SubPopStack(const x86::reg::FPU::Data &source, const x86::reg::FPU::Data &destination);
+			};
 		}
 
 	}

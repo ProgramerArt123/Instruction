@@ -1932,6 +1932,16 @@ namespace x86
 			{
 				
 			}
+			SubPopStack::SubPopStack()
+				: AbstractInstruction(x86::mnemonic::FPU::arithmetic::Sub_Pop_Stack_ST_C1())
+			{
+				
+			}
+			SubPopStack::SubPopStack(const x86::reg::FPU::Data &source, const x86::reg::FPU::Data &destination)
+				: AbstractInstruction(x86::mnemonic::FPU::arithmetic::Sub_Pop_Stack_ST_C1(), source, destination)
+			{
+				
+			}
 		}
 	}
 }
