@@ -800,23 +800,23 @@ int main(int argc, char *argv[])
 	
 		
 	{
-		out << x86::instruction::integer::Sub(x86::immediate::ImmediateSigned8(1), AL) << std::endl;
+		out << x86::instruction::integer::Subtract(x86::immediate::ImmediateSigned8(1), AL) << std::endl;
 	}
 	{
-		out << x86::instruction::integer::Sub(x86::immediate::ImmediateSigned16(-1), AX) << std::endl;
+		out << x86::instruction::integer::Subtract(x86::immediate::ImmediateSigned16(-1), AX) << std::endl;
 	}
 	{
-		out << x86::instruction::integer::Sub(x86::immediate::ImmediateSigned32(1), EAX) << std::endl;
+		out << x86::instruction::integer::Subtract(x86::immediate::ImmediateSigned32(1), EAX) << std::endl;
 	}
 	
 	{
-		out << x86::instruction::integer::SubCarray(x86::immediate::ImmediateSigned8(1), AL) << std::endl;
+		out << x86::instruction::integer::SubtractCarray(x86::immediate::ImmediateSigned8(1), AL) << std::endl;
 	}
 	{
-		out << x86::instruction::integer::SubCarray(x86::immediate::ImmediateSigned16(-1), AX) << std::endl;
+		out << x86::instruction::integer::SubtractCarray(x86::immediate::ImmediateSigned16(-1), AX) << std::endl;
 	}
 	{
-		out << x86::instruction::integer::SubCarray(x86::immediate::ImmediateSigned32(1), EAX) << std::endl;
+		out << x86::instruction::integer::SubtractCarray(x86::immediate::ImmediateSigned32(1), EAX) << std::endl;
 	}
 	
 	{
@@ -1575,35 +1575,41 @@ int main(int argc, char *argv[])
 	}
 	
 	{
-		out << x86::instruction::FPU::Sub(x86::memory::Memory32(EAX)) << std::endl;
-		out << x86::instruction::FPU::Sub(x86::memory::Memory64(EAX)) << std::endl;
-		out << x86::instruction::FPU::Sub(ST0, ST1) << std::endl;
+		out << x86::instruction::FPU::Subtract(x86::memory::Memory32(EAX)) << std::endl;
+		out << x86::instruction::FPU::Subtract(x86::memory::Memory64(EAX)) << std::endl;
+		out << x86::instruction::FPU::Subtract(ST0, ST1) << std::endl;
 	}
 	
 	{
-		out << x86::instruction::FPU::SubPopStack() << std::endl;
-		out << x86::instruction::FPU::SubPopStack(ST0, ST1) << std::endl;
+		out << x86::instruction::FPU::SubtractPopStack() << std::endl;
+		out << x86::instruction::FPU::SubtractPopStack(ST0, ST1) << std::endl;
 	}
 	
 	{
-		out << x86::instruction::FPU::SubInteger(x86::memory::Memory32(EAX)) << std::endl;
-		out << x86::instruction::FPU::SubInteger(x86::memory::Memory64(EAX)) << std::endl;
+		out << x86::instruction::FPU::SubtractInteger(x86::memory::Memory32(EAX)) << std::endl;
+		out << x86::instruction::FPU::SubtractInteger(x86::memory::Memory64(EAX)) << std::endl;
 	}
 	
 	{
-		out << x86::instruction::FPU::SwapSub(x86::memory::Memory32(EAX)) << std::endl;
-		out << x86::instruction::FPU::SwapSub(x86::memory::Memory64(EAX)) << std::endl;
-		out << x86::instruction::FPU::SwapSub(ST0, ST1) << std::endl;
+		out << x86::instruction::FPU::SwapSubtract(x86::memory::Memory32(EAX)) << std::endl;
+		out << x86::instruction::FPU::SwapSubtract(x86::memory::Memory64(EAX)) << std::endl;
+		out << x86::instruction::FPU::SwapSubtract(ST0, ST1) << std::endl;
 	}
 	
 	{
-		out << x86::instruction::FPU::SwapSubPopStack() << std::endl;
-		out << x86::instruction::FPU::SwapSubPopStack(ST0, ST1) << std::endl;
+		out << x86::instruction::FPU::SwapSubtractPopStack() << std::endl;
+		out << x86::instruction::FPU::SwapSubtractPopStack(ST0, ST1) << std::endl;
 	}
 	
 	{
-		out << x86::instruction::FPU::SwapSubInteger(x86::memory::Memory32(EAX)) << std::endl;
-		out << x86::instruction::FPU::SwapSubInteger(x86::memory::Memory64(EAX)) << std::endl;
+		out << x86::instruction::FPU::SwapSubtractInteger(x86::memory::Memory32(EAX)) << std::endl;
+		out << x86::instruction::FPU::SwapSubtractInteger(x86::memory::Memory64(EAX)) << std::endl;
+	}
+	
+	{
+		out << x86::instruction::FPU::Multiply(x86::memory::Memory32(EAX)) << std::endl;
+		out << x86::instruction::FPU::Multiply(x86::memory::Memory64(EAX)) << std::endl;
+		out << x86::instruction::FPU::Multiply(ST0, ST1) << std::endl;
 	}
 	
 	const std::string &str = out.str();

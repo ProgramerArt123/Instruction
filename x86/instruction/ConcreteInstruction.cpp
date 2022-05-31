@@ -703,53 +703,53 @@ namespace x86
 			{
 		
 			}
-			Sub::Sub(const x86::immediate::Immediate8 &source, const x86::operand::RegMem8 &destination)
+			Subtract::Subtract(const x86::immediate::Immediate8 &source, const x86::operand::RegMem8 &destination)
 				: AbstractInstruction(x86::mnemonic::integer::size32::arithmetic::Sub_8__16__32(), source, destination) 
 			{
 		
 			}
-			Sub::Sub(const x86::immediate::Immediate8 &source, const x86::operand::RegMem16 &destination)
+			Subtract::Subtract(const x86::immediate::Immediate8 &source, const x86::operand::RegMem16 &destination)
 				: AbstractInstruction(x86::mnemonic::integer::size32::arithmetic::Sub_8__16__32(), source, destination) 
 			{
 		
 			}
-			Sub::Sub(const x86::immediate::Immediate8 &source, const x86::operand::RegMem32 &destination)
+			Subtract::Subtract(const x86::immediate::Immediate8 &source, const x86::operand::RegMem32 &destination)
 				: AbstractInstruction(x86::mnemonic::integer::size32::arithmetic::Sub_8__16__32(), source, destination) 
 			{
 		
 			}
-			Sub::Sub(const x86::immediate::Immediate16 &source, const x86::operand::RegMem16 &destination)
+			Subtract::Subtract(const x86::immediate::Immediate16 &source, const x86::operand::RegMem16 &destination)
 				: AbstractInstruction(x86::mnemonic::integer::size32::arithmetic::Sub_8__16__32(), source, destination) 
 			{
 		
 			}
-			Sub::Sub(const x86::immediate::Immediate32 &source, const x86::operand::RegMem32 &destination)
+			Subtract::Subtract(const x86::immediate::Immediate32 &source, const x86::operand::RegMem32 &destination)
 				: AbstractInstruction(x86::mnemonic::integer::size32::arithmetic::Sub_8__16__32(), source, destination) 
 			{
 		
 			}
 	
-			SubCarray::SubCarray(const x86::immediate::Immediate8 &source, const x86::operand::RegMem8 &destination)
+			SubtractCarray::SubtractCarray(const x86::immediate::Immediate8 &source, const x86::operand::RegMem8 &destination)
 				: AbstractInstruction(x86::mnemonic::integer::size32::arithmetic::Sub_8__16__32_CF(), source, destination) 
 			{
 		
 			}
-			SubCarray::SubCarray(const x86::immediate::Immediate8 &source, const x86::operand::RegMem16 &destination)
+			SubtractCarray::SubtractCarray(const x86::immediate::Immediate8 &source, const x86::operand::RegMem16 &destination)
 				: AbstractInstruction(x86::mnemonic::integer::size32::arithmetic::Sub_8__16__32_CF(), source, destination) 
 			{
 		
 			}
-			SubCarray::SubCarray(const x86::immediate::Immediate8 &source, const x86::operand::RegMem32 &destination)
+			SubtractCarray::SubtractCarray(const x86::immediate::Immediate8 &source, const x86::operand::RegMem32 &destination)
 				: AbstractInstruction(x86::mnemonic::integer::size32::arithmetic::Sub_8__16__32_CF(), source, destination) 
 			{
 		
 			}
-			SubCarray::SubCarray(const x86::immediate::Immediate16 &source, const x86::operand::RegMem16 &destination)
+			SubtractCarray::SubtractCarray(const x86::immediate::Immediate16 &source, const x86::operand::RegMem16 &destination)
 				: AbstractInstruction(x86::mnemonic::integer::size32::arithmetic::Sub_8__16__32_CF(), source, destination) 
 			{
 		
 			}
-			SubCarray::SubCarray(const x86::immediate::Immediate32 &source, const x86::operand::RegMem32 &destination)
+			SubtractCarray::SubtractCarray(const x86::immediate::Immediate32 &source, const x86::operand::RegMem32 &destination)
 				: AbstractInstruction(x86::mnemonic::integer::size32::arithmetic::Sub_8__16__32_CF(), source, destination) 
 			{
 		
@@ -799,12 +799,12 @@ namespace x86
 			{
 		
 			}
-			SubConvertASCIIFormat::SubConvertASCIIFormat()
+			SubtractConvertASCIIFormat::SubtractConvertASCIIFormat()
 				: AbstractInstruction(x86::mnemonic::integer::size32::arithmetic::Convert_ASCII_Format_Sub_AL_AF_CF()) 
 			{
 		
 			}
-			SubConvertDecimalFormat::SubConvertDecimalFormat() 
+			SubtractConvertDecimalFormat::SubtractConvertDecimalFormat() 
 				: AbstractInstruction(x86::mnemonic::integer::size32::arithmetic::Convert_Decimal_Format_Sub_AL_CF_AF())
 			{
 
@@ -1917,73 +1917,88 @@ namespace x86
 			{
 				
 			}
-			Sub::Sub(const x86::memory::Memory32 &source)
+			Subtract::Subtract(const x86::memory::Memory32 &source)
 				: AbstractInstruction(x86::mnemonic::FPU::arithmetic::Sub_ST__Value_32__64_C1(), source)
 			{
 				
 			}
-			Sub::Sub(const x86::memory::Memory64 &source)
+			Subtract::Subtract(const x86::memory::Memory64 &source)
 				: AbstractInstruction(x86::mnemonic::FPU::arithmetic::Sub_ST__Value_32__64_C1(), source)
 			{
 				
 			}
-			Sub::Sub(const x86::reg::FPU::Data &source, const x86::reg::FPU::Data &destination)
+			Subtract::Subtract(const x86::reg::FPU::Data &source, const x86::reg::FPU::Data &destination)
 				: AbstractInstruction(x86::mnemonic::FPU::arithmetic::Sub_ST__Value_32__64_C1(), source, destination)
 			{
 				
 			}
-			SubPopStack::SubPopStack()
+			SubtractPopStack::SubtractPopStack()
 				: AbstractInstruction(x86::mnemonic::FPU::arithmetic::Sub_Pop_Stack_ST_C1())
 			{
 				
 			}
-			SubPopStack::SubPopStack(const x86::reg::FPU::Data &source, const x86::reg::FPU::Data &destination)
+			SubtractPopStack::SubtractPopStack(const x86::reg::FPU::Data &source, const x86::reg::FPU::Data &destination)
 				: AbstractInstruction(x86::mnemonic::FPU::arithmetic::Sub_Pop_Stack_ST_C1(), source, destination)
 			{
 				
 			}
-			SubInteger::SubInteger(const x86::memory::Memory32 &source)
+			SubtractInteger::SubtractInteger(const x86::memory::Memory32 &source)
 				: AbstractInstruction(x86::mnemonic::FPU::arithmetic::Sub_Integer_16__32_C1(), source)
 			{
 				
 			}
-			SubInteger::SubInteger(const x86::memory::Memory64 &source)
+			SubtractInteger::SubtractInteger(const x86::memory::Memory64 &source)
 				: AbstractInstruction(x86::mnemonic::FPU::arithmetic::Sub_Integer_16__32_C1(), source)
 			{
 				
 			}
-			SwapSub::SwapSub(const x86::memory::Memory32 &source)
+			SwapSubtract::SwapSubtract(const x86::memory::Memory32 &source)
 				: AbstractInstruction(x86::mnemonic::FPU::arithmetic::Swap_Sub_ST__Value_32__64_C1(), source)
 			{
 				
 			}
-			SwapSub::SwapSub(const x86::memory::Memory64 &source)
+			SwapSubtract::SwapSubtract(const x86::memory::Memory64 &source)
 				: AbstractInstruction(x86::mnemonic::FPU::arithmetic::Swap_Sub_ST__Value_32__64_C1(), source)
 			{
 				
 			}
-			SwapSub::SwapSub(const x86::reg::FPU::Data &source, const x86::reg::FPU::Data &destination)
+			SwapSubtract::SwapSubtract(const x86::reg::FPU::Data &source, const x86::reg::FPU::Data &destination)
 				: AbstractInstruction(x86::mnemonic::FPU::arithmetic::Swap_Sub_ST__Value_32__64_C1(), source, destination)
 			{
 				
 			}
-			SwapSubPopStack::SwapSubPopStack()
+			SwapSubtractPopStack::SwapSubtractPopStack()
 				: AbstractInstruction(x86::mnemonic::FPU::arithmetic::Swap_Sub_Pop_Stack_ST_C1())
 			{
 				
 			}
-			SwapSubPopStack::SwapSubPopStack(const x86::reg::FPU::Data &source, const x86::reg::FPU::Data &destination)
+			SwapSubtractPopStack::SwapSubtractPopStack(const x86::reg::FPU::Data &source, const x86::reg::FPU::Data &destination)
 				: AbstractInstruction(x86::mnemonic::FPU::arithmetic::Swap_Sub_Pop_Stack_ST_C1(), source, destination)
 			{
 				
 			}
-			SwapSubInteger::SwapSubInteger(const x86::memory::Memory32 &source)
+			SwapSubtractInteger::SwapSubtractInteger(const x86::memory::Memory32 &source)
 				: AbstractInstruction(x86::mnemonic::FPU::arithmetic::Swap_Sub_Integer_16__32_C1(), source)
 			{
 				
 			}
-			SwapSubInteger::SwapSubInteger(const x86::memory::Memory64 &source)
+			SwapSubtractInteger::SwapSubtractInteger(const x86::memory::Memory64 &source)
 				: AbstractInstruction(x86::mnemonic::FPU::arithmetic::Swap_Sub_Integer_16__32_C1(), source)
+			{
+				
+			}
+			Multiply::Multiply(const x86::memory::Memory32 &source)
+				: AbstractInstruction(x86::mnemonic::FPU::arithmetic::Mul_ST__Value_32__64_C1(), source)
+			{
+				
+			}
+			Multiply::Multiply(const x86::memory::Memory64 &source)
+				: AbstractInstruction(x86::mnemonic::FPU::arithmetic::Mul_ST__Value_32__64_C1(), source)
+			{
+				
+			}
+			Multiply::Multiply(const x86::reg::FPU::Data &source, const x86::reg::FPU::Data &destination)
+				: AbstractInstruction(x86::mnemonic::FPU::arithmetic::Mul_ST__Value_32__64_C1(), source, destination)
 			{
 				
 			}

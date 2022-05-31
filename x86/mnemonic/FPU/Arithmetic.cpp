@@ -34,7 +34,7 @@ namespace x86
 				const char *Swap_Sub_Integer_16__32_C1() {
 					return "FISUBR";
 				}
-				const char *Mul_ST__Value_32_C1() {
+				const char *Mul_ST__Value_32__64_C1() {
 					return "FMUL";
 				}
 				const char *Mul_Pop_Stack_ST_C1() {

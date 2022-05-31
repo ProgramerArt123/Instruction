@@ -352,22 +352,22 @@ namespace x86
 				explicit AddConvertDecimalFormat();
 			};
 
-			class Sub : public AbstractInstruction {
+			class Subtract : public AbstractInstruction {
 			public:
-				explicit Sub(const x86::immediate::Immediate8 &source, const x86::operand::RegMem8 &destination);
-				explicit Sub(const x86::immediate::Immediate8 &source, const x86::operand::RegMem16 &destination);
-				explicit Sub(const x86::immediate::Immediate8 &source, const x86::operand::RegMem32 &destination);
-				explicit Sub(const x86::immediate::Immediate16 &source, const x86::operand::RegMem16 &destination);
-				explicit Sub(const x86::immediate::Immediate32 &source, const x86::operand::RegMem32 &destination);
+				explicit Subtract(const x86::immediate::Immediate8 &source, const x86::operand::RegMem8 &destination);
+				explicit Subtract(const x86::immediate::Immediate8 &source, const x86::operand::RegMem16 &destination);
+				explicit Subtract(const x86::immediate::Immediate8 &source, const x86::operand::RegMem32 &destination);
+				explicit Subtract(const x86::immediate::Immediate16 &source, const x86::operand::RegMem16 &destination);
+				explicit Subtract(const x86::immediate::Immediate32 &source, const x86::operand::RegMem32 &destination);
 			};
 	
-			class SubCarray : public AbstractInstruction {
+			class SubtractCarray : public AbstractInstruction {
 			public:
-				explicit SubCarray(const x86::immediate::Immediate8 &source, const x86::operand::RegMem8 &destination);
-				explicit SubCarray(const x86::immediate::Immediate8 &source, const x86::operand::RegMem16 &destination);
-				explicit SubCarray(const x86::immediate::Immediate8 &source, const x86::operand::RegMem32 &destination);
-				explicit SubCarray(const x86::immediate::Immediate16 &source, const x86::operand::RegMem16 &destination);
-				explicit SubCarray(const x86::immediate::Immediate32 &source, const x86::operand::RegMem32 &destination);
+				explicit SubtractCarray(const x86::immediate::Immediate8 &source, const x86::operand::RegMem8 &destination);
+				explicit SubtractCarray(const x86::immediate::Immediate8 &source, const x86::operand::RegMem16 &destination);
+				explicit SubtractCarray(const x86::immediate::Immediate8 &source, const x86::operand::RegMem32 &destination);
+				explicit SubtractCarray(const x86::immediate::Immediate16 &source, const x86::operand::RegMem16 &destination);
+				explicit SubtractCarray(const x86::immediate::Immediate32 &source, const x86::operand::RegMem32 &destination);
 			};
 			class Decrease : public AbstractInstruction {
 			public:
@@ -389,14 +389,14 @@ namespace x86
 				explicit Compare(const x86::immediate::Immediate16 &source, const x86::operand::RegMem16 &destination);
 				explicit Compare(const x86::immediate::Immediate32 &source, const x86::operand::RegMem32 &destination);
 			};
-			class SubConvertASCIIFormat : public AbstractInstruction {
+			class SubtractConvertASCIIFormat : public AbstractInstruction {
 			public:
-				explicit SubConvertASCIIFormat();
+				explicit SubtractConvertASCIIFormat();
 			};
 
-			class SubConvertDecimalFormat : public AbstractInstruction {
+			class SubtractConvertDecimalFormat : public AbstractInstruction {
 			public:
-				explicit SubConvertDecimalFormat();
+				explicit SubtractConvertDecimalFormat();
 			};
 	
 			class UnsignedMultiply : public AbstractInstruction {
@@ -1082,38 +1082,45 @@ namespace x86
 				explicit AddInteger(const x86::memory::Memory64 &source);
 			};
 			
-			class Sub : public AbstractInstruction {
+			class Subtract : public AbstractInstruction {
 			public:
-				explicit Sub(const x86::memory::Memory32 &source);
-				explicit Sub(const x86::memory::Memory64 &source);
-				explicit Sub(const x86::reg::FPU::Data &source, const x86::reg::FPU::Data &destination);
+				explicit Subtract(const x86::memory::Memory32 &source);
+				explicit Subtract(const x86::memory::Memory64 &source);
+				explicit Subtract(const x86::reg::FPU::Data &source, const x86::reg::FPU::Data &destination);
 			};
-			class SubPopStack : public AbstractInstruction {
+			class SubtractPopStack : public AbstractInstruction {
 			public:
-				explicit SubPopStack();
-				explicit SubPopStack(const x86::reg::FPU::Data &source, const x86::reg::FPU::Data &destination);
+				explicit SubtractPopStack();
+				explicit SubtractPopStack(const x86::reg::FPU::Data &source, const x86::reg::FPU::Data &destination);
 			};
-			class SubInteger : public AbstractInstruction {
+			class SubtractInteger : public AbstractInstruction {
 			public:
-				explicit SubInteger(const x86::memory::Memory32 &source);
-				explicit SubInteger(const x86::memory::Memory64 &source);
+				explicit SubtractInteger(const x86::memory::Memory32 &source);
+				explicit SubtractInteger(const x86::memory::Memory64 &source);
 			};
-			class SwapSub : public AbstractInstruction {
+			class SwapSubtract : public AbstractInstruction {
 			public:
-				explicit SwapSub(const x86::memory::Memory32 &source);
-				explicit SwapSub(const x86::memory::Memory64 &source);
-				explicit SwapSub(const x86::reg::FPU::Data &source, const x86::reg::FPU::Data &destination);
+				explicit SwapSubtract(const x86::memory::Memory32 &source);
+				explicit SwapSubtract(const x86::memory::Memory64 &source);
+				explicit SwapSubtract(const x86::reg::FPU::Data &source, const x86::reg::FPU::Data &destination);
 			};
 			
-			class SwapSubPopStack : public AbstractInstruction {
+			class SwapSubtractPopStack : public AbstractInstruction {
 			public:
-				explicit SwapSubPopStack();
-				explicit SwapSubPopStack(const x86::reg::FPU::Data &source, const x86::reg::FPU::Data &destination);
+				explicit SwapSubtractPopStack();
+				explicit SwapSubtractPopStack(const x86::reg::FPU::Data &source, const x86::reg::FPU::Data &destination);
 			};
-			class SwapSubInteger : public AbstractInstruction {
+			class SwapSubtractInteger : public AbstractInstruction {
 			public:
-				explicit SwapSubInteger(const x86::memory::Memory32 &source);
-				explicit SwapSubInteger(const x86::memory::Memory64 &source);
+				explicit SwapSubtractInteger(const x86::memory::Memory32 &source);
+				explicit SwapSubtractInteger(const x86::memory::Memory64 &source);
+			};
+			
+			class Multiply : public AbstractInstruction {
+			public:
+				explicit Multiply(const x86::memory::Memory32 &source);
+				explicit Multiply(const x86::memory::Memory64 &source);
+				explicit Multiply(const x86::reg::FPU::Data &source, const x86::reg::FPU::Data &destination);
 			};
 		}
 
