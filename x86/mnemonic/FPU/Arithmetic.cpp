@@ -28,7 +28,7 @@ namespace x86
 				const char *Swap_Sub_ST__Value_32__64_C1() {
 					return "FSUBR";
 				}
-				const char *Swap_Sub_Pop_Stack_ST__Value_32_C1() {
+				const char *Swap_Sub_Pop_Stack_ST_C1() {
 					return "FSUBRP";
 				}
 				const char *Swap_Sub_Integer_16__32_C1() {

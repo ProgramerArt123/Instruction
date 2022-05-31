@@ -1596,6 +1596,11 @@ int main(int argc, char *argv[])
 		out << x86::instruction::FPU::SwapSub(ST0, ST1) << std::endl;
 	}
 	
+	{
+		out << x86::instruction::FPU::SwapSubPopStack() << std::endl;
+		out << x86::instruction::FPU::SwapSubPopStack(ST0, ST1) << std::endl;
+	}
+	
 	const std::string &str = out.str();
 	{
 		std::ofstream code("test.s");

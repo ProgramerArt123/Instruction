@@ -1967,6 +1967,16 @@ namespace x86
 			{
 				
 			}
+			SwapSubPopStack::SwapSubPopStack()
+				: AbstractInstruction(x86::mnemonic::FPU::arithmetic::Swap_Sub_Pop_Stack_ST_C1())
+			{
+				
+			}
+			SwapSubPopStack::SwapSubPopStack(const x86::reg::FPU::Data &source, const x86::reg::FPU::Data &destination)
+				: AbstractInstruction(x86::mnemonic::FPU::arithmetic::Swap_Sub_Pop_Stack_ST_C1(), source, destination)
+			{
+				
+			}
 		}
 	}
 }
