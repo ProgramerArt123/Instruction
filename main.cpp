@@ -1590,6 +1590,12 @@ int main(int argc, char *argv[])
 		out << x86::instruction::FPU::SubInteger(x86::memory::Memory64(EAX)) << std::endl;
 	}
 	
+	{
+		out << x86::instruction::FPU::SwapSub(x86::memory::Memory32(EAX)) << std::endl;
+		out << x86::instruction::FPU::SwapSub(x86::memory::Memory64(EAX)) << std::endl;
+		out << x86::instruction::FPU::SwapSub(ST0, ST1) << std::endl;
+	}
+	
 	const std::string &str = out.str();
 	{
 		std::ofstream code("test.s");

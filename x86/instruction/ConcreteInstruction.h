@@ -1098,6 +1098,12 @@ namespace x86
 				explicit SubInteger(const x86::memory::Memory32 &source);
 				explicit SubInteger(const x86::memory::Memory64 &source);
 			};
+			class SwapSub : public AbstractInstruction {
+			public:
+				explicit SwapSub(const x86::memory::Memory32 &source);
+				explicit SwapSub(const x86::memory::Memory64 &source);
+				explicit SwapSub(const x86::reg::FPU::Data &source, const x86::reg::FPU::Data &destination);
+			};
 		}
 
 	}
