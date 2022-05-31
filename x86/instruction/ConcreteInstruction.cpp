@@ -1977,6 +1977,16 @@ namespace x86
 			{
 				
 			}
+			SwapSubInteger::SwapSubInteger(const x86::memory::Memory32 &source)
+				: AbstractInstruction(x86::mnemonic::FPU::arithmetic::Swap_Sub_Integer_16__32_C1(), source)
+			{
+				
+			}
+			SwapSubInteger::SwapSubInteger(const x86::memory::Memory64 &source)
+				: AbstractInstruction(x86::mnemonic::FPU::arithmetic::Swap_Sub_Integer_16__32_C1(), source)
+			{
+				
+			}
 		}
 	}
 }

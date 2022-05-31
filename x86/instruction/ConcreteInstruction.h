@@ -1110,6 +1110,11 @@ namespace x86
 				explicit SwapSubPopStack();
 				explicit SwapSubPopStack(const x86::reg::FPU::Data &source, const x86::reg::FPU::Data &destination);
 			};
+			class SwapSubInteger : public AbstractInstruction {
+			public:
+				explicit SwapSubInteger(const x86::memory::Memory32 &source);
+				explicit SwapSubInteger(const x86::memory::Memory64 &source);
+			};
 		}
 
 	}
