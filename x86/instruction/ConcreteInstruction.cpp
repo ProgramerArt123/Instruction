@@ -2012,6 +2012,16 @@ namespace x86
 			{
 				
 			}
+			MultiplyInteger::MultiplyInteger(const x86::memory::Memory16 &source)
+				: AbstractInstruction(x86::mnemonic::FPU::arithmetic::Mul_Integer_16__32_C1(), source)
+			{
+				
+			}
+			MultiplyInteger::MultiplyInteger(const x86::memory::Memory32 &source)
+				: AbstractInstruction(x86::mnemonic::FPU::arithmetic::Mul_Integer_16__32_C1(), source)
+			{
+				
+			}
 		}
 	}
 }
