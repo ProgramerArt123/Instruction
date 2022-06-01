@@ -2002,6 +2002,16 @@ namespace x86
 			{
 				
 			}
+			MultiplyPopStack::MultiplyPopStack()
+				: AbstractInstruction(x86::mnemonic::FPU::arithmetic::Mul_Pop_Stack_ST_C1())
+			{
+				
+			}
+			MultiplyPopStack::MultiplyPopStack(const x86::reg::FPU::Data &source, const x86::reg::FPU::Data &destination)
+				: AbstractInstruction(x86::mnemonic::FPU::arithmetic::Mul_Pop_Stack_ST_C1(), source, destination)
+			{
+				
+			}
 		}
 	}
 }

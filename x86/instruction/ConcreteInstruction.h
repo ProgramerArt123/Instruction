@@ -1122,6 +1122,11 @@ namespace x86
 				explicit Multiply(const x86::memory::Memory64 &source);
 				explicit Multiply(const x86::reg::FPU::Data &source, const x86::reg::FPU::Data &destination);
 			};
+			class MultiplyPopStack : public AbstractInstruction {
+			public:
+				explicit MultiplyPopStack();
+				explicit MultiplyPopStack(const x86::reg::FPU::Data &source, const x86::reg::FPU::Data &destination);
+			};
 		}
 
 	}
