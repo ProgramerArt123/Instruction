@@ -2097,6 +2097,11 @@ namespace x86
 			{
 				
 			}
+			AbsoluteValue::AbsoluteValue()
+				: AbstractInstruction(x86::mnemonic::FPU::arithmetic::Absolute_Value_C1())
+			{
+				
+			}
 		}
 	}
 }

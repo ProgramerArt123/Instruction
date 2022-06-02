@@ -1658,6 +1658,10 @@ int main(int argc, char *argv[])
 		out << x86::instruction::FPU::ChangeSign() << std::endl;
 	}
 	
+	{
+		out << x86::instruction::FPU::AbsoluteValue() << std::endl;
+	}
+	
 	const std::string &str = out.str();
 	{
 		std::ofstream code("test.s");

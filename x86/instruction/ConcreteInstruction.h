@@ -1168,6 +1168,11 @@ namespace x86
 			public:
 				explicit ChangeSign();
 			};
+			
+			class AbsoluteValue : public AbstractInstruction {
+			public:
+				explicit AbsoluteValue();
+			};
 		}
 
 	}
