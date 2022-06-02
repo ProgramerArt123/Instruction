@@ -1173,6 +1173,11 @@ namespace x86
 			public:
 				explicit AbsoluteValue();
 			};
+			
+			class SquareRoot : public AbstractInstruction {
+			public:
+				explicit SquareRoot();
+			};
 		}
 
 	}

@@ -2102,6 +2102,11 @@ namespace x86
 			{
 				
 			}
+			SquareRoot::SquareRoot()
+				: AbstractInstruction(x86::mnemonic::FPU::arithmetic::Square_Root_C1())
+			{
+				
+			}
 		}
 	}
 }
