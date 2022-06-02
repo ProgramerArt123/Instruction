@@ -43,7 +43,7 @@ namespace x86
 				const char *Mul_Integer_16__32_C1() {
 					return "FIMUL";
 				}
-				const char *Div_ST__Value_32_C1() {
+				const char *Div_ST__Value_32__64_C1() {
 					return "FDIV";
 				}
 				const char *Div_Pop_Stack_ST_C1() {

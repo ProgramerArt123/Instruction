@@ -1132,6 +1132,12 @@ namespace x86
 				explicit MultiplyInteger(const x86::memory::Memory16 &source);
 				explicit MultiplyInteger(const x86::memory::Memory32 &source);
 			};
+			class Divide : public AbstractInstruction {
+			public:
+				explicit Divide(const x86::memory::Memory32 &source);
+				explicit Divide(const x86::memory::Memory64 &source);
+				explicit Divide(const x86::reg::FPU::Data &source, const x86::reg::FPU::Data &destination);
+			};
 		}
 
 	}

@@ -1622,6 +1622,12 @@ int main(int argc, char *argv[])
 		out << x86::instruction::FPU::MultiplyInteger(x86::memory::Memory32(EAX)) << std::endl;
 	}
 	
+	{
+		out << x86::instruction::FPU::Divide(x86::memory::Memory32(EAX)) << std::endl;
+		out << x86::instruction::FPU::Divide(x86::memory::Memory64(EAX)) << std::endl;
+		out << x86::instruction::FPU::Divide(ST0, ST1) << std::endl;
+	}
+	
 	const std::string &str = out.str();
 	{
 		std::ofstream code("test.s");
