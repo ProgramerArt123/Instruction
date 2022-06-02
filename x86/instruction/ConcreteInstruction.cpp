@@ -2082,6 +2082,16 @@ namespace x86
 			{
 				
 			}
+			SwapDivideInteger::SwapDivideInteger(const x86::memory::Memory16 &source)
+				: AbstractInstruction(x86::mnemonic::FPU::arithmetic::Swap_Div_Integer_16__32_C1(), source)
+			{
+				
+			}
+			SwapDivideInteger::SwapDivideInteger(const x86::memory::Memory32 &source)
+				: AbstractInstruction(x86::mnemonic::FPU::arithmetic::Swap_Div_Integer_16__32_C1(), source)
+			{
+				
+			}
 		}
 	}
 }

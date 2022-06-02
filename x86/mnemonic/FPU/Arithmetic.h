@@ -22,7 +22,7 @@ namespace x86
 				const char *Div_Integer_16__32_C1();
 				const char *Swap_Div_ST__Value_32__64_C1();
 				const char *Swap_Div_Pop_Stack_ST_C1();
-				const char *Div_Sub_Integer_16__32_C1();
+				const char *Swap_Div_Integer_16__32_C1();
 				const char *Change_Sign_C1();
 				const char *Absolute_Value_C1();
 				const char *Square_Root_C1();

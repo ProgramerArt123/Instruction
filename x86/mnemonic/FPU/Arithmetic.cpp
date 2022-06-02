@@ -59,7 +59,7 @@ namespace x86
 				const char *Swap_Div_Pop_Stack_ST_C1() {
 					return "FDIVRP";
 				}
-				const char *Div_Sub_Integer_16__32_C1() {
+				const char *Swap_Div_Integer_16__32_C1() {
 					return "FIDIVR";
 				}
 				const char *Change_Sign_C1() {

@@ -1159,6 +1159,11 @@ namespace x86
 				explicit SwapDividePopStack();
 				explicit SwapDividePopStack(const x86::reg::FPU::Data &source, const x86::reg::FPU::Data &destination);
 			};
+			class SwapDivideInteger : public AbstractInstruction {
+			public:
+				explicit SwapDivideInteger(const x86::memory::Memory16 &source);
+				explicit SwapDivideInteger(const x86::memory::Memory32 &source);
+			};
 		}
 
 	}
