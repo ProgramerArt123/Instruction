@@ -1187,6 +1187,14 @@ namespace x86
 			public:
 				explicit RoundToInteger();
 			};
+			
+			class Compare : public AbstractInstruction {
+			public:
+				explicit Compare();
+				explicit Compare(const x86::memory::Memory32 &source);
+				explicit Compare(const x86::memory::Memory64 &source);
+				explicit Compare(const x86::reg::FPU::Data &source);
+			};
 		}
 
 	}

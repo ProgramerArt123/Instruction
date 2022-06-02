@@ -7,6 +7,7 @@
 #include "x86/mnemonic/string/Operation.h"
 #include "x86/mnemonic/FPU/DataTransmitted.h"
 #include "x86/mnemonic/FPU/Arithmetic.h"
+#include "x86/mnemonic/FPU/Compare.h"
 #include "Instruction.h"
 #include "ConcreteInstruction.h"
 namespace x86
@@ -2114,6 +2115,26 @@ namespace x86
 			}
 			RoundToInteger::RoundToInteger()
 				: AbstractInstruction(x86::mnemonic::FPU::arithmetic::Round_To_Integer_C1())
+			{
+				
+			}
+			Compare::Compare()
+				: AbstractInstruction(x86::mnemonic::FPU::arithmetic::Round_To_Integer_C1())
+			{
+				
+			}
+			Compare::Compare(const x86::memory::Memory32 &source)
+				: AbstractInstruction(x86::mnemonic::FPU::compare::Compare_ST__Value_32_C1_C0_C2_C3(), source)
+			{
+				
+			}
+			Compare::Compare(const x86::memory::Memory64 &source)
+				: AbstractInstruction(x86::mnemonic::FPU::compare::Compare_ST__Value_32_C1_C0_C2_C3(), source)
+			{
+				
+			}
+			Compare::Compare(const x86::reg::FPU::Data &source)
+				: AbstractInstruction(x86::mnemonic::FPU::compare::Compare_ST__Value_32_C1_C0_C2_C3(), source)
 			{
 				
 			}
