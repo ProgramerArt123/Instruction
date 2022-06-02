@@ -1644,6 +1644,11 @@ int main(int argc, char *argv[])
 		out << x86::instruction::FPU::SwapDivide(ST0, ST1) << std::endl;
 	}
 	
+	{
+		out << x86::instruction::FPU::SwapDividePopStack() << std::endl;
+		out << x86::instruction::FPU::SwapDividePopStack(ST0, ST1) << std::endl;
+	}
+	
 	const std::string &str = out.str();
 	{
 		std::ofstream code("test.s");
