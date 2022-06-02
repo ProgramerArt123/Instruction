@@ -1143,6 +1143,11 @@ namespace x86
 				explicit DividePopStack();
 				explicit DividePopStack(const x86::reg::FPU::Data &source, const x86::reg::FPU::Data &destination);
 			};
+			class DivideInteger : public AbstractInstruction {
+			public:
+				explicit DivideInteger(const x86::memory::Memory16 &source);
+				explicit DivideInteger(const x86::memory::Memory32 &source);
+			};
 		}
 
 	}

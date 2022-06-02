@@ -2047,6 +2047,16 @@ namespace x86
 			{
 				
 			}
+			DivideInteger::DivideInteger(const x86::memory::Memory16 &source)
+				: AbstractInstruction(x86::mnemonic::FPU::arithmetic::Div_Integer_16__32_C1(), source)
+			{
+				
+			}
+			DivideInteger::DivideInteger(const x86::memory::Memory32 &source)
+				: AbstractInstruction(x86::mnemonic::FPU::arithmetic::Div_Integer_16__32_C1(), source)
+			{
+				
+			}
 		}
 	}
 }
