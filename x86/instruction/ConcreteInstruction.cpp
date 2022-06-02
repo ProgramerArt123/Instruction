@@ -2092,6 +2092,11 @@ namespace x86
 			{
 				
 			}
+			ChangeSign::ChangeSign()
+				: AbstractInstruction(x86::mnemonic::FPU::arithmetic::Change_Sign_C1())
+			{
+				
+			}
 		}
 	}
 }

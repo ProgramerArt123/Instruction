@@ -1654,6 +1654,10 @@ int main(int argc, char *argv[])
 		out << x86::instruction::FPU::SwapDivideInteger(x86::memory::Memory32(EAX)) << std::endl;
 	}
 	
+	{
+		out << x86::instruction::FPU::ChangeSign() << std::endl;
+	}
+	
 	const std::string &str = out.str();
 	{
 		std::ofstream code("test.s");

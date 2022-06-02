@@ -1164,6 +1164,10 @@ namespace x86
 				explicit SwapDivideInteger(const x86::memory::Memory16 &source);
 				explicit SwapDivideInteger(const x86::memory::Memory32 &source);
 			};
+			class ChangeSign : public AbstractInstruction {
+			public:
+				explicit ChangeSign();
+			};
 		}
 
 	}
