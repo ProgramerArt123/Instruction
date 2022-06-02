@@ -52,7 +52,7 @@ namespace x86
 				const char *Div_Integer_16__32_C1() {
 					return "FIDIV";
 				}
-				const char *Swap_Div_ST__Value_32_C1() {
+				const char *Swap_Div_ST__Value_32__64_C1() {
 					return "FDIVR";
 				}
 

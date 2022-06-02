@@ -1148,6 +1148,12 @@ namespace x86
 				explicit DivideInteger(const x86::memory::Memory16 &source);
 				explicit DivideInteger(const x86::memory::Memory32 &source);
 			};
+			class SwapDivide : public AbstractInstruction {
+			public:
+				explicit SwapDivide(const x86::memory::Memory32 &source);
+				explicit SwapDivide(const x86::memory::Memory64 &source);
+				explicit SwapDivide(const x86::reg::FPU::Data &source, const x86::reg::FPU::Data &destination);
+			};
 		}
 
 	}

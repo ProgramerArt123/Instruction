@@ -2057,6 +2057,21 @@ namespace x86
 			{
 				
 			}
+			SwapDivide::SwapDivide(const x86::memory::Memory32 &source)
+				: AbstractInstruction(x86::mnemonic::FPU::arithmetic::Swap_Div_ST__Value_32__64_C1(), source)
+			{
+				
+			}
+			SwapDivide::SwapDivide(const x86::memory::Memory64 &source)
+				: AbstractInstruction(x86::mnemonic::FPU::arithmetic::Swap_Div_ST__Value_32__64_C1(), source)
+			{
+				
+			}
+			SwapDivide::SwapDivide(const x86::reg::FPU::Data &source, const x86::reg::FPU::Data &destination)
+				: AbstractInstruction(x86::mnemonic::FPU::arithmetic::Swap_Div_ST__Value_32__64_C1(), source, destination)
+			{
+				
+			}
 		}
 	}
 }
