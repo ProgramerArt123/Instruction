@@ -1681,6 +1681,10 @@ int main(int argc, char *argv[])
 		out << x86::instruction::FPU::Compare(x86::memory::Memory64(EAX)) << std::endl;
 	}
 	
+	{
+		out << x86::instruction::FPU::CompareEFlags(ST0) << std::endl;
+	}
+	
 	const std::string &str = out.str();
 	{
 		std::ofstream code("test.s");

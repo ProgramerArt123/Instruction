@@ -5,8 +5,8 @@ namespace x86
 	namespace mnemonic {
 		namespace FPU {
 			namespace compare {
-				const char *Compare_ST__Value_32_C1_C0_C2_C3();
-				const char *Compare_ST_Value_C1();
+				const char *Compare_ST__Value_32__64_C1_C0_C2_C3();
+				const char *Compare_ST_Flags_C1();
 				const char *Compare_Pop_Stack_ST_Value_C1();
 				const char *Compare_Integer_16__32_C1_C0_C2_C3();
 				const char *Compare_Pop_Stack_Integer_16__32_C1_C0_C2_C3();

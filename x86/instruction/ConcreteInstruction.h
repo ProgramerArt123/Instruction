@@ -1195,6 +1195,11 @@ namespace x86
 				explicit Compare(const x86::memory::Memory64 &source);
 				explicit Compare(const x86::reg::FPU::Data &source);
 			};
+			
+			class CompareEFlags : public AbstractInstruction {
+			public:
+				explicit CompareEFlags(const x86::reg::FPU::Data &source);
+			};
 		}
 
 	}

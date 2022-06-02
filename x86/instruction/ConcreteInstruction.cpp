@@ -2119,22 +2119,27 @@ namespace x86
 				
 			}
 			Compare::Compare()
-				: AbstractInstruction(x86::mnemonic::FPU::arithmetic::Round_To_Integer_C1())
+				: AbstractInstruction(x86::mnemonic::FPU::compare::Compare_ST__Value_32__64_C1_C0_C2_C3())
 			{
 				
 			}
 			Compare::Compare(const x86::memory::Memory32 &source)
-				: AbstractInstruction(x86::mnemonic::FPU::compare::Compare_ST__Value_32_C1_C0_C2_C3(), source)
+				: AbstractInstruction(x86::mnemonic::FPU::compare::Compare_ST__Value_32__64_C1_C0_C2_C3(), source)
 			{
 				
 			}
 			Compare::Compare(const x86::memory::Memory64 &source)
-				: AbstractInstruction(x86::mnemonic::FPU::compare::Compare_ST__Value_32_C1_C0_C2_C3(), source)
+				: AbstractInstruction(x86::mnemonic::FPU::compare::Compare_ST__Value_32__64_C1_C0_C2_C3(), source)
 			{
 				
 			}
 			Compare::Compare(const x86::reg::FPU::Data &source)
-				: AbstractInstruction(x86::mnemonic::FPU::compare::Compare_ST__Value_32_C1_C0_C2_C3(), source)
+				: AbstractInstruction(x86::mnemonic::FPU::compare::Compare_ST__Value_32__64_C1_C0_C2_C3(), source)
+			{
+				
+			}
+			CompareEFlags::CompareEFlags(const x86::reg::FPU::Data &source)
+				: AbstractInstruction(x86::mnemonic::FPU::compare::Compare_ST_Flags_C1(), source)
 			{
 				
 			}
