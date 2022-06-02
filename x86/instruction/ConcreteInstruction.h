@@ -1182,6 +1182,11 @@ namespace x86
 			public:
 				explicit Scale();
 			};
+			
+			class RoundToInteger : public AbstractInstruction {
+			public:
+				explicit RoundToInteger();
+			};
 		}
 
 	}

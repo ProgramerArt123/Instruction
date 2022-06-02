@@ -2112,6 +2112,11 @@ namespace x86
 			{
 				
 			}
+			RoundToInteger::RoundToInteger()
+				: AbstractInstruction(x86::mnemonic::FPU::arithmetic::Round_To_Integer_C1())
+			{
+				
+			}
 		}
 	}
 }

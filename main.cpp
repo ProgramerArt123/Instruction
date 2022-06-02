@@ -1670,6 +1670,10 @@ int main(int argc, char *argv[])
 		out << x86::instruction::FPU::Scale() << std::endl;
 	}
 	
+	{
+		out << x86::instruction::FPU::RoundToInteger() << std::endl;
+	}
+	
 	const std::string &str = out.str();
 	{
 		std::ofstream code("test.s");
