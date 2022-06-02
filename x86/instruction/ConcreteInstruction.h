@@ -1138,6 +1138,11 @@ namespace x86
 				explicit Divide(const x86::memory::Memory64 &source);
 				explicit Divide(const x86::reg::FPU::Data &source, const x86::reg::FPU::Data &destination);
 			};
+			class DividePopStack : public AbstractInstruction {
+			public:
+				explicit DividePopStack();
+				explicit DividePopStack(const x86::reg::FPU::Data &source, const x86::reg::FPU::Data &destination);
+			};
 		}
 
 	}

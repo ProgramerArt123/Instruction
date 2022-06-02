@@ -2037,6 +2037,16 @@ namespace x86
 			{
 				
 			}
+			DividePopStack::DividePopStack()
+				: AbstractInstruction(x86::mnemonic::FPU::arithmetic::Div_Pop_Stack_ST_C1())
+			{
+				
+			}
+			DividePopStack::DividePopStack(const x86::reg::FPU::Data &source, const x86::reg::FPU::Data &destination)
+				: AbstractInstruction(x86::mnemonic::FPU::arithmetic::Div_Pop_Stack_ST_C1(), source, destination)
+			{
+				
+			}
 		}
 	}
 }
