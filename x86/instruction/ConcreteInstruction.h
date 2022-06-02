@@ -1178,6 +1178,10 @@ namespace x86
 			public:
 				explicit SquareRoot();
 			};
+			class Scale : public AbstractInstruction {
+			public:
+				explicit Scale();
+			};
 		}
 
 	}

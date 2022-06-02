@@ -2107,6 +2107,11 @@ namespace x86
 			{
 				
 			}
+			Scale::Scale()
+				: AbstractInstruction(x86::mnemonic::FPU::arithmetic::Scale_C1())
+			{
+				
+			}
 		}
 	}
 }
