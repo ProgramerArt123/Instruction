@@ -1223,7 +1223,11 @@ namespace x86
 				explicit CompareZero();
 			};
 			
-			
+			class UnorderedCompare : public AbstractInstruction {
+			public:
+				explicit UnorderedCompare();
+				explicit UnorderedCompare(const x86::reg::FPU::Data &source);
+			};
 		}
 
 	}

@@ -1703,6 +1703,11 @@ int main(int argc, char *argv[])
 		out << x86::instruction::FPU::CompareZero() << std::endl;
 	}
 	
+	{
+		out << x86::instruction::FPU::UnorderedCompare() << std::endl;
+		out << x86::instruction::FPU::UnorderedCompare(ST0) << std::endl;
+	}
+	
 	const std::string &str = out.str();
 	{
 		std::ofstream code("test.s");

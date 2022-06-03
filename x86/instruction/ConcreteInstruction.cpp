@@ -2173,6 +2173,16 @@ namespace x86
 			{
 				
 			}
+			UnorderedCompare::UnorderedCompare()
+				: AbstractInstruction(x86::mnemonic::FPU::compare::Unordered_Compare_ST_C1_C0_C2_C3())
+			{
+				
+			}
+			UnorderedCompare::UnorderedCompare(const x86::reg::FPU::Data &source)
+				: AbstractInstruction(x86::mnemonic::FPU::compare::Unordered_Compare_ST_C1_C0_C2_C3(), source)
+			{
+				
+			}
 		}
 	}
 }
