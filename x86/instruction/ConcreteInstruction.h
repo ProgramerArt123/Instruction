@@ -1200,6 +1200,11 @@ namespace x86
 			public:
 				explicit CompareEFlags(const x86::reg::FPU::Data &source);
 			};
+			
+			class CompareEFlagsPopStack : public AbstractInstruction {
+			public:
+				explicit CompareEFlagsPopStack(const x86::reg::FPU::Data &source);
+			};
 		}
 
 	}

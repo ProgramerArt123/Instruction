@@ -2143,6 +2143,11 @@ namespace x86
 			{
 				
 			}
+			CompareEFlagsPopStack::CompareEFlagsPopStack(const x86::reg::FPU::Data &source)
+				: AbstractInstruction(x86::mnemonic::FPU::compare::Compare_ST_Flags_Pop_Stack_C1(), source)
+			{
+				
+			}
 		}
 	}
 }

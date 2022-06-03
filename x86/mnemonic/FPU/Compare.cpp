@@ -10,7 +10,7 @@ namespace x86
 				const char *Compare_ST_Flags_C1() {
 					return "FCOMI";
 				}
-				const char *Compare_Pop_Stack_ST_Value_C1() {
+				const char *Compare_ST_Flags_Pop_Stack_C1() {
 					return "FCOMIP";
 				}
 				const char *Compare_Integer_16__32_C1_C0_C2_C3() {
