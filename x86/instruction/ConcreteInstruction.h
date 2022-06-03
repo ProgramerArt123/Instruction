@@ -1212,6 +1212,12 @@ namespace x86
 				explicit CompareInteger(const x86::memory::Memory32 &source);
 			};
 			
+			class CompareIntegerPopStack : public AbstractInstruction {
+			public:
+				explicit CompareIntegerPopStack(const x86::memory::Memory16 &source);
+				explicit CompareIntegerPopStack(const x86::memory::Memory32 &source);
+			};
+			
 		}
 
 	}

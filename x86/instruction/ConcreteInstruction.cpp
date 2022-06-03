@@ -2149,12 +2149,22 @@ namespace x86
 				
 			}
 			CompareInteger::CompareInteger(const x86::memory::Memory16 &source)
-				: AbstractInstruction(x86::mnemonic::FPU::compare::Compare_Integer_16__32_C1_C0_C2_C3(), source)
+				: AbstractInstruction(x86::mnemonic::FPU::compare::Compare_Integer_Value_16__32_C1_C0_C2_C3(), source)
 			{
 				
 			}
 			CompareInteger::CompareInteger(const x86::memory::Memory32 &source)
-				: AbstractInstruction(x86::mnemonic::FPU::compare::Compare_Integer_16__32_C1_C0_C2_C3(), source)
+				: AbstractInstruction(x86::mnemonic::FPU::compare::Compare_Integer_Value_16__32_C1_C0_C2_C3(), source)
+			{
+				
+			}
+			CompareIntegerPopStack::CompareIntegerPopStack(const x86::memory::Memory16 &source)
+				: AbstractInstruction(x86::mnemonic::FPU::compare::Compare_Integer_Value_16__32_Pop_Stack_C1_C0_C2_C3(), source)
+			{
+				
+			}
+			CompareIntegerPopStack::CompareIntegerPopStack(const x86::memory::Memory32 &source)
+				: AbstractInstruction(x86::mnemonic::FPU::compare::Compare_Integer_Value_16__32_Pop_Stack_C1_C0_C2_C3(), source)
 			{
 				
 			}

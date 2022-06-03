@@ -13,10 +13,10 @@ namespace x86
 				const char *Compare_ST_Flags_Pop_Stack_C1() {
 					return "FCOMIP";
 				}
-				const char *Compare_Integer_16__32_C1_C0_C2_C3() {
+				const char *Compare_Integer_Value_16__32_C1_C0_C2_C3() {
 					return "FICOM";
 				}
-				const char *Compare_Pop_Stack_Integer_16__32_C1_C0_C2_C3() {
+				const char *Compare_Integer_Value_16__32_Pop_Stack_C1_C0_C2_C3() {
 					return "FICOMP";
 				}
 				const char *Compare_ZERO_C1_C0_C2_C3() {
