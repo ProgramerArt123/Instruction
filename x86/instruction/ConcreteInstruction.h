@@ -1205,6 +1205,13 @@ namespace x86
 			public:
 				explicit CompareEFlagsPopStack(const x86::reg::FPU::Data &source);
 			};
+			
+			class CompareInteger : public AbstractInstruction {
+			public:
+				explicit CompareInteger(const x86::memory::Memory16 &source);
+				explicit CompareInteger(const x86::memory::Memory32 &source);
+			};
+			
 		}
 
 	}
