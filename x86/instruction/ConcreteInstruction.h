@@ -1234,6 +1234,12 @@ namespace x86
 				explicit UnorderedComparePopStack();
 				explicit UnorderedComparePopStack(const x86::reg::FPU::Data &source);
 			};
+			
+			class UnorderedComparePopStack2 : public AbstractInstruction {
+			public:
+				explicit UnorderedComparePopStack2();
+				explicit UnorderedComparePopStack2(const x86::reg::FPU::Data &source);
+			};
 		}
 
 	}
