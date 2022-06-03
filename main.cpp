@@ -1708,6 +1708,11 @@ int main(int argc, char *argv[])
 		out << x86::instruction::FPU::UnorderedCompare(ST0) << std::endl;
 	}
 	
+	{
+		out << x86::instruction::FPU::UnorderedComparePopStack() << std::endl;
+		out << x86::instruction::FPU::UnorderedComparePopStack(ST0) << std::endl;
+	}
+	
 	const std::string &str = out.str();
 	{
 		std::ofstream code("test.s");

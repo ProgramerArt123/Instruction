@@ -2183,6 +2183,16 @@ namespace x86
 			{
 				
 			}
+			UnorderedComparePopStack::UnorderedComparePopStack()
+				: AbstractInstruction(x86::mnemonic::FPU::compare::Unordered_Compare_ST_Pop_Stack_C1_C0_C2_C3())
+			{
+				
+			}
+			UnorderedComparePopStack::UnorderedComparePopStack(const x86::reg::FPU::Data &source)
+				: AbstractInstruction(x86::mnemonic::FPU::compare::Unordered_Compare_ST_Pop_Stack_C1_C0_C2_C3(), source)
+			{
+				
+			}
 		}
 	}
 }

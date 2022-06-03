@@ -25,7 +25,7 @@ namespace x86
 				const char *Unordered_Compare_ST_C1_C0_C2_C3() {
 					return "FUCOM";
 				}
-				const char *Unordered_Compare_Pop_Stack_ST_C1_C0_C2_C3() {
+				const char *Unordered_Compare_ST_Pop_Stack_C1_C0_C2_C3() {
 					return "FUCOMP";
 				}
 
