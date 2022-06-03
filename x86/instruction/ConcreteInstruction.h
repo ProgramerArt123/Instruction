@@ -1218,6 +1218,12 @@ namespace x86
 				explicit CompareIntegerPopStack(const x86::memory::Memory32 &source);
 			};
 			
+			class CompareZero : public AbstractInstruction {
+			public:
+				explicit CompareZero();
+			};
+			
+			
 		}
 
 	}

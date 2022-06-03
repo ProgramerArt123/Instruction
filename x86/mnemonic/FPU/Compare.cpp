@@ -19,7 +19,7 @@ namespace x86
 				const char *Compare_Integer_Value_16__32_Pop_Stack_C1_C0_C2_C3() {
 					return "FICOMP";
 				}
-				const char *Compare_ZERO_C1_C0_C2_C3() {
+				const char *Compare_Zero_C1_C0_C2_C3() {
 					return "FTST";
 				}
 				const char *Unordered_Compare_ST_C1_C0_C2_C3() {

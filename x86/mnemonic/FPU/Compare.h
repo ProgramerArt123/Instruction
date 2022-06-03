@@ -10,7 +10,7 @@ namespace x86
 				const char *Compare_ST_Flags_Pop_Stack_C1();
 				const char *Compare_Integer_Value_16__32_C1_C0_C2_C3();
 				const char *Compare_Integer_Value_16__32_Pop_Stack_C1_C0_C2_C3();
-				const char *Compare_ZERO_C1_C0_C2_C3();
+				const char *Compare_Zero_C1_C0_C2_C3();
 				const char *Unordered_Compare_ST_C1_C0_C2_C3();
 				const char *Unordered_Compare_Pop_Stack_ST_C1_C0_C2_C3();
 				const char *Unordered_Compare_Pop_Stack_2_ST_C1_C0_C2_C3();

@@ -2168,6 +2168,11 @@ namespace x86
 			{
 				
 			}
+			CompareZero::CompareZero()
+				: AbstractInstruction(x86::mnemonic::FPU::compare::Compare_Zero_C1_C0_C2_C3())
+			{
+				
+			}
 		}
 	}
 }
