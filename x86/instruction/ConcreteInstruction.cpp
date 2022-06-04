@@ -2209,6 +2209,11 @@ namespace x86
 			{
 				
 			}
+			ClearExceptions::ClearExceptions()
+				: AbstractInstruction(x86::mnemonic::FPU::control::Clear_Exceptions_PE_UE_OE_ZE_DE_IE_ES_SF_B())
+			{
+				
+			}
 		}
 	}
 }

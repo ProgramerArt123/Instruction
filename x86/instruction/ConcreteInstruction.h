@@ -1247,6 +1247,10 @@ namespace x86
 			public:
 				explicit Init();
 			};
+			class ClearExceptions : public AbstractInstruction {
+			public:
+				explicit ClearExceptions();
+			};
 		}
 
 	}

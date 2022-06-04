@@ -1725,6 +1725,10 @@ int main(int argc, char *argv[])
 		out << x86::instruction::FPU::Init() << std::endl;
 	}
 	
+	{
+		out << x86::instruction::FPU::ClearExceptions() << std::endl;
+	}
+	
 	const std::string &str = out.str();
 	{
 		std::ofstream code("test.s");
