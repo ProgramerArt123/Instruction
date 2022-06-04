@@ -2229,6 +2229,16 @@ namespace x86
 			{
 				
 			}
+			SaveFPUStatus::SaveFPUStatus(const x86::memory::Memory16 &source)
+				: AbstractInstruction(x86::mnemonic::FPU::control::Store_FPU_Status_16(), source)
+			{
+				
+			}
+			SaveFPUStatus::SaveFPUStatus()
+				: AbstractInstruction(x86::mnemonic::FPU::control::Store_FPU_Status_16(), AX)
+			{
+				
+			}
 		}
 	}
 }

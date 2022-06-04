@@ -1738,6 +1738,11 @@ int main(int argc, char *argv[])
 		out << x86::instruction::FPU::ExchangeContents(ST0) << std::endl;
 	}
 	
+	{
+		out << x86::instruction::FPU::SaveFPUStatus(x86::memory::Memory16(EAX)) << std::endl;
+		out << x86::instruction::FPU::SaveFPUStatus() << std::endl;
+	}
+	
 	const std::string &str = out.str();
 	{
 		std::ofstream code("test.s");

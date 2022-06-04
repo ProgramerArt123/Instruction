@@ -1261,6 +1261,12 @@ namespace x86
 				explicit ExchangeContents();
 				explicit ExchangeContents(const x86::reg::FPU::Data &source);
 			};
+			
+			class SaveFPUStatus : public AbstractInstruction {
+			public:
+				explicit SaveFPUStatus(const x86::memory::Memory16 &source);
+				explicit SaveFPUStatus();
+			};
 		}
 
 	}
