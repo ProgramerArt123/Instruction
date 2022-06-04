@@ -1251,6 +1251,10 @@ namespace x86
 			public:
 				explicit ClearExceptions();
 			};
+			class NoOperation : public AbstractInstruction {
+			public:
+				explicit NoOperation();
+			};
 		}
 
 	}

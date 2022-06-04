@@ -2214,6 +2214,11 @@ namespace x86
 			{
 				
 			}
+			NoOperation::NoOperation()
+				: AbstractInstruction(x86::mnemonic::FPU::control::No_Operation())
+			{
+				
+			}
 		}
 	}
 }
