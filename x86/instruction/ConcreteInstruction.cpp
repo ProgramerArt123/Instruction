@@ -2219,6 +2219,16 @@ namespace x86
 			{
 				
 			}
+			ExchangeContents::ExchangeContents()
+				: AbstractInstruction(x86::mnemonic::FPU::control::Exchange_Register_Content_C1())
+			{
+				
+			}
+			ExchangeContents::ExchangeContents(const x86::reg::FPU::Data &source)
+				: AbstractInstruction(x86::mnemonic::FPU::control::Exchange_Register_Content_C1(), source)
+			{
+				
+			}
 		}
 	}
 }

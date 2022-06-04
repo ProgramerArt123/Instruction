@@ -1255,6 +1255,12 @@ namespace x86
 			public:
 				explicit NoOperation();
 			};
+			
+			class ExchangeContents : public AbstractInstruction {
+			public:
+				explicit ExchangeContents();
+				explicit ExchangeContents(const x86::reg::FPU::Data &source);
+			};
 		}
 
 	}
