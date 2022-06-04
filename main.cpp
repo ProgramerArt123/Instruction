@@ -1715,7 +1715,14 @@ int main(int argc, char *argv[])
 	
 	{
 		out << x86::instruction::FPU::UnorderedComparePopStack2() << std::endl;
-		out << x86::instruction::FPU::UnorderedComparePopStack2(ST0) << std::endl;
+	}
+	
+	{
+		out << x86::instruction::FPU::ExamineValue() << std::endl;
+	}
+	
+	{
+		out << x86::instruction::FPU::Init() << std::endl;
 	}
 	
 	const std::string &str = out.str();

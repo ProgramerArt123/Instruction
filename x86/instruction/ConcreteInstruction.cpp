@@ -8,6 +8,7 @@
 #include "x86/mnemonic/FPU/DataTransmitted.h"
 #include "x86/mnemonic/FPU/Arithmetic.h"
 #include "x86/mnemonic/FPU/Compare.h"
+#include "x86/mnemonic/FPU/Control.h"
 #include "Instruction.h"
 #include "ConcreteInstruction.h"
 namespace x86
@@ -2198,8 +2199,13 @@ namespace x86
 			{
 				
 			}
-			UnorderedComparePopStack2::UnorderedComparePopStack2(const x86::reg::FPU::Data &source)
-				: AbstractInstruction(x86::mnemonic::FPU::compare::Unordered_Compare_ST_Pop_Stack_2_C1_C0_C2_C3(), source)
+			ExamineValue::ExamineValue()
+				: AbstractInstruction(x86::mnemonic::FPU::compare::Examine_Value_C1_C0_C2_C3())
+			{
+				
+			}
+			Init::Init()
+				: AbstractInstruction(x86::mnemonic::FPU::control::Init_FPU_C0_C1_C2_C3())
 			{
 				
 			}
