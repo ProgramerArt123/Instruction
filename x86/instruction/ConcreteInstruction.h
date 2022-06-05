@@ -1277,6 +1277,11 @@ namespace x86
 			public:
 				explicit SaveControl(const x86::memory::Memory16 &source);
 			};
+			
+			class LoadEnvironment : public AbstractInstruction {
+			public:
+				explicit LoadEnvironment(const x86::label::CodeLabel &source);
+			};
 		}
 
 	}

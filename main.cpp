@@ -1751,6 +1751,12 @@ int main(int argc, char *argv[])
 		out << x86::instruction::FPU::SaveControl(x86::memory::Memory16(EAX)) << std::endl;
 	}
 	
+	{
+		const x86::label::CodeLabel bytes("m14byte");
+		out << bytes << std::endl;
+		out << x86::instruction::FPU::LoadEnvironment(bytes) << std::endl;
+	}
+	
 	const std::string &str = out.str();
 	{
 		std::ofstream code("test.s");

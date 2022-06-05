@@ -2249,6 +2249,11 @@ namespace x86
 			{
 				
 			}
+			LoadEnvironment::LoadEnvironment(const x86::label::CodeLabel &source)
+				: AbstractInstruction(x86::mnemonic::FPU::control::Load_FPU_Environment(), source)
+			{
+				
+			}
 		}
 	}
 }
