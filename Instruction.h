@@ -10,6 +10,7 @@
 #include "x86/memory/Memory64.h"
 #include "x86/memory/Memory80.h"
 #include "x86/label/CodeLabel.h"
+#include "x86/label/SizeLabel.hpp"
 #include "x86/register/classic/general/General.h"
 #include "x86/register/classic/segment/Segment.h"
 #include "x86/register/classic/general/offset/Offset8.h"

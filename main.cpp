@@ -2,9 +2,9 @@
 #include <fstream>
 #include <sstream>
 #include "Instruction.h"
+
 int main(int argc, char *argv[])
 {
-	
 	std::stringstream out;
 	{
 		const x86::instruction::NoOperation nop;
@@ -1752,13 +1752,13 @@ int main(int argc, char *argv[])
 	}
 	
 	{
-		const x86::label::CodeLabel bytes("m14byte");
+		const x86::label::SizeLabel<14> bytes("m14byte");
 		out << bytes << std::endl;
 		out << x86::instruction::FPU::LoadEnvironment(bytes) << std::endl;
 	}
 	
 	{
-		const x86::label::CodeLabel bytes("m28byte");
+		const x86::label::SizeLabel<28> bytes("m28byte");
 		out << bytes << std::endl;
 		out << x86::instruction::FPU::SaveEnvironment(bytes) << std::endl;
 	}

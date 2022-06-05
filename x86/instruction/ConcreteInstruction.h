@@ -51,6 +51,7 @@ namespace x86
 	namespace label 
 	{
 		class CodeLabel;
+		template<uint64_t count> class SizeLabel;
 	}
 	namespace instruction
 	{
@@ -1280,11 +1281,13 @@ namespace x86
 			
 			class LoadEnvironment : public AbstractInstruction {
 			public:
-				explicit LoadEnvironment(const x86::label::CodeLabel &source);
+				explicit LoadEnvironment(const x86::label::SizeLabel<14> &source);
+				explicit LoadEnvironment(const x86::label::SizeLabel<28> &source);
 			};
 			class SaveEnvironment : public AbstractInstruction {
 			public:
-				explicit SaveEnvironment(const x86::label::CodeLabel &source);
+				explicit SaveEnvironment(const x86::label::SizeLabel<14> &source);
+				explicit SaveEnvironment(const x86::label::SizeLabel<28> &source);
 			};
 		}
 

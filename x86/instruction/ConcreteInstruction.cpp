@@ -2249,12 +2249,22 @@ namespace x86
 			{
 				
 			}
-			LoadEnvironment::LoadEnvironment(const x86::label::CodeLabel &source)
+			LoadEnvironment::LoadEnvironment(const x86::label::SizeLabel<14> &source)
 				: AbstractInstruction(x86::mnemonic::FPU::control::Load_FPU_Environment(), source)
 			{
 				
 			}
-			SaveEnvironment::SaveEnvironment(const x86::label::CodeLabel &source)
+			LoadEnvironment::LoadEnvironment(const x86::label::SizeLabel<28> &source)
+				: AbstractInstruction(x86::mnemonic::FPU::control::Load_FPU_Environment(), source)
+			{
+				
+			}
+			SaveEnvironment::SaveEnvironment(const x86::label::SizeLabel<14> &source)
+				: AbstractInstruction(x86::mnemonic::FPU::control::Store_FPU_Environment(), source)
+			{
+				
+			}
+			SaveEnvironment::SaveEnvironment(const x86::label::SizeLabel<28> &source)
 				: AbstractInstruction(x86::mnemonic::FPU::control::Store_FPU_Environment(), source)
 			{
 				
