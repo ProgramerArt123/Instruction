@@ -2229,13 +2229,18 @@ namespace x86
 			{
 				
 			}
+			SaveFPUStatus::SaveFPUStatus()
+				: AbstractInstruction(x86::mnemonic::FPU::control::Store_FPU_Status_16(), AX)
+			{
+				
+			}
 			SaveFPUStatus::SaveFPUStatus(const x86::memory::Memory16 &source)
 				: AbstractInstruction(x86::mnemonic::FPU::control::Store_FPU_Status_16(), source)
 			{
 				
 			}
-			SaveFPUStatus::SaveFPUStatus()
-				: AbstractInstruction(x86::mnemonic::FPU::control::Store_FPU_Status_16(), AX)
+			LoadControl::LoadControl(const x86::memory::Memory16 &source)
+				: AbstractInstruction(x86::mnemonic::FPU::control::Load_FPU_Control_16(), source)
 			{
 				
 			}

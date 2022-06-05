@@ -1264,8 +1264,13 @@ namespace x86
 			
 			class SaveFPUStatus : public AbstractInstruction {
 			public:
-				explicit SaveFPUStatus(const x86::memory::Memory16 &source);
 				explicit SaveFPUStatus();
+				explicit SaveFPUStatus(const x86::memory::Memory16 &source);
+			};
+			
+			class LoadControl : public AbstractInstruction {
+			public:
+				explicit LoadControl(const x86::memory::Memory16 &source);
 			};
 		}
 
