@@ -1282,6 +1282,10 @@ namespace x86
 			public:
 				explicit LoadEnvironment(const x86::label::CodeLabel &source);
 			};
+			class SaveEnvironment : public AbstractInstruction {
+			public:
+				explicit SaveEnvironment(const x86::label::CodeLabel &source);
+			};
 		}
 
 	}

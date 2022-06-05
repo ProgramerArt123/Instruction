@@ -2254,6 +2254,11 @@ namespace x86
 			{
 				
 			}
+			SaveEnvironment::SaveEnvironment(const x86::label::CodeLabel &source)
+				: AbstractInstruction(x86::mnemonic::FPU::control::Store_FPU_Environment(), source)
+			{
+				
+			}
 		}
 	}
 }

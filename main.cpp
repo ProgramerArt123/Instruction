@@ -1757,6 +1757,12 @@ int main(int argc, char *argv[])
 		out << x86::instruction::FPU::LoadEnvironment(bytes) << std::endl;
 	}
 	
+	{
+		const x86::label::CodeLabel bytes("m28byte");
+		out << bytes << std::endl;
+		out << x86::instruction::FPU::SaveEnvironment(bytes) << std::endl;
+	}
+	
 	const std::string &str = out.str();
 	{
 		std::ofstream code("test.s");
