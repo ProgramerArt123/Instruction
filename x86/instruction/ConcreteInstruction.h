@@ -1272,6 +1272,11 @@ namespace x86
 			public:
 				explicit LoadControl(const x86::memory::Memory16 &source);
 			};
+			
+			class SaveControl : public AbstractInstruction {
+			public:
+				explicit SaveControl(const x86::memory::Memory16 &source);
+			};
 		}
 
 	}

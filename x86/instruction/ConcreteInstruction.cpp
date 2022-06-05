@@ -2244,6 +2244,11 @@ namespace x86
 			{
 				
 			}
+			SaveControl::SaveControl(const x86::memory::Memory16 &source)
+				: AbstractInstruction(x86::mnemonic::FPU::control::Store_FPU_Control_16(), source)
+			{
+				
+			}
 		}
 	}
 }
