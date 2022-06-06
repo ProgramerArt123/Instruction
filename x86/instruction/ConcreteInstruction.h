@@ -17,6 +17,7 @@ namespace x86
 		class Memory32;
 		class Memory64;
 		class Memory80;
+		template<std::size_t size> class MemoryN;
 	}
 	namespace reg
 	{
@@ -51,7 +52,7 @@ namespace x86
 	namespace label 
 	{
 		class CodeLabel;
-		template<uint64_t count> class SizeLabel;
+		template<std::size_t size> class SizeLabel;
 	}
 	namespace instruction
 	{
@@ -1283,16 +1284,22 @@ namespace x86
 			public:
 				explicit LoadEnvironment(const x86::label::SizeLabel<14> &source);
 				explicit LoadEnvironment(const x86::label::SizeLabel<28> &source);
+				explicit LoadEnvironment(const x86::memory::MemoryN<14> &source);
+				explicit LoadEnvironment(const x86::memory::MemoryN<28> &source);
 			};
 			class SaveEnvironment : public AbstractInstruction {
 			public:
 				explicit SaveEnvironment(const x86::label::SizeLabel<14> &source);
 				explicit SaveEnvironment(const x86::label::SizeLabel<28> &source);
+				explicit SaveEnvironment(const x86::memory::MemoryN<14> &source);
+				explicit SaveEnvironment(const x86::memory::MemoryN<28> &source);
 			};
 			class RestoreState : public AbstractInstruction {
 			public:
 				explicit RestoreState(const x86::label::SizeLabel<94> &source);
 				explicit RestoreState(const x86::label::SizeLabel<108> &source);
+				explicit RestoreState(const x86::memory::MemoryN<94> &source);
+				explicit RestoreState(const x86::memory::MemoryN<108> &source);
 			};
 		}
 

@@ -6,14 +6,14 @@ namespace x86
 {
 	namespace label
 	{
-		template<uint64_t count>
+		template<std::size_t size>
 		class SizeLabel : public CodeLabel {
 		public:
 			explicit SizeLabel(std::string name):
-				CodeLabel(name), m_count(count){
+				CodeLabel(name){
 			}
 		protected:
-			uint64_t m_count = 0;
+			std::size_t m_size = size;
 		};
 		
 	}

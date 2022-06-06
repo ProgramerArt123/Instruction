@@ -2259,6 +2259,16 @@ namespace x86
 			{
 				
 			}
+			LoadEnvironment::LoadEnvironment(const x86::memory::MemoryN<14> &source)
+				: AbstractInstruction(x86::mnemonic::FPU::control::Load_FPU_Environment(), source)
+			{
+				
+			}
+			LoadEnvironment::LoadEnvironment(const x86::memory::MemoryN<28> &source)
+				: AbstractInstruction(x86::mnemonic::FPU::control::Load_FPU_Environment(), source)
+			{
+				
+			}
 			SaveEnvironment::SaveEnvironment(const x86::label::SizeLabel<14> &source)
 				: AbstractInstruction(x86::mnemonic::FPU::control::Store_FPU_Environment(), source)
 			{
@@ -2269,12 +2279,32 @@ namespace x86
 			{
 				
 			}
+			SaveEnvironment::SaveEnvironment(const x86::memory::MemoryN<14> &source)
+				: AbstractInstruction(x86::mnemonic::FPU::control::Store_FPU_Environment(), source)
+			{
+				
+			}
+			SaveEnvironment::SaveEnvironment(const x86::memory::MemoryN<28> &source)
+				: AbstractInstruction(x86::mnemonic::FPU::control::Store_FPU_Environment(), source)
+			{
+				
+			}
 			RestoreState::RestoreState(const x86::label::SizeLabel<94> &source)
 				: AbstractInstruction(x86::mnemonic::FPU::control::Restore_FPU_State(), source)
 			{
 				
 			}
 			RestoreState::RestoreState(const x86::label::SizeLabel<108> &source)
+				: AbstractInstruction(x86::mnemonic::FPU::control::Restore_FPU_State(), source)
+			{
+				
+			}
+			RestoreState::RestoreState(const x86::memory::MemoryN<94> &source)
+				: AbstractInstruction(x86::mnemonic::FPU::control::Restore_FPU_State(), source)
+			{
+				
+			}
+			RestoreState::RestoreState(const x86::memory::MemoryN<108> &source)
 				: AbstractInstruction(x86::mnemonic::FPU::control::Restore_FPU_State(), source)
 			{
 				

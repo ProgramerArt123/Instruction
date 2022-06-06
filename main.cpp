@@ -1758,9 +1758,17 @@ int main(int argc, char *argv[])
 	}
 	
 	{
+		out << x86::instruction::FPU::LoadEnvironment(x86::memory::MemoryN<28>(EAX)) << std::endl;
+	}
+	
+	{
 		const x86::label::SizeLabel<28> bytes("m28byte");
 		out << bytes << std::endl;
 		out << x86::instruction::FPU::SaveEnvironment(bytes) << std::endl;
+	}
+	
+	{
+		out << x86::instruction::FPU::SaveEnvironment(x86::memory::MemoryN<14>(EAX)) << std::endl;
 	}
 	
 	{
@@ -1768,11 +1776,17 @@ int main(int argc, char *argv[])
 		out << bytes << std::endl;
 		out << x86::instruction::FPU::RestoreState(bytes) << std::endl;
 	}
+	{
+		out << x86::instruction::FPU::RestoreState(x86::memory::MemoryN<94>(EAX)) << std::endl;
+	}
 	
 	{
 		const x86::label::SizeLabel<108> bytes("m108byte");
 		out << bytes << std::endl;
 		out << x86::instruction::FPU::RestoreState(bytes) << std::endl;
+	}
+	{
+		out << x86::instruction::FPU::RestoreState(x86::memory::MemoryN<108>(EAX)) << std::endl;
 	}
 	
 	const std::string &str = out.str();
