@@ -8,8 +8,6 @@ namespace x86
 		class MemoryN : public Memory {
 		public:
 			using Memory::Memory;
-		protected:
-			std::size_t m_size = size;
 		};
 		
 	}

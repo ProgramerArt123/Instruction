@@ -12,8 +12,6 @@ namespace x86
 			explicit SizeLabel(std::string name):
 				CodeLabel(name){
 			}
-		protected:
-			std::size_t m_size = size;
 		};
 		
 	}

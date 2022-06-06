@@ -1301,6 +1301,13 @@ namespace x86
 				explicit RestoreState(const x86::memory::MemoryN<94> &source);
 				explicit RestoreState(const x86::memory::MemoryN<108> &source);
 			};
+			class SaveState : public AbstractInstruction {
+			public:
+				explicit SaveState(const x86::label::SizeLabel<94> &source);
+				explicit SaveState(const x86::label::SizeLabel<108> &source);
+				explicit SaveState(const x86::memory::MemoryN<94> &source);
+				explicit SaveState(const x86::memory::MemoryN<108> &source);
+			};
 		}
 
 	}

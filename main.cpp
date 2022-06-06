@@ -1771,23 +1771,40 @@ int main(int argc, char *argv[])
 		out << x86::instruction::FPU::SaveEnvironment(x86::memory::MemoryN<14>(EAX)) << std::endl;
 	}
 	
+	const x86::label::SizeLabel<94> m94byte("m94byte");
+	out << m94byte << std::endl;
+	const x86::label::SizeLabel<108> m108byte("m108byte");
+	out << m108byte << std::endl;
+	
 	{
-		const x86::label::SizeLabel<94> bytes("m94byte");
-		out << bytes << std::endl;
-		out << x86::instruction::FPU::RestoreState(bytes) << std::endl;
+		out << x86::instruction::FPU::RestoreState(m94byte) << std::endl;
 	}
 	{
 		out << x86::instruction::FPU::RestoreState(x86::memory::MemoryN<94>(EAX)) << std::endl;
 	}
 	
 	{
-		const x86::label::SizeLabel<108> bytes("m108byte");
-		out << bytes << std::endl;
-		out << x86::instruction::FPU::RestoreState(bytes) << std::endl;
+		out << x86::instruction::FPU::RestoreState(m108byte) << std::endl;
 	}
 	{
 		out << x86::instruction::FPU::RestoreState(x86::memory::MemoryN<108>(EAX)) << std::endl;
 	}
+	
+	{
+		
+		out << x86::instruction::FPU::SaveState(m94byte) << std::endl;
+	}
+	{
+		out << x86::instruction::FPU::SaveState(x86::memory::MemoryN<94>(EAX)) << std::endl;
+	}
+	
+	{
+		out << x86::instruction::FPU::SaveState(m108byte) << std::endl;
+	}
+	{
+		out << x86::instruction::FPU::SaveState(x86::memory::MemoryN<108>(EAX)) << std::endl;
+	}
+	
 	
 	const std::string &str = out.str();
 	{

@@ -2309,6 +2309,26 @@ namespace x86
 			{
 				
 			}
+			SaveState::SaveState(const x86::label::SizeLabel<94> &source)
+				: AbstractInstruction(x86::mnemonic::FPU::control::Store_FPU_State_C0_C1_C2_C3(), source)
+			{
+				
+			}
+			SaveState::SaveState(const x86::label::SizeLabel<108> &source)
+				: AbstractInstruction(x86::mnemonic::FPU::control::Store_FPU_State_C0_C1_C2_C3(), source)
+			{
+				
+			}
+			SaveState::SaveState(const x86::memory::MemoryN<94> &source)
+				: AbstractInstruction(x86::mnemonic::FPU::control::Store_FPU_State_C0_C1_C2_C3(), source)
+			{
+				
+			}
+			SaveState::SaveState(const x86::memory::MemoryN<108> &source)
+				: AbstractInstruction(x86::mnemonic::FPU::control::Store_FPU_State_C0_C1_C2_C3(), source)
+			{
+				
+			}
 		}
 	}
 }
