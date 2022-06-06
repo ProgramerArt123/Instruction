@@ -1763,6 +1763,18 @@ int main(int argc, char *argv[])
 		out << x86::instruction::FPU::SaveEnvironment(bytes) << std::endl;
 	}
 	
+	{
+		const x86::label::SizeLabel<94> bytes("m94byte");
+		out << bytes << std::endl;
+		out << x86::instruction::FPU::RestoreState(bytes) << std::endl;
+	}
+	
+	{
+		const x86::label::SizeLabel<108> bytes("m108byte");
+		out << bytes << std::endl;
+		out << x86::instruction::FPU::RestoreState(bytes) << std::endl;
+	}
+	
 	const std::string &str = out.str();
 	{
 		std::ofstream code("test.s");

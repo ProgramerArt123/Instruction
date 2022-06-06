@@ -2269,6 +2269,16 @@ namespace x86
 			{
 				
 			}
+			RestoreState::RestoreState(const x86::label::SizeLabel<94> &source)
+				: AbstractInstruction(x86::mnemonic::FPU::control::Restore_FPU_State(), source)
+			{
+				
+			}
+			RestoreState::RestoreState(const x86::label::SizeLabel<108> &source)
+				: AbstractInstruction(x86::mnemonic::FPU::control::Restore_FPU_State(), source)
+			{
+				
+			}
 		}
 	}
 }

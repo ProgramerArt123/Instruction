@@ -1289,6 +1289,11 @@ namespace x86
 				explicit SaveEnvironment(const x86::label::SizeLabel<14> &source);
 				explicit SaveEnvironment(const x86::label::SizeLabel<28> &source);
 			};
+			class RestoreState : public AbstractInstruction {
+			public:
+				explicit RestoreState(const x86::label::SizeLabel<94> &source);
+				explicit RestoreState(const x86::label::SizeLabel<108> &source);
+			};
 		}
 
 	}
