@@ -1320,6 +1320,10 @@ namespace x86
 			public:
 				explicit Increment();
 			};
+			class SetProtectedMode : public AbstractInstruction {
+			public:
+				explicit SetProtectedMode();
+			};
 		}
 
 	}

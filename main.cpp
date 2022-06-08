@@ -1817,6 +1817,9 @@ int main(int argc, char *argv[])
 		out << x86::instruction::FPU::Increment() << std::endl;
 	}
 	
+	{
+		out << x86::instruction::FPU::SetProtectedMode() << std::endl;
+	}
 	
 	const std::string &str = out.str();
 	{

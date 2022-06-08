@@ -2344,6 +2344,11 @@ namespace x86
 			{
 				
 			}
+			SetProtectedMode::SetProtectedMode()
+				: AbstractInstruction(x86::mnemonic::FPU::control::Setup_FPU_Protected_Mode())
+			{
+				
+			}
 		}
 	}
 }
