@@ -2334,6 +2334,11 @@ namespace x86
 			{
 				
 			}
+			Decrement::Decrement()
+				: AbstractInstruction(x86::mnemonic::FPU::control::Decrement_Stack_Top_Pointer_C1())
+			{
+				
+			}
 		}
 	}
 }

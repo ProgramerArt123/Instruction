@@ -1312,6 +1312,10 @@ namespace x86
 			public:
 				explicit Free(const x86::reg::FPU::Data &source);
 			};
+			class Decrement : public AbstractInstruction {
+			public:
+				explicit Decrement();
+			};
 		}
 
 	}
