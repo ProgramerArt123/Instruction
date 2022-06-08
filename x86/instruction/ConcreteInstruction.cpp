@@ -2339,6 +2339,11 @@ namespace x86
 			{
 				
 			}
+			Increment::Increment()
+				: AbstractInstruction(x86::mnemonic::FPU::control::Increment_Stack_Top_Pointer_C1())
+			{
+				
+			}
 		}
 	}
 }

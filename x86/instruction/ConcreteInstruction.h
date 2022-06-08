@@ -1316,6 +1316,10 @@ namespace x86
 			public:
 				explicit Decrement();
 			};
+			class Increment : public AbstractInstruction {
+			public:
+				explicit Increment();
+			};
 		}
 
 	}
