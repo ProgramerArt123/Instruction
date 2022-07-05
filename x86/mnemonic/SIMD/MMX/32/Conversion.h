@@ -1,5 +1,5 @@
-#ifndef __X86_MNEMONIC_SIMD_MMX_32_COMPARE_H__
-#define __X86_MNEMONIC_SIMD_MMX_32_COMPARE_H__
+#ifndef __X86_MNEMONIC_SIMD_MMX_32_CONVERSION_H__
+#define __X86_MNEMONIC_SIMD_MMX_32_CONVERSION_H__
 namespace x86
 {
 	namespace mnemonic 
