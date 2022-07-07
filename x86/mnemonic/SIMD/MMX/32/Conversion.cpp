@@ -22,6 +22,21 @@ namespace x86
 						const char *Unpack_High_Order_Bytes_64() {
 							return "PUNPCKHBW";
 						}
+						const char *Unpack_High_Order_Words_64() {
+							return "PUNPCKHWD";
+						}
+						const char *Unpack_High_Order_Doublewords_64() {
+							return "PUNPCKHDQ";
+						}
+						const char *Unpack_Low_Order_Bytes_64() {
+							return "PUNPCKLBW";
+						}
+						const char *Unpack_Low_Order_Words_64() {
+							return "PUNPCKLWD";
+						}
+						const char *Unpack_Low_Order_Doublewords_64() {
+							return "PUNPCKLDQ";
+						}
 					}
 				}
 			}

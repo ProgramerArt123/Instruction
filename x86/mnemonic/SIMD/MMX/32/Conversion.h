@@ -15,6 +15,11 @@ namespace x86
 						const char *Pack_Doublewords_Into_Words_Signed_64();
 						const char *Pack_Words_Into_Bytes_Unsigned_64();
 						const char *Unpack_High_Order_Bytes_64();
+						const char *Unpack_High_Order_Words_64();
+						const char *Unpack_High_Order_Doublewords_64();
+						const char *Unpack_Low_Order_Bytes_64();
+						const char *Unpack_Low_Order_Words_64();
+						const char *Unpack_Low_Order_Doublewords_64();
 					}
 				}
 			}
