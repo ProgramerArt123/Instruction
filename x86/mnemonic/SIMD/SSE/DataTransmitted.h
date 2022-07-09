@@ -12,7 +12,12 @@ namespace x86
 				{
 					const char *Transmitted_Four_Aligned_Packed_Single_128();
 					const char *Transmitted_Four_Unaligned_Packed_Single_128();
-					const char *Transmitted_Two_Packed_Single_64();
+					const char *Transmitted_Two_Packed_Single_High_64();
+					const char *Transmitted_Two_Packed_Single_High_Low_64();
+					const char *Transmitted_Two_Packed_Single_Low_64();
+					const char *Transmitted_Two_Packed_Single_Low_High_64();
+					const char *Extract_Sign_Mask_Four_Packed_Single_128();
+					const char *Transmitted_Scalar_Single_32__128();
 				}
 			}
 		}
