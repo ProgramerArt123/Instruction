@@ -14,10 +14,7 @@ namespace x86
 					{
 						namespace data_transmitted 
 						{
-							const char *Extract_Word();
-							const char *Insert_Word();
-							const char *Move_Byte_Mask();
-							const char *Shuffle_Packed_Words_64();
+							const char *Shuffle_Packed_Words();
 						}
 					}
 				}

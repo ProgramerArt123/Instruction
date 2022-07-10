@@ -35,6 +35,15 @@ namespace x86
 						const char *Transmitted_Scalar_Single_32__128() {
 							return "MOVSS";
 						}
+						const char *Extract_Word() {
+							return "PEXTRW";
+						}
+						const char *Insert_Word() {
+							return "PINSRW";
+						}
+						const char *Move_Byte_Mask() {
+							return "PMOVMSKB";
+						}
 					}
 				}
 			}

@@ -30,6 +30,14 @@ namespace x86
 						const char *Maximum_Scalar_Single_32();
 						const char *Minimum_Packed_Single_128();
 						const char *Minimum_Scalar_Single_32();
+						const char *Average_Packed_Unsigned_Byte_Integers_64();
+						const char *Average_Packed_Unsigned_Word_Integers_64();
+						const char *Maximum_Packed_Unsigned_Byte_Integers_64();
+						const char *Maximum_Packed_Signed_Word_Integers_64();
+						const char *Minimum_Packed_Unsigned_Byte_Integers_64();
+						const char *Minimum_Packed_Signed_Word_Integers_64();
+						const char *Multiply_Packed_Unsigned_Integers_High_64();
+						const char *Sum_Absolute_Differences_64();
 					}
 				}
 			}
