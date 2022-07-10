@@ -10,7 +10,7 @@ namespace x86
 			{
 				namespace size32
 				{
-					namespace logical {
+					namespace state {
 						const char *Empty_State();
 					}
 				}
