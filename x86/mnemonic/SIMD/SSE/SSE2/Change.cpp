@@ -7,17 +7,17 @@ namespace x86
 		{
 			namespace SSE
 			{
-				namespace SSE
+				namespace SSE2
 				{
 					namespace change {
-						const char *Shuffles_Packed_Single_128() {
-							return "SHUFPS";
+						const char *Shuffles_Packed_Double_128() {
+							return "SHUFPD";
 						}
 						const char *Unpacks_Interleaves_High_128() {
-							return "UNPCKHPS";
+							return "UNPCKHPD";
 						}
 						const char *Unpacks_Interleaves_Low_128() {
-							return "UNPCKLPS";
+							return "UNPCKLPD";
 						}
 					}
 				}
