@@ -41,6 +41,15 @@ namespace x86
 						const char *Convert_Doubleword_Integer_Scalar_Double_32() {
 							return "CVTSI2SD";
 						}
+						const char *Convert_Packed_Doubleword_Integers_Packed_Single_128() {
+							return "CVTDQ2PS";
+						}
+						const char *Convert_Packed_Single_Packed_Doubleword_Integers_128() {
+							return "CVTPS2DQ";
+						}
+						const char *Convert_Truncation_Packed_Single_Packed_Doubleword_Integers_128() {
+							return "CVTTPS2DQ";
+						}
 					}
 				}
 			}
