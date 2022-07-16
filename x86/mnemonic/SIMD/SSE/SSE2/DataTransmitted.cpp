@@ -29,6 +29,12 @@ namespace x86
 						const char *Transmitted_Scalar_Double() {
 							return "MOVSD";
 						}
+						const char *Transmitted_Two_Aligned_Quadwords_128() {
+							return "MOVDQA";
+						}
+						const char *Transmitted_Two_Unaligned_Quadwords_128() {
+							return "MOVDQU";
+						}
 					}
 				}
 			}

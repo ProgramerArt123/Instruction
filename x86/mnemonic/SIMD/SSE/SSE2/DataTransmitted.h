@@ -18,6 +18,8 @@ namespace x86
 						const char *Transmitted_Packed_Double_Low_64();
 						const char *Extract_Sign_Mask_Two_Packed_Double();
 						const char *Transmitted_Scalar_Double();
+						const char *Transmitted_Two_Aligned_Quadwords_128();
+						const char *Transmitted_Two_Unaligned_Quadwords_128();
 					}
 				}
 			}

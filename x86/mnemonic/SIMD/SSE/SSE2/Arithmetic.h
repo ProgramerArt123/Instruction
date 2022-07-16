@@ -26,6 +26,9 @@ namespace x86
 						const char *Maximum_Scalar_Double_64();
 						const char *Minimum_Packed_Double_128();
 						const char *Minimum_Scalar_Double_64();
+						const char *Multiply_Packed_Unsigned_Doublewords_64__128();
+						const char *Add_Packed_Quadwords_128();
+						const char *Subtract_Packed_Quadwords_64_128();
 					}
 				}
 			}

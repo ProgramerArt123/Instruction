@@ -53,6 +53,15 @@ namespace x86
 						const char *Minimum_Scalar_Double_64() {
 							return "MINSD";
 						}
+						const char *Multiply_Packed_Unsigned_Doublewords_64__128() {
+							return "PMULUDQ";
+						}
+						const char *Add_Packed_Quadwords_128() {
+							return "PADDQ";
+						}
+						const char *Subtract_Packed_Quadwords_64_128() {
+							return "PSUBQ";
+						}
 					}
 				}
 			}
