@@ -16,6 +16,7 @@ namespace x86
 						{
 							const char *Transmitted_Quadword_MMX_XMM_64();
 							const char *Transmitted_Quadword_XMM_MMX_64();
+							const char *Store_Doublewords_Non_Temporal_Hint_32__64();
 						}
 					}
 				}

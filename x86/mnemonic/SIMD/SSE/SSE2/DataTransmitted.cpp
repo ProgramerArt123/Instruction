@@ -35,6 +35,15 @@ namespace x86
 						const char *Transmitted_Two_Unaligned_Quadwords_128() {
 							return "MOVDQU";
 						}
+						const char *Store_Selected_Bytes_Two_Quadwords() {
+							return "MASKMOVDQU";
+						}
+						const char *Store_Packed_Doubles_Non_Temporal_Hint_128() {
+							return "MOVNTPD";
+						}
+						const char *Store_Packed_Integers_Non_Temporal_Hint_128() {
+							return "MOVNTDQ";
+						}
 					}
 				}
 			}

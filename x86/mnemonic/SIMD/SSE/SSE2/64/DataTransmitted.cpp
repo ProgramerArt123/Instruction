@@ -19,6 +19,9 @@ namespace x86
 							const char *Transmitted_Quadword_XMM_MMX_64() {
 								return "MOVDQ2Q";
 							}
+							const char *Store_Doublewords_Non_Temporal_Hint_32__64() {
+								return "MOVNTI";
+							}
 						}
 					}
 				}
