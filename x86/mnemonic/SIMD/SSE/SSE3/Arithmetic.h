@@ -26,6 +26,9 @@ namespace x86
 						const char *Horizontal_Subtraction_Signed_Doublewords_Packed_64__128();
 						const char *Multiply__Add_Bytes_64__128();
 						const char *Multiply_Signed_Words_Scale_Round_Signed_Doublewords_64__128();
+						const char *Absolute_Bytes_64__128();
+						const char *Absolute_Words_64__128();
+						const char *Absolute_Doublewords_64__128();
 					}
 				}
 			}

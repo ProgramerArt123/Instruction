@@ -53,6 +53,15 @@ namespace x86
 						const char *Multiply_Signed_Words_Scale_Round_Signed_Doublewords_64__128() {
 							return "PMULHRSW";
 						}
+						const char *Absolute_Bytes_64__128() {
+							return "PABSB";
+						}
+						const char *Absolute_Words_64__128() {
+							return "PABSW";
+						}
+						const char *Absolute_Doublewords_64__128() {
+							return "PABSD";
+						}
 					}
 				}
 			}
