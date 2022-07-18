@@ -1,0 +1,26 @@
+#ifndef __X86_MNEMONIC_SIMD_SSE_SSE3_64_DATA_TRANSMITTED_H__
+#define __X86_MNEMONIC_SIMD_SSE_SSE3_64_DATA_TRANSMITTED_H__
+namespace x86
+{
+	namespace mnemonic 
+	{
+		namespace SIMD
+		{
+			namespace SSE
+			{
+				namespace SSE3
+				{
+					namespace size64
+					{
+						namespace data_transmitted 
+						{
+							const char *Store_Integer_Truncation_16__32__64();
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#endif
