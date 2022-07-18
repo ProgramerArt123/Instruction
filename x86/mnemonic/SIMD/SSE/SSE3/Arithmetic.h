@@ -29,6 +29,10 @@ namespace x86
 						const char *Absolute_Bytes_64__128();
 						const char *Absolute_Words_64__128();
 						const char *Absolute_Doublewords_64__128();
+						const char *Packed_Sign_Bytes_64__128();
+						const char *Packed_Sign_Words_64__128();
+						const char *Packed_Sign_Doublewords_64__128();
+						
 					}
 				}
 			}

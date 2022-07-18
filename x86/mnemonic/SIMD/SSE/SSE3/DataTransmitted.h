@@ -16,6 +16,7 @@ namespace x86
 						const char *Replicate_Single_High_128();
 						const char *Replicate_Single_Low_128();
 						const char *Replicate_Double_64();
+						const char *Packed_Align_Right_64__128();
 					}
 				}
 			}

@@ -62,6 +62,15 @@ namespace x86
 						const char *Absolute_Doublewords_64__128() {
 							return "PABSD";
 						}
+						const char *Packed_Sign_Bytes_64__128() {
+							return "PSIGNB";
+						}
+						const char *Packed_Sign_Words_64__128() {
+							return "PSIGNW";
+						}
+						const char *Packed_Sign_Doublewords_64__128() {
+							return "PSIGND";
+						}
 					}
 				}
 			}

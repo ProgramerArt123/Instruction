@@ -23,6 +23,9 @@ namespace x86
 						const char *Replicate_Double_64() {
 							return "MOVDDUP";
 						}
+						const char *Packed_Align_Right_64__128() {
+							return "PALIGNR";
+						}
 					}
 				}
 			}
