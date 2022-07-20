@@ -30,6 +30,7 @@ namespace x86
 							const char *Extract_Word();
 							const char *Extract_Doubleword();
 							const char *Extract_Quadword();
+
 						}
 					}
 				}
