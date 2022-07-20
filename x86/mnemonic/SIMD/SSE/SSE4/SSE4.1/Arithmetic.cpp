@@ -64,6 +64,9 @@ namespace x86
 							const char *Absolute_Difference_Sum() {
 								return "MPSADBW";
 							}
+							const char *Packed_Horizontal_Word_Minimum() {
+								return "PHMINPOSUW";
+							}
 						}
 					}
 				}

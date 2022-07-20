@@ -31,6 +31,7 @@ namespace x86
 							const char *Round_Scalar_Single_32();
 							const char *Round_Scalar_Double_64();
 							const char *Absolute_Difference_Sum();
+							const char *Packed_Horizontal_Word_Minimum();
 						}
 					}
 				}
