@@ -26,6 +26,7 @@ namespace x86
 							const char *Zero_Extend_Word_Packed_Quadwords_32();
 							const char *Sign_Extend_Doubleword_Packed_Quadwords_64();
 							const char *Zero_Extend_Doubleword_Packed_Quadwords_64();
+							const char *Pack_Unsigned_Saturation_128();
 						}
 					}
 				}

@@ -49,6 +49,9 @@ namespace x86
 							const char *Zero_Extend_Doubleword_Packed_Quadwords_64() {
 								return "PMOVZXDQ";
 							}
+							const char *Pack_Unsigned_Saturation_128() {
+								return "PACKUSDW";
+							}
 						}
 					}
 				}
