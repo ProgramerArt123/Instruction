@@ -24,6 +24,10 @@ namespace x86
 						const char *Multiply_Packed_Double_128__256();
 						const char *Divide_Packed_Single_128__256();
 						const char *Divide_Packed_Double_128__256();
+						const char *Minimum_Packed_Single_128__256();
+						const char *Minimum_Packed_Double_128__256();
+						const char *Maximum_Packed_Single_128__256();
+						const char *Maximum_Packed_Double_128__256();
 					}
 				}
 			}

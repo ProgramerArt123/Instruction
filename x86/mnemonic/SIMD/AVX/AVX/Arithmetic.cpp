@@ -47,6 +47,18 @@ namespace x86
 						const char *Divide_Packed_Double_128__256() {
 							return "VDIVPD";
 						}
+						const char *Minimum_Packed_Single_128__256() {
+							return "VMINPS";
+						}
+						const char *Minimum_Packed_Double_128__256() {
+							return "VMINPD";
+						}
+						const char *Maximum_Packed_Single_128__256() {
+							return "VMAXPS";
+						}
+						const char *Maximum_Packed_Double_128__256() {
+							return "VMAXPD";
+						}
 					}
 				}
 			}
