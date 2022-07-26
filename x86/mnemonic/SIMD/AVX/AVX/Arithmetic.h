@@ -16,6 +16,10 @@ namespace x86
 						const char *Square_Root_Double_128__256();
 						const char *Square_Roots_Reciprocals_Packed_Single_128__256();
 						const char *Reciprocals_Packed_Single_128__256();
+						const char *Add_Packed_Single_128__256();
+						const char *Add_Packed_Double_128__256();
+						const char *Subtract_Packed_Single_128__256();
+						const char *Subtract_Packed_Double_128__256();
 					}
 				}
 			}

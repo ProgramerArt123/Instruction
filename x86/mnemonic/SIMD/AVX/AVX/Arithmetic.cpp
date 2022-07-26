@@ -23,6 +23,18 @@ namespace x86
 						const char *Reciprocals_Packed_Single_128__256() {
 							return "VRCPPS";
 						}
+						const char *Add_Packed_Single_128__256() {
+							return "VADDPS";
+						}
+						const char *Add_Packed_Double_128__256() {
+							return "VADDPD";
+						}
+						const char *Subtract_Packed_Single_128__256() {
+							return "VSUBPS";
+						}
+						const char *Subtract_Packed_Double_128__256() {
+							return "VSUBPD";
+						}
 					}
 				}
 			}
