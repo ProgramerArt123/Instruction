@@ -59,6 +59,18 @@ namespace x86
 						const char *Maximum_Packed_Double_128__256() {
 							return "VMAXPD";
 						}
+						const char *Packed_Double_Horizontal_Add_128__256() {
+							return "VHADDPD";
+						}
+						const char *Packed_Single_Horizontal_Add_128__256() {
+							return "VHADDPS";
+						}
+						const char *Packed_Double_Horizontal_Subtract_128__256() {
+							return "VHSUBPD";
+						}
+						const char *Packed_Single_Horizontal_Subtract_128__256() {
+							return "VHSUBPS";
+						}
 					}
 				}
 			}

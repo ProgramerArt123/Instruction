@@ -28,6 +28,10 @@ namespace x86
 						const char *Minimum_Packed_Double_128__256();
 						const char *Maximum_Packed_Single_128__256();
 						const char *Maximum_Packed_Double_128__256();
+						const char *Packed_Double_Horizontal_Add_128__256();
+						const char *Packed_Single_Horizontal_Add_128__256();
+						const char *Packed_Double_Horizontal_Subtract_128__256();
+						const char *Packed_Single_Horizontal_Subtract_128__256();
 					}
 				}
 			}
