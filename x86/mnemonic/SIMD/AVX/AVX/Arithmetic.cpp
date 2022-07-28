@@ -80,6 +80,12 @@ namespace x86
 						const char *Dot_Product_Packed_Single_128__256() {
 							return "VDPPS";
 						}
+						const char *Round_Packed_Double_128__256() {
+							return "VROUNDPD";
+						}
+						const char *Round_Packed_Single_128__256() {
+							return "VROUNDPS";
+						}
 					}
 				}
 			}

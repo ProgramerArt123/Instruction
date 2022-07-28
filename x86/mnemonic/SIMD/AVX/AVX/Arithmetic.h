@@ -35,6 +35,8 @@ namespace x86
 						const char *Packed_Double_Add__Subtract_128__256();
 						const char *Packed_Single_Add__Subtract_128__256();
 						const char *Dot_Product_Packed_Single_128__256();
+						const char *Round_Packed_Double_128__256();
+						const char *Round_Packed_Single_128__256();
 					}
 				}
 			}
