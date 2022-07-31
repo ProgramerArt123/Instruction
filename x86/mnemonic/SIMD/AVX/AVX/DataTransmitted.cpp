@@ -71,6 +71,15 @@ namespace x86
 						const char *Variable_Blend_Packed_Double_128__256() {
 							return "VBLENDVPD";
 						}
+						const char *Broadcast_Float_128() {
+							return "VBROADCASTF128";
+						}
+						const char *Broadcast_Double_64() {
+							return "VBROADCASTSD";
+						}
+						const char *Broadcast_Single_32() {
+							return "VBROADCASTSS";
+						}
 					}
 				}
 			}

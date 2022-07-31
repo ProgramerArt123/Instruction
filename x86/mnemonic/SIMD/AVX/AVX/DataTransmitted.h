@@ -32,6 +32,9 @@ namespace x86
 						const char *Blend_Packed_Double_128__256();
 						const char *Variable_Blend_Packed_Single_128__256();
 						const char *Variable_Blend_Packed_Double_128__256();
+						const char *Broadcast_Float_128();
+						const char *Broadcast_Double_64();
+						const char *Broadcast_Single_32();
 					}
 				}
 			}
