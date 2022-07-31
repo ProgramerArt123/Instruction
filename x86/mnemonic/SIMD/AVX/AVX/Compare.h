@@ -13,6 +13,7 @@ namespace x86
 					namespace compare {
 						const char *Compare_Packed_Single_128__256();
 						const char *Compare_Packed_Double_128__256();
+						const char *Logical_Compare_128__256();
 					}
 				}
 			}

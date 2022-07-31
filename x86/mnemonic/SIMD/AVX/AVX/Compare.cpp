@@ -16,6 +16,9 @@ namespace x86
 						const char *Compare_Packed_Double_128__256() {
 							return "VCMPPD";
 						}
+						const char *Logical_Compare_128__256() {
+							return "VPTEST";
+						}
 					}
 				}
 			}
