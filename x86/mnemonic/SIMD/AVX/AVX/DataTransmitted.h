@@ -35,6 +35,9 @@ namespace x86
 						const char *Broadcast_Float_128();
 						const char *Broadcast_Double_64();
 						const char *Broadcast_Single_32();
+						const char *Extract_Packed_Float_128();
+						const char *Insert_Packed_Float_128();
+						const char *Load_Packed_Single_Mask_128__256();
 					}
 				}
 			}

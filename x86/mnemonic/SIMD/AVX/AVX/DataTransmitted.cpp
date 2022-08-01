@@ -80,6 +80,15 @@ namespace x86
 						const char *Broadcast_Single_32() {
 							return "VBROADCASTSS";
 						}
+						const char *Extract_Packed_Float_128() {
+							return "VEXTRACTF128";
+						}
+						const char *Insert_Packed_Float_128() {
+							return "VINSERTF128";
+						}
+						const char *Load_Packed_Single_Mask_128__256() {
+							return "VMASKMOVPS";
+						}
 					}
 				}
 			}
