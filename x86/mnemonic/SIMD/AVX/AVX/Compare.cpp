@@ -19,6 +19,12 @@ namespace x86
 						const char *Logical_Compare_128__256() {
 							return "VPTEST";
 						}
+						const char *Packed_Bit_Test_Single_128__256() {
+							return "VTESTPS";
+						}
+						const char *Packed_Bit_Test_Double_128__256() {
+							return "VTESTPD";
+						}
 					}
 				}
 			}

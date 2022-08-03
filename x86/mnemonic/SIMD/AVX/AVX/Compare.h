@@ -14,6 +14,8 @@ namespace x86
 						const char *Compare_Packed_Single_128__256();
 						const char *Compare_Packed_Double_128__256();
 						const char *Logical_Compare_128__256();
+						const char *Packed_Bit_Test_Single_128__256();
+						const char *Packed_Bit_Test_Double_128__256();
 					}
 				}
 			}
