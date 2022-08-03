@@ -37,6 +37,7 @@ namespace x86
 						const char *Dot_Product_Packed_Single_128__256();
 						const char *Round_Packed_Double_128__256();
 						const char *Round_Packed_Single_128__256();
+						const char *Multiply_Add_Packed_Integers_128();
 					}
 				}
 			}

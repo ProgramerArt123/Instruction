@@ -86,6 +86,9 @@ namespace x86
 						const char *Round_Packed_Single_128__256() {
 							return "VROUNDPS";
 						}
+						const char *Multiply_Add_Packed_Integers_128() {
+							return "VPMADDWD";
+						}
 					}
 				}
 			}
