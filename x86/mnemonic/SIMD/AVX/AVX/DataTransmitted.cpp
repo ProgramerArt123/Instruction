@@ -92,6 +92,12 @@ namespace x86
 						const char *Load__Save_Packed_Double_Mask_128__256() {
 							return "VMASKMOVPD";
 						}
+						const char *Zero_All_YMM_Registers() {
+							return "VZEROALL";
+						}
+						const char *Zero_Upper_YMM_Registers() {
+							return "VZEROUPPER";
+						}
 					}
 				}
 			}
