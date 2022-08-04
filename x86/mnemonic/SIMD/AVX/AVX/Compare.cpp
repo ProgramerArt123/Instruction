@@ -25,6 +25,15 @@ namespace x86
 						const char *Packed_Bit_Test_Double_128__256() {
 							return "VTESTPD";
 						}
+						const char *Compare_Packed_Bytes_128() {
+							return "VPCMPEQB";
+						}
+						const char *Compare_Packed_Words_128() {
+							return "VPCMPEQW";
+						}
+						const char *Compare_Packed_Doublewords_128() {
+							return "VPCMPEQD";
+						}
 					}
 				}
 			}
