@@ -66,7 +66,20 @@ namespace x86
 						const char *Subtract_Packed_Bytes_128();
 						const char *Subtract_Packed_Words_128();
 						const char *Subtract_Packed_Doublewords_128();
-						const char *Subtract_Packed_Quadwords_128();						
+						const char *Subtract_Packed_Quadwords_128();
+						const char *Horizontal_Subtraction_Words_Packed_128();
+						const char *Horizontal_Subtraction_Signed_Doublewords_Packed_128();
+						const char *Horizontal_Subtraction_Words_Saturated_Packed_128();
+						const char *Horizontal_Add_Words_Packed_128();
+						const char *Horizontal_Add_Doublewords_Packed_128();
+						const char *Horizontal_Add_Signed_Words_Packed_128();
+						const char *Multiply_Signed_Words_Scale_Round_Signed_Doublewords_128();
+						const char *Packed_Sign_Bytes_128();
+						const char *Packed_Sign_Words_128();
+						const char *Packed_Sign_Doublewords_128();
+						const char *Absolute_Bytes_128();
+						const char *Absolute_Words_128();
+						const char *Absolute_Doublewords_128();
 					}
 				}
 			}

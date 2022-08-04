@@ -173,6 +173,45 @@ namespace x86
 						const char *Subtract_Packed_Quadwords_128() {
 							return "VPSUBQ";
 						}
+						const char *Horizontal_Subtraction_Words_Packed_128() {
+							return "VPHSUBW";
+						}
+						const char *Horizontal_Subtraction_Signed_Doublewords_Packed_128() {
+							return "VPHSUBD";
+						}
+						const char *Horizontal_Subtraction_Words_Saturated_Packed_128() {
+							return "VPHSUBSW";
+						}
+						const char *Horizontal_Add_Words_Packed_128() {
+							return "VPHADDW";
+						}
+						const char *Horizontal_Add_Doublewords_Packed_128() {
+							return "VPHADDD";
+						}
+						const char *Horizontal_Add_Signed_Words_Packed_128() {
+							return "VPHADDSW";
+						}
+						const char *Multiply_Signed_Words_Scale_Round_Signed_Doublewords_128() {
+							return "VPMULHRSW";
+						}
+						const char *Packed_Sign_Bytes_128() {
+							return "VPSIGNB";
+						}
+						const char *Packed_Sign_Words_128() {
+							return "VPSIGNW";
+						}
+						const char *Packed_Sign_Doublewords_128() {
+							return "VPSIGND";
+						}
+						const char *Absolute_Bytes_128() {
+							return "VPABSB";
+						}
+						const char *Absolute_Words_128() {
+							return "VPABSW";
+						}
+						const char *Absolute_Doublewords_128() {
+							return "VPABSD";
+						}
 					}
 				}
 			}
