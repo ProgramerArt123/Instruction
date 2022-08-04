@@ -17,6 +17,14 @@ namespace x86
 						const char *Permute_Double_128__256();
 						const char *Permute_Single_128__256();
 						const char *Permute_Float_256();
+						const char *Move_Packed_Words_Left_Logical();
+						const char *Move_Packed_Doublewords_Left_Logical();
+						const char *Move_Packed_Quadwords_Left_Logical();
+						const char *Move_Packed_Words_Right_Arithmetic();
+						const char *Move_Packed_Words_Right_Logical();
+						const char *Move_Packed_Doublewords_Right_Logical();
+						const char *Move_Packed_Quadwords_Right_Logical();
+						const char *Move_Packed_Doublewords_Right_Arithmetic();
 					}
 				}
 			}
