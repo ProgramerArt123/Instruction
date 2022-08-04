@@ -38,6 +38,11 @@ namespace x86
 						const char *Round_Packed_Double_128__256();
 						const char *Round_Packed_Single_128__256();
 						const char *Multiply_Add_Packed_Integers_128();
+						const char *Multiply_Add_Packed_Integers_128();
+						const char *Multiply_Add_Packed_Signed__Unsigned_Bytes_128();
+						const char *Average_Packed_Unsigned_Bytes_128();
+						const char *Average_Packed_Unsigned_Words_128();
+						const char *Average_Packed_Unsigned_Doublewords_128();
 					}
 				}
 			}

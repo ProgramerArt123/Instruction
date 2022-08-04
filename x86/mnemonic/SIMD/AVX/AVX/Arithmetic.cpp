@@ -89,6 +89,18 @@ namespace x86
 						const char *Multiply_Add_Packed_Integers_128() {
 							return "VPMADDWD";
 						}
+						const char *Multiply_Add_Packed_Signed__Unsigned_Bytes_128() {
+							return "VPMADDUBSW";
+						}
+						const char *Average_Packed_Unsigned_Bytes_128() {
+							return "VPAVGB";
+						}
+						const char *Average_Packed_Unsigned_Words_128() {
+							return "VPAVGW";
+						}
+						const char *Average_Packed_Unsigned_Doublewords_128() {
+							return "VPMULUDQ";
+						}
 					}
 				}
 			}
