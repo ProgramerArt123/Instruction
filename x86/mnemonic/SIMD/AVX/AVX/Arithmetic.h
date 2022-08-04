@@ -43,6 +43,30 @@ namespace x86
 						const char *Average_Packed_Unsigned_Bytes_128();
 						const char *Average_Packed_Unsigned_Words_128();
 						const char *Average_Packed_Unsigned_Doublewords_128();
+						const char *Multiply_Packed_Signed_Doublewords_128();
+						const char *Multiply_Packed_Unsigned_Words_128();
+						const char *Multiply_Packed_Signed_Words_128();
+						const char *Subtract_Packed_Signed_Words_128();
+						const char *Add_Packed_Signed_Words_128();
+						const char *Sum_Absolute_Differences_128();
+						const char *Add_Packed_Unsigned_Bytes_128();
+						const char *Add_Packed_Unsigned_Words_128();
+						const char *Add_Packed_Signed_Bytes_128();
+						const char *Subtract_Packed_Unsigned_Bytes_128();
+						const char *Subtract_Packed_Unsigned_Words_128();
+						const char *Subtract_Packed_Signed_Bytes_128();
+						const char *Minimum_Packed_Unsigned_Bytes_128();
+						const char *Minimum_Packed_Signed_Words_128();
+						const char *Maximum_Packed_Unsigned_Bytes_128();
+						const char *Maximum_Packed_Signed_Words_128();
+						const char *Add_Packed_Bytes_128();
+						const char *Add_Packed_Words_128();
+						const char *Add_Packed_Doublewords_128();
+						const char *Add_Packed_Quadwords_128();
+						const char *Subtract_Packed_Bytes_128();
+						const char *Subtract_Packed_Words_128();
+						const char *Subtract_Packed_Doublewords_128();
+						const char *Subtract_Packed_Quadwords_128();						
 					}
 				}
 			}

@@ -101,6 +101,78 @@ namespace x86
 						const char *Average_Packed_Unsigned_Doublewords_128() {
 							return "VPMULUDQ";
 						}
+						const char *Multiply_Packed_Signed_Doublewords_128() {
+							return "VPMULLW";
+						}
+						const char *Multiply_Packed_Unsigned_Words_128() {
+							return "VPMULHUW";
+						}
+						const char *Multiply_Packed_Signed_Words_128() {
+							return "VPMULHW";
+						}
+						const char *Subtract_Packed_Signed_Words_128() {
+							return "VPSUBSW";
+						}
+						const char *Add_Packed_Signed_Words_128() {
+							return "VPADDSW";
+						}
+						const char *Sum_Absolute_Differences_128() {
+							return "VPSADBW";
+						}
+						const char *Add_Packed_Unsigned_Bytes_128() {
+							return "VPADDUSB";
+						}
+						const char *Add_Packed_Unsigned_Words_128() {
+							return "VPADDUSW";
+						}
+						const char *Add_Packed_Signed_Bytes_128() {
+							return "VPADDSB";
+						}
+						const char *Subtract_Packed_Unsigned_Bytes_128() {
+							return "VPSUBUSB";
+						}
+						const char *Subtract_Packed_Unsigned_Words_128() {
+							return "VPSUBUSW";
+						}
+						const char *Subtract_Packed_Signed_Bytes_128() {
+							return "VPSUBSB";
+						}
+						const char *Minimum_Packed_Unsigned_Bytes_128() {
+							return "VPMINUB";
+						}
+						const char *Minimum_Packed_Signed_Words_128() {
+							return "VPMINSW";
+						}
+						const char *Maximum_Packed_Unsigned_Bytes_128() {
+							return "VPMAXUB";
+						}
+						const char *Maximum_Packed_Signed_Words_128() {
+							return "VPMAXSW";
+						}
+						const char *Add_Packed_Bytes_128() {
+							return "VPADDB";
+						}
+						const char *Add_Packed_Words_128() {
+							return "VPADDW";
+						}
+						const char *Add_Packed_Doublewords_128() {
+							return "VPADDD";
+						}
+						const char *Add_Packed_Quadwords_128() {
+							return "VPADDQ";
+						}
+						const char *Subtract_Packed_Bytes_128() {
+							return "VPSUBB";
+						}
+						const char *Subtract_Packed_Words_128() {
+							return "VPSUBW";
+						}
+						const char *Subtract_Packed_Doublewords_128() {
+							return "VPSUBD";
+						}
+						const char *Subtract_Packed_Quadwords_128() {
+							return "VPSUBQ";
+						}
 					}
 				}
 			}
