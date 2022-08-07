@@ -31,7 +31,7 @@ namespace x86
 							const char *Minimum_Packed_Unsigned_Doublewords_128() {
 								return "PMINUD";
 							}
-							const char *Minimum_Packed_Signed_Words_128() {
+							const char *Minimum_Packed_Signed_Bytes_128() {
 								return "PMINSB";
 							}
 							const char *Minimum_Packed_Signed_Doublewords_128() {
@@ -43,7 +43,7 @@ namespace x86
 							const char *Maximum_Packed_Unsigned_Doublewords_128() {
 								return "PMAXUD";
 							}
-							const char *Maximum_Packed_Signed_Words_128() {
+							const char *Maximum_Packed_Signed_Bytes_128() {
 								return "PMAXSB";
 							}
 							const char *Maximum_Packed_Signed_Doublewords_128() {

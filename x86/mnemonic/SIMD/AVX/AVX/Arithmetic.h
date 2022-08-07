@@ -80,6 +80,17 @@ namespace x86
 						const char *Absolute_Bytes_128();
 						const char *Absolute_Words_128();
 						const char *Absolute_Doublewords_128();
+						const char *Packed_Double_Dot_Product_128();
+						const char *Packed_Horizontal_Word_Minimum();
+						const char *Absolute_Difference_Sum();
+						const char *Maximum_Packed_Signed_Bytes_128();
+						const char *Maximum_Packed_Signed_Doublewords_128();
+						const char *Maximum_Packed_Unsigned_Doublewords_128();
+						const char *Minimum_Packed_Signed_Bytes_128();
+						const char *Minimum_Packed_Signed_Doublewords_128();
+						const char *Minimum_Packed_Unsigned_Doublewords_128();
+						const char *Maximum_Packed_Unsigned_Words_128();
+						const char *Minimum_Packed_Unsigned_Words_128();
 					}
 				}
 			}

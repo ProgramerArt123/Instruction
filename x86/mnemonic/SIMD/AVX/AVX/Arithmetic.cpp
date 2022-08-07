@@ -212,6 +212,39 @@ namespace x86
 						const char *Absolute_Doublewords_128() {
 							return "VPABSD";
 						}
+						const char *Packed_Double_Dot_Product_128() {
+							return "VDPPD";
+						}
+						const char *Packed_Horizontal_Word_Minimum() {
+							return "VPHMINPOSUW";
+						}
+						const char *Absolute_Difference_Sum() {
+							return "VMPSADBW";
+						}
+						const char *Maximum_Packed_Signed_Bytes_128() {
+							return "VPMAXSB";
+						}
+						const char *Maximum_Packed_Signed_Doublewords_128() {
+							return "VPMAXSD";
+						}
+						const char *Maximum_Packed_Unsigned_Doublewords_128() {
+							return "VPMAXUD";
+						}
+						const char *Minimum_Packed_Signed_Bytes_128() {
+							return "VPMINSB";
+						}
+						const char *Minimum_Packed_Signed_Doublewords_128() {
+							return "VPMINSD";
+						}
+						const char *Minimum_Packed_Unsigned_Doublewords_128() {
+							return "VPMINUD";
+						}
+						const char *Maximum_Packed_Unsigned_Words_128() {
+							return "VPMAXUW";
+						}
+						const char *Minimum_Packed_Unsigned_Words_128() {
+							return "VPMINUW";
+						}
 					}
 				}
 			}
