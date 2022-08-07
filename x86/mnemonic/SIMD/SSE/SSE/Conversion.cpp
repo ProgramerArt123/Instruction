@@ -22,10 +22,10 @@ namespace x86
 						const char *Convert_Truncation_Packed_Single_Packed_Doubleword_Integers_64() {
 							return "CVTTPS2PI";
 						}
-						const char *Convert_Scalar_Single_Integer_32__64() {
+						const char *Convert_Scalar_Single_Integer_32() {
 							return "CVTSS2SI";
 						}
-						const char *Convert_Truncation_Scalar_Single_Integer_32__64() {
+						const char *Convert_Truncation_Scalar_Single_Integer_32() {
 							return "CVTTSS2SI";
 						}
 					}

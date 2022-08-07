@@ -79,6 +79,24 @@ namespace x86
 						const char *Zero_Extend_Doubleword_Packed_Quadwords_64() {
 							return "VPMOVZXDQ";
 						}
+						const char *Convert_Integers_Scalar_Single_32__64() {
+							return "VCVTSI2SS";
+						}
+						const char *Convert_Doubleword_Integer_Scalar_Double_32__64() {
+							return "VCVTSI2SD";
+						}
+						const char *Convert_Scalar_Double_Doubleword_Integer_64() {
+							return "VCVTSD2SI";
+						}
+						const char *Convert_Truncation_Scalar_Single_Integer_32() {
+							return "VCVTTSS2SI";
+						}
+						const char *Convert_Truncation_Scalar_Double_Scalar_Doubleword_Integers_64() {
+							return "VCVTTSD2SI";
+						}
+						const char *Convert_Scalar_Single_Integer_32() {
+							return "VCVTSS2SI";
+						}
 					}
 				}
 			}

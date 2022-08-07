@@ -34,6 +34,12 @@ namespace x86
 						const char *Zero_Extend_Word_Packed_Quadwords_32();
 						const char *Sign_Extend_Doubleword_Packed_Quadwords_64();
 						const char *Zero_Extend_Doubleword_Packed_Quadwords_64();
+						const char *Convert_Integers_Scalar_Single_32__64();
+						const char *Convert_Doubleword_Integer_Scalar_Double_32__64();
+						const char *Convert_Scalar_Double_Doubleword_Integer_64();
+						const char *Convert_Truncation_Scalar_Single_Integer_32();
+						const char *Convert_Truncation_Scalar_Double_Scalar_Doubleword_Integers_64();
+						const char *Convert_Scalar_Single_Integer_32();
 					}
 				}
 			}

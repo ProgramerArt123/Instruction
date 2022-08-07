@@ -38,7 +38,7 @@ namespace x86
 						const char *Convert_Truncation_Scalar_Double_Scalar_Doubleword_Integers_64() {
 							return "CVTTSD2SI";
 						}
-						const char *Convert_Doubleword_Integer_Scalar_Double_32() {
+						const char *Convert_Doubleword_Integer_Scalar_Double_32__64() {
 							return "CVTSI2SD";
 						}
 						const char *Convert_Packed_Doubleword_Integers_Packed_Single_128() {

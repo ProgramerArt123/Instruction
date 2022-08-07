@@ -15,8 +15,8 @@ namespace x86
 						const char *Convert_Integers_Scalar_Single_32__64();
 						const char *Convert_Packed_Single_Packed_Doubleword_Integers_64();
 						const char *Convert_Truncation_Packed_Single_Packed_Doubleword_Integers_64();
-						const char *Convert_Scalar_Single_Integer_32__64();
-						const char *Convert_Truncation_Scalar_Single_Integer_32__64();
+						const char *Convert_Scalar_Single_Integer_32();
+						const char *Convert_Truncation_Scalar_Single_Integer_32();
 					}
 				}
 			}
