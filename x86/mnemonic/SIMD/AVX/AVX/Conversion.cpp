@@ -43,6 +43,42 @@ namespace x86
 						const char *Unpack_Interleave_Low_Packed_Double_128__256() {
 							return "VUNPCKLPD";
 						}
+						const char *Sign_Extend_Byte_Packed_Words_64() {
+							return "VPMOVSXBW";
+						}
+						const char *Zero_Extend_Byte_Packed_Words_64() {
+							return "VPMOVZXBW";
+						}
+						const char *Sign_Extend_Byte_Packed_Doublewords() {
+							return "VPMOVSXBD";
+						}
+						const char *Zero_Extend_Byte_Packed_Doublewords() {
+							return "VPMOVZXBD";
+						}
+						const char *Sign_Extend_Word_Packed_Doublewords_64() {
+							return "VPMOVSXWD";
+						}
+						const char *Zero_Extend_Word_Packed_Doublewords_64() {
+							return "VPMOVZXWD";
+						}
+						const char *Sign_Extend_Byte_Packed_Quadwords_16() {
+							return "VPMOVSXBQ";
+						}
+						const char *Zero_Extend_Byte_Packed_Quadwords_16() {
+							return "VPMOVZXBQ";
+						}
+						const char *Sign_Extend_Word_Packed_Quadwords_32() {
+							return "VPMOVSXWQ";
+						}
+						const char *Zero_Extend_Word_Packed_Quadwords_32() {
+							return "VPMOVZXWQ";
+						}
+						const char *Sign_Extend_Doubleword_Packed_Quadwords_64() {
+							return "VPMOVSXDQ";
+						}
+						const char *Zero_Extend_Doubleword_Packed_Quadwords_64() {
+							return "VPMOVZXDQ";
+						}
 					}
 				}
 			}

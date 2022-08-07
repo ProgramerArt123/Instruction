@@ -22,6 +22,18 @@ namespace x86
 						const char *Unpack_Interleave_High_Packed_Double_128__256();
 						const char *Unpack_Interleave_High_Packed_Single_128__256();
 						const char *Unpack_Interleave_Low_Packed_Double_128__256();
+						const char *Sign_Extend_Byte_Packed_Words_64();
+						const char *Zero_Extend_Byte_Packed_Words_64();
+						const char *Sign_Extend_Byte_Packed_Doublewords();
+						const char *Zero_Extend_Byte_Packed_Doublewords();
+						const char *Sign_Extend_Word_Packed_Doublewords_64();
+						const char *Zero_Extend_Word_Packed_Doublewords_64();
+						const char *Sign_Extend_Byte_Packed_Quadwords_16();
+						const char *Zero_Extend_Byte_Packed_Quadwords_16();
+						const char *Sign_Extend_Word_Packed_Quadwords_32();
+						const char *Zero_Extend_Word_Packed_Quadwords_32();
+						const char *Sign_Extend_Doubleword_Packed_Quadwords_64();
+						const char *Zero_Extend_Doubleword_Packed_Quadwords_64();
 					}
 				}
 			}
