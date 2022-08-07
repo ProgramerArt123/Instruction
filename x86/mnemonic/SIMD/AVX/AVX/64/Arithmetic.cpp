@@ -16,6 +16,9 @@ namespace x86
 							const char *Return_Count_Number_Bits_One_16__32__64() {
 								return "POPCNT";
 							}
+							const char *Accumulate_CRC32_Value_8__16__32__64() {
+								return "CRC32";
+							}
 							
 						}
 					}
