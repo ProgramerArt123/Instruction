@@ -34,6 +34,9 @@ namespace x86
 						const char *Compare_Packed_Doublewords_128() {
 							return "VPCMPEQD";
 						}
+						const char *Compare_Packed_Signed_Quadwords_128() {
+							return "VPCMPGTQ";
+						}
 					}
 				}
 			}
