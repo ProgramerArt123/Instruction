@@ -95,6 +95,7 @@ namespace x86
 						const char *Multiply_Packed_Signed_Doublewords_Store_Low_128();
 						const char *Round_Scalar_Single_32();
 						const char *Round_Scalar_Double_64();
+						const char *Carry_Less_Multiplication_Quadwords_128();
 					}
 				}
 			}

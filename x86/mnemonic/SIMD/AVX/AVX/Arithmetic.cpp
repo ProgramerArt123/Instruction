@@ -257,6 +257,9 @@ namespace x86
 						const char *Round_Scalar_Double_64() {
 							return "VROUNDSD";
 						}
+						const char *Carry_Less_Multiplication_Quadwords_128() {
+							return "VPCLMULQDQ";
+						}
 					}
 				}
 			}
