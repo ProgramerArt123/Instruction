@@ -91,6 +91,10 @@ namespace x86
 						const char *Minimum_Packed_Unsigned_Doublewords_128();
 						const char *Maximum_Packed_Unsigned_Words_128();
 						const char *Minimum_Packed_Unsigned_Words_128();
+						const char *Multiply_Packed_Signed_Doublewords_Store_Quadwords_128();
+						const char *Multiply_Packed_Signed_Doublewords_Store_Low_128();
+						const char *Round_Scalar_Single_32();
+						const char *Round_Scalar_Double_64();
 					}
 				}
 			}

@@ -245,6 +245,18 @@ namespace x86
 						const char *Minimum_Packed_Unsigned_Words_128() {
 							return "VPMINUW";
 						}
+						const char *Multiply_Packed_Signed_Doublewords_Store_Quadwords_128() {
+							return "VPMULDQ";
+						}
+						const char *Multiply_Packed_Signed_Doublewords_Store_Low_128() {
+							return "VPMULLD";
+						}
+						const char *Round_Scalar_Single_32() {
+							return "VROUNDSS";
+						}
+						const char *Round_Scalar_Double_64() {
+							return "VROUNDSD";
+						}
 					}
 				}
 			}
