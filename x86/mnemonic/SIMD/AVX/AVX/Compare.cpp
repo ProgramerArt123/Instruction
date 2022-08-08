@@ -40,7 +40,15 @@ namespace x86
 						const char *Compare_Ordered_Scalar_Double_EFLAGS_64() {
 							return "VCOMISD";
 						}
-						
+						const char *Compare_Unordered_Scalar_Single_EFLAGS_32() {
+							return "VUCOMISS";
+						}
+						const char *Compare_Unordered_Scalar_Double_EFLAGS_64() {
+							return "VUCOMISD";
+						}
+						const char *Compare_Ordered_Scalar_Single_EFLAGS_32() {
+							return "VCOMISS";
+						}
 					}
 				}
 			}
