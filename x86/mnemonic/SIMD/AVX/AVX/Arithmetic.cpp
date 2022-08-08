@@ -266,6 +266,36 @@ namespace x86
 						const char *Reciprocal_Scalar_Single_32() {
 							return "VRCPSS";
 						}
+						const char *Add_Scalar_Single_32() {
+							return "VADDSS";
+						}
+						const char *Add_Scalar_Double_64() {
+							return "VADDSD";
+						}
+						const char *Subtract_Scalar_Single_32() {
+							return "VSUBSS";
+						}
+						const char *Subtract_Scalar_Double_64() {
+							return "VSUBSD";
+						}
+						const char *Multiply_Scalar_Single_32() {
+							return "VMULSS";
+						}
+						const char *Multiply_Scalar_Double_64() {
+							return "VMULSD";
+						}
+						const char *Divide_Scalar_Single_32() {
+							return "VDIVSS";
+						}
+						const char *Divide_Scalar_Double_64() {
+							return "VDIVSD";
+						}
+						const char *Square_Root_Scalar_Single_32() {
+							return "VSQRTSS";
+						}
+						const char *Square_Root_Scalar_Double_64() {
+							return "VSQRTSD";
+						}
 					}
 				}
 			}
