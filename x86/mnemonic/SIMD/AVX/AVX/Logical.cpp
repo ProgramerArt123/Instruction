@@ -34,6 +34,18 @@ namespace x86
 						const char *Logical_And_Packed_Single_128__256() {
 							return "VANDPS";
 						}
+						const char *Logical_AND_128() {
+							return "VPAND";
+						}
+						const char *Logical_And_Not_128() {
+							return "VPANDN";
+						}
+						const char *Logical_Or_128() {
+							return "VPOR";
+						}
+						const char *Logical_Exclusive_Or_128() {
+							return "VPXOR";
+						}
 					}
 				}
 			}

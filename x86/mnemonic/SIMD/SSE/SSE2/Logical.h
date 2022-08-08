@@ -15,6 +15,10 @@ namespace x86
 						const char *Logical_And_Not_Packed_Double_128();
 						const char *Logical_Or_Packed_Double_128();
 						const char *Logical_Xor_Packed_Double_128();
+						const char *Logical_AND_128();
+						const char *Logical_And_Not_128();
+						const char *Logical_Or_128();
+						const char *Logical_Exclusive_Or_128();
 					}
 				}
 			}

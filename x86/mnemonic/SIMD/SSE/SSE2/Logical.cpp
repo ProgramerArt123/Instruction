@@ -22,6 +22,18 @@ namespace x86
 						const char *Logical_Xor_Packed_Double_128() {
 							return "XORPD";
 						}
+						const char *Logical_AND_128() {
+							return "PAND";
+						}
+						const char *Logical_And_Not_128() {
+							return "PANDN";
+						}
+						const char *Logical_Or_128() {
+							return "POR";
+						}
+						const char *Logical_Exclusive_Or_128() {
+							return "PXOR";
+						}
 					}
 				}
 			}
