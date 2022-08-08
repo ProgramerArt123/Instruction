@@ -97,6 +97,12 @@ namespace x86
 						const char *Convert_Scalar_Single_Integer_32() {
 							return "VCVTSS2SI";
 						}
+						const char *Convert_Scalar_Single_Scalar_Double_32() {
+							return "VCVTSS2SD";
+						}
+						const char *Convert_Scalar_Double_Scalar_Single_64() {
+							return "VCVTSD2SS";
+						}
 					}
 				}
 			}
