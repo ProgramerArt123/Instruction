@@ -25,6 +25,9 @@ namespace x86
 						const char *Move_Packed_Doublewords_Right_Logical();
 						const char *Move_Packed_Quadwords_Right_Logical();
 						const char *Move_Packed_Doublewords_Right_Arithmetic();
+						const char *Shuffle_Packed_Low_Words_128();
+						const char *Shuffle_Packed_High_Words_128();
+						const char *Shuffle_Packed_Doublewords_128();
 					}
 				}
 			}

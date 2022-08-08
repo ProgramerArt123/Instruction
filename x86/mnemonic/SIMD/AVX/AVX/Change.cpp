@@ -52,6 +52,15 @@ namespace x86
 						const char *Move_Packed_Doublewords_Right_Arithmetic() {
 							return "VPSRAD";
 						}
+						const char *Shuffle_Packed_Low_Words_128() {
+							return "VPSHUFLW";
+						}
+						const char *Shuffle_Packed_High_Words_128() {
+							return "VPSHUFHW";
+						}
+						const char *Shuffle_Packed_Doublewords_128() {
+							return "VPSHUFD";
+						}
 					}
 				}
 			}
