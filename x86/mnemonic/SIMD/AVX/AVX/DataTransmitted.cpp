@@ -104,6 +104,30 @@ namespace x86
 						const char *Transmitted_Scalar_Double() {
 							return "VMOVSD";
 						}
+						const char *Transmitted_Two_Packed_Single_High_64() {
+							return "VMOVHPS";
+						}
+						const char *Transmitted_Packed_Double_High_64() {
+							return "VMOVHPD";
+						}
+						const char *Transmitted_Two_Packed_Single_Low_64() {
+							return "VMOVLPS";
+						}
+						const char *Transmitted_Packed_Double_Low_64() {
+							return "VMOVLPD";
+						}
+						const char *Transmitted_Two_Packed_Single_Low_High_64() {
+							return "VMOVLHPS";
+						}
+						const char *Transmitted_Two_Packed_Single_High_Low_64() {
+							return "VMOVHLPS";
+						}
+						const char *Transmitted_64() {
+							return "VMOVQ";
+						}
+						const char *Transmitted_32() {
+							return "VMOVD";
+						}
 					}
 				}
 			}

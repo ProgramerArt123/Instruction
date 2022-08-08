@@ -23,6 +23,8 @@ namespace x86
 						const char *Store_Selected_Bytes_Two_Quadwords();
 						const char *Store_Packed_Doubles_Non_Temporal_Hint_128();
 						const char *Store_Packed_Integers_Non_Temporal_Hint_128();
+						const char *Transmitted_32();
+						const char *Transmitted_64();
 					}
 				}
 			}

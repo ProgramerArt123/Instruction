@@ -43,6 +43,14 @@ namespace x86
 						const char *Zero_Upper_YMM_Registers();
 						const char *Transmitted_Scalar_Single_32__128();
 						const char *Transmitted_Scalar_Double();
+						const char *Transmitted_Two_Packed_Single_High_64();
+						const char *Transmitted_Packed_Double_High_64();
+						const char *Transmitted_Two_Packed_Single_Low_64();
+						const char *Transmitted_Packed_Double_Low_64();
+						const char *Transmitted_Two_Packed_Single_Low_High_64();
+						const char *Transmitted_Two_Packed_Single_High_Low_64();
+						const char *Transmitted_64();
+						const char *Transmitted_32();
 					}
 				}
 			}

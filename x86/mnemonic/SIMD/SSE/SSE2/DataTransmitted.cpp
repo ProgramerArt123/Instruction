@@ -44,6 +44,12 @@ namespace x86
 						const char *Store_Packed_Integers_Non_Temporal_Hint_128() {
 							return "MOVNTDQ";
 						}
+						const char *Transmitted_32() {
+							return "MOVD";
+						}
+						const char *Transmitted_64() {
+							return "MOVQ";
+						}
 					}
 				}
 			}
