@@ -47,6 +47,9 @@ namespace x86
 						const char *Square_Root_Scalar_Single_32() {
 							return "SQRTSS";
 						}
+						const char *Square_Root_Reciprocal_Scalar_Single_32() {
+							return "RSQRTSS";
+						}
 						const char *Square_Roots_Reciprocals_Packed_Single_128() {
 							return "RSQRTPS";
 						}

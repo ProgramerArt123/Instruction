@@ -260,6 +260,12 @@ namespace x86
 						const char *Carry_Less_Multiplication_Quadwords_128() {
 							return "VPCLMULQDQ";
 						}
+						const char *Square_Root_Reciprocal_Scalar_Single_32() {
+							return "VRSQRTSS";
+						}
+						const char *Reciprocal_Scalar_Single_32() {
+							return "VRCPSS";
+						}
 					}
 				}
 			}

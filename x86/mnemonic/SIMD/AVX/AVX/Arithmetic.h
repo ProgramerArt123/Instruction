@@ -96,6 +96,8 @@ namespace x86
 						const char *Round_Scalar_Single_32();
 						const char *Round_Scalar_Double_64();
 						const char *Carry_Less_Multiplication_Quadwords_128();
+						const char *Square_Root_Reciprocal_Scalar_Single_32();
+						const char *Reciprocal_Scalar_Single_32();
 					}
 				}
 			}

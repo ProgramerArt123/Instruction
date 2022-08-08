@@ -37,6 +37,10 @@ namespace x86
 						const char *Compare_Packed_Signed_Quadwords_128() {
 							return "VPCMPGTQ";
 						}
+						const char *Compare_Ordered_Scalar_Double_EFLAGS_64() {
+							return "VCOMISD";
+						}
+						
 					}
 				}
 			}

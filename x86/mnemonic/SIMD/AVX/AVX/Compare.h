@@ -20,6 +20,7 @@ namespace x86
 						const char *Compare_Packed_Words_128();
 						const char *Compare_Packed_Doublewords_128();
 						const char *Compare_Packed_Signed_Quadwords_128();
+						const char *Compare_Ordered_Scalar_Double_EFLAGS_64();
 					}
 				}
 			}
