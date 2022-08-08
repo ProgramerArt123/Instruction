@@ -54,6 +54,8 @@ namespace x86
 						const char *Extract_Word();
 						const char *Insert_Word();
 						const char *Packed_Align_Right_128();
+						const char *Extract_Packed_Single_32();
+						const char *Insert_Scalar_Single_32();
 					}
 				}
 			}

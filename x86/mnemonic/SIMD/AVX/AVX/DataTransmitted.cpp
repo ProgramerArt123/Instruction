@@ -137,6 +137,12 @@ namespace x86
 						const char *Packed_Align_Right_128() {
 							return "VPALIGNR";
 						}
+						const char *Extract_Packed_Single_32() {
+							return "VEXTRACTPS";
+						}
+						const char *Insert_Scalar_Single_32() {
+							return "VINSERTPS";
+						}
 					}
 				}
 			}
