@@ -58,6 +58,12 @@ namespace x86
 						const char *Compare_Packed_Signed_Doublewords_Greater_128() {
 							return "VPCMPGTD";
 						}
+						const char *Compare_Scalar_Single_32() {
+							return "VCMPSS";
+						}
+						const char *Compare_Scalar_Double_64() {
+							return "VCMPSD";
+						}
 					}
 				}
 			}
