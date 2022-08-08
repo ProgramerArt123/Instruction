@@ -50,6 +50,33 @@ namespace x86
 						const char *Convert_Truncation_Packed_Single_Packed_Doubleword_Integers_128() {
 							return "CVTTPS2DQ";
 						}
+						const char *Pack_Words_Into_Bytes_Unsigned_128() {
+							return "PACKUSWB";
+						}
+						const char *Pack_Doublewords_Into_Words_Signed_128() {
+							return "PACKSSDW";
+						}
+						const char *Pack_Words_Into_Bytes_Signed_128() {
+							return "PACKSSWB";
+						}
+						const char *Unpack_High_Order_Bytes_128() {
+							return "PUNPCKHBW";
+						}
+						const char *Unpack_High_Order_Words_128() {
+							return "PUNPCKHWD";
+						}
+						const char *Unpack_Low_Order_Bytes_128() {
+							return "PUNPCKLBW";
+						}
+						const char *Unpack_Low_Order_Words_128() {
+							return "PUNPCKLWD";
+						}
+						const char *Unpack_High_Order_Doublewords_128() {
+							return "PUNPCKHDQ";
+						}
+						const char *Unpack_Low_Order_Doublewords_128() {
+							return "PUNPCKLDQ";
+						}
 					}
 				}
 			}

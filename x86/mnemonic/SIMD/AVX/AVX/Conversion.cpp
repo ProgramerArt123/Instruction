@@ -103,6 +103,39 @@ namespace x86
 						const char *Convert_Scalar_Double_Scalar_Single_64() {
 							return "VCVTSD2SS";
 						}
+						const char *Pack_Words_Into_Bytes_Unsigned_128() {
+							return "VPACKUSWB";
+						}
+						const char *Pack_Doublewords_Into_Words_Signed_128() {
+							return "VPACKSSDW";
+						}
+						const char *Pack_Words_Into_Bytes_Signed_128() {
+							return "VPACKSSWB";
+						}
+						const char *Unpack_High_Order_Bytes_128() {
+							return "VPUNPCKHBW";
+						}
+						const char *Unpack_High_Order_Words_128() {
+							return "VPUNPCKHWD";
+						}
+						const char *Unpack_Low_Order_Bytes_128() {
+							return "VPUNPCKLBW";
+						}
+						const char *Unpack_Low_Order_Words_128() {
+							return "VPUNPCKLWD";
+						}
+						const char *Unpack_High_Order_Doublewords_128() {
+							return "VPUNPCKHDQ";
+						}
+						const char *Unpack_Low_Order_Doublewords_128() {
+							return "VPUNPCKLDQ";
+						}
+						const char *Unpack_Low_Quadwords_128() {
+							return "VPUNPCKLQDQ";
+						}
+						const char *Unpack_High_Quadwords_128() {
+							return "VPUNPCKHQDQ";
+						}
 					}
 				}
 			}
