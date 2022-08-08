@@ -128,6 +128,15 @@ namespace x86
 						const char *Transmitted_32() {
 							return "VMOVD";
 						}
+						const char *Extract_Word() {
+							return "VPEXTRW";
+						}
+						const char *Insert_Word() {
+							return "VPINSRW";
+						}
+						const char *Packed_Align_Right_128() {
+							return "PALIGNR";
+						}
 					}
 				}
 			}

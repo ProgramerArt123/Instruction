@@ -51,6 +51,9 @@ namespace x86
 						const char *Transmitted_Two_Packed_Single_High_Low_64();
 						const char *Transmitted_64();
 						const char *Transmitted_32();
+						const char *Extract_Word();
+						const char *Insert_Word();
+						const char *Packed_Align_Right_128();
 					}
 				}
 			}
