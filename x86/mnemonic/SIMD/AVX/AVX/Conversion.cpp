@@ -136,6 +136,9 @@ namespace x86
 						const char *Unpack_High_Quadwords_128() {
 							return "VPUNPCKHQDQ";
 						}
+						const char *Pack_Unsigned_Saturation_128() {
+							return "VPACKUSDW";
+						}
 					}
 				}
 			}
