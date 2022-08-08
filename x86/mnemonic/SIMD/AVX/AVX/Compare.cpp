@@ -49,6 +49,15 @@ namespace x86
 						const char *Compare_Ordered_Scalar_Single_EFLAGS_32() {
 							return "VCOMISS";
 						}
+						const char *Compare_Packed_Signed_Bytes_Greater_128() {
+							return "VPCMPGTB";
+						}
+						const char *Compare_Packed_Signed_Words_Greater_128() {
+							return "VPCMPGTW";
+						}
+						const char *Compare_Packed_Signed_Doublewords_Greater_128() {
+							return "VPCMPGTD";
+						}
 					}
 				}
 			}

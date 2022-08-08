@@ -15,6 +15,9 @@ namespace x86
 						const char *Compare_Scalar_Double_64();
 						const char *Compare_Ordered_Scalar_Double_EFLAGS_64();
 						const char *Compare_Unordered_Scalar_Double_EFLAGS_64();
+						const char *Compare_Packed_Signed_Bytes_Greater_128();
+						const char *Compare_Packed_Signed_Words_Greater_128();
+						const char *Compare_Packed_Signed_Doublewords_Greater_128();
 					}
 				}
 			}
