@@ -108,6 +108,10 @@ namespace x86
 						const char *Divide_Scalar_Double_64();
 						const char *Square_Root_Scalar_Single_32();
 						const char *Square_Root_Scalar_Double_64();
+						const char *Minimum_Scalar_Single_32();
+						const char *Minimum_Scalar_Double_64();
+						const char *Maximum_Scalar_Single_32();
+						const char *Maximum_Scalar_Double_64();
 					}
 				}
 			}

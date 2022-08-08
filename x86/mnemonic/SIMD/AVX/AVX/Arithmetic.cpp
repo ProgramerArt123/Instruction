@@ -296,6 +296,18 @@ namespace x86
 						const char *Square_Root_Scalar_Double_64() {
 							return "VSQRTSD";
 						}
+						const char *Minimum_Scalar_Single_32() {
+							return "VMINSS";
+						}
+						const char *Minimum_Scalar_Double_64() {
+							return "VMINSD";
+						}
+						const char *Maximum_Scalar_Single_32() {
+							return "VMAXSS";
+						}
+						const char *Maximum_Scalar_Double_64() {
+							return "VMAXSD";
+						}
 					}
 				}
 			}
