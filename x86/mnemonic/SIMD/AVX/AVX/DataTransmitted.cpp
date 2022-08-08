@@ -98,6 +98,12 @@ namespace x86
 						const char *Zero_Upper_YMM_Registers() {
 							return "VZEROUPPER";
 						}
+						const char *Transmitted_Scalar_Single_32__128() {
+							return "VMOVSS";
+						}
+						const char *Transmitted_Scalar_Double() {
+							return "VMOVSD";
+						}
 					}
 				}
 			}

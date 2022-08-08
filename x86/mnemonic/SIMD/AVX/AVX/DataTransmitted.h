@@ -41,6 +41,8 @@ namespace x86
 						const char *Load__Save_Packed_Double_Mask_128__256();
 						const char *Zero_All_YMM_Registers();
 						const char *Zero_Upper_YMM_Registers();
+						const char *Transmitted_Scalar_Single_32__128();
+						const char *Transmitted_Scalar_Double();
 					}
 				}
 			}
