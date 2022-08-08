@@ -135,7 +135,7 @@ namespace x86
 							return "VPINSRW";
 						}
 						const char *Packed_Align_Right_128() {
-							return "PALIGNR";
+							return "VPALIGNR";
 						}
 					}
 				}
