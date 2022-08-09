@@ -56,6 +56,14 @@ namespace x86
 						const char *Packed_Align_Right_128();
 						const char *Extract_Packed_Single_32();
 						const char *Insert_Scalar_Single_32();
+						const char *Variable_Blend_Packed_Bytes_128();
+						const char *Blend_Packed_Words_128();
+						const char *Extract_Byte();
+						const char *Extract_Doubleword();
+						const char *Extract_Quadword();
+						const char *Insert_Byte();
+						const char *Insert_Doubleword();
+						const char *Insert_Quadword();
 					}
 				}
 			}

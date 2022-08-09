@@ -143,6 +143,30 @@ namespace x86
 						const char *Insert_Scalar_Single_32() {
 							return "VINSERTPS";
 						}
+						const char *Variable_Blend_Packed_Bytes_128() {
+							return "VPBLENDVB";
+						}
+						const char *Blend_Packed_Words_128() {
+							return "VPBLENDW";
+						}
+						const char *Extract_Byte() {
+							return "VPEXTRB";
+						}
+						const char *Extract_Doubleword() {
+							return "VPEXTRD";
+						}
+						const char *Extract_Quadword() {
+							return "VPEXTRQ";
+						}
+						const char *Insert_Byte() {
+							return "VPINSRB";
+						}
+						const char *Insert_Doubleword() {
+							return "VPINSRD";
+						}
+						const char *Insert_Quadword() {
+							return "VPINSRQ";
+						}
 					}
 				}
 			}
