@@ -130,7 +130,7 @@ namespace x86
 						const char *Unpack_Low_Order_Doublewords_128() {
 							return "VPUNPCKLDQ";
 						}
-						const char *Unpack_Low_Quadwords_128() {
+						const char *Unpack_Low_Order_Quadwords_128() {
 							return "VPUNPCKLQDQ";
 						}
 						const char *Unpack_High_Quadwords_128() {
