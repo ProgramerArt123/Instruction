@@ -19,6 +19,15 @@ namespace x86
 						const char *Compare_Packed_Signed_Doublewords_Greater_256() {
 							return "VPCMPGTD";
 						}
+						const char *Compare_Packed_Bytes_256() {
+							return "VPCMPEQB";
+						}
+						const char *Compare_Packed_Words_256() {
+							return "VPCMPEQW";
+						}
+						const char *Compare_Packed_Doublewords_256() {
+							return "VPCMPEQD";
+						}
 					}
 				}
 			}
