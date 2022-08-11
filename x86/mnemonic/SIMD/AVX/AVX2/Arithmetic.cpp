@@ -29,6 +29,15 @@ namespace x86
 						const char *Minimum_Packed_Unsigned_Bytes_256() {
 							return "VPMINUB";
 						}
+						const char *Add_Packed_Unsigned_Bytes_256() {
+							return "VPADDUSB";
+						}
+						const char *Add_Packed_Unsigned_Words_256() {
+							return "VPADDUSW";
+						}
+						const char *Maximum_Packed_Unsigned_Bytes_256() {
+							return "VPMAXUB";
+						}
 					}
 				}
 			}

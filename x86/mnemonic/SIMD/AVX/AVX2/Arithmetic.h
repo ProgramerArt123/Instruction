@@ -18,6 +18,9 @@ namespace x86
 						const char *Subtract_Packed_Unsigned_Bytes_256();
 						const char *Subtract_Packed_Unsigned_Words_256();
 						const char *Minimum_Packed_Unsigned_Bytes_256();
+						const char *Add_Packed_Unsigned_Bytes_256();
+						const char *Add_Packed_Unsigned_Words_256();
+						const char *Maximum_Packed_Unsigned_Bytes_256();
 					}
 				}
 			}
