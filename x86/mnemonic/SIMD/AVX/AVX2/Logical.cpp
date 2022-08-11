@@ -13,6 +13,15 @@ namespace x86
 						const char *Logical_AND_256() {
 							return "VPAND";
 						}
+						const char *Logical_And_Not_256() {
+							return "VPANDN";
+						}
+						const char *Logical_Or_256() {
+							return "POR";
+						}
+						const char *Logical_Exclusive_Or_256() {
+							return "VPXOR";
+						}
 					}
 				}
 			}

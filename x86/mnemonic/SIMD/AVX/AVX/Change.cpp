@@ -35,7 +35,7 @@ namespace x86
 							return "VPSLLD";
 						}
 						const char *Move_Packed_Quadwords_Left_Logical() {
-							return "VPSLLD";
+							return "VPSLLQ";
 						}
 						const char *Move_Packed_Words_Right_Arithmetic() {
 							return "VPSRAW";

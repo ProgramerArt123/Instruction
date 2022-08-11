@@ -28,6 +28,12 @@ namespace x86
 						const char *Compare_Packed_Doublewords_256() {
 							return "VPCMPEQD";
 						}
+						const char *Compare_Packed_Quadwords_256() {
+							return "VPCMPEQQ";
+						}
+						const char *Compare_Packed_Signed_Quadwords_256() {
+							return "VPCMPGTQ";
+						}
 					}
 				}
 			}

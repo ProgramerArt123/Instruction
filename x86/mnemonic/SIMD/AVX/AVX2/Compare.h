@@ -17,6 +17,8 @@ namespace x86
 						const char *Compare_Packed_Bytes_256();
 						const char *Compare_Packed_Words_256();
 						const char *Compare_Packed_Doublewords_256();
+						const char *Compare_Packed_Quadwords_256();
+						const char *Compare_Packed_Signed_Quadwords_256();
 					}
 				}
 			}

@@ -12,6 +12,9 @@ namespace x86
 				{
 					namespace logical {
 						const char *Logical_AND_256();
+						const char *Logical_And_Not_256();
+						const char *Logical_Or_256();
+						const char *Logical_Exclusive_Or_256();
 					}
 				}
 			}
