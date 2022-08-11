@@ -14,6 +14,10 @@ namespace x86
 					{
 						const char *Add_Packed_Quadwords_256();
 						const char *Multiply_Packed_Signed_Doublewords_256();
+						const char *Move_Byte_Mask();
+						const char *Subtract_Packed_Unsigned_Bytes_256();
+						const char *Subtract_Packed_Unsigned_Words_256();
+						const char *Minimum_Packed_Unsigned_Bytes_256();
 					}
 				}
 			}

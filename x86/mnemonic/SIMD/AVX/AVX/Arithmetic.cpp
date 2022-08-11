@@ -308,6 +308,9 @@ namespace x86
 						const char *Maximum_Scalar_Double_64() {
 							return "VMAXSD";
 						}
+						const char *Move_Byte_Mask() {
+							return "VPMOVMSKB";
+						}
 					}
 				}
 			}
