@@ -14,6 +14,21 @@ namespace x86
 						const char *Align_Doubleword_Vectors_128__256__512() {
 							return "VALIGND";
 						}
+						const char *Align_Quadword_Vectors_128__256__512() {
+							return "VALIGNQ";
+						}
+						const char *Blend_Single_Vectors_OpMask_Control_128__256__512() {
+							return "VBLENDMPS";
+						}
+						const char *Blend_Double_Vectors_OpMask_Control_128__256__512() {
+							return "VBLENDMPD";
+						}
+						const char *Save_Sparse_Packed_Double_Dense_128__256__512() {
+							return "VCOMPRESSPD";
+						}
+						const char *Save_Sparse_Packed_Single_Dense_128__256__512() {
+							return "VCOMPRESSPS";
+						}
 					}
 				}
 			}
