@@ -25,6 +25,14 @@ namespace x86
 						const char *Convert_Packed_Unsigned_Doubleword_Integers_Packed_Single_128__256__512();
 						const char *Convert_Unsigned_Integer_Scalar_Double_32__64();
 						const char *Convert_Unsigned_Integer_Scalar_Single_32__64();
+						const char *Convert_Exponents_Packed_Double_128__256__512();
+						const char *Convert_Exponents_Packed_Single_128__256__512();
+						const char *Convert_Exponents_Scalar_Double();
+						const char *Convert_Exponents_Scalar_Single();
+						const char *Extract_Double_Vector_Normalized_Mantissas_Double_Vector_128__256__512();
+						const char *Extract_Single_Vector_Normalized_Mantissas_Single_Vector_128__256__512();
+						const char *Extract_Double_Normalized_Mantissas_Double_Scalar();
+						const char *Extract_Single_Vector_Normalized_Mantissa_Single_Vector();
 					}
 				}
 			}

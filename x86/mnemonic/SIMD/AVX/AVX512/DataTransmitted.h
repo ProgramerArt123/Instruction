@@ -27,6 +27,7 @@ namespace x86
 						const char *Fix_Up_Special_Packed_Double_128__256__512();
 						const char *Fix_Up_Special_Packed_Single_128__256__512();
 						const char *Fix_Up_Special_Scalar_Double();
+						const char *Fix_Up_Special_Scalar_Single();
 					}
 				}
 			}

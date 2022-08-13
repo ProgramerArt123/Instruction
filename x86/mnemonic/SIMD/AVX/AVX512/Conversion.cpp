@@ -52,6 +52,30 @@ namespace x86
 						const char *Convert_Unsigned_Integer_Scalar_Single_32__64() {
 							return "VCVTUSI2SS";
 						}
+						const char *Convert_Exponents_Packed_Double_128__256__512() {
+							return "VGETEXPPD";
+						}
+						const char *Convert_Exponents_Packed_Single_128__256__512() {
+							return "VGETEXPPS";
+						}
+						const char *Convert_Exponents_Scalar_Double() {
+							return "VGETEXPSD";
+						}
+						const char *Convert_Exponents_Scalar_Single() {
+							return "VGETEXPSS";
+						}
+						const char *Extract_Double_Vector_Normalized_Mantissas_Double_Vector_128__256__512() {
+							return "VGETMANTPD";
+						}
+						const char *Extract_Single_Vector_Normalized_Mantissas_Single_Vector_128__256__512() {
+							return "VGETMANTPS";
+						}
+						const char *Extract_Double_Normalized_Mantissas_Double_Scalar() {
+							return "VGETMANTSD";
+						}
+						const char *Extract_Single_Vector_Normalized_Mantissa_Single_Vector() {
+							return "VGETMANTSS";
+						}
 					}
 				}
 			}
