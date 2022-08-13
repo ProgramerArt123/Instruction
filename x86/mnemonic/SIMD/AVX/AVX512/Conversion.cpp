@@ -76,6 +76,24 @@ namespace x86
 						const char *Extract_Single_Vector_Normalized_Mantissa_Single_Vector() {
 							return "VGETMANTSS";
 						}
+						const char *Insert_Packed_Single_128() {
+							return "VINSERTF32X4";
+						}
+						const char *Insert_Packed_Double_256() {
+							return "VINSERTF64X4";
+						}
+						const char *Move_Aligned_Packed_Doubleword_128__256__512() {
+							return "VMOVDQA32";
+						}
+						const char *Move_Aligned_Packed_Quadword_128__256__512() {
+							return "VMOVDQA64";
+						}
+						const char *Move_Unaligned_Packed_Doubleword_128__256__512() {
+							return "VMOVDQU32";
+						}
+						const char *Move_Unaligned_Packed_Quadword_128__256__512() {
+							return "VMOVDQU64";
+						}
 					}
 				}
 			}

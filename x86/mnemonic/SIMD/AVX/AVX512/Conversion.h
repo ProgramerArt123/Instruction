@@ -33,6 +33,12 @@ namespace x86
 						const char *Extract_Single_Vector_Normalized_Mantissas_Single_Vector_128__256__512();
 						const char *Extract_Double_Normalized_Mantissas_Double_Scalar();
 						const char *Extract_Single_Vector_Normalized_Mantissa_Single_Vector();
+						const char *Insert_Packed_Single_128();
+						const char *Insert_Packed_Double_256();
+						const char *Move_Aligned_Packed_Doubleword_128__256__512();
+						const char *Move_Aligned_Packed_Quadword_128__256__512();
+						const char *Move_Unaligned_Packed_Doubleword_128__256__512();
+						const char *Move_Unaligned_Packed_Quadword_128__256__512();
 					}
 				}
 			}

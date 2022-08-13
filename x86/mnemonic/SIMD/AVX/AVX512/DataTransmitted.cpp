@@ -59,6 +59,36 @@ namespace x86
 						const char *Fix_Up_Special_Scalar_Single() {
 							return "VFIXUPIMMSS";
 						}
+						const char *Blend_Doubleword_Vectors_OpMask_Control_128__256__512() {
+							return "VPBLENDMD";
+						}
+						const char *Blend_Quadword_Vectors_OpMask_Control_128__256__512() {
+							return "VPBLENDMQ";
+						}
+						const char *Broadcast_Doubleword_GPR_128__256__512() {
+							return "VPBROADCASTD";
+						}
+						const char *Broadcast_Quadword_GPR_128__256__512() {
+							return "VPBROADCASTQ";
+						}
+						const char *Save_Sparse_Packed_Quadword_128__256__512() {
+							return "VPCOMPRESSQ";
+						}
+						const char *Save_Sparse_Packed_Doubleword_128__256__512() {
+							return "VPCOMPRESSD";
+						}
+						const char *Save_Doublewords_Two_Tables_128__256__512() {
+							return "VPERMI2D";
+						}
+						const char *Save_Quadwords_Two_Tables_128__256__512() {
+							return "VPERMI2Q";
+						}
+						const char *Save_Double_Two_Tables_128__256__512() {
+							return "VPERMI2PD";
+						}
+						const char *Save_Single_Two_Tables_128__256__512() {
+							return "VPERMI2PS";
+						}
 					}
 				}
 			}

@@ -28,6 +28,16 @@ namespace x86
 						const char *Fix_Up_Special_Packed_Single_128__256__512();
 						const char *Fix_Up_Special_Scalar_Double();
 						const char *Fix_Up_Special_Scalar_Single();
+						const char *Blend_Doubleword_Vectors_OpMask_Control_128__256__512();
+						const char *Blend_Quadword_Vectors_OpMask_Control_128__256__512();
+						const char *Broadcast_Doubleword_GPR_128__256__512();
+						const char *Broadcast_Quadword_GPR_128__256__512();
+						const char *Save_Sparse_Packed_Quadword_128__256__512();
+						const char *Save_Sparse_Packed_Doubleword_128__256__512();
+						const char *Save_Doublewords_Two_Tables_128__256__512();
+						const char *Save_Quadwords_Two_Tables_128__256__512();
+						const char *Save_Double_Two_Tables_128__256__512();
+						const char *Save_Single_Two_Tables_128__256__512();
 					}
 				}
 			}
