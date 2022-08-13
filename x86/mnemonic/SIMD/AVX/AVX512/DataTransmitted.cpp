@@ -47,6 +47,18 @@ namespace x86
 						const char *Extract_Packed_Quadwords_256() {
 							return "VEXTRACTI64X4";
 						}
+						const char *Fix_Up_Special_Packed_Double_128__256__512() {
+							return "VFIXUPIMMPD";
+						}
+						const char *Fix_Up_Special_Packed_Single_128__256__512() {
+							return "VFIXUPIMMPS";
+						}
+						const char *Fix_Up_Special_Scalar_Double() {
+							return "VFIXUPIMMSD";
+						}
+						const char *Fix_Up_Special_Scalar_Single() {
+							return "VFIXUPIMMSS";
+						}
 					}
 				}
 			}

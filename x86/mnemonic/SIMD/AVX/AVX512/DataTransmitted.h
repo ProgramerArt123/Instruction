@@ -24,6 +24,9 @@ namespace x86
 						const char *Extract_Packed_Double_128();
 						const char *Extract_Packed_Doublewords_128();
 						const char *Extract_Packed_Quadwords_256();
+						const char *Fix_Up_Special_Packed_Double_128__256__512();
+						const char *Fix_Up_Special_Packed_Single_128__256__512();
+						const char *Fix_Up_Special_Scalar_Double();
 					}
 				}
 			}
