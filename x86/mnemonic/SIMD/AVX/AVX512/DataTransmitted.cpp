@@ -29,6 +29,24 @@ namespace x86
 						const char *Save_Sparse_Packed_Single_Dense_128__256__512() {
 							return "VCOMPRESSPS";
 						}
+						const char *Load_Sparse_Packed_Double_Dense_Memory_128__256__512() {
+							return "VEXPANDPD";
+						}
+						const char *Load_Sparse_Packed_Single_Dense_Memory_128__256__512() {
+							return "VEXPANDPS";
+						}
+						const char *Extract_Packed_Single_128() {
+							return "VEXTRACTF32X4";
+						}
+						const char *Extract_Packed_Double_128() {
+							return "VEXTRACTF64X4";
+						}
+						const char *Extract_Packed_Doublewords_128() {
+							return "VEXTRACTI32X4";
+						}
+						const char *Extract_Packed_Quadwords_256() {
+							return "VEXTRACTI64X4";
+						}
 					}
 				}
 			}

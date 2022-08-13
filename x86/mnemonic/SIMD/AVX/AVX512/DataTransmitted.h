@@ -18,6 +18,12 @@ namespace x86
 						const char *Blend_Double_Vectors_OpMask_Control_128__256__512();
 						const char *Save_Sparse_Packed_Double_Dense_128__256__512();
 						const char *Save_Sparse_Packed_Single_Dense_128__256__512();
+						const char *Load_Sparse_Packed_Double_Dense_Memory_128__256__512();
+						const char *Load_Sparse_Packed_Single_Dense_Memory_128__256__512();
+						const char *Extract_Packed_Single_128();
+						const char *Extract_Packed_Double_128();
+						const char *Extract_Packed_Doublewords_128();
+						const char *Extract_Packed_Quadwords_256();
 					}
 				}
 			}
